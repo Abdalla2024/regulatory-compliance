@@ -1,0 +1,1058 @@
+{
+  "schema_version": "regulatory-compliance-stage-snapshot/2",
+  "snapshot_id": "RCIB-20261006T202129Z-2f81-S04",
+  "run_id": "RCIB-20261006T202129Z-2f81",
+  "stage": "evidence-reconciliation",
+  "sequence": 4,
+  "created_at": "2026-10-06T20:21:37Z",
+  "status": "partial",
+  "predecessor": {
+    "snapshot_id": "RCIB-20261006T202129Z-2f81-S03",
+    "path": "deliverables/snapshots/03-authority-and-timing.json",
+    "sha256": "sha256:75bab0c657190732380aa4372229feb9f6c4ae7f5f32d03ea6b29d69ce968ea3"
+  },
+  "consumed_record_ids": [
+    "ATT-EVIDENCE-1",
+    "ATT-EVIDENCE-2",
+    "ATT-POLICY-1",
+    "ATT-POLICY-2",
+    "ATT-SYSTEMS-1",
+    "ATT-SYSTEMS-2",
+    "EXT-CALENDAR-ACT-001",
+    "EXT-CALENDAR-ACT-002",
+    "EXT-CALENDAR-ACT-003",
+    "EXT-CALENDAR-ACT-004",
+    "EXT-CALENDAR-ACT-005",
+    "EXT-CALENDAR-ACT-006",
+    "EXT-CALENDAR-ACT-007",
+    "EXT-CALENDAR-ACT-008",
+    "EXT-EVIDENCE-REC-001",
+    "EXT-EVIDENCE-REC-002",
+    "EXT-EVIDENCE-REC-003",
+    "EXT-EVIDENCE-REC-004",
+    "EXT-EVIDENCE-REC-005",
+    "EXT-EVIDENCE-REC-006",
+    "EXT-EVIDENCE-REC-007",
+    "EXT-EVIDENCE-REC-008",
+    "EXT-EVIDENCE-REC-009",
+    "EXT-EVIDENCE-REC-010",
+    "EXT-POLICY-BLK-03ba4640",
+    "EXT-POLICY-BLK-03ec4cd9",
+    "EXT-POLICY-BLK-0ae801e1",
+    "EXT-POLICY-BLK-1c33c0b1",
+    "EXT-POLICY-BLK-1f79995a",
+    "EXT-POLICY-BLK-23072c7a",
+    "EXT-POLICY-BLK-2a762c65",
+    "EXT-POLICY-BLK-2aacbbf1",
+    "EXT-POLICY-BLK-2baa4238",
+    "EXT-POLICY-BLK-2e28b3c4",
+    "EXT-POLICY-BLK-39a6c5d1",
+    "EXT-POLICY-BLK-3ba0b700",
+    "EXT-POLICY-BLK-3e6cadff",
+    "EXT-POLICY-BLK-3f8d8763",
+    "EXT-POLICY-BLK-41ca6506",
+    "EXT-POLICY-BLK-4689e99e",
+    "EXT-POLICY-BLK-4ab52877",
+    "EXT-POLICY-BLK-4c3ab759",
+    "EXT-POLICY-BLK-5ae4808f",
+    "EXT-POLICY-BLK-5bcbdfef",
+    "EXT-POLICY-BLK-5fb89831",
+    "EXT-POLICY-BLK-640e17f8",
+    "EXT-POLICY-BLK-66b46c79",
+    "EXT-POLICY-BLK-77291703",
+    "EXT-POLICY-BLK-7e90cdc4",
+    "EXT-POLICY-BLK-868f44e2",
+    "EXT-POLICY-BLK-8ddc27f5",
+    "EXT-POLICY-BLK-911cd23c",
+    "EXT-POLICY-BLK-9f65728f",
+    "EXT-POLICY-BLK-a44120e5",
+    "EXT-POLICY-BLK-a46fd543",
+    "EXT-POLICY-BLK-a9d1fb18",
+    "EXT-POLICY-BLK-af61ff06",
+    "EXT-POLICY-BLK-bcd6574a",
+    "EXT-POLICY-BLK-bd8de7fd",
+    "EXT-POLICY-BLK-bfc055c8",
+    "EXT-POLICY-BLK-c8c5d892",
+    "EXT-POLICY-BLK-d194ed55",
+    "EXT-POLICY-BLK-d6992cd6",
+    "EXT-POLICY-BLK-d77be889",
+    "EXT-POLICY-BLK-ddb274c4",
+    "EXT-POLICY-BLK-de175065",
+    "EXT-SYSTEMS-AI-001",
+    "EXT-SYSTEMS-AI-002",
+    "EXT-SYSTEMS-AI-003",
+    "EXT-SYSTEMS-AI-004",
+    "EXT-SYSTEMS-AI-005",
+    "EXT-SYSTEMS-AI-006",
+    "EXT-SYSTEMS-AI-007",
+    "EXT-SYSTEMS-AI-008",
+    "SCOPE-SYS-AI-001",
+    "SCOPE-SYS-AI-002",
+    "SCOPE-SYS-AI-003",
+    "SCOPE-SYS-AI-004",
+    "SCOPE-SYS-AI-005",
+    "SCOPE-SYS-AI-006",
+    "SCOPE-SYS-AI-007",
+    "SCOPE-SYS-AI-008"
+  ],
+  "produced_record_ids": [
+    "CONF-REC-003",
+    "CONF-REC-008",
+    "D-001",
+    "FACT-AI-001",
+    "FACT-AI-002",
+    "FACT-AI-003",
+    "FACT-AI-004",
+    "FACT-AI-005",
+    "FACT-AI-006",
+    "FACT-AI-007",
+    "FACT-AI-008",
+    "GAP-AI-002-CURRENT_NOTICE",
+    "GAP-AI-005-PROVIDER_ROLE",
+    "GAP-AI-005-REGISTER-STALE",
+    "GAP-REC-002",
+    "GAP-REC-005",
+    "GAP-REC-009",
+    "GAP-REC-010",
+    "POLCTL-EVIDENCE-STATES",
+    "POLCTL-EXCEPTIONS",
+    "POLCTL-POL-T1",
+    "POLCTL-POL-T2-LABEL",
+    "POLCTL-POL-T2-PROV",
+    "POLCTL-POL-T3",
+    "REC-001",
+    "REC-002",
+    "REC-003",
+    "REC-004",
+    "REC-005",
+    "REC-006",
+    "REC-007",
+    "REC-008",
+    "REC-009",
+    "REC-010"
+  ],
+  "state": {
+    "system_facts": [
+      {
+        "id": "FACT-AI-001",
+        "summary": "AI-001 Learner Support Chat: Answers routine learner questions; owner Learner Operations; provider_role=no, deployer_role=yes, exposed_group=learners, output_type=direct_interaction, current_notice=yes, evidence_status=complete (updated 2026-08-20).",
+        "evidence_ids": [
+          "EXT-POLICY-BLK-39a6c5d1",
+          "EXT-POLICY-BLK-3f8d8763",
+          "EXT-SYSTEMS-AI-001"
+        ],
+        "owner": "Learner Operations",
+        "rationale": "SYSTEMS register row plus POLICY operating facts for the system.",
+        "system_id": "AI-001",
+        "fields": {
+          "system_id": "AI-001",
+          "system_name": "Learner Support Chat",
+          "use_case": "Answers routine learner questions",
+          "owner": "Learner Operations",
+          "provider_role": "no",
+          "deployer_role": "yes",
+          "exposed_group": "learners",
+          "output_type": "direct_interaction",
+          "current_notice": "yes",
+          "human_review": "staff escalation",
+          "evidence_status": "complete",
+          "evidence_updated_at": "2026-08-20",
+          "record_version": "register-2026-08-26"
+        },
+        "licensed_supplier_product": true,
+        "policy_section_found": true,
+        "policy_cues": {
+          "no_emotion_or_biometric": [
+            "EXT-POLICY-BLK-3f8d8763"
+          ],
+          "emotion_or_biometric_unestablished": null,
+          "not_existing_person_depiction": null,
+          "deep_fake_indicators": null,
+          "not_public_interest_text": null,
+          "no_direct_conversation": null
+        },
+        "evidence_record_ids": [
+          "REC-001"
+        ],
+        "data_quality_issues": []
+      },
+      {
+        "id": "FACT-AI-002",
+        "summary": "AI-002 Admissions Draft Assistant: Drafts applicant email replies; owner Admissions; provider_role=no, deployer_role=yes, exposed_group=applicants, output_type=text, current_notice=unknown, evidence_status=partial (updated 2026-07-01).",
+        "evidence_ids": [
+          "EXT-POLICY-BLK-03ec4cd9",
+          "EXT-POLICY-BLK-39a6c5d1",
+          "EXT-SYSTEMS-AI-002"
+        ],
+        "owner": "Admissions",
+        "rationale": "SYSTEMS register row plus POLICY operating facts for the system.",
+        "system_id": "AI-002",
+        "fields": {
+          "system_id": "AI-002",
+          "system_name": "Admissions Draft Assistant",
+          "use_case": "Drafts applicant email replies",
+          "owner": "Admissions",
+          "provider_role": "no",
+          "deployer_role": "yes",
+          "exposed_group": "applicants",
+          "output_type": "text",
+          "current_notice": "unknown",
+          "human_review": "advisor approval",
+          "evidence_status": "partial",
+          "evidence_updated_at": "2026-07-01",
+          "record_version": "register-2026-08-26"
+        },
+        "licensed_supplier_product": true,
+        "policy_section_found": true,
+        "policy_cues": {
+          "no_emotion_or_biometric": null,
+          "emotion_or_biometric_unestablished": null,
+          "not_existing_person_depiction": null,
+          "deep_fake_indicators": null,
+          "not_public_interest_text": [
+            "EXT-POLICY-BLK-03ec4cd9"
+          ],
+          "no_direct_conversation": [
+            "EXT-POLICY-BLK-03ec4cd9"
+          ]
+        },
+        "evidence_record_ids": [
+          "REC-002"
+        ],
+        "data_quality_issues": []
+      },
+      {
+        "id": "FACT-AI-003",
+        "summary": "AI-003 Campaign Image Studio: Creates public campaign images; owner Communications; provider_role=no, deployer_role=yes, exposed_group=public, output_type=synthetic_image, current_notice=visible_label, evidence_status=complete (updated 2026-08-22).",
+        "evidence_ids": [
+          "EXT-POLICY-BLK-39a6c5d1",
+          "EXT-POLICY-BLK-de175065",
+          "EXT-SYSTEMS-AI-003"
+        ],
+        "owner": "Communications",
+        "rationale": "SYSTEMS register row plus POLICY operating facts for the system.",
+        "system_id": "AI-003",
+        "fields": {
+          "system_id": "AI-003",
+          "system_name": "Campaign Image Studio",
+          "use_case": "Creates public campaign images",
+          "owner": "Communications",
+          "provider_role": "no",
+          "deployer_role": "yes",
+          "exposed_group": "public",
+          "output_type": "synthetic_image",
+          "current_notice": "visible_label",
+          "human_review": "communications approval",
+          "evidence_status": "complete",
+          "evidence_updated_at": "2026-08-22",
+          "record_version": "register-2026-08-26"
+        },
+        "licensed_supplier_product": true,
+        "policy_section_found": true,
+        "policy_cues": {
+          "no_emotion_or_biometric": null,
+          "emotion_or_biometric_unestablished": null,
+          "not_existing_person_depiction": [
+            "EXT-POLICY-BLK-de175065"
+          ],
+          "deep_fake_indicators": null,
+          "not_public_interest_text": null,
+          "no_direct_conversation": null
+        },
+        "evidence_record_ids": [
+          "REC-003"
+        ],
+        "data_quality_issues": []
+      },
+      {
+        "id": "FACT-AI-004",
+        "summary": "AI-004 Pronunciation Coach: Provides spoken practice feedback; owner Learning Experience; provider_role=no, deployer_role=yes, exposed_group=learners, output_type=direct_interaction, current_notice=no, evidence_status=complete (updated 2026-08-18).",
+        "evidence_ids": [
+          "EXT-POLICY-BLK-2aacbbf1",
+          "EXT-POLICY-BLK-39a6c5d1",
+          "EXT-SYSTEMS-AI-004"
+        ],
+        "owner": "Learning Experience",
+        "rationale": "SYSTEMS register row plus POLICY operating facts for the system.",
+        "system_id": "AI-004",
+        "fields": {
+          "system_id": "AI-004",
+          "system_name": "Pronunciation Coach",
+          "use_case": "Provides spoken practice feedback",
+          "owner": "Learning Experience",
+          "provider_role": "no",
+          "deployer_role": "yes",
+          "exposed_group": "learners",
+          "output_type": "direct_interaction",
+          "current_notice": "no",
+          "human_review": "instructor escalation",
+          "evidence_status": "complete",
+          "evidence_updated_at": "2026-08-18",
+          "record_version": "register-2026-08-26"
+        },
+        "licensed_supplier_product": true,
+        "policy_section_found": true,
+        "policy_cues": {
+          "no_emotion_or_biometric": [
+            "EXT-POLICY-BLK-2aacbbf1"
+          ],
+          "emotion_or_biometric_unestablished": null,
+          "not_existing_person_depiction": null,
+          "deep_fake_indicators": null,
+          "not_public_interest_text": null,
+          "no_direct_conversation": null
+        },
+        "evidence_record_ids": [
+          "REC-004"
+        ],
+        "data_quality_issues": []
+      },
+      {
+        "id": "FACT-AI-005",
+        "summary": "AI-005 Remote Proctor Signal: Flags assessment sessions for review; owner Assessment Operations; provider_role=unknown, deployer_role=yes, exposed_group=learners, output_type=classification, current_notice=yes, evidence_status=stale (updated 2026-04-15).",
+        "evidence_ids": [
+          "EXT-POLICY-BLK-2e28b3c4",
+          "EXT-SYSTEMS-AI-005"
+        ],
+        "owner": "Assessment Operations",
+        "rationale": "SYSTEMS register row plus POLICY operating facts for the system.",
+        "system_id": "AI-005",
+        "fields": {
+          "system_id": "AI-005",
+          "system_name": "Remote Proctor Signal",
+          "use_case": "Flags assessment sessions for review",
+          "owner": "Assessment Operations",
+          "provider_role": "unknown",
+          "deployer_role": "yes",
+          "exposed_group": "learners",
+          "output_type": "classification",
+          "current_notice": "yes",
+          "human_review": "human adjudication",
+          "evidence_status": "stale",
+          "evidence_updated_at": "2026-04-15",
+          "record_version": "register-2026-08-26"
+        },
+        "licensed_supplier_product": false,
+        "policy_section_found": true,
+        "policy_cues": {
+          "no_emotion_or_biometric": null,
+          "emotion_or_biometric_unestablished": [
+            "EXT-POLICY-BLK-2e28b3c4"
+          ],
+          "not_existing_person_depiction": null,
+          "deep_fake_indicators": null,
+          "not_public_interest_text": null,
+          "no_direct_conversation": null
+        },
+        "evidence_record_ids": [
+          "REC-005",
+          "REC-006"
+        ],
+        "data_quality_issues": []
+      },
+      {
+        "id": "FACT-AI-006",
+        "summary": "AI-006 Staff Summary Assistant: Summarizes internal meeting notes; owner People Operations; provider_role=no, deployer_role=yes, exposed_group=staff, output_type=text, current_notice=not_applicable, evidence_status=complete (updated 2026-08-14).",
+        "evidence_ids": [
+          "EXT-POLICY-BLK-2baa4238",
+          "EXT-POLICY-BLK-39a6c5d1",
+          "EXT-SYSTEMS-AI-006"
+        ],
+        "owner": "People Operations",
+        "rationale": "SYSTEMS register row plus POLICY operating facts for the system.",
+        "system_id": "AI-006",
+        "fields": {
+          "system_id": "AI-006",
+          "system_name": "Staff Summary Assistant",
+          "use_case": "Summarizes internal meeting notes",
+          "owner": "People Operations",
+          "provider_role": "no",
+          "deployer_role": "yes",
+          "exposed_group": "staff",
+          "output_type": "text",
+          "current_notice": "not_applicable",
+          "human_review": "author review",
+          "evidence_status": "complete",
+          "evidence_updated_at": "2026-08-14",
+          "record_version": "register-2026-08-26"
+        },
+        "licensed_supplier_product": true,
+        "policy_section_found": true,
+        "policy_cues": {
+          "no_emotion_or_biometric": null,
+          "emotion_or_biometric_unestablished": null,
+          "not_existing_person_depiction": null,
+          "deep_fake_indicators": null,
+          "not_public_interest_text": [
+            "EXT-POLICY-BLK-2baa4238"
+          ],
+          "no_direct_conversation": null
+        },
+        "evidence_record_ids": [
+          "REC-007"
+        ],
+        "data_quality_issues": []
+      },
+      {
+        "id": "FACT-AI-007",
+        "summary": "AI-007 Website Guide Avatar: Answers public programme questions; owner Marketing; provider_role=no, deployer_role=yes, exposed_group=public, output_type=direct_interaction, current_notice=no, evidence_status=conflicting (updated 2026-08-21).",
+        "evidence_ids": [
+          "EXT-POLICY-BLK-39a6c5d1",
+          "EXT-POLICY-BLK-a44120e5",
+          "EXT-SYSTEMS-AI-007"
+        ],
+        "owner": "Marketing",
+        "rationale": "SYSTEMS register row plus POLICY operating facts for the system.",
+        "system_id": "AI-007",
+        "fields": {
+          "system_id": "AI-007",
+          "system_name": "Website Guide Avatar",
+          "use_case": "Answers public programme questions",
+          "owner": "Marketing",
+          "provider_role": "no",
+          "deployer_role": "yes",
+          "exposed_group": "public",
+          "output_type": "direct_interaction",
+          "current_notice": "no",
+          "human_review": "marketing escalation",
+          "evidence_status": "conflicting",
+          "evidence_updated_at": "2026-08-21",
+          "record_version": "register-2026-08-26"
+        },
+        "licensed_supplier_product": true,
+        "policy_section_found": true,
+        "policy_cues": {
+          "no_emotion_or_biometric": null,
+          "emotion_or_biometric_unestablished": null,
+          "not_existing_person_depiction": null,
+          "deep_fake_indicators": null,
+          "not_public_interest_text": null,
+          "no_direct_conversation": null
+        },
+        "evidence_record_ids": [
+          "REC-008"
+        ],
+        "data_quality_issues": []
+      },
+      {
+        "id": "FACT-AI-008",
+        "summary": "AI-008 Video Localisation Tool: Generates dubbed public programme videos; owner Communications; provider_role=no, deployer_role=yes, exposed_group=public, output_type=synthetic_audio_video, current_notice=visible_label, evidence_status=partial (updated 2026-08-19).",
+        "evidence_ids": [
+          "EXT-POLICY-BLK-39a6c5d1",
+          "EXT-POLICY-BLK-a46fd543",
+          "EXT-SYSTEMS-AI-008"
+        ],
+        "owner": "Communications",
+        "rationale": "SYSTEMS register row plus POLICY operating facts for the system.",
+        "system_id": "AI-008",
+        "fields": {
+          "system_id": "AI-008",
+          "system_name": "Video Localisation Tool",
+          "use_case": "Generates dubbed public programme videos",
+          "owner": "Communications",
+          "provider_role": "no",
+          "deployer_role": "yes",
+          "exposed_group": "public",
+          "output_type": "synthetic_audio_video",
+          "current_notice": "visible_label",
+          "human_review": "communications approval",
+          "evidence_status": "partial",
+          "evidence_updated_at": "2026-08-19",
+          "record_version": "register-2026-08-26"
+        },
+        "licensed_supplier_product": true,
+        "policy_section_found": true,
+        "policy_cues": {
+          "no_emotion_or_biometric": null,
+          "emotion_or_biometric_unestablished": null,
+          "not_existing_person_depiction": null,
+          "deep_fake_indicators": [
+            "EXT-POLICY-BLK-a46fd543",
+            "EXT-POLICY-BLK-a46fd543",
+            "EXT-POLICY-BLK-a46fd543"
+          ],
+          "not_public_interest_text": null,
+          "no_direct_conversation": null
+        },
+        "evidence_record_ids": [
+          "REC-009",
+          "REC-010"
+        ],
+        "data_quality_issues": []
+      }
+    ],
+    "policy_controls": [
+      {
+        "id": "POLCTL-POL-T1",
+        "summary": "AI-POL Learner and public transparency, bullet 1 (interaction notice) [internal policy]: A person directly interacting with an AI system receives a clear notice before or at the first interaction unless the AI nature is obvious from context.",
+        "evidence_ids": [
+          "EXT-POLICY-BLK-7e90cdc4"
+        ],
+        "owner": "Legal (policy interpretation); Operations (activation)",
+        "rationale": "Located in live POLICY AI-POL-2026-08-15",
+        "rule_id": "POL-T1",
+        "located": true,
+        "policy_version": "AI-POL-2026-08-15"
+      },
+      {
+        "id": "POLCTL-POL-T2-PROV",
+        "summary": "AI-POL Learner and public transparency, bullet 2 (machine-readable provenance) [internal policy]: Public synthetic images, audio or video retain machine-readable provenance when the tool supports it.",
+        "evidence_ids": [
+          "EXT-POLICY-BLK-3e6cadff"
+        ],
+        "owner": "Legal (policy interpretation); Operations (activation)",
+        "rationale": "Located in live POLICY AI-POL-2026-08-15",
+        "rule_id": "POL-T2-PROV",
+        "located": true,
+        "policy_version": "AI-POL-2026-08-15"
+      },
+      {
+        "id": "POLCTL-POL-T2-LABEL",
+        "summary": "AI-POL Learner and public transparency, bullet 2 (visible label unless Legal-approved exception) [internal policy]: The Communications owner requires a visible label on public synthetic media unless Legal approves a documented exception.",
+        "evidence_ids": [
+          "EXT-POLICY-BLK-3e6cadff"
+        ],
+        "owner": "Legal (policy interpretation); Operations (activation)",
+        "rationale": "Located in live POLICY AI-POL-2026-08-15",
+        "rule_id": "POL-T2-LABEL",
+        "located": true,
+        "policy_version": "AI-POL-2026-08-15"
+      },
+      {
+        "id": "POLCTL-POL-T3",
+        "summary": "AI-POL Learner and public transparency, bullet 3 (staff-only tool output route) [internal policy]: Staff-only drafting tools are not automatically public interactions; the owner records how generated material reaches learners or the public.",
+        "evidence_ids": [
+          "EXT-POLICY-BLK-41ca6506"
+        ],
+        "owner": "Legal (policy interpretation); Operations (activation)",
+        "rationale": "Located in live POLICY AI-POL-2026-08-15",
+        "rule_id": "POL-T3",
+        "located": true,
+        "policy_version": "AI-POL-2026-08-15"
+      },
+      {
+        "id": "POLCTL-EVIDENCE-STATES",
+        "summary": "missing, stale, conflicting, and not-applicable are different evidence states. Missing evidence must not be converted to compliance or non-compliance.",
+        "evidence_ids": [
+          "EXT-POLICY-BLK-8ddc27f5"
+        ],
+        "owner": "Legal",
+        "rationale": "Policy constraint applied to state handling and exception requests.",
+        "located": true
+      },
+      {
+        "id": "POLCTL-EXCEPTIONS",
+        "summary": "An exception requires a named owner, rationale, expiry date, and Legal approval. The automation may draft an exception request but may not approve it.",
+        "evidence_ids": [
+          "EXT-POLICY-BLK-a9d1fb18"
+        ],
+        "owner": "Legal",
+        "rationale": "Policy constraint applied to state handling and exception requests.",
+        "located": true
+      }
+    ],
+    "incident_evidence": [
+      {
+        "id": "REC-001",
+        "summary": "REC-001 (evidence, closed) for AI-001: evidence_state=complete; Notice screenshot and release record agree",
+        "evidence_ids": [
+          "EXT-EVIDENCE-REC-001"
+        ],
+        "owner": "Learner Operations",
+        "rationale": "Recorded in EVIDENCE; carried unchanged.",
+        "system_id": "AI-001",
+        "record_type": "evidence",
+        "record_status": "closed",
+        "evidence_state": "complete",
+        "evidence_ref": "notice-screen-v3",
+        "reported_at": "2026-08-20",
+        "notes": "Notice screenshot and release record agree",
+        "reported_after_review_date": false,
+        "evidence_subjects": [
+          "interaction-notice"
+        ],
+        "attribution": "attributed to rules naming: interaction-notice"
+      },
+      {
+        "id": "REC-002",
+        "summary": "REC-002 (evidence_gap, open) for AI-002: evidence_state=missing; No evidence that recipients are told when generated text is used",
+        "evidence_ids": [
+          "EXT-EVIDENCE-REC-002"
+        ],
+        "owner": "Admissions",
+        "rationale": "Recorded in EVIDENCE; carried unchanged.",
+        "system_id": "AI-002",
+        "record_type": "evidence_gap",
+        "record_status": "open",
+        "evidence_state": "missing",
+        "evidence_ref": "applicant-email-sample",
+        "reported_at": "2026-08-23",
+        "notes": "No evidence that recipients are told when generated text is used",
+        "reported_after_review_date": false,
+        "evidence_subjects": [
+          "text-output-route"
+        ],
+        "attribution": "attributed to rules naming: text-output-route"
+      },
+      {
+        "id": "REC-003",
+        "summary": "REC-003 (incident, open) for AI-003: evidence_state=conflicting; Visible label exists but exported platform copy may have lost metadata",
+        "evidence_ids": [
+          "EXT-EVIDENCE-REC-003"
+        ],
+        "owner": "Communications",
+        "rationale": "Recorded in EVIDENCE; carried unchanged.",
+        "system_id": "AI-003",
+        "record_type": "incident",
+        "record_status": "open",
+        "evidence_state": "conflicting",
+        "evidence_ref": "social-post-884",
+        "reported_at": "2026-08-24",
+        "notes": "Visible label exists but exported platform copy may have lost metadata",
+        "reported_after_review_date": false,
+        "evidence_subjects": [
+          "provenance-marking",
+          "visible-label-disclosure"
+        ],
+        "attribution": "attributed to rules naming: provenance-marking, visible-label-disclosure"
+      },
+      {
+        "id": "REC-004",
+        "summary": "REC-004 (incident, open) for AI-004: evidence_state=complete; First interaction contains no AI notice",
+        "evidence_ids": [
+          "EXT-EVIDENCE-REC-004"
+        ],
+        "owner": "Learning Experience",
+        "rationale": "Recorded in EVIDENCE; carried unchanged.",
+        "system_id": "AI-004",
+        "record_type": "incident",
+        "record_status": "open",
+        "evidence_state": "complete",
+        "evidence_ref": "coach-onboarding-v2",
+        "reported_at": "2026-08-18",
+        "notes": "First interaction contains no AI notice",
+        "reported_after_review_date": false,
+        "evidence_subjects": [
+          "interaction-notice"
+        ],
+        "attribution": "attributed to rules naming: interaction-notice"
+      },
+      {
+        "id": "REC-005",
+        "summary": "REC-005 (evidence_gap, open) for AI-005: evidence_state=stale; Provider role questionnaire predates the current release",
+        "evidence_ids": [
+          "EXT-EVIDENCE-REC-005"
+        ],
+        "owner": "Assessment Operations",
+        "rationale": "Recorded in EVIDENCE; carried unchanged.",
+        "system_id": "AI-005",
+        "record_type": "evidence_gap",
+        "record_status": "open",
+        "evidence_state": "stale",
+        "evidence_ref": "provider-role-questionnaire",
+        "reported_at": "2026-08-25",
+        "notes": "Provider role questionnaire predates the current release",
+        "reported_after_review_date": false,
+        "evidence_subjects": [
+          "provider-role"
+        ],
+        "attribution": "attributed to rules naming: provider-role"
+      },
+      {
+        "id": "REC-006",
+        "summary": "REC-006 (evidence, open) for AI-005: evidence_state=complete; Flag never makes the final assessment decision",
+        "evidence_ids": [
+          "EXT-EVIDENCE-REC-006"
+        ],
+        "owner": "Assessment Operations",
+        "rationale": "Recorded in EVIDENCE; carried unchanged.",
+        "system_id": "AI-005",
+        "record_type": "evidence",
+        "record_status": "open",
+        "evidence_state": "complete",
+        "evidence_ref": "human-review-sop-v4",
+        "reported_at": "2026-08-25",
+        "notes": "Flag never makes the final assessment decision",
+        "reported_after_review_date": false,
+        "evidence_subjects": [],
+        "attribution": "unattributed: the record names no rule subject, so it affects no register row (context only)"
+      },
+      {
+        "id": "REC-007",
+        "summary": "REC-007 (evidence, closed) for AI-006: evidence_state=complete; Tool is restricted to staff workspace",
+        "evidence_ids": [
+          "EXT-EVIDENCE-REC-007"
+        ],
+        "owner": "People Operations",
+        "rationale": "Recorded in EVIDENCE; carried unchanged.",
+        "system_id": "AI-006",
+        "record_type": "evidence",
+        "record_status": "closed",
+        "evidence_state": "complete",
+        "evidence_ref": "internal-use-review",
+        "reported_at": "2026-08-14",
+        "notes": "Tool is restricted to staff workspace",
+        "reported_after_review_date": false,
+        "evidence_subjects": [
+          "text-output-route"
+        ],
+        "attribution": "attributed to rules naming: text-output-route"
+      },
+      {
+        "id": "REC-008",
+        "summary": "REC-008 (incident, open) for AI-007: evidence_state=conflicting; Owner says a banner exists but the current capture shows none",
+        "evidence_ids": [
+          "EXT-EVIDENCE-REC-008"
+        ],
+        "owner": "Marketing",
+        "rationale": "Recorded in EVIDENCE; carried unchanged.",
+        "system_id": "AI-007",
+        "record_type": "incident",
+        "record_status": "open",
+        "evidence_state": "conflicting",
+        "evidence_ref": "avatar-page-capture",
+        "reported_at": "2026-08-21",
+        "notes": "Owner says a banner exists but the current capture shows none",
+        "reported_after_review_date": false,
+        "evidence_subjects": [
+          "interaction-notice"
+        ],
+        "attribution": "attributed to rules naming: interaction-notice"
+      },
+      {
+        "id": "REC-009",
+        "summary": "REC-009 (evidence, open) for AI-008: evidence_state=partial; Visible label verified but machine-readable provenance not checked",
+        "evidence_ids": [
+          "EXT-EVIDENCE-REC-009"
+        ],
+        "owner": "Communications",
+        "rationale": "Recorded in EVIDENCE; carried unchanged.",
+        "system_id": "AI-008",
+        "record_type": "evidence",
+        "record_status": "open",
+        "evidence_state": "partial",
+        "evidence_ref": "localisation-export-test",
+        "reported_at": "2026-08-19",
+        "notes": "Visible label verified but machine-readable provenance not checked",
+        "reported_after_review_date": false,
+        "evidence_subjects": [
+          "provenance-marking",
+          "visible-label-disclosure"
+        ],
+        "attribution": "attributed to rules naming: provenance-marking, visible-label-disclosure"
+      },
+      {
+        "id": "REC-010",
+        "summary": "REC-010 (exception_request, draft) for AI-008: evidence_state=missing; No Legal approval or expiry date recorded",
+        "evidence_ids": [
+          "EXT-EVIDENCE-REC-010"
+        ],
+        "owner": "Communications",
+        "rationale": "Recorded in EVIDENCE; carried unchanged.",
+        "system_id": "AI-008",
+        "record_type": "exception_request",
+        "record_status": "draft",
+        "evidence_state": "missing",
+        "evidence_ref": "exception-draft-008",
+        "reported_at": "2026-08-26",
+        "notes": "No Legal approval or expiry date recorded",
+        "reported_after_review_date": false,
+        "evidence_subjects": [
+          "visible-label-disclosure"
+        ],
+        "attribution": "attributed to rules naming: visible-label-disclosure"
+      }
+    ],
+    "conflicts": [
+      {
+        "id": "CONF-REC-003",
+        "summary": "Conflicting evidence for AI-003: Visible label exists but exported platform copy may have lost metadata (evidence reference social-post-884). Both facts are preserved; the automation does not decide which is true.",
+        "evidence_ids": [
+          "EXT-EVIDENCE-REC-003",
+          "EXT-SYSTEMS-AI-003"
+        ],
+        "owner": "Communications",
+        "rationale": "D-001",
+        "system_id": "AI-003",
+        "record_id": "REC-003",
+        "resolution_need": "System owner (Communications) verifies the contested fact using social-post-884 and updates EVIDENCE/SYSTEMS.",
+        "interview_note": null
+      },
+      {
+        "id": "CONF-REC-008",
+        "summary": "Conflicting evidence for AI-007: Owner says a banner exists but the current capture shows none (evidence reference avatar-page-capture). Both facts are preserved; the automation does not decide which is true.",
+        "evidence_ids": [
+          "EXT-EVIDENCE-REC-008",
+          "EXT-SYSTEMS-AI-007"
+        ],
+        "owner": "Marketing",
+        "rationale": "D-001",
+        "system_id": "AI-007",
+        "record_id": "REC-008",
+        "resolution_need": "System owner (Marketing) verifies the contested fact using avatar-page-capture and updates EVIDENCE/SYSTEMS.",
+        "interview_note": "Interview 2 (line 148) described this item as unresolved pending owner verification; it remains unresolved in that sense, with state 'conflicting' (D-001)."
+      }
+    ],
+    "evidence_gaps": [
+      {
+        "id": "GAP-REC-002",
+        "summary": "REC-002 for AI-002 is missing: No evidence that recipients are told when generated text is used",
+        "evidence_ids": [
+          "EXT-EVIDENCE-REC-002"
+        ],
+        "owner": "Admissions",
+        "rationale": "Missing, stale or partial evidence stays unresolved; it is never converted to compliance or non-compliance (POLICY).",
+        "system_id": "AI-002",
+        "record_id": "REC-002",
+        "evidence_state": "missing",
+        "resolution_need": "Admissions supplies current, complete evidence for applicant-email-sample."
+      },
+      {
+        "id": "GAP-REC-005",
+        "summary": "REC-005 for AI-005 is stale: Provider role questionnaire predates the current release",
+        "evidence_ids": [
+          "EXT-EVIDENCE-REC-005"
+        ],
+        "owner": "Assessment Operations",
+        "rationale": "Missing, stale or partial evidence stays unresolved; it is never converted to compliance or non-compliance (POLICY).",
+        "system_id": "AI-005",
+        "record_id": "REC-005",
+        "evidence_state": "stale",
+        "resolution_need": "Assessment Operations supplies current, complete evidence for provider-role-questionnaire."
+      },
+      {
+        "id": "GAP-REC-009",
+        "summary": "REC-009 for AI-008 is partial: Visible label verified but machine-readable provenance not checked",
+        "evidence_ids": [
+          "EXT-EVIDENCE-REC-009"
+        ],
+        "owner": "Communications",
+        "rationale": "Missing, stale or partial evidence stays unresolved; it is never converted to compliance or non-compliance (POLICY).",
+        "system_id": "AI-008",
+        "record_id": "REC-009",
+        "evidence_state": "partial",
+        "resolution_need": "Communications supplies current, complete evidence for localisation-export-test."
+      },
+      {
+        "id": "GAP-REC-010",
+        "summary": "REC-010 for AI-008 is missing: No Legal approval or expiry date recorded",
+        "evidence_ids": [
+          "EXT-EVIDENCE-REC-010"
+        ],
+        "owner": "Communications",
+        "rationale": "Missing, stale or partial evidence stays unresolved; it is never converted to compliance or non-compliance (POLICY).",
+        "system_id": "AI-008",
+        "record_id": "REC-010",
+        "evidence_state": "missing",
+        "resolution_need": "Communications supplies current, complete evidence for exception-draft-008. Legal approval and expiry date are also required for the exception request."
+      },
+      {
+        "id": "GAP-AI-002-CURRENT_NOTICE",
+        "summary": "AI-002 SYSTEMS field current_notice is 'unknown'.",
+        "evidence_ids": [
+          "EXT-SYSTEMS-AI-002"
+        ],
+        "owner": "Admissions",
+        "rationale": "Expected fact missing.",
+        "system_id": "AI-002",
+        "resolution_need": "Admissions supplies the current_notice fact."
+      },
+      {
+        "id": "GAP-AI-005-PROVIDER_ROLE",
+        "summary": "AI-005 SYSTEMS field provider_role is 'unknown'.",
+        "evidence_ids": [
+          "EXT-SYSTEMS-AI-005"
+        ],
+        "owner": "Assessment Operations",
+        "rationale": "Expected fact missing.",
+        "system_id": "AI-005",
+        "resolution_need": "Assessment Operations supplies the provider_role fact."
+      },
+      {
+        "id": "GAP-AI-005-REGISTER-STALE",
+        "summary": "AI-005 register facts are stale (evidence_updated_at 2026-04-15); all rows for this system stay unresolved.",
+        "evidence_ids": [
+          "EXT-SYSTEMS-AI-005"
+        ],
+        "owner": "Assessment Operations",
+        "rationale": "Stale facts block conclusions (interview 1 lines 150, 166).",
+        "system_id": "AI-005",
+        "resolution_need": "Assessment Operations refreshes the register entry and supporting evidence."
+      }
+    ]
+  },
+  "unresolved": [
+    {
+      "id": "CONF-REC-003",
+      "summary": "Conflicting evidence for AI-003: Visible label exists but exported platform copy may have lost metadata (evidence reference social-post-884). Both facts are preserved; the automation does not decide which is true.",
+      "evidence_ids": [
+        "EXT-EVIDENCE-REC-003",
+        "EXT-SYSTEMS-AI-003"
+      ],
+      "owner": "Communications",
+      "rationale": "D-001",
+      "system_id": "AI-003",
+      "record_id": "REC-003",
+      "resolution_need": "System owner (Communications) verifies the contested fact using social-post-884 and updates EVIDENCE/SYSTEMS.",
+      "interview_note": null
+    },
+    {
+      "id": "CONF-REC-008",
+      "summary": "Conflicting evidence for AI-007: Owner says a banner exists but the current capture shows none (evidence reference avatar-page-capture). Both facts are preserved; the automation does not decide which is true.",
+      "evidence_ids": [
+        "EXT-EVIDENCE-REC-008",
+        "EXT-SYSTEMS-AI-007"
+      ],
+      "owner": "Marketing",
+      "rationale": "D-001",
+      "system_id": "AI-007",
+      "record_id": "REC-008",
+      "resolution_need": "System owner (Marketing) verifies the contested fact using avatar-page-capture and updates EVIDENCE/SYSTEMS.",
+      "interview_note": "Interview 2 (line 148) described this item as unresolved pending owner verification; it remains unresolved in that sense, with state 'conflicting' (D-001)."
+    },
+    {
+      "id": "GAP-REC-002",
+      "summary": "REC-002 for AI-002 is missing: No evidence that recipients are told when generated text is used",
+      "evidence_ids": [
+        "EXT-EVIDENCE-REC-002"
+      ],
+      "owner": "Admissions",
+      "rationale": "Missing, stale or partial evidence stays unresolved; it is never converted to compliance or non-compliance (POLICY).",
+      "system_id": "AI-002",
+      "record_id": "REC-002",
+      "evidence_state": "missing",
+      "resolution_need": "Admissions supplies current, complete evidence for applicant-email-sample."
+    },
+    {
+      "id": "GAP-REC-005",
+      "summary": "REC-005 for AI-005 is stale: Provider role questionnaire predates the current release",
+      "evidence_ids": [
+        "EXT-EVIDENCE-REC-005"
+      ],
+      "owner": "Assessment Operations",
+      "rationale": "Missing, stale or partial evidence stays unresolved; it is never converted to compliance or non-compliance (POLICY).",
+      "system_id": "AI-005",
+      "record_id": "REC-005",
+      "evidence_state": "stale",
+      "resolution_need": "Assessment Operations supplies current, complete evidence for provider-role-questionnaire."
+    },
+    {
+      "id": "GAP-REC-009",
+      "summary": "REC-009 for AI-008 is partial: Visible label verified but machine-readable provenance not checked",
+      "evidence_ids": [
+        "EXT-EVIDENCE-REC-009"
+      ],
+      "owner": "Communications",
+      "rationale": "Missing, stale or partial evidence stays unresolved; it is never converted to compliance or non-compliance (POLICY).",
+      "system_id": "AI-008",
+      "record_id": "REC-009",
+      "evidence_state": "partial",
+      "resolution_need": "Communications supplies current, complete evidence for localisation-export-test."
+    },
+    {
+      "id": "GAP-REC-010",
+      "summary": "REC-010 for AI-008 is missing: No Legal approval or expiry date recorded",
+      "evidence_ids": [
+        "EXT-EVIDENCE-REC-010"
+      ],
+      "owner": "Communications",
+      "rationale": "Missing, stale or partial evidence stays unresolved; it is never converted to compliance or non-compliance (POLICY).",
+      "system_id": "AI-008",
+      "record_id": "REC-010",
+      "evidence_state": "missing",
+      "resolution_need": "Communications supplies current, complete evidence for exception-draft-008. Legal approval and expiry date are also required for the exception request."
+    },
+    {
+      "id": "GAP-AI-002-CURRENT_NOTICE",
+      "summary": "AI-002 SYSTEMS field current_notice is 'unknown'.",
+      "evidence_ids": [
+        "EXT-SYSTEMS-AI-002"
+      ],
+      "owner": "Admissions",
+      "rationale": "Expected fact missing.",
+      "system_id": "AI-002",
+      "resolution_need": "Admissions supplies the current_notice fact."
+    },
+    {
+      "id": "GAP-AI-005-PROVIDER_ROLE",
+      "summary": "AI-005 SYSTEMS field provider_role is 'unknown'.",
+      "evidence_ids": [
+        "EXT-SYSTEMS-AI-005"
+      ],
+      "owner": "Assessment Operations",
+      "rationale": "Expected fact missing.",
+      "system_id": "AI-005",
+      "resolution_need": "Assessment Operations supplies the provider_role fact."
+    },
+    {
+      "id": "GAP-AI-005-REGISTER-STALE",
+      "summary": "AI-005 register facts are stale (evidence_updated_at 2026-04-15); all rows for this system stay unresolved.",
+      "evidence_ids": [
+        "EXT-SYSTEMS-AI-005"
+      ],
+      "owner": "Assessment Operations",
+      "rationale": "Stale facts block conclusions (interview 1 lines 150, 166).",
+      "system_id": "AI-005",
+      "resolution_need": "Assessment Operations refreshes the register entry and supporting evidence."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "D-001",
+      "summary": "Keep REC-008 (and REC-003) in the conflicting state, owned by the system owner, instead of reclassifying it as unresolved.",
+      "concern": "The interviews describe REC-008 two ways. Interview 1 gives it as the example of conflicting evidence; interview 2 says it 'must be recorded in the impact register as unresolved and assigned to the owner'. The schema and register keep conflicting and unresolved as distinct impact states, so the item can only carry one.",
+      "options": [
+        {
+          "option": "Record REC-008 as unresolved, following interview 2's wording.",
+          "assessment": "Matches the latest interview phrasing but discards the source's own conflicting state and merges two states the assignment and POLICY keep distinct."
+        },
+        {
+          "option": "Record REC-008 as conflicting, preserving both contradictory facts, with the owner assigned to resolve it.",
+          "assessment": "Matches EVIDENCE, SYSTEMS, POLICY's evidence-state list, interview 1 and the schema; still satisfies interview 2's requirement that it stay visible and be assigned to the owner."
+        },
+        {
+          "option": "Record it as both (two register rows).",
+          "assessment": "Creates duplicate rows for one system/rule fact and makes counts and cross-file agreement ambiguous."
+        }
+      ],
+      "source_basis": [
+        "INSPECT-EVIDENCE-REC-008",
+        "INSPECT-SYSTEMS-AI-007",
+        "INSPECT-POLICY-STATES",
+        "INSPECT-POLICY-AI-007",
+        "INT1-L150",
+        "INT2-L148",
+        "INT2-L164",
+        "INT1-L118",
+        "ASSIGN-STATES",
+        "INSPECT-EVIDENCE-REC-003"
+      ],
+      "chosen_behavior": "Impact rows whose outcome depends on REC-008 use state 'conflicting'. Owner: Marketing (the AI-007 system owner). Resolution need: the system owner verifies whether the disclosure banner exists, using the identified evidence reference avatar-page-capture. Both facts (the owner's claim that a banner exists; the current capture showing none) are preserved, and the automation does not decide which is true. The item appears in the brief's conflicts/unresolved scope section. The same rule applies to REC-003 (AI-003, owner Communications), which is also conflicting at source level: label reported present, exported platform copy may have lost metadata (evidence reference social-post-884).",
+      "interview_interpretation_preserved": "Interview 2's reading — that REC-008 is unresolved until the owner verifies it — is kept in the register 'reason' and the brief: the item is described as not yet resolved and pending owner verification. Only the state value differs: 'conflicting' rather than 'unresolved'.",
+      "rationale": "The underlying facts directly contradict each other, which is the defining case for 'conflicting' in interview 1, POLICY and the schema. Interview 2's two concerns — visibility, and assignment to the owner — are fully met. Using the source's own state avoids the automation overriding a recorded business fact.",
+      "tradeoffs": [
+        "Departs from interview 2's literal wording; a reader comparing it with that transcript must see this record to understand why.",
+        "Conflicting and unresolved items are counted separately in the brief, so 'unresolved' totals are lower than a reader of interview 2 might expect."
+      ],
+      "downstream_effect": [
+        "Stage 04 records CONF-REC-008 and CONF-REC-003 as conflicts, citing both facts.",
+        "Stage 05 impact rows for AI-007 and AI-003 that need control evidence carry state 'conflicting'.",
+        "Stage 06 links the rows to the existing CALENDAR actions (ACT-002 for AI-007, ACT-004 for AI-003) with owners Marketing and Communications.",
+        "The register, brief and stage 07 cross-file checks treat conflicting as distinct from unresolved."
+      ],
+      "evidence_ids": [
+        "INSPECT-EVIDENCE-REC-008",
+        "INSPECT-SYSTEMS-AI-007",
+        "INT1-L150",
+        "INT2-L148",
+        "INSPECT-EVIDENCE-REC-003"
+      ],
+      "owner": "Project developer",
+      "decided_by": "Project developer (independent decision; no stakeholder or facilitator approval)",
+      "stages": [
+        "evidence-reconciliation",
+        "impact-analysis"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2244 @@
+{
+  "schema_version": "regulatory-compliance-stage-snapshot/2",
+  "snapshot_id": "RCIB-20261006T204836Z-4ec0-S06",
+  "run_id": "RCIB-20261006T204836Z-4ec0",
+  "stage": "actions-and-approvals",
+  "sequence": 6,
+  "created_at": "2026-10-06T20:48:43Z",
+  "status": "partial",
+  "predecessor": {
+    "snapshot_id": "RCIB-20261006T204836Z-4ec0-S05",
+    "path": "deliverables/snapshots/05-impact-analysis.json",
+    "sha256": "sha256:863f90ae8725270cec4f4b601e425c837b3682281942b09b4b4830faa1c999ca"
+  },
+  "consumed_record_ids": [
+    "EXT-CALENDAR-ACT-001",
+    "EXT-CALENDAR-ACT-002",
+    "EXT-CALENDAR-ACT-003",
+    "EXT-CALENDAR-ACT-004",
+    "EXT-CALENDAR-ACT-005",
+    "EXT-CALENDAR-ACT-006",
+    "EXT-CALENDAR-ACT-007",
+    "EXT-CALENDAR-ACT-008",
+    "IMP-AI-001-L-50-1",
+    "IMP-AI-001-L-50-2",
+    "IMP-AI-001-L-50-3",
+    "IMP-AI-001-L-50-4-DF",
+    "IMP-AI-001-L-50-4-TXT",
+    "IMP-AI-001-POL-T1",
+    "IMP-AI-001-POL-T2-LABEL",
+    "IMP-AI-001-POL-T2-PROV",
+    "IMP-AI-001-POL-T3",
+    "IMP-AI-002-L-50-1",
+    "IMP-AI-002-L-50-2",
+    "IMP-AI-002-L-50-3",
+    "IMP-AI-002-L-50-4-DF",
+    "IMP-AI-002-L-50-4-TXT",
+    "IMP-AI-002-POL-T1",
+    "IMP-AI-002-POL-T2-LABEL",
+    "IMP-AI-002-POL-T2-PROV",
+    "IMP-AI-002-POL-T3",
+    "IMP-AI-003-L-50-1",
+    "IMP-AI-003-L-50-2",
+    "IMP-AI-003-L-50-3",
+    "IMP-AI-003-L-50-4-DF",
+    "IMP-AI-003-L-50-4-TXT",
+    "IMP-AI-003-POL-T1",
+    "IMP-AI-003-POL-T2-LABEL",
+    "IMP-AI-003-POL-T2-PROV",
+    "IMP-AI-003-POL-T3",
+    "IMP-AI-004-L-50-1",
+    "IMP-AI-004-L-50-2",
+    "IMP-AI-004-L-50-3",
+    "IMP-AI-004-L-50-4-DF",
+    "IMP-AI-004-L-50-4-TXT",
+    "IMP-AI-004-POL-T1",
+    "IMP-AI-004-POL-T2-LABEL",
+    "IMP-AI-004-POL-T2-PROV",
+    "IMP-AI-004-POL-T3",
+    "IMP-AI-005-L-50-1",
+    "IMP-AI-005-L-50-2",
+    "IMP-AI-005-L-50-3",
+    "IMP-AI-005-L-50-4-DF",
+    "IMP-AI-005-L-50-4-TXT",
+    "IMP-AI-005-POL-T1",
+    "IMP-AI-005-POL-T2-LABEL",
+    "IMP-AI-005-POL-T2-PROV",
+    "IMP-AI-005-POL-T3",
+    "IMP-AI-006-L-50-1",
+    "IMP-AI-006-L-50-2",
+    "IMP-AI-006-L-50-3",
+    "IMP-AI-006-L-50-4-DF",
+    "IMP-AI-006-L-50-4-TXT",
+    "IMP-AI-006-POL-T1",
+    "IMP-AI-006-POL-T2-LABEL",
+    "IMP-AI-006-POL-T2-PROV",
+    "IMP-AI-006-POL-T3",
+    "IMP-AI-007-L-50-1",
+    "IMP-AI-007-L-50-2",
+    "IMP-AI-007-L-50-3",
+    "IMP-AI-007-L-50-4-DF",
+    "IMP-AI-007-L-50-4-TXT",
+    "IMP-AI-007-POL-T1",
+    "IMP-AI-007-POL-T2-LABEL",
+    "IMP-AI-007-POL-T2-PROV",
+    "IMP-AI-007-POL-T3",
+    "IMP-AI-008-L-50-1",
+    "IMP-AI-008-L-50-2",
+    "IMP-AI-008-L-50-3",
+    "IMP-AI-008-L-50-4-DF",
+    "IMP-AI-008-L-50-4-TXT",
+    "IMP-AI-008-POL-T1",
+    "IMP-AI-008-POL-T2-LABEL",
+    "IMP-AI-008-POL-T2-PROV",
+    "IMP-AI-008-POL-T3",
+    "SCOPE-REVIEW"
+  ],
+  "produced_record_ids": [
+    "ACT-001",
+    "ACT-002",
+    "ACT-003",
+    "ACT-004",
+    "ACT-005",
+    "ACT-006",
+    "ACT-007",
+    "ACT-008",
+    "APR-ACT-001",
+    "APR-ACT-002",
+    "APR-ACT-003",
+    "APR-ACT-004",
+    "APR-ACT-005",
+    "APR-ACT-006",
+    "APR-ACT-007",
+    "APR-ACT-008",
+    "APR-LEGAL-A50-INTERPRETATION",
+    "APR-LEGAL-POLICY-INTERPRETATION",
+    "D-005",
+    "D-006",
+    "ESC-IMP-AI-002-POL-T3",
+    "ESC-IMP-AI-003-POL-T2-LABEL",
+    "ESC-IMP-AI-003-POL-T2-PROV",
+    "ESC-IMP-AI-005-L-50-1",
+    "ESC-IMP-AI-005-L-50-2",
+    "ESC-IMP-AI-005-L-50-3",
+    "ESC-IMP-AI-005-L-50-4-DF",
+    "ESC-IMP-AI-005-L-50-4-TXT",
+    "ESC-IMP-AI-005-POL-T1",
+    "ESC-IMP-AI-005-POL-T2-LABEL",
+    "ESC-IMP-AI-005-POL-T2-PROV",
+    "ESC-IMP-AI-005-POL-T3",
+    "ESC-IMP-AI-007-POL-T1",
+    "ESC-IMP-AI-008-L-50-4-DF",
+    "ESC-IMP-AI-008-POL-T2-LABEL",
+    "ESC-IMP-AI-008-POL-T2-PROV",
+    "RR-A50",
+    "RR-ACT-001",
+    "RR-ACT-002",
+    "RR-ACT-003",
+    "RR-ACT-004",
+    "RR-ACT-005",
+    "RR-ACT-006",
+    "RR-ACT-007",
+    "RR-ACT-008",
+    "RR-POLICY"
+  ],
+  "state": {
+    "proposed_actions": [
+      {
+        "id": "ACT-001",
+        "summary": "Add and verify first-interaction AI notice",
+        "evidence_ids": [
+          "EXT-CALENDAR-ACT-001",
+          "IMP-AI-004-POL-T1"
+        ],
+        "owner": "Learning Experience",
+        "rationale": "Existing CALENDAR action linked to review findings to avoid duplication (D-005).",
+        "origin": "calendar-linked",
+        "system_id": "AI-004",
+        "action": "Add and verify first-interaction AI notice",
+        "proposed_due_date": "2026-09-04",
+        "date_basis": "Operations-proposed date from CALENDAR calendar-2026-08-26",
+        "calendar_status": "planned",
+        "approval_required": "operations",
+        "responsible_role": "Learning Experience",
+        "impact_ids": [
+          "IMP-AI-004-POL-T1"
+        ],
+        "link_basis": "action cue match",
+        "uid": "ACT-001@regulatory-change-impact-brief.quillhaven",
+        "required_reviewer": "Operations",
+        "approval_status": "pending",
+        "dated": true
+      },
+      {
+        "id": "ACT-002",
+        "summary": "Resolve disclosure evidence conflict",
+        "evidence_ids": [
+          "EXT-CALENDAR-ACT-002",
+          "IMP-AI-007-POL-T1"
+        ],
+        "owner": "Marketing",
+        "rationale": "Existing CALENDAR action linked to review findings to avoid duplication (D-005).",
+        "origin": "calendar-linked",
+        "system_id": "AI-007",
+        "action": "Resolve disclosure evidence conflict",
+        "proposed_due_date": "2026-09-03",
+        "date_basis": "Operations-proposed date from CALENDAR calendar-2026-08-26",
+        "calendar_status": "open",
+        "approval_required": "operations",
+        "responsible_role": "Marketing",
+        "impact_ids": [
+          "IMP-AI-007-POL-T1"
+        ],
+        "link_basis": "action cue match",
+        "uid": "ACT-002@regulatory-change-impact-brief.quillhaven",
+        "required_reviewer": "Operations",
+        "approval_status": "pending",
+        "dated": true
+      },
+      {
+        "id": "ACT-003",
+        "summary": "Confirm recipient disclosure practice",
+        "evidence_ids": [
+          "EXT-CALENDAR-ACT-003",
+          "IMP-AI-002-POL-T3"
+        ],
+        "owner": "Admissions",
+        "rationale": "Existing CALENDAR action linked to review findings to avoid duplication (D-005).",
+        "origin": "calendar-linked",
+        "system_id": "AI-002",
+        "action": "Confirm recipient disclosure practice",
+        "proposed_due_date": "2026-09-08",
+        "date_basis": "Operations-proposed date from CALENDAR calendar-2026-08-26",
+        "calendar_status": "open",
+        "approval_required": "legal",
+        "responsible_role": "Admissions",
+        "impact_ids": [
+          "IMP-AI-002-POL-T3"
+        ],
+        "link_basis": "action cue match",
+        "uid": "ACT-003@regulatory-change-impact-brief.quillhaven",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "dated": true
+      },
+      {
+        "id": "ACT-004",
+        "summary": "Verify machine-readable provenance after publishing",
+        "evidence_ids": [
+          "EXT-CALENDAR-ACT-004",
+          "IMP-AI-003-POL-T2-LABEL",
+          "IMP-AI-003-POL-T2-PROV"
+        ],
+        "owner": "Communications",
+        "rationale": "Existing CALENDAR action linked to review findings to avoid duplication (D-005).",
+        "origin": "calendar-linked",
+        "system_id": "AI-003",
+        "action": "Verify machine-readable provenance after publishing",
+        "proposed_due_date": "2026-09-10",
+        "date_basis": "Operations-proposed date from CALENDAR calendar-2026-08-26",
+        "calendar_status": "open",
+        "approval_required": "operations",
+        "responsible_role": "Communications",
+        "impact_ids": [
+          "IMP-AI-003-POL-T2-PROV",
+          "IMP-AI-003-POL-T2-LABEL"
+        ],
+        "link_basis": "action cue match",
+        "uid": "ACT-004@regulatory-change-impact-brief.quillhaven",
+        "required_reviewer": "Operations",
+        "approval_status": "pending",
+        "dated": true
+      },
+      {
+        "id": "ACT-005",
+        "summary": "Refresh provider-role and release evidence",
+        "evidence_ids": [
+          "EXT-CALENDAR-ACT-005",
+          "IMP-AI-005-L-50-1",
+          "IMP-AI-005-L-50-2",
+          "IMP-AI-005-L-50-3",
+          "IMP-AI-005-L-50-4-DF",
+          "IMP-AI-005-L-50-4-TXT",
+          "IMP-AI-005-POL-T1",
+          "IMP-AI-005-POL-T2-LABEL",
+          "IMP-AI-005-POL-T2-PROV",
+          "IMP-AI-005-POL-T3"
+        ],
+        "owner": "Assessment Operations",
+        "rationale": "Existing CALENDAR action linked to review findings to avoid duplication (D-005).",
+        "origin": "calendar-linked",
+        "system_id": "AI-005",
+        "action": "Refresh provider-role and release evidence",
+        "proposed_due_date": "2026-09-12",
+        "date_basis": "Operations-proposed date from CALENDAR calendar-2026-08-26",
+        "calendar_status": "open",
+        "approval_required": "legal",
+        "responsible_role": "Assessment Operations",
+        "impact_ids": [
+          "IMP-AI-005-L-50-1",
+          "IMP-AI-005-L-50-2",
+          "IMP-AI-005-L-50-3",
+          "IMP-AI-005-L-50-4-DF",
+          "IMP-AI-005-L-50-4-TXT",
+          "IMP-AI-005-POL-T1",
+          "IMP-AI-005-POL-T2-PROV",
+          "IMP-AI-005-POL-T2-LABEL",
+          "IMP-AI-005-POL-T3"
+        ],
+        "link_basis": "sole CALENDAR action for the system",
+        "uid": "ACT-005@regulatory-change-impact-brief.quillhaven",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "dated": true
+      },
+      {
+        "id": "ACT-006",
+        "summary": "Complete provenance test",
+        "evidence_ids": [
+          "EXT-CALENDAR-ACT-006",
+          "IMP-AI-008-POL-T2-PROV"
+        ],
+        "owner": "Communications",
+        "rationale": "Existing CALENDAR action linked to review findings to avoid duplication (D-005).",
+        "origin": "calendar-linked",
+        "system_id": "AI-008",
+        "action": "Complete provenance test",
+        "proposed_due_date": "2026-09-09",
+        "date_basis": "Operations-proposed date from CALENDAR calendar-2026-08-26",
+        "calendar_status": "open",
+        "approval_required": "operations",
+        "responsible_role": "Communications",
+        "impact_ids": [
+          "IMP-AI-008-POL-T2-PROV"
+        ],
+        "link_basis": "action cue match",
+        "uid": "ACT-006@regulatory-change-impact-brief.quillhaven",
+        "required_reviewer": "Operations",
+        "approval_status": "pending",
+        "dated": true
+      },
+      {
+        "id": "ACT-007",
+        "summary": "Review exception request",
+        "evidence_ids": [
+          "EXT-CALENDAR-ACT-007",
+          "IMP-AI-008-L-50-4-DF",
+          "IMP-AI-008-POL-T2-LABEL"
+        ],
+        "owner": "Legal",
+        "rationale": "Existing CALENDAR action linked to review findings to avoid duplication (D-005).",
+        "origin": "calendar-linked",
+        "system_id": "AI-008",
+        "action": "Review exception request",
+        "proposed_due_date": "2026-09-15",
+        "date_basis": "Operations-proposed date from CALENDAR calendar-2026-08-26",
+        "calendar_status": "blocked",
+        "approval_required": "legal",
+        "responsible_role": "Legal",
+        "impact_ids": [
+          "IMP-AI-008-L-50-4-DF",
+          "IMP-AI-008-POL-T2-LABEL"
+        ],
+        "link_basis": "action cue match",
+        "uid": "ACT-007@regulatory-change-impact-brief.quillhaven",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "dated": true
+      },
+      {
+        "id": "ACT-008",
+        "summary": "Quarterly AI register evidence review",
+        "evidence_ids": [
+          "EXT-CALENDAR-ACT-008"
+        ],
+        "owner": "Operations",
+        "rationale": "Existing CALENDAR action carried forward; not derived from this review's findings (kept to avoid loss of work, D-005).",
+        "origin": "calendar-carried-forward",
+        "system_id": "ALL",
+        "action": "Quarterly AI register evidence review",
+        "proposed_due_date": "2026-10-02",
+        "date_basis": "Operations-proposed date from CALENDAR calendar-2026-08-26",
+        "calendar_status": "scheduled",
+        "approval_required": "operations",
+        "responsible_role": "Operations",
+        "impact_ids": [],
+        "link_basis": null,
+        "uid": "ACT-008@regulatory-change-impact-brief.quillhaven",
+        "required_reviewer": "Operations",
+        "approval_status": "pending",
+        "dated": true
+      }
+    ],
+    "approval_requirements": [
+      {
+        "id": "APR-ACT-001",
+        "summary": "Operations approval of proposed action ACT-001 (Add and verify first-interaction AI notice) for AI-004, including owner and date.",
+        "evidence_ids": [
+          "ACT-001"
+        ],
+        "owner": "Operations",
+        "rationale": "No approval outcome is recorded in any source (D-006).",
+        "status": "pending",
+        "subject_action_id": "ACT-001",
+        "approver_role": "Operations"
+      },
+      {
+        "id": "APR-ACT-002",
+        "summary": "Operations approval of proposed action ACT-002 (Resolve disclosure evidence conflict) for AI-007, including owner and date.",
+        "evidence_ids": [
+          "ACT-002"
+        ],
+        "owner": "Operations",
+        "rationale": "No approval outcome is recorded in any source (D-006).",
+        "status": "pending",
+        "subject_action_id": "ACT-002",
+        "approver_role": "Operations"
+      },
+      {
+        "id": "APR-ACT-003",
+        "summary": "Legal approval of proposed action ACT-003 (Confirm recipient disclosure practice) for AI-002, including owner and date.",
+        "evidence_ids": [
+          "ACT-003"
+        ],
+        "owner": "Legal",
+        "rationale": "No approval outcome is recorded in any source (D-006).",
+        "status": "pending",
+        "subject_action_id": "ACT-003",
+        "approver_role": "Legal"
+      },
+      {
+        "id": "APR-ACT-004",
+        "summary": "Operations approval of proposed action ACT-004 (Verify machine-readable provenance after publishing) for AI-003, including owner and date.",
+        "evidence_ids": [
+          "ACT-004"
+        ],
+        "owner": "Operations",
+        "rationale": "No approval outcome is recorded in any source (D-006).",
+        "status": "pending",
+        "subject_action_id": "ACT-004",
+        "approver_role": "Operations"
+      },
+      {
+        "id": "APR-ACT-005",
+        "summary": "Legal approval of proposed action ACT-005 (Refresh provider-role and release evidence) for AI-005, including owner and date.",
+        "evidence_ids": [
+          "ACT-005"
+        ],
+        "owner": "Legal",
+        "rationale": "No approval outcome is recorded in any source (D-006).",
+        "status": "pending",
+        "subject_action_id": "ACT-005",
+        "approver_role": "Legal"
+      },
+      {
+        "id": "APR-ACT-006",
+        "summary": "Operations approval of proposed action ACT-006 (Complete provenance test) for AI-008, including owner and date.",
+        "evidence_ids": [
+          "ACT-006"
+        ],
+        "owner": "Operations",
+        "rationale": "No approval outcome is recorded in any source (D-006).",
+        "status": "pending",
+        "subject_action_id": "ACT-006",
+        "approver_role": "Operations"
+      },
+      {
+        "id": "APR-ACT-007",
+        "summary": "Legal approval of proposed action ACT-007 (Review exception request) for AI-008, including owner and date.",
+        "evidence_ids": [
+          "ACT-007"
+        ],
+        "owner": "Legal",
+        "rationale": "No approval outcome is recorded in any source (D-006).",
+        "status": "pending",
+        "subject_action_id": "ACT-007",
+        "approver_role": "Legal"
+      },
+      {
+        "id": "APR-ACT-008",
+        "summary": "Operations approval of proposed action ACT-008 (Quarterly AI register evidence review) for ALL, including owner and date.",
+        "evidence_ids": [
+          "ACT-008"
+        ],
+        "owner": "Operations",
+        "rationale": "No approval outcome is recorded in any source (D-006).",
+        "status": "pending",
+        "subject_action_id": "ACT-008",
+        "approver_role": "Operations"
+      },
+      {
+        "id": "APR-LEGAL-A50-INTERPRETATION",
+        "summary": "Legal review of the draft Article 50 applicability interpretation for all binding-law register rows.",
+        "evidence_ids": [
+          "IMP-AI-001-L-50-1",
+          "IMP-AI-001-L-50-2",
+          "IMP-AI-001-L-50-3",
+          "IMP-AI-001-L-50-4-DF",
+          "IMP-AI-001-L-50-4-TXT",
+          "IMP-AI-002-L-50-1",
+          "IMP-AI-002-L-50-2",
+          "IMP-AI-002-L-50-3",
+          "IMP-AI-002-L-50-4-DF",
+          "IMP-AI-002-L-50-4-TXT",
+          "IMP-AI-003-L-50-1",
+          "IMP-AI-003-L-50-2",
+          "IMP-AI-003-L-50-3",
+          "IMP-AI-003-L-50-4-DF",
+          "IMP-AI-003-L-50-4-TXT",
+          "IMP-AI-004-L-50-1",
+          "IMP-AI-004-L-50-2",
+          "IMP-AI-004-L-50-3",
+          "IMP-AI-004-L-50-4-DF",
+          "IMP-AI-004-L-50-4-TXT",
+          "IMP-AI-005-L-50-1",
+          "IMP-AI-005-L-50-2",
+          "IMP-AI-005-L-50-3",
+          "IMP-AI-005-L-50-4-DF",
+          "IMP-AI-005-L-50-4-TXT",
+          "IMP-AI-006-L-50-1",
+          "IMP-AI-006-L-50-2",
+          "IMP-AI-006-L-50-3",
+          "IMP-AI-006-L-50-4-DF",
+          "IMP-AI-006-L-50-4-TXT",
+          "IMP-AI-007-L-50-1",
+          "IMP-AI-007-L-50-2",
+          "IMP-AI-007-L-50-3",
+          "IMP-AI-007-L-50-4-DF",
+          "IMP-AI-007-L-50-4-TXT",
+          "IMP-AI-008-L-50-1",
+          "IMP-AI-008-L-50-2",
+          "IMP-AI-008-L-50-3",
+          "IMP-AI-008-L-50-4-DF",
+          "IMP-AI-008-L-50-4-TXT"
+        ],
+        "owner": "Legal",
+        "rationale": "Legal owns final interpretation (interview 2 line 108).",
+        "status": "pending",
+        "approver_role": "Legal"
+      },
+      {
+        "id": "APR-LEGAL-POLICY-INTERPRETATION",
+        "summary": "Legal review of the draft internal-policy interpretation boundaries for all internal-policy register rows.",
+        "evidence_ids": [
+          "IMP-AI-001-POL-T1",
+          "IMP-AI-001-POL-T2-LABEL",
+          "IMP-AI-001-POL-T2-PROV",
+          "IMP-AI-001-POL-T3",
+          "IMP-AI-002-POL-T1",
+          "IMP-AI-002-POL-T2-LABEL",
+          "IMP-AI-002-POL-T2-PROV",
+          "IMP-AI-002-POL-T3",
+          "IMP-AI-003-POL-T1",
+          "IMP-AI-003-POL-T2-LABEL",
+          "IMP-AI-003-POL-T2-PROV",
+          "IMP-AI-003-POL-T3",
+          "IMP-AI-004-POL-T1",
+          "IMP-AI-004-POL-T2-LABEL",
+          "IMP-AI-004-POL-T2-PROV",
+          "IMP-AI-004-POL-T3",
+          "IMP-AI-005-POL-T1",
+          "IMP-AI-005-POL-T2-LABEL",
+          "IMP-AI-005-POL-T2-PROV",
+          "IMP-AI-005-POL-T3",
+          "IMP-AI-006-POL-T1",
+          "IMP-AI-006-POL-T2-LABEL",
+          "IMP-AI-006-POL-T2-PROV",
+          "IMP-AI-006-POL-T3",
+          "IMP-AI-007-POL-T1",
+          "IMP-AI-007-POL-T2-LABEL",
+          "IMP-AI-007-POL-T2-PROV",
+          "IMP-AI-007-POL-T3",
+          "IMP-AI-008-POL-T1",
+          "IMP-AI-008-POL-T2-LABEL",
+          "IMP-AI-008-POL-T2-PROV",
+          "IMP-AI-008-POL-T3"
+        ],
+        "owner": "Legal",
+        "rationale": "Legal approves policy interpretation boundaries (interview 1 line 220).",
+        "status": "pending",
+        "approver_role": "Legal"
+      }
+    ],
+    "escalations": [
+      {
+        "id": "ESC-IMP-AI-002-POL-T3",
+        "summary": "unresolved: SYSTEMS records a text-generation tool used by staff (exposed group applicants). Evidence for this rule is incomplete: REC-002 (missing): No evidence that recipients are told when generated text is used.",
+        "evidence_ids": [
+          "ACT-003",
+          "IMP-AI-002-POL-T3"
+        ],
+        "owner": "Admissions",
+        "rationale": "Kept visible until evidence or an actual decision changes it.",
+        "impact_id": "IMP-AI-002-POL-T3",
+        "resolution_owner": "Admissions",
+        "resolution_need": "Admissions supplies current, complete evidence.",
+        "linked_action_ids": [
+          "ACT-003"
+        ]
+      },
+      {
+        "id": "ESC-IMP-AI-003-POL-T2-PROV",
+        "summary": "conflicting: SYSTEMS records public synthetic media (synthetic_image, exposed_group=public). Evidence for this rule conflicts (D-001): REC-003 (conflicting): Visible label exists but exported platform copy may have lost metadata [record also names visible-label-disclosure; its single recorded state is applied to each rule it names and is not split by the automation]. Both facts are preserved; the item remains unresolved pending system-owner verification and is not decided by the automation.",
+        "evidence_ids": [
+          "ACT-004",
+          "IMP-AI-003-POL-T2-PROV"
+        ],
+        "owner": "Communications",
+        "rationale": "Kept visible until evidence or an actual decision changes it.",
+        "impact_id": "IMP-AI-003-POL-T2-PROV",
+        "resolution_owner": "Communications",
+        "resolution_need": "System owner (Communications) verifies the contested fact using social-post-884 and updates EVIDENCE/SYSTEMS.",
+        "linked_action_ids": [
+          "ACT-004"
+        ]
+      },
+      {
+        "id": "ESC-IMP-AI-003-POL-T2-LABEL",
+        "summary": "conflicting: SYSTEMS records public synthetic media (synthetic_image, exposed_group=public). Evidence for this rule conflicts (D-001): REC-003 (conflicting): Visible label exists but exported platform copy may have lost metadata [record also names provenance-marking; its single recorded state is applied to each rule it names and is not split by the automation]. Both facts are preserved; the item remains unresolved pending system-owner verification and is not decided by the automation.",
+        "evidence_ids": [
+          "ACT-004",
+          "IMP-AI-003-POL-T2-LABEL"
+        ],
+        "owner": "Communications",
+        "rationale": "Kept visible until evidence or an actual decision changes it.",
+        "impact_id": "IMP-AI-003-POL-T2-LABEL",
+        "resolution_owner": "Communications",
+        "resolution_need": "System owner (Communications) verifies the contested fact using social-post-884 and updates EVIDENCE/SYSTEMS.",
+        "linked_action_ids": [
+          "ACT-004"
+        ]
+      },
+      {
+        "id": "ESC-IMP-AI-005-L-50-1",
+        "summary": "unresolved: The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release.",
+        "evidence_ids": [
+          "ACT-005",
+          "IMP-AI-005-L-50-1"
+        ],
+        "owner": "Assessment Operations",
+        "rationale": "Kept visible until evidence or an actual decision changes it.",
+        "impact_id": "IMP-AI-005-L-50-1",
+        "resolution_owner": "Assessment Operations",
+        "resolution_need": "Assessment Operations refreshes the register entry and evidence.",
+        "linked_action_ids": [
+          "ACT-005"
+        ]
+      },
+      {
+        "id": "ESC-IMP-AI-005-L-50-2",
+        "summary": "unresolved: The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release.",
+        "evidence_ids": [
+          "ACT-005",
+          "IMP-AI-005-L-50-2"
+        ],
+        "owner": "Assessment Operations",
+        "rationale": "Kept visible until evidence or an actual decision changes it.",
+        "impact_id": "IMP-AI-005-L-50-2",
+        "resolution_owner": "Assessment Operations",
+        "resolution_need": "Assessment Operations refreshes the register entry and evidence.",
+        "linked_action_ids": [
+          "ACT-005"
+        ]
+      },
+      {
+        "id": "ESC-IMP-AI-005-L-50-3",
+        "summary": "unresolved: The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release [record also names provider-role; its single recorded state is applied to each rule it names and is not split by the automation].",
+        "evidence_ids": [
+          "ACT-005",
+          "IMP-AI-005-L-50-3"
+        ],
+        "owner": "Assessment Operations",
+        "rationale": "Kept visible until evidence or an actual decision changes it.",
+        "impact_id": "IMP-AI-005-L-50-3",
+        "resolution_owner": "Assessment Operations",
+        "resolution_need": "Assessment Operations refreshes the register entry and evidence.",
+        "linked_action_ids": [
+          "ACT-005"
+        ]
+      },
+      {
+        "id": "ESC-IMP-AI-005-L-50-4-DF",
+        "summary": "unresolved: The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release [record also names provider-role; its single recorded state is applied to each rule it names and is not split by the automation].",
+        "evidence_ids": [
+          "ACT-005",
+          "IMP-AI-005-L-50-4-DF"
+        ],
+        "owner": "Assessment Operations",
+        "rationale": "Kept visible until evidence or an actual decision changes it.",
+        "impact_id": "IMP-AI-005-L-50-4-DF",
+        "resolution_owner": "Assessment Operations",
+        "resolution_need": "Assessment Operations refreshes the register entry and evidence.",
+        "linked_action_ids": [
+          "ACT-005"
+        ]
+      },
+      {
+        "id": "ESC-IMP-AI-005-L-50-4-TXT",
+        "summary": "unresolved: The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release [record also names provider-role; its single recorded state is applied to each rule it names and is not split by the automation].",
+        "evidence_ids": [
+          "ACT-005",
+          "IMP-AI-005-L-50-4-TXT"
+        ],
+        "owner": "Assessment Operations",
+        "rationale": "Kept visible until evidence or an actual decision changes it.",
+        "impact_id": "IMP-AI-005-L-50-4-TXT",
+        "resolution_owner": "Assessment Operations",
+        "resolution_need": "Assessment Operations refreshes the register entry and evidence.",
+        "linked_action_ids": [
+          "ACT-005"
+        ]
+      },
+      {
+        "id": "ESC-IMP-AI-005-POL-T1",
+        "summary": "unresolved: The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release [record also names provider-role; its single recorded state is applied to each rule it names and is not split by the automation].",
+        "evidence_ids": [
+          "ACT-005",
+          "IMP-AI-005-POL-T1"
+        ],
+        "owner": "Assessment Operations",
+        "rationale": "Kept visible until evidence or an actual decision changes it.",
+        "impact_id": "IMP-AI-005-POL-T1",
+        "resolution_owner": "Assessment Operations",
+        "resolution_need": "Assessment Operations refreshes the register entry and evidence.",
+        "linked_action_ids": [
+          "ACT-005"
+        ]
+      },
+      {
+        "id": "ESC-IMP-AI-005-POL-T2-PROV",
+        "summary": "unresolved: The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release [record also names provider-role; its single recorded state is applied to each rule it names and is not split by the automation].",
+        "evidence_ids": [
+          "ACT-005",
+          "IMP-AI-005-POL-T2-PROV"
+        ],
+        "owner": "Assessment Operations",
+        "rationale": "Kept visible until evidence or an actual decision changes it.",
+        "impact_id": "IMP-AI-005-POL-T2-PROV",
+        "resolution_owner": "Assessment Operations",
+        "resolution_need": "Assessment Operations refreshes the register entry and evidence.",
+        "linked_action_ids": [
+          "ACT-005"
+        ]
+      },
+      {
+        "id": "ESC-IMP-AI-005-POL-T2-LABEL",
+        "summary": "unresolved: The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release [record also names provider-role; its single recorded state is applied to each rule it names and is not split by the automation].",
+        "evidence_ids": [
+          "ACT-005",
+          "IMP-AI-005-POL-T2-LABEL"
+        ],
+        "owner": "Assessment Operations",
+        "rationale": "Kept visible until evidence or an actual decision changes it.",
+        "impact_id": "IMP-AI-005-POL-T2-LABEL",
+        "resolution_owner": "Assessment Operations",
+        "resolution_need": "Assessment Operations refreshes the register entry and evidence.",
+        "linked_action_ids": [
+          "ACT-005"
+        ]
+      },
+      {
+        "id": "ESC-IMP-AI-005-POL-T3",
+        "summary": "unresolved: The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release [record also names provider-role; its single recorded state is applied to each rule it names and is not split by the automation].",
+        "evidence_ids": [
+          "ACT-005",
+          "IMP-AI-005-POL-T3"
+        ],
+        "owner": "Assessment Operations",
+        "rationale": "Kept visible until evidence or an actual decision changes it.",
+        "impact_id": "IMP-AI-005-POL-T3",
+        "resolution_owner": "Assessment Operations",
+        "resolution_need": "Assessment Operations refreshes the register entry and evidence.",
+        "linked_action_ids": [
+          "ACT-005"
+        ]
+      },
+      {
+        "id": "ESC-IMP-AI-007-POL-T1",
+        "summary": "conflicting: SYSTEMS records direct interaction with public. Evidence for this rule conflicts (D-001): REC-008 (conflicting): Owner says a banner exists but the current capture shows none. Both facts are preserved; the item remains unresolved pending system-owner verification and is not decided by the automation.",
+        "evidence_ids": [
+          "ACT-002",
+          "IMP-AI-007-POL-T1"
+        ],
+        "owner": "Marketing",
+        "rationale": "Kept visible until evidence or an actual decision changes it.",
+        "impact_id": "IMP-AI-007-POL-T1",
+        "resolution_owner": "Marketing",
+        "resolution_need": "System owner (Marketing) verifies the contested fact using avatar-page-capture and updates EVIDENCE/SYSTEMS.",
+        "linked_action_ids": [
+          "ACT-002"
+        ]
+      },
+      {
+        "id": "ESC-IMP-AI-008-L-50-4-DF",
+        "summary": "unresolved: POLICY records that the content shows real people, could be mistaken for an authentic recording and is not an evidently artistic or fictional work. Evidence for this rule is incomplete: REC-009 (partial): Visible label verified but machine-readable provenance not checked [record also names provenance-marking; its single recorded state is applied to each rule it names and is not split by the automation]; REC-010 (missing): No Legal approval or expiry date recorded.",
+        "evidence_ids": [
+          "ACT-007",
+          "IMP-AI-008-L-50-4-DF"
+        ],
+        "owner": "Communications",
+        "rationale": "Kept visible until evidence or an actual decision changes it.",
+        "impact_id": "IMP-AI-008-L-50-4-DF",
+        "resolution_owner": "Communications",
+        "resolution_need": "Communications supplies current, complete evidence; Legal decides the exception request.",
+        "linked_action_ids": [
+          "ACT-007"
+        ]
+      },
+      {
+        "id": "ESC-IMP-AI-008-POL-T2-PROV",
+        "summary": "unresolved: SYSTEMS records public synthetic media (synthetic_audio_video, exposed_group=public). Evidence for this rule is incomplete: REC-009 (partial): Visible label verified but machine-readable provenance not checked [record also names visible-label-disclosure; its single recorded state is applied to each rule it names and is not split by the automation].",
+        "evidence_ids": [
+          "ACT-006",
+          "IMP-AI-008-POL-T2-PROV"
+        ],
+        "owner": "Communications",
+        "rationale": "Kept visible until evidence or an actual decision changes it.",
+        "impact_id": "IMP-AI-008-POL-T2-PROV",
+        "resolution_owner": "Communications",
+        "resolution_need": "Communications supplies current, complete evidence.",
+        "linked_action_ids": [
+          "ACT-006"
+        ]
+      },
+      {
+        "id": "ESC-IMP-AI-008-POL-T2-LABEL",
+        "summary": "unresolved: SYSTEMS records public synthetic media (synthetic_audio_video, exposed_group=public). Evidence for this rule is incomplete: REC-009 (partial): Visible label verified but machine-readable provenance not checked [record also names provenance-marking; its single recorded state is applied to each rule it names and is not split by the automation]; REC-010 (missing): No Legal approval or expiry date recorded.",
+        "evidence_ids": [
+          "ACT-007",
+          "IMP-AI-008-POL-T2-LABEL"
+        ],
+        "owner": "Communications",
+        "rationale": "Kept visible until evidence or an actual decision changes it.",
+        "impact_id": "IMP-AI-008-POL-T2-LABEL",
+        "resolution_owner": "Communications",
+        "resolution_need": "Communications supplies current, complete evidence; Legal decides the exception request.",
+        "linked_action_ids": [
+          "ACT-007"
+        ]
+      }
+    ],
+    "review_requests": [
+      {
+        "id": "RR-A50",
+        "summary": "Review of the draft Article 50 applicability interpretation (binding-law rows).",
+        "evidence_ids": [
+          "IMP-AI-001-L-50-1",
+          "IMP-AI-001-L-50-2",
+          "IMP-AI-001-L-50-3",
+          "IMP-AI-001-L-50-4-DF",
+          "IMP-AI-001-L-50-4-TXT",
+          "IMP-AI-002-L-50-1",
+          "IMP-AI-002-L-50-2",
+          "IMP-AI-002-L-50-3",
+          "IMP-AI-002-L-50-4-DF",
+          "IMP-AI-002-L-50-4-TXT",
+          "IMP-AI-003-L-50-1",
+          "IMP-AI-003-L-50-2",
+          "IMP-AI-003-L-50-3",
+          "IMP-AI-003-L-50-4-DF",
+          "IMP-AI-003-L-50-4-TXT",
+          "IMP-AI-004-L-50-1",
+          "IMP-AI-004-L-50-2",
+          "IMP-AI-004-L-50-3",
+          "IMP-AI-004-L-50-4-DF",
+          "IMP-AI-004-L-50-4-TXT",
+          "IMP-AI-005-L-50-1",
+          "IMP-AI-005-L-50-2",
+          "IMP-AI-005-L-50-3",
+          "IMP-AI-005-L-50-4-DF",
+          "IMP-AI-005-L-50-4-TXT",
+          "IMP-AI-006-L-50-1",
+          "IMP-AI-006-L-50-2",
+          "IMP-AI-006-L-50-3",
+          "IMP-AI-006-L-50-4-DF",
+          "IMP-AI-006-L-50-4-TXT",
+          "IMP-AI-007-L-50-1",
+          "IMP-AI-007-L-50-2",
+          "IMP-AI-007-L-50-3",
+          "IMP-AI-007-L-50-4-DF",
+          "IMP-AI-007-L-50-4-TXT",
+          "IMP-AI-008-L-50-1",
+          "IMP-AI-008-L-50-2",
+          "IMP-AI-008-L-50-3",
+          "IMP-AI-008-L-50-4-DF",
+          "IMP-AI-008-L-50-4-TXT"
+        ],
+        "owner": "Legal",
+        "rationale": "Legal owns final interpretation.",
+        "request_id": "RR-A50",
+        "run_id": "RCIB-20261006T204836Z-4ec0",
+        "subject": {
+          "impact_ids": [
+            "IMP-AI-001-L-50-1",
+            "IMP-AI-001-L-50-2",
+            "IMP-AI-001-L-50-3",
+            "IMP-AI-001-L-50-4-DF",
+            "IMP-AI-001-L-50-4-TXT",
+            "IMP-AI-002-L-50-1",
+            "IMP-AI-002-L-50-2",
+            "IMP-AI-002-L-50-3",
+            "IMP-AI-002-L-50-4-DF",
+            "IMP-AI-002-L-50-4-TXT",
+            "IMP-AI-003-L-50-1",
+            "IMP-AI-003-L-50-2",
+            "IMP-AI-003-L-50-3",
+            "IMP-AI-003-L-50-4-DF",
+            "IMP-AI-003-L-50-4-TXT",
+            "IMP-AI-004-L-50-1",
+            "IMP-AI-004-L-50-2",
+            "IMP-AI-004-L-50-3",
+            "IMP-AI-004-L-50-4-DF",
+            "IMP-AI-004-L-50-4-TXT",
+            "IMP-AI-005-L-50-1",
+            "IMP-AI-005-L-50-2",
+            "IMP-AI-005-L-50-3",
+            "IMP-AI-005-L-50-4-DF",
+            "IMP-AI-005-L-50-4-TXT",
+            "IMP-AI-006-L-50-1",
+            "IMP-AI-006-L-50-2",
+            "IMP-AI-006-L-50-3",
+            "IMP-AI-006-L-50-4-DF",
+            "IMP-AI-006-L-50-4-TXT",
+            "IMP-AI-007-L-50-1",
+            "IMP-AI-007-L-50-2",
+            "IMP-AI-007-L-50-3",
+            "IMP-AI-007-L-50-4-DF",
+            "IMP-AI-007-L-50-4-TXT",
+            "IMP-AI-008-L-50-1",
+            "IMP-AI-008-L-50-2",
+            "IMP-AI-008-L-50-3",
+            "IMP-AI-008-L-50-4-DF",
+            "IMP-AI-008-L-50-4-TXT"
+          ]
+        },
+        "source_versions": {
+          "OJ": {
+            "status": "retrieved",
+            "content_hash": "sha256:26eba3fb058ba07ec674fd1424942c4f2e906be6f792bc7cd1129e278a8ecb80",
+            "extracts_sha256": "sha256:bb692d7918df0189dd26615ddb2cba757d4b2afe2f881d569d85d37d526ab532",
+            "version": {
+              "title": "Regulation - EU - 2024/1689 - EN - EUR-Lex",
+              "eli": "http://data.europa.eu/eli/reg/2024/1689/oj",
+              "publication": "OJ L, 2024/1689, 12.7.2024"
+            },
+            "retrieved_at": "2026-10-06T20:48:36Z"
+          },
+          "AMEND": {
+            "status": "retrieved",
+            "content_hash": "sha256:9348edc0e4c29f3d47131d846ba8e0632ae81f48b28dbd34286a4d8c3136a682",
+            "extracts_sha256": "sha256:e4c62ed296ee6561daeed21174792ea2d96de4d8e27d5aa008ce94a07ebc9321",
+            "version": {
+              "title": "Regulation - EU - 2026/1744 - EN - EUR-Lex",
+              "eli": "http://data.europa.eu/eli/reg/2026/1744/oj",
+              "publication_date": "2026-07-24",
+              "entry_into_force_date": "2026-07-27",
+              "entry_into_force_basis": "shall enter into force on the third day following that of its publication; computed as publication date + 3 days"
+            },
+            "retrieved_at": "2026-10-06T20:48:37Z"
+          },
+          "CONSOLIDATED": {
+            "status": "retrieved",
+            "content_hash": "sha256:4c8d4fe96be93a08a543a7c39799cb79f1bd4e693f145d390ef12dea79814eaf",
+            "extracts_sha256": "sha256:47c3891418a55eb43b894168d851e017ee69a107ecc6c4aadd4b845bc351ce2d",
+            "version": {
+              "title": "EUR-Lex - 02024R1689-20260727 - EN - EUR-Lex",
+              "consolidated_version_date": "2026-07-27",
+              "celex": "02024R1689-20260727"
+            },
+            "retrieved_at": "2026-10-06T20:48:38Z"
+          },
+          "LAW": {
+            "status": "retrieved",
+            "content_hash": "sha256:792b673040b148fbaa57878b2fd4a27d161af8bff10ec0485dcb30a598a2fe00",
+            "extracts_sha256": "sha256:ce17c0109748f4c48b373e5b50408bd7954fa47db3156c440b5db01b316824d8",
+            "version": {
+              "last-modified": "Mon, 05 Oct 2026 07:11:36 GMT",
+              "etag": "W/\"1791184296-gzip\"",
+              "title": "Article 50: Transparency obligations for providers and deployers of certain AI systems | AI Act Service Desk",
+              "revision_after_review_date": true
+            },
+            "retrieved_at": "2026-10-06T20:48:39Z"
+          },
+          "TIME": {
+            "status": "retrieved",
+            "content_hash": "sha256:0a0f4470e0d6d44f398ea78bce698c61c5c3fa5d130c55630b1d26a1394e245a",
+            "extracts_sha256": "sha256:3cb2b38cac9f254bdae79819142c5858d902b9d3d79f30a63d874b4f1afa9322",
+            "version": {
+              "last-modified": "Mon, 05 Oct 2026 07:38:03 GMT",
+              "etag": "W/\"1791185883-gzip\"",
+              "title": "Timeline for the Implementation of the EU AI Act | AI Act Service Desk",
+              "revision_after_review_date": true
+            },
+            "retrieved_at": "2026-10-06T20:48:39Z"
+          },
+          "FAQ": {
+            "status": "retrieved",
+            "content_hash": "sha256:e56059d641632a1bec232bf818e9472ba5a7d0babe7f2c3db90759ba049a3a0a",
+            "extracts_sha256": "sha256:e0021984b46aa1d182990cc71ed949f40d8bb08a6004c667c59cc9f650dfdb9c",
+            "version": {
+              "last-modified": "Tue, 06 Oct 2026 20:41:45 GMT",
+              "etag": "W/\"1791319305-gzip\"",
+              "title": "Transparency obligations under Article 50 of the AI Act | Shaping Europe’s digital future",
+              "page_last_update": "2026-07-24",
+              "revision_after_review_date": true
+            },
+            "retrieved_at": "2026-10-06T20:48:39Z"
+          },
+          "SYSTEMS": {
+            "status": "retrieved",
+            "content_hash": "sha256:5ccd555dac9dc3af5a77d3206105fb093565865f7283abe43f5339dd46ed8a80",
+            "extracts_sha256": "sha256:785733a4d76a83fcd21c8ffadd3b61d28c8aa031fdfdfa571431063899cb85f4",
+            "version": {
+              "in_source_versions": [
+                "register-2026-08-26"
+              ],
+              "tabs": [
+                "AI System Register"
+              ],
+              "extra_columns": [],
+              "versions_after_review_date": []
+            },
+            "retrieved_at": "2026-10-06T20:48:40Z"
+          },
+          "POLICY": {
+            "status": "retrieved",
+            "content_hash": "sha256:5a3bdd7dabaccf0d1764f9cb405be270eba0486d8191cb565e37bf98c100a06a",
+            "extracts_sha256": "sha256:65bc60e4be29d6d923d2efd5988414925b1e87a216890086b83dafa8c61a8de7",
+            "version": {
+              "page_id": "3ba0b700-541e-81f0-9998-d48f3b1c2856",
+              "title": "Project 2 Regulatory Compliance — Current Internal Policies",
+              "policy_version": "AI-POL-2026-08-15",
+              "context_revision": "RC-CONTEXT-2026-09-12-R1",
+              "business_observation_date": "2026-08-26",
+              "authoring_clarification_date": "2026-09-12",
+              "etag": "W/\"16783-Z1dnXhJPpI/h/vHp/r38yYGZXhY\"",
+              "revision_after_review_date": true
+            },
+            "retrieved_at": "2026-10-06T20:48:39Z"
+          },
+          "EVIDENCE": {
+            "status": "retrieved",
+            "content_hash": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b",
+            "extracts_sha256": "sha256:7e81d567d50bc12511bce5b8f7f854bce316c77d24f4f15bb8617adbccc248dd",
+            "version": {
+              "in_source_versions": [],
+              "tabs": [
+                "Incident Evidence Register"
+              ],
+              "extra_columns": [],
+              "versions_after_review_date": []
+            },
+            "retrieved_at": "2026-10-06T20:48:42Z"
+          }
+        },
+        "question": "Do you confirm, correct or reject each draft Article 50 state and its reason, including the unresolved and withheld items? See the specific questions listed.",
+        "questions": [
+          "Q1 (Art. 50(1)/(2)): Is Quillhaven the provider of any in-scope system? The draft treats it as not the provider wherever SYSTEMS records provider_role=no and POLICY records a licensed supplier product.",
+          "Q2 (Art. 50(4) deep fake): Do you confirm the draft readings that AI-008 (dubbed presenter videos) falls within the deep-fake disclosure duty and AI-003 (illustrated fictional scenes) does not?",
+          "Q3 (Art. 50(3)): Once Assessment Operations refreshes AI-005's release facts, does AI-005 perform emotion recognition or biometric categorisation?",
+          "Q4 (Art. 50(4) text): Do you confirm that AI-002 and AI-006 outputs are not text published to inform the public on matters of public interest?",
+          "Q5 (version): Do you confirm CONSOLIDATED 02024R1689-20260727, reconciled with OJ 2024/1689 and AMEND 2026/1744, as the binding text effective on 26 August 2026?"
+        ],
+        "required_reviewer": "Legal",
+        "approval_record": "APR-LEGAL-A50-INTERPRETATION",
+        "delivery_status": "prepared; not sent by the automation"
+      },
+      {
+        "id": "RR-POLICY",
+        "summary": "Review of the draft internal-policy interpretation boundaries (internal-policy rows).",
+        "evidence_ids": [
+          "IMP-AI-001-POL-T1",
+          "IMP-AI-001-POL-T2-LABEL",
+          "IMP-AI-001-POL-T2-PROV",
+          "IMP-AI-001-POL-T3",
+          "IMP-AI-002-POL-T1",
+          "IMP-AI-002-POL-T2-LABEL",
+          "IMP-AI-002-POL-T2-PROV",
+          "IMP-AI-002-POL-T3",
+          "IMP-AI-003-POL-T1",
+          "IMP-AI-003-POL-T2-LABEL",
+          "IMP-AI-003-POL-T2-PROV",
+          "IMP-AI-003-POL-T3",
+          "IMP-AI-004-POL-T1",
+          "IMP-AI-004-POL-T2-LABEL",
+          "IMP-AI-004-POL-T2-PROV",
+          "IMP-AI-004-POL-T3",
+          "IMP-AI-005-POL-T1",
+          "IMP-AI-005-POL-T2-LABEL",
+          "IMP-AI-005-POL-T2-PROV",
+          "IMP-AI-005-POL-T3",
+          "IMP-AI-006-POL-T1",
+          "IMP-AI-006-POL-T2-LABEL",
+          "IMP-AI-006-POL-T2-PROV",
+          "IMP-AI-006-POL-T3",
+          "IMP-AI-007-POL-T1",
+          "IMP-AI-007-POL-T2-LABEL",
+          "IMP-AI-007-POL-T2-PROV",
+          "IMP-AI-007-POL-T3",
+          "IMP-AI-008-POL-T1",
+          "IMP-AI-008-POL-T2-LABEL",
+          "IMP-AI-008-POL-T2-PROV",
+          "IMP-AI-008-POL-T3"
+        ],
+        "owner": "Legal",
+        "rationale": "Legal approves policy interpretation boundaries.",
+        "request_id": "RR-POLICY",
+        "run_id": "RCIB-20261006T204836Z-4ec0",
+        "subject": {
+          "impact_ids": [
+            "IMP-AI-001-POL-T1",
+            "IMP-AI-001-POL-T2-PROV",
+            "IMP-AI-001-POL-T2-LABEL",
+            "IMP-AI-001-POL-T3",
+            "IMP-AI-002-POL-T1",
+            "IMP-AI-002-POL-T2-PROV",
+            "IMP-AI-002-POL-T2-LABEL",
+            "IMP-AI-002-POL-T3",
+            "IMP-AI-003-POL-T1",
+            "IMP-AI-003-POL-T2-PROV",
+            "IMP-AI-003-POL-T2-LABEL",
+            "IMP-AI-003-POL-T3",
+            "IMP-AI-004-POL-T1",
+            "IMP-AI-004-POL-T2-PROV",
+            "IMP-AI-004-POL-T2-LABEL",
+            "IMP-AI-004-POL-T3",
+            "IMP-AI-005-POL-T1",
+            "IMP-AI-005-POL-T2-PROV",
+            "IMP-AI-005-POL-T2-LABEL",
+            "IMP-AI-005-POL-T3",
+            "IMP-AI-006-POL-T1",
+            "IMP-AI-006-POL-T2-PROV",
+            "IMP-AI-006-POL-T2-LABEL",
+            "IMP-AI-006-POL-T3",
+            "IMP-AI-007-POL-T1",
+            "IMP-AI-007-POL-T2-PROV",
+            "IMP-AI-007-POL-T2-LABEL",
+            "IMP-AI-007-POL-T3",
+            "IMP-AI-008-POL-T1",
+            "IMP-AI-008-POL-T2-PROV",
+            "IMP-AI-008-POL-T2-LABEL",
+            "IMP-AI-008-POL-T3"
+          ]
+        },
+        "source_versions": {
+          "POLICY": {
+            "status": "retrieved",
+            "content_hash": "sha256:5a3bdd7dabaccf0d1764f9cb405be270eba0486d8191cb565e37bf98c100a06a",
+            "extracts_sha256": "sha256:65bc60e4be29d6d923d2efd5988414925b1e87a216890086b83dafa8c61a8de7",
+            "version": {
+              "page_id": "3ba0b700-541e-81f0-9998-d48f3b1c2856",
+              "title": "Project 2 Regulatory Compliance — Current Internal Policies",
+              "policy_version": "AI-POL-2026-08-15",
+              "context_revision": "RC-CONTEXT-2026-09-12-R1",
+              "business_observation_date": "2026-08-26",
+              "authoring_clarification_date": "2026-09-12",
+              "etag": "W/\"16783-Z1dnXhJPpI/h/vHp/r38yYGZXhY\"",
+              "revision_after_review_date": true
+            },
+            "retrieved_at": "2026-10-06T20:48:39Z"
+          },
+          "SYSTEMS": {
+            "status": "retrieved",
+            "content_hash": "sha256:5ccd555dac9dc3af5a77d3206105fb093565865f7283abe43f5339dd46ed8a80",
+            "extracts_sha256": "sha256:785733a4d76a83fcd21c8ffadd3b61d28c8aa031fdfdfa571431063899cb85f4",
+            "version": {
+              "in_source_versions": [
+                "register-2026-08-26"
+              ],
+              "tabs": [
+                "AI System Register"
+              ],
+              "extra_columns": [],
+              "versions_after_review_date": []
+            },
+            "retrieved_at": "2026-10-06T20:48:40Z"
+          },
+          "EVIDENCE": {
+            "status": "retrieved",
+            "content_hash": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b",
+            "extracts_sha256": "sha256:7e81d567d50bc12511bce5b8f7f854bce316c77d24f4f15bb8617adbccc248dd",
+            "version": {
+              "in_source_versions": [],
+              "tabs": [
+                "Incident Evidence Register"
+              ],
+              "extra_columns": [],
+              "versions_after_review_date": []
+            },
+            "retrieved_at": "2026-10-06T20:48:42Z"
+          }
+        },
+        "question": "Do you confirm the draft policy-rule states, conflicts and resolution owners?",
+        "required_reviewer": "Legal",
+        "approval_record": "APR-LEGAL-POLICY-INTERPRETATION",
+        "delivery_status": "prepared; not sent by the automation"
+      },
+      {
+        "id": "RR-ACT-001",
+        "summary": "Operations decision on proposed action ACT-001 for AI-004.",
+        "evidence_ids": [
+          "ACT-001",
+          "IMP-AI-004-POL-T1"
+        ],
+        "owner": "Operations",
+        "rationale": "Action approval stays with the responsible role.",
+        "request_id": "RR-ACT-001",
+        "run_id": "RCIB-20261006T204836Z-4ec0",
+        "subject": {
+          "system_id": "AI-004",
+          "action_id": "ACT-001",
+          "impact_ids": [
+            "IMP-AI-004-POL-T1"
+          ]
+        },
+        "source_versions": {
+          "CALENDAR": {
+            "status": "retrieved",
+            "content_hash": "sha256:cb3e2ba90e96733e5713102f0653dd02d0282be92058e60febe5af899926d8ab",
+            "extracts_sha256": "sha256:855cd517f5c589bf5fd9f79ebbf5a5aa5837f5e50fb45d0383bcd51d3d12b7ec",
+            "version": {
+              "in_source_versions": [
+                "calendar-2026-08-26"
+              ],
+              "tabs": [
+                "Compliance Calendar"
+              ],
+              "extra_columns": [],
+              "versions_after_review_date": []
+            },
+            "retrieved_at": "2026-10-06T20:48:43Z"
+          },
+          "SYSTEMS": {
+            "status": "retrieved",
+            "content_hash": "sha256:5ccd555dac9dc3af5a77d3206105fb093565865f7283abe43f5339dd46ed8a80",
+            "extracts_sha256": "sha256:785733a4d76a83fcd21c8ffadd3b61d28c8aa031fdfdfa571431063899cb85f4",
+            "version": {
+              "in_source_versions": [
+                "register-2026-08-26"
+              ],
+              "tabs": [
+                "AI System Register"
+              ],
+              "extra_columns": [],
+              "versions_after_review_date": []
+            },
+            "retrieved_at": "2026-10-06T20:48:40Z"
+          },
+          "EVIDENCE": {
+            "status": "retrieved",
+            "content_hash": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b",
+            "extracts_sha256": "sha256:7e81d567d50bc12511bce5b8f7f854bce316c77d24f4f15bb8617adbccc248dd",
+            "version": {
+              "in_source_versions": [],
+              "tabs": [
+                "Incident Evidence Register"
+              ],
+              "extra_columns": [],
+              "versions_after_review_date": []
+            },
+            "retrieved_at": "2026-10-06T20:48:42Z"
+          },
+          "POLICY": {
+            "status": "retrieved",
+            "content_hash": "sha256:5a3bdd7dabaccf0d1764f9cb405be270eba0486d8191cb565e37bf98c100a06a",
+            "extracts_sha256": "sha256:65bc60e4be29d6d923d2efd5988414925b1e87a216890086b83dafa8c61a8de7",
+            "version": {
+              "page_id": "3ba0b700-541e-81f0-9998-d48f3b1c2856",
+              "title": "Project 2 Regulatory Compliance — Current Internal Policies",
+              "policy_version": "AI-POL-2026-08-15",
+              "context_revision": "RC-CONTEXT-2026-09-12-R1",
+              "business_observation_date": "2026-08-26",
+              "authoring_clarification_date": "2026-09-12",
+              "etag": "W/\"16783-Z1dnXhJPpI/h/vHp/r38yYGZXhY\"",
+              "revision_after_review_date": true
+            },
+            "retrieved_at": "2026-10-06T20:48:39Z"
+          }
+        },
+        "question": "Approve, reject or amend action 'Add and verify first-interaction AI notice' with owner Learning Experience and proposed date 2026-09-04?",
+        "required_reviewer": "Operations",
+        "approval_record": "APR-ACT-001",
+        "delivery_status": "prepared; not sent by the automation"
+      },
+      {
+        "id": "RR-ACT-002",
+        "summary": "Operations decision on proposed action ACT-002 for AI-007.",
+        "evidence_ids": [
+          "ACT-002",
+          "IMP-AI-007-POL-T1"
+        ],
+        "owner": "Operations",
+        "rationale": "Action approval stays with the responsible role.",
+        "request_id": "RR-ACT-002",
+        "run_id": "RCIB-20261006T204836Z-4ec0",
+        "subject": {
+          "system_id": "AI-007",
+          "action_id": "ACT-002",
+          "impact_ids": [
+            "IMP-AI-007-POL-T1"
+          ]
+        },
+        "source_versions": {
+          "CALENDAR": {
+            "status": "retrieved",
+            "content_hash": "sha256:cb3e2ba90e96733e5713102f0653dd02d0282be92058e60febe5af899926d8ab",
+            "extracts_sha256": "sha256:855cd517f5c589bf5fd9f79ebbf5a5aa5837f5e50fb45d0383bcd51d3d12b7ec",
+            "version": {
+              "in_source_versions": [
+                "calendar-2026-08-26"
+              ],
+              "tabs": [
+                "Compliance Calendar"
+              ],
+              "extra_columns": [],
+              "versions_after_review_date": []
+            },
+            "retrieved_at": "2026-10-06T20:48:43Z"
+          },
+          "SYSTEMS": {
+            "status": "retrieved",
+            "content_hash": "sha256:5ccd555dac9dc3af5a77d3206105fb093565865f7283abe43f5339dd46ed8a80",
+            "extracts_sha256": "sha256:785733a4d76a83fcd21c8ffadd3b61d28c8aa031fdfdfa571431063899cb85f4",
+            "version": {
+              "in_source_versions": [
+                "register-2026-08-26"
+              ],
+              "tabs": [
+                "AI System Register"
+              ],
+              "extra_columns": [],
+              "versions_after_review_date": []
+            },
+            "retrieved_at": "2026-10-06T20:48:40Z"
+          },
+          "EVIDENCE": {
+            "status": "retrieved",
+            "content_hash": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b",
+            "extracts_sha256": "sha256:7e81d567d50bc12511bce5b8f7f854bce316c77d24f4f15bb8617adbccc248dd",
+            "version": {
+              "in_source_versions": [],
+              "tabs": [
+                "Incident Evidence Register"
+              ],
+              "extra_columns": [],
+              "versions_after_review_date": []
+            },
+            "retrieved_at": "2026-10-06T20:48:42Z"
+          },
+          "POLICY": {
+            "status": "retrieved",
+            "content_hash": "sha256:5a3bdd7dabaccf0d1764f9cb405be270eba0486d8191cb565e37bf98c100a06a",
+            "extracts_sha256": "sha256:65bc60e4be29d6d923d2efd5988414925b1e87a216890086b83dafa8c61a8de7",
+            "version": {
+              "page_id": "3ba0b700-541e-81f0-9998-d48f3b1c2856",
+              "title": "Project 2 Regulatory Compliance — Current Internal Policies",
+              "policy_version": "AI-POL-2026-08-15",
+              "context_revision": "RC-CONTEXT-2026-09-12-R1",
+              "business_observation_date": "2026-08-26",
+              "authoring_clarification_date": "2026-09-12",
+              "etag": "W/\"16783-Z1dnXhJPpI/h/vHp/r38yYGZXhY\"",
+              "revision_after_review_date": true
+            },
+            "retrieved_at": "2026-10-06T20:48:39Z"
+          }
+        },
+        "question": "Approve, reject or amend action 'Resolve disclosure evidence conflict' with owner Marketing and proposed date 2026-09-03?",
+        "required_reviewer": "Operations",
+        "approval_record": "APR-ACT-002",
+        "delivery_status": "prepared; not sent by the automation"
+      },
+      {
+        "id": "RR-ACT-003",
+        "summary": "Legal decision on proposed action ACT-003 for AI-002.",
+        "evidence_ids": [
+          "ACT-003",
+          "IMP-AI-002-POL-T3"
+        ],
+        "owner": "Legal",
+        "rationale": "Action approval stays with the responsible role.",
+        "request_id": "RR-ACT-003",
+        "run_id": "RCIB-20261006T204836Z-4ec0",
+        "subject": {
+          "system_id": "AI-002",
+          "action_id": "ACT-003",
+          "impact_ids": [
+            "IMP-AI-002-POL-T3"
+          ]
+        },
+        "source_versions": {
+          "CALENDAR": {
+            "status": "retrieved",
+            "content_hash": "sha256:cb3e2ba90e96733e5713102f0653dd02d0282be92058e60febe5af899926d8ab",
+            "extracts_sha256": "sha256:855cd517f5c589bf5fd9f79ebbf5a5aa5837f5e50fb45d0383bcd51d3d12b7ec",
+            "version": {
+              "in_source_versions": [
+                "calendar-2026-08-26"
+              ],
+              "tabs": [
+                "Compliance Calendar"
+              ],
+              "extra_columns": [],
+              "versions_after_review_date": []
+            },
+            "retrieved_at": "2026-10-06T20:48:43Z"
+          },
+          "SYSTEMS": {
+            "status": "retrieved",
+            "content_hash": "sha256:5ccd555dac9dc3af5a77d3206105fb093565865f7283abe43f5339dd46ed8a80",
+            "extracts_sha256": "sha256:785733a4d76a83fcd21c8ffadd3b61d28c8aa031fdfdfa571431063899cb85f4",
+            "version": {
+              "in_source_versions": [
+                "register-2026-08-26"
+              ],
+              "tabs": [
+                "AI System Register"
+              ],
+              "extra_columns": [],
+              "versions_after_review_date": []
+            },
+            "retrieved_at": "2026-10-06T20:48:40Z"
+          },
+          "EVIDENCE": {
+            "status": "retrieved",
+            "content_hash": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b",
+            "extracts_sha256": "sha256:7e81d567d50bc12511bce5b8f7f854bce316c77d24f4f15bb8617adbccc248dd",
+            "version": {
+              "in_source_versions": [],
+              "tabs": [
+                "Incident Evidence Register"
+              ],
+              "extra_columns": [],
+              "versions_after_review_date": []
+            },
+            "retrieved_at": "2026-10-06T20:48:42Z"
+          },
+          "POLICY": {
+            "status": "retrieved",
+            "content_hash": "sha256:5a3bdd7dabaccf0d1764f9cb405be270eba0486d8191cb565e37bf98c100a06a",
+            "extracts_sha256": "sha256:65bc60e4be29d6d923d2efd5988414925b1e87a216890086b83dafa8c61a8de7",
+            "version": {
+              "page_id": "3ba0b700-541e-81f0-9998-d48f3b1c2856",
+              "title": "Project 2 Regulatory Compliance — Current Internal Policies",
+              "policy_version": "AI-POL-2026-08-15",
+              "context_revision": "RC-CONTEXT-2026-09-12-R1",
+              "business_observation_date": "2026-08-26",
+              "authoring_clarification_date": "2026-09-12",
+              "etag": "W/\"16783-Z1dnXhJPpI/h/vHp/r38yYGZXhY\"",
+              "revision_after_review_date": true
+            },
+            "retrieved_at": "2026-10-06T20:48:39Z"
+          }
+        },
+        "question": "Approve, reject or amend action 'Confirm recipient disclosure practice' with owner Admissions and proposed date 2026-09-08?",
+        "required_reviewer": "Legal",
+        "approval_record": "APR-ACT-003",
+        "delivery_status": "prepared; not sent by the automation"
+      },
+      {
+        "id": "RR-ACT-004",
+        "summary": "Operations decision on proposed action ACT-004 for AI-003.",
+        "evidence_ids": [
+          "ACT-004",
+          "IMP-AI-003-POL-T2-LABEL",
+          "IMP-AI-003-POL-T2-PROV"
+        ],
+        "owner": "Operations",
+        "rationale": "Action approval stays with the responsible role.",
+        "request_id": "RR-ACT-004",
+        "run_id": "RCIB-20261006T204836Z-4ec0",
+        "subject": {
+          "system_id": "AI-003",
+          "action_id": "ACT-004",
+          "impact_ids": [
+            "IMP-AI-003-POL-T2-PROV",
+            "IMP-AI-003-POL-T2-LABEL"
+          ]
+        },
+        "source_versions": {
+          "CALENDAR": {
+            "status": "retrieved",
+            "content_hash": "sha256:cb3e2ba90e96733e5713102f0653dd02d0282be92058e60febe5af899926d8ab",
+            "extracts_sha256": "sha256:855cd517f5c589bf5fd9f79ebbf5a5aa5837f5e50fb45d0383bcd51d3d12b7ec",
+            "version": {
+              "in_source_versions": [
+                "calendar-2026-08-26"
+              ],
+              "tabs": [
+                "Compliance Calendar"
+              ],
+              "extra_columns": [],
+              "versions_after_review_date": []
+            },
+            "retrieved_at": "2026-10-06T20:48:43Z"
+          },
+          "SYSTEMS": {
+            "status": "retrieved",
+            "content_hash": "sha256:5ccd555dac9dc3af5a77d3206105fb093565865f7283abe43f5339dd46ed8a80",
+            "extracts_sha256": "sha256:785733a4d76a83fcd21c8ffadd3b61d28c8aa031fdfdfa571431063899cb85f4",
+            "version": {
+              "in_source_versions": [
+                "register-2026-08-26"
+              ],
+              "tabs": [
+                "AI System Register"
+              ],
+              "extra_columns": [],
+              "versions_after_review_date": []
+            },
+            "retrieved_at": "2026-10-06T20:48:40Z"
+          },
+          "EVIDENCE": {
+            "status": "retrieved",
+            "content_hash": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b",
+            "extracts_sha256": "sha256:7e81d567d50bc12511bce5b8f7f854bce316c77d24f4f15bb8617adbccc248dd",
+            "version": {
+              "in_source_versions": [],
+              "tabs": [
+                "Incident Evidence Register"
+              ],
+              "extra_columns": [],
+              "versions_after_review_date": []
+            },
+            "retrieved_at": "2026-10-06T20:48:42Z"
+          },
+          "POLICY": {
+            "status": "retrieved",
+            "content_hash": "sha256:5a3bdd7dabaccf0d1764f9cb405be270eba0486d8191cb565e37bf98c100a06a",
+            "extracts_sha256": "sha256:65bc60e4be29d6d923d2efd5988414925b1e87a216890086b83dafa8c61a8de7",
+            "version": {
+              "page_id": "3ba0b700-541e-81f0-9998-d48f3b1c2856",
+              "title": "Project 2 Regulatory Compliance — Current Internal Policies",
+              "policy_version": "AI-POL-2026-08-15",
+              "context_revision": "RC-CONTEXT-2026-09-12-R1",
+              "business_observation_date": "2026-08-26",
+              "authoring_clarification_date": "2026-09-12",
+              "etag": "W/\"16783-Z1dnXhJPpI/h/vHp/r38yYGZXhY\"",
+              "revision_after_review_date": true
+            },
+            "retrieved_at": "2026-10-06T20:48:39Z"
+          }
+        },
+        "question": "Approve, reject or amend action 'Verify machine-readable provenance after publishing' with owner Communications and proposed date 2026-09-10?",
+        "required_reviewer": "Operations",
+        "approval_record": "APR-ACT-004",
+        "delivery_status": "prepared; not sent by the automation"
+      },
+      {
+        "id": "RR-ACT-005",
+        "summary": "Legal decision on proposed action ACT-005 for AI-005.",
+        "evidence_ids": [
+          "ACT-005",
+          "IMP-AI-005-L-50-1",
+          "IMP-AI-005-L-50-2",
+          "IMP-AI-005-L-50-3",
+          "IMP-AI-005-L-50-4-DF",
+          "IMP-AI-005-L-50-4-TXT",
+          "IMP-AI-005-POL-T1",
+          "IMP-AI-005-POL-T2-LABEL",
+          "IMP-AI-005-POL-T2-PROV",
+          "IMP-AI-005-POL-T3"
+        ],
+        "owner": "Legal",
+        "rationale": "Action approval stays with the responsible role.",
+        "request_id": "RR-ACT-005",
+        "run_id": "RCIB-20261006T204836Z-4ec0",
+        "subject": {
+          "system_id": "AI-005",
+          "action_id": "ACT-005",
+          "impact_ids": [
+            "IMP-AI-005-L-50-1",
+            "IMP-AI-005-L-50-2",
+            "IMP-AI-005-L-50-3",
+            "IMP-AI-005-L-50-4-DF",
+            "IMP-AI-005-L-50-4-TXT",
+            "IMP-AI-005-POL-T1",
+            "IMP-AI-005-POL-T2-PROV",
+            "IMP-AI-005-POL-T2-LABEL",
+            "IMP-AI-005-POL-T3"
+          ]
+        },
+        "source_versions": {
+          "CALENDAR": {
+            "status": "retrieved",
+            "content_hash": "sha256:cb3e2ba90e96733e5713102f0653dd02d0282be92058e60febe5af899926d8ab",
+            "extracts_sha256": "sha256:855cd517f5c589bf5fd9f79ebbf5a5aa5837f5e50fb45d0383bcd51d3d12b7ec",
+            "version": {
+              "in_source_versions": [
+                "calendar-2026-08-26"
+              ],
+              "tabs": [
+                "Compliance Calendar"
+              ],
+              "extra_columns": [],
+              "versions_after_review_date": []
+            },
+            "retrieved_at": "2026-10-06T20:48:43Z"
+          },
+          "SYSTEMS": {
+            "status": "retrieved",
+            "content_hash": "sha256:5ccd555dac9dc3af5a77d3206105fb093565865f7283abe43f5339dd46ed8a80",
+            "extracts_sha256": "sha256:785733a4d76a83fcd21c8ffadd3b61d28c8aa031fdfdfa571431063899cb85f4",
+            "version": {
+              "in_source_versions": [
+                "register-2026-08-26"
+              ],
+              "tabs": [
+                "AI System Register"
+              ],
+              "extra_columns": [],
+              "versions_after_review_date": []
+            },
+            "retrieved_at": "2026-10-06T20:48:40Z"
+          },
+          "EVIDENCE": {
+            "status": "retrieved",
+            "content_hash": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b",
+            "extracts_sha256": "sha256:7e81d567d50bc12511bce5b8f7f854bce316c77d24f4f15bb8617adbccc248dd",
+            "version": {
+              "in_source_versions": [],
+              "tabs": [
+                "Incident Evidence Register"
+              ],
+              "extra_columns": [],
+              "versions_after_review_date": []
+            },
+            "retrieved_at": "2026-10-06T20:48:42Z"
+          },
+          "POLICY": {
+            "status": "retrieved",
+            "content_hash": "sha256:5a3bdd7dabaccf0d1764f9cb405be270eba0486d8191cb565e37bf98c100a06a",
+            "extracts_sha256": "sha256:65bc60e4be29d6d923d2efd5988414925b1e87a216890086b83dafa8c61a8de7",
+            "version": {
+              "page_id": "3ba0b700-541e-81f0-9998-d48f3b1c2856",
+              "title": "Project 2 Regulatory Compliance — Current Internal Policies",
+              "policy_version": "AI-POL-2026-08-15",
+              "context_revision": "RC-CONTEXT-2026-09-12-R1",
+              "business_observation_date": "2026-08-26",
+              "authoring_clarification_date": "2026-09-12",
+              "etag": "W/\"16783-Z1dnXhJPpI/h/vHp/r38yYGZXhY\"",
+              "revision_after_review_date": true
+            },
+            "retrieved_at": "2026-10-06T20:48:39Z"
+          }
+        },
+        "question": "Approve, reject or amend action 'Refresh provider-role and release evidence' with owner Assessment Operations and proposed date 2026-09-12?",
+        "required_reviewer": "Legal",
+        "approval_record": "APR-ACT-005",
+        "delivery_status": "prepared; not sent by the automation"
+      },
+      {
+        "id": "RR-ACT-006",
+        "summary": "Operations decision on proposed action ACT-006 for AI-008.",
+        "evidence_ids": [
+          "ACT-006",
+          "IMP-AI-008-POL-T2-PROV"
+        ],
+        "owner": "Operations",
+        "rationale": "Action approval stays with the responsible role.",
+        "request_id": "RR-ACT-006",
+        "run_id": "RCIB-20261006T204836Z-4ec0",
+        "subject": {
+          "system_id": "AI-008",
+          "action_id": "ACT-006",
+          "impact_ids": [
+            "IMP-AI-008-POL-T2-PROV"
+          ]
+        },
+        "source_versions": {
+          "CALENDAR": {
+            "status": "retrieved",
+            "content_hash": "sha256:cb3e2ba90e96733e5713102f0653dd02d0282be92058e60febe5af899926d8ab",
+            "extracts_sha256": "sha256:855cd517f5c589bf5fd9f79ebbf5a5aa5837f5e50fb45d0383bcd51d3d12b7ec",
+            "version": {
+              "in_source_versions": [
+                "calendar-2026-08-26"
+              ],
+              "tabs": [
+                "Compliance Calendar"
+              ],
+              "extra_columns": [],
+              "versions_after_review_date": []
+            },
+            "retrieved_at": "2026-10-06T20:48:43Z"
+          },
+          "SYSTEMS": {
+            "status": "retrieved",
+            "content_hash": "sha256:5ccd555dac9dc3af5a77d3206105fb093565865f7283abe43f5339dd46ed8a80",
+            "extracts_sha256": "sha256:785733a4d76a83fcd21c8ffadd3b61d28c8aa031fdfdfa571431063899cb85f4",
+            "version": {
+              "in_source_versions": [
+                "register-2026-08-26"
+              ],
+              "tabs": [
+                "AI System Register"
+              ],
+              "extra_columns": [],
+              "versions_after_review_date": []
+            },
+            "retrieved_at": "2026-10-06T20:48:40Z"
+          },
+          "EVIDENCE": {
+            "status": "retrieved",
+            "content_hash": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b",
+            "extracts_sha256": "sha256:7e81d567d50bc12511bce5b8f7f854bce316c77d24f4f15bb8617adbccc248dd",
+            "version": {
+              "in_source_versions": [],
+              "tabs": [
+                "Incident Evidence Register"
+              ],
+              "extra_columns": [],
+              "versions_after_review_date": []
+            },
+            "retrieved_at": "2026-10-06T20:48:42Z"
+          },
+          "POLICY": {
+            "status": "retrieved",
+            "content_hash": "sha256:5a3bdd7dabaccf0d1764f9cb405be270eba0486d8191cb565e37bf98c100a06a",
+            "extracts_sha256": "sha256:65bc60e4be29d6d923d2efd5988414925b1e87a216890086b83dafa8c61a8de7",
+            "version": {
+              "page_id": "3ba0b700-541e-81f0-9998-d48f3b1c2856",
+              "title": "Project 2 Regulatory Compliance — Current Internal Policies",
+              "policy_version": "AI-POL-2026-08-15",
+              "context_revision": "RC-CONTEXT-2026-09-12-R1",
+              "business_observation_date": "2026-08-26",
+              "authoring_clarification_date": "2026-09-12",
+              "etag": "W/\"16783-Z1dnXhJPpI/h/vHp/r38yYGZXhY\"",
+              "revision_after_review_date": true
+            },
+            "retrieved_at": "2026-10-06T20:48:39Z"
+          }
+        },
+        "question": "Approve, reject or amend action 'Complete provenance test' with owner Communications and proposed date 2026-09-09?",
+        "required_reviewer": "Operations",
+        "approval_record": "APR-ACT-006",
+        "delivery_status": "prepared; not sent by the automation"
+      },
+      {
+        "id": "RR-ACT-007",
+        "summary": "Legal decision on proposed action ACT-007 for AI-008.",
+        "evidence_ids": [
+          "ACT-007",
+          "IMP-AI-008-L-50-4-DF",
+          "IMP-AI-008-POL-T2-LABEL"
+        ],
+        "owner": "Legal",
+        "rationale": "Action approval stays with the responsible role.",
+        "request_id": "RR-ACT-007",
+        "run_id": "RCIB-20261006T204836Z-4ec0",
+        "subject": {
+          "system_id": "AI-008",
+          "action_id": "ACT-007",
+          "impact_ids": [
+            "IMP-AI-008-L-50-4-DF",
+            "IMP-AI-008-POL-T2-LABEL"
+          ]
+        },
+        "source_versions": {
+          "CALENDAR": {
+            "status": "retrieved",
+            "content_hash": "sha256:cb3e2ba90e96733e5713102f0653dd02d0282be92058e60febe5af899926d8ab",
+            "extracts_sha256": "sha256:855cd517f5c589bf5fd9f79ebbf5a5aa5837f5e50fb45d0383bcd51d3d12b7ec",
+            "version": {
+              "in_source_versions": [
+                "calendar-2026-08-26"
+              ],
+              "tabs": [
+                "Compliance Calendar"
+              ],
+              "extra_columns": [],
+              "versions_after_review_date": []
+            },
+            "retrieved_at": "2026-10-06T20:48:43Z"
+          },
+          "SYSTEMS": {
+            "status": "retrieved",
+            "content_hash": "sha256:5ccd555dac9dc3af5a77d3206105fb093565865f7283abe43f5339dd46ed8a80",
+            "extracts_sha256": "sha256:785733a4d76a83fcd21c8ffadd3b61d28c8aa031fdfdfa571431063899cb85f4",
+            "version": {
+              "in_source_versions": [
+                "register-2026-08-26"
+              ],
+              "tabs": [
+                "AI System Register"
+              ],
+              "extra_columns": [],
+              "versions_after_review_date": []
+            },
+            "retrieved_at": "2026-10-06T20:48:40Z"
+          },
+          "EVIDENCE": {
+            "status": "retrieved",
+            "content_hash": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b",
+            "extracts_sha256": "sha256:7e81d567d50bc12511bce5b8f7f854bce316c77d24f4f15bb8617adbccc248dd",
+            "version": {
+              "in_source_versions": [],
+              "tabs": [
+                "Incident Evidence Register"
+              ],
+              "extra_columns": [],
+              "versions_after_review_date": []
+            },
+            "retrieved_at": "2026-10-06T20:48:42Z"
+          },
+          "POLICY": {
+            "status": "retrieved",
+            "content_hash": "sha256:5a3bdd7dabaccf0d1764f9cb405be270eba0486d8191cb565e37bf98c100a06a",
+            "extracts_sha256": "sha256:65bc60e4be29d6d923d2efd5988414925b1e87a216890086b83dafa8c61a8de7",
+            "version": {
+              "page_id": "3ba0b700-541e-81f0-9998-d48f3b1c2856",
+              "title": "Project 2 Regulatory Compliance — Current Internal Policies",
+              "policy_version": "AI-POL-2026-08-15",
+              "context_revision": "RC-CONTEXT-2026-09-12-R1",
+              "business_observation_date": "2026-08-26",
+              "authoring_clarification_date": "2026-09-12",
+              "etag": "W/\"16783-Z1dnXhJPpI/h/vHp/r38yYGZXhY\"",
+              "revision_after_review_date": true
+            },
+            "retrieved_at": "2026-10-06T20:48:39Z"
+          }
+        },
+        "question": "Approve, reject or amend action 'Review exception request' with owner Legal and proposed date 2026-09-15?",
+        "required_reviewer": "Legal",
+        "approval_record": "APR-ACT-007",
+        "delivery_status": "prepared; not sent by the automation"
+      },
+      {
+        "id": "RR-ACT-008",
+        "summary": "Operations decision on proposed action ACT-008 for ALL.",
+        "evidence_ids": [
+          "ACT-008"
+        ],
+        "owner": "Operations",
+        "rationale": "Action approval stays with the responsible role.",
+        "request_id": "RR-ACT-008",
+        "run_id": "RCIB-20261006T204836Z-4ec0",
+        "subject": {
+          "system_id": "ALL",
+          "action_id": "ACT-008",
+          "impact_ids": []
+        },
+        "source_versions": {
+          "CALENDAR": {
+            "status": "retrieved",
+            "content_hash": "sha256:cb3e2ba90e96733e5713102f0653dd02d0282be92058e60febe5af899926d8ab",
+            "extracts_sha256": "sha256:855cd517f5c589bf5fd9f79ebbf5a5aa5837f5e50fb45d0383bcd51d3d12b7ec",
+            "version": {
+              "in_source_versions": [
+                "calendar-2026-08-26"
+              ],
+              "tabs": [
+                "Compliance Calendar"
+              ],
+              "extra_columns": [],
+              "versions_after_review_date": []
+            },
+            "retrieved_at": "2026-10-06T20:48:43Z"
+          },
+          "SYSTEMS": {
+            "status": "retrieved",
+            "content_hash": "sha256:5ccd555dac9dc3af5a77d3206105fb093565865f7283abe43f5339dd46ed8a80",
+            "extracts_sha256": "sha256:785733a4d76a83fcd21c8ffadd3b61d28c8aa031fdfdfa571431063899cb85f4",
+            "version": {
+              "in_source_versions": [
+                "register-2026-08-26"
+              ],
+              "tabs": [
+                "AI System Register"
+              ],
+              "extra_columns": [],
+              "versions_after_review_date": []
+            },
+            "retrieved_at": "2026-10-06T20:48:40Z"
+          },
+          "EVIDENCE": {
+            "status": "retrieved",
+            "content_hash": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b",
+            "extracts_sha256": "sha256:7e81d567d50bc12511bce5b8f7f854bce316c77d24f4f15bb8617adbccc248dd",
+            "version": {
+              "in_source_versions": [],
+              "tabs": [
+                "Incident Evidence Register"
+              ],
+              "extra_columns": [],
+              "versions_after_review_date": []
+            },
+            "retrieved_at": "2026-10-06T20:48:42Z"
+          },
+          "POLICY": {
+            "status": "retrieved",
+            "content_hash": "sha256:5a3bdd7dabaccf0d1764f9cb405be270eba0486d8191cb565e37bf98c100a06a",
+            "extracts_sha256": "sha256:65bc60e4be29d6d923d2efd5988414925b1e87a216890086b83dafa8c61a8de7",
+            "version": {
+              "page_id": "3ba0b700-541e-81f0-9998-d48f3b1c2856",
+              "title": "Project 2 Regulatory Compliance — Current Internal Policies",
+              "policy_version": "AI-POL-2026-08-15",
+              "context_revision": "RC-CONTEXT-2026-09-12-R1",
+              "business_observation_date": "2026-08-26",
+              "authoring_clarification_date": "2026-09-12",
+              "etag": "W/\"16783-Z1dnXhJPpI/h/vHp/r38yYGZXhY\"",
+              "revision_after_review_date": true
+            },
+            "retrieved_at": "2026-10-06T20:48:39Z"
+          }
+        },
+        "question": "Approve, reject or amend action 'Quarterly AI register evidence review' with owner Operations and proposed date 2026-10-02?",
+        "required_reviewer": "Operations",
+        "approval_record": "APR-ACT-008",
+        "delivery_status": "prepared; not sent by the automation"
+      }
+    ],
+    "responses_applied": [],
+    "responses_unmatched": []
+  },
+  "unresolved": [
+    {
+      "id": "ESC-IMP-AI-002-POL-T3",
+      "summary": "unresolved: SYSTEMS records a text-generation tool used by staff (exposed group applicants). Evidence for this rule is incomplete: REC-002 (missing): No evidence that recipients are told when generated text is used.",
+      "evidence_ids": [
+        "ACT-003",
+        "IMP-AI-002-POL-T3"
+      ],
+      "owner": "Admissions",
+      "rationale": "Kept visible until evidence or an actual decision changes it.",
+      "impact_id": "IMP-AI-002-POL-T3",
+      "resolution_owner": "Admissions",
+      "resolution_need": "Admissions supplies current, complete evidence.",
+      "linked_action_ids": [
+        "ACT-003"
+      ]
+    },
+    {
+      "id": "ESC-IMP-AI-003-POL-T2-PROV",
+      "summary": "conflicting: SYSTEMS records public synthetic media (synthetic_image, exposed_group=public). Evidence for this rule conflicts (D-001): REC-003 (conflicting): Visible label exists but exported platform copy may have lost metadata [record also names visible-label-disclosure; its single recorded state is applied to each rule it names and is not split by the automation]. Both facts are preserved; the item remains unresolved pending system-owner verification and is not decided by the automation.",
+      "evidence_ids": [
+        "ACT-004",
+        "IMP-AI-003-POL-T2-PROV"
+      ],
+      "owner": "Communications",
+      "rationale": "Kept visible until evidence or an actual decision changes it.",
+      "impact_id": "IMP-AI-003-POL-T2-PROV",
+      "resolution_owner": "Communications",
+      "resolution_need": "System owner (Communications) verifies the contested fact using social-post-884 and updates EVIDENCE/SYSTEMS.",
+      "linked_action_ids": [
+        "ACT-004"
+      ]
+    },
+    {
+      "id": "ESC-IMP-AI-003-POL-T2-LABEL",
+      "summary": "conflicting: SYSTEMS records public synthetic media (synthetic_image, exposed_group=public). Evidence for this rule conflicts (D-001): REC-003 (conflicting): Visible label exists but exported platform copy may have lost metadata [record also names provenance-marking; its single recorded state is applied to each rule it names and is not split by the automation]. Both facts are preserved; the item remains unresolved pending system-owner verification and is not decided by the automation.",
+      "evidence_ids": [
+        "ACT-004",
+        "IMP-AI-003-POL-T2-LABEL"
+      ],
+      "owner": "Communications",
+      "rationale": "Kept visible until evidence or an actual decision changes it.",
+      "impact_id": "IMP-AI-003-POL-T2-LABEL",
+      "resolution_owner": "Communications",
+      "resolution_need": "System owner (Communications) verifies the contested fact using social-post-884 and updates EVIDENCE/SYSTEMS.",
+      "linked_action_ids": [
+        "ACT-004"
+      ]
+    },
+    {
+      "id": "ESC-IMP-AI-005-L-50-1",
+      "summary": "unresolved: The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release.",
+      "evidence_ids": [
+        "ACT-005",
+        "IMP-AI-005-L-50-1"
+      ],
+      "owner": "Assessment Operations",
+      "rationale": "Kept visible until evidence or an actual decision changes it.",
+      "impact_id": "IMP-AI-005-L-50-1",
+      "resolution_owner": "Assessment Operations",
+      "resolution_need": "Assessment Operations refreshes the register entry and evidence.",
+      "linked_action_ids": [
+        "ACT-005"
+      ]
+    },
+    {
+      "id": "ESC-IMP-AI-005-L-50-2",
+      "summary": "unresolved: The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release.",
+      "evidence_ids": [
+        "ACT-005",
+        "IMP-AI-005-L-50-2"
+      ],
+      "owner": "Assessment Operations",
+      "rationale": "Kept visible until evidence or an actual decision changes it.",
+      "impact_id": "IMP-AI-005-L-50-2",
+      "resolution_owner": "Assessment Operations",
+      "resolution_need": "Assessment Operations refreshes the register entry and evidence.",
+      "linked_action_ids": [
+        "ACT-005"
+      ]
+    },
+    {
+      "id": "ESC-IMP-AI-005-L-50-3",
+      "summary": "unresolved: The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release [record also names provider-role; its single recorded state is applied to each rule it names and is not split by the automation].",
+      "evidence_ids": [
+        "ACT-005",
+        "IMP-AI-005-L-50-3"
+      ],
+      "owner": "Assessment Operations",
+      "rationale": "Kept visible until evidence or an actual decision changes it.",
+      "impact_id": "IMP-AI-005-L-50-3",
+      "resolution_owner": "Assessment Operations",
+      "resolution_need": "Assessment Operations refreshes the register entry and evidence.",
+      "linked_action_ids": [
+        "ACT-005"
+      ]
+    },
+    {
+      "id": "ESC-IMP-AI-005-L-50-4-DF",
+      "summary": "unresolved: The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release [record also names provider-role; its single recorded state is applied to each rule it names and is not split by the automation].",
+      "evidence_ids": [
+        "ACT-005",
+        "IMP-AI-005-L-50-4-DF"
+      ],
+      "owner": "Assessment Operations",
+      "rationale": "Kept visible until evidence or an actual decision changes it.",
+      "impact_id": "IMP-AI-005-L-50-4-DF",
+      "resolution_owner": "Assessment Operations",
+      "resolution_need": "Assessment Operations refreshes the register entry and evidence.",
+      "linked_action_ids": [
+        "ACT-005"
+      ]
+    },
+    {
+      "id": "ESC-IMP-AI-005-L-50-4-TXT",
+      "summary": "unresolved: The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release [record also names provider-role; its single recorded state is applied to each rule it names and is not split by the automation].",
+      "evidence_ids": [
+        "ACT-005",
+        "IMP-AI-005-L-50-4-TXT"
+      ],
+      "owner": "Assessment Operations",
+      "rationale": "Kept visible until evidence or an actual decision changes it.",
+      "impact_id": "IMP-AI-005-L-50-4-TXT",
+      "resolution_owner": "Assessment Operations",
+      "resolution_need": "Assessment Operations refreshes the register entry and evidence.",
+      "linked_action_ids": [
+        "ACT-005"
+      ]
+    },
+    {
+      "id": "ESC-IMP-AI-005-POL-T1",
+      "summary": "unresolved: The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release [record also names provider-role; its single recorded state is applied to each rule it names and is not split by the automation].",
+      "evidence_ids": [
+        "ACT-005",
+        "IMP-AI-005-POL-T1"
+      ],
+      "owner": "Assessment Operations",
+      "rationale": "Kept visible until evidence or an actual decision changes it.",
+      "impact_id": "IMP-AI-005-POL-T1",
+      "resolution_owner": "Assessment Operations",
+      "resolution_need": "Assessment Operations refreshes the register entry and evidence.",
+      "linked_action_ids": [
+        "ACT-005"
+      ]
+    },
+    {
+      "id": "ESC-IMP-AI-005-POL-T2-PROV",
+      "summary": "unresolved: The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release [record also names provider-role; its single recorded state is applied to each rule it names and is not split by the automation].",
+      "evidence_ids": [
+        "ACT-005",
+        "IMP-AI-005-POL-T2-PROV"
+      ],
+      "owner": "Assessment Operations",
+      "rationale": "Kept visible until evidence or an actual decision changes it.",
+      "impact_id": "IMP-AI-005-POL-T2-PROV",
+      "resolution_owner": "Assessment Operations",
+      "resolution_need": "Assessment Operations refreshes the register entry and evidence.",
+      "linked_action_ids": [
+        "ACT-005"
+      ]
+    },
+    {
+      "id": "ESC-IMP-AI-005-POL-T2-LABEL",
+      "summary": "unresolved: The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release [record also names provider-role; its single recorded state is applied to each rule it names and is not split by the automation].",
+      "evidence_ids": [
+        "ACT-005",
+        "IMP-AI-005-POL-T2-LABEL"
+      ],
+      "owner": "Assessment Operations",
+      "rationale": "Kept visible until evidence or an actual decision changes it.",
+      "impact_id": "IMP-AI-005-POL-T2-LABEL",
+      "resolution_owner": "Assessment Operations",
+      "resolution_need": "Assessment Operations refreshes the register entry and evidence.",
+      "linked_action_ids": [
+        "ACT-005"
+      ]
+    },
+    {
+      "id": "ESC-IMP-AI-005-POL-T3",
+      "summary": "unresolved: The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release [record also names provider-role; its single recorded state is applied to each rule it names and is not split by the automation].",
+      "evidence_ids": [
+        "ACT-005",
+        "IMP-AI-005-POL-T3"
+      ],
+      "owner": "Assessment Operations",
+      "rationale": "Kept visible until evidence or an actual decision changes it.",
+      "impact_id": "IMP-AI-005-POL-T3",
+      "resolution_owner": "Assessment Operations",
+      "resolution_need": "Assessment Operations refreshes the register entry and evidence.",
+      "linked_action_ids": [
+        "ACT-005"
+      ]
+    },
+    {
+      "id": "ESC-IMP-AI-007-POL-T1",
+      "summary": "conflicting: SYSTEMS records direct interaction with public. Evidence for this rule conflicts (D-001): REC-008 (conflicting): Owner says a banner exists but the current capture shows none. Both facts are preserved; the item remains unresolved pending system-owner verification and is not decided by the automation.",
+      "evidence_ids": [
+        "ACT-002",
+        "IMP-AI-007-POL-T1"
+      ],
+      "owner": "Marketing",
+      "rationale": "Kept visible until evidence or an actual decision changes it.",
+      "impact_id": "IMP-AI-007-POL-T1",
+      "resolution_owner": "Marketing",
+      "resolution_need": "System owner (Marketing) verifies the contested fact using avatar-page-capture and updates EVIDENCE/SYSTEMS.",
+      "linked_action_ids": [
+        "ACT-002"
+      ]
+    },
+    {
+      "id": "ESC-IMP-AI-008-L-50-4-DF",
+      "summary": "unresolved: POLICY records that the content shows real people, could be mistaken for an authentic recording and is not an evidently artistic or fictional work. Evidence for this rule is incomplete: REC-009 (partial): Visible label verified but machine-readable provenance not checked [record also names provenance-marking; its single recorded state is applied to each rule it names and is not split by the automation]; REC-010 (missing): No Legal approval or expiry date recorded.",
+      "evidence_ids": [
+        "ACT-007",
+        "IMP-AI-008-L-50-4-DF"
+      ],
+      "owner": "Communications",
+      "rationale": "Kept visible until evidence or an actual decision changes it.",
+      "impact_id": "IMP-AI-008-L-50-4-DF",
+      "resolution_owner": "Communications",
+      "resolution_need": "Communications supplies current, complete evidence; Legal decides the exception request.",
+      "linked_action_ids": [
+        "ACT-007"
+      ]
+    },
+    {
+      "id": "ESC-IMP-AI-008-POL-T2-PROV",
+      "summary": "unresolved: SYSTEMS records public synthetic media (synthetic_audio_video, exposed_group=public). Evidence for this rule is incomplete: REC-009 (partial): Visible label verified but machine-readable provenance not checked [record also names visible-label-disclosure; its single recorded state is applied to each rule it names and is not split by the automation].",
+      "evidence_ids": [
+        "ACT-006",
+        "IMP-AI-008-POL-T2-PROV"
+      ],
+      "owner": "Communications",
+      "rationale": "Kept visible until evidence or an actual decision changes it.",
+      "impact_id": "IMP-AI-008-POL-T2-PROV",
+      "resolution_owner": "Communications",
+      "resolution_need": "Communications supplies current, complete evidence.",
+      "linked_action_ids": [
+        "ACT-006"
+      ]
+    },
+    {
+      "id": "ESC-IMP-AI-008-POL-T2-LABEL",
+      "summary": "unresolved: SYSTEMS records public synthetic media (synthetic_audio_video, exposed_group=public). Evidence for this rule is incomplete: REC-009 (partial): Visible label verified but machine-readable provenance not checked [record also names provenance-marking; its single recorded state is applied to each rule it names and is not split by the automation]; REC-010 (missing): No Legal approval or expiry date recorded.",
+      "evidence_ids": [
+        "ACT-007",
+        "IMP-AI-008-POL-T2-LABEL"
+      ],
+      "owner": "Communications",
+      "rationale": "Kept visible until evidence or an actual decision changes it.",
+      "impact_id": "IMP-AI-008-POL-T2-LABEL",
+      "resolution_owner": "Communications",
+      "resolution_need": "Communications supplies current, complete evidence; Legal decides the exception request.",
+      "linked_action_ids": [
+        "ACT-007"
+      ]
+    }
+  ],
+  "decisions": [
+    {
+      "id": "D-005",
+      "summary": "Propose actions from findings, linking them to existing CALENDAR actions to avoid duplication. Take dates only from CALENDAR (Operations' proposals); new actions stay undated, are omitted from the ICS and are explained.",
+      "concern": "The automation proposes actions from findings and must account for existing CALENDAR actions, but it cannot set operational deadlines; Operations proposes owners and dates.",
+      "options": [
+        {
+          "option": "Generate actions and compute due dates from the findings.",
+          "assessment": "Sets operational deadlines, which the stakeholder and POLICY reserve to Operations."
+        },
+        {
+          "option": "Report only CALENDAR actions.",
+          "assessment": "Misses findings that have no action and does not propose anything."
+        },
+        {
+          "option": "Link each finding that needs action to an existing CALENDAR action for the same system (by declared cue match, or the system's sole action); otherwise propose a new undated action owned by the system owner; carry forward unlinked CALENDAR actions.",
+          "assessment": "Avoids duplication and loss of work, never invents dates, and keeps undated items visible."
+        }
+      ],
+      "source_basis": [
+        "INT2-L132",
+        "INT1-L212",
+        "INT2-L140",
+        "INT1-L236",
+        "ASSIGN-CAL",
+        "INSPECT-CALENDAR"
+      ],
+      "chosen_behavior": "Findings that need action are supported-impact rows with a control gap, plus conflicting and unresolved rows. Each is linked to a CALENDAR action for the same system: first by matching the rule's declared action cues, otherwise when the system has exactly one CALENDAR action. A linked action keeps its CALENDAR id, owner, due date (as the Operations-proposed date), status and required approver. A finding with no linkable action gets a new proposed action (PA-nnn) owned by the system owner, with a blank date and the reason disclosed. CALENDAR actions that are not linked to any finding are carried forward and marked as not derived from this review. The ICS contains only dated proposals, all STATUS:TENTATIVE. Undated actions are omitted from it and explained in the register and brief.",
+      "rationale": "Meets both interview requirements (findings-driven proposals; no duplication or loss of CALENDAR work) and the rule that the automation does not set deadlines.",
+      "tradeoffs": [
+        "Cue and system matching may link a finding to an action Operations considers unrelated; the link is shown for Operations to confirm.",
+        "Proposals without a CALENDAR action stay undated until Operations supplies a date."
+      ],
+      "downstream_effect": [
+        "Stage 06 proposed_actions and approval_requirements.",
+        "The register's proposed_action and proposed_due_date columns.",
+        "The ICS events and the brief's actions section."
+      ],
+      "evidence_ids": [
+        "INT2-L132",
+        "INT1-L212",
+        "INT2-L140",
+        "ASSIGN-CAL"
+      ],
+      "owner": "Project developer",
+      "decided_by": "Implementation decision (Claude), awaiting project developer review",
+      "stages": [
+        "actions-and-approvals"
+      ]
+    },
+    {
+      "id": "D-006",
+      "summary": "Every approval is 'pending', because no source records an approval outcome. The required approver comes from CALENDAR approval_required (actions) or Legal (applicability interpretation). Reviewer responses are applied only from a supplied verified file whose binding validates.",
+      "concern": "The schema needs approval statuses, but no source contains approval outcomes. POLICY states that no Legal approval is supplied, and the assignment forbids simulated replies.",
+      "options": [
+        {
+          "option": "Mark actions approved when CALENDAR shows planned or scheduled.",
+          "assessment": "Invents approval from a scheduling status."
+        },
+        {
+          "option": "Mark everything pending with the required approver role, and accept only verified responses bound to the reviewed draft hash.",
+          "assessment": "Honest; uses only recorded facts."
+        }
+      ],
+      "source_basis": [
+        "ASSIGN-REVIEW",
+        "INSPECT-CALENDAR",
+        "INT1-L236"
+      ],
+      "chosen_behavior": "Approval records have status 'pending'. Action approvals use CALENDAR approval_required (legal or operations); impact interpretation approvals use Legal. 'not-required' is not used in this design, because every register row needs either a Legal interpretation review (binding-law and internal-policy rows) or an action approval. Review requests are prepared but not sent. Responses are applied only when supplied with --responses and when their request id, reviewer role, run id and artifact hash match the bound draft. Unmatched responses are recorded as unresolved.",
+      "rationale": "Uses only recorded facts and keeps decisions with Legal and Operations.",
+      "tradeoffs": [
+        "The package shows nearly everything as pending, which is accurate but less informative.",
+        "Responses need a strict file format."
+      ],
+      "downstream_effect": [
+        "Stage 06 approval_requirements and review_requests.",
+        "Stage 07 review_bindings.",
+        "The register's approval_status column."
+      ],
+      "evidence_ids": [
+        "ASSIGN-REVIEW",
+        "INSPECT-CALENDAR"
+      ],
+      "owner": "Project developer",
+      "decided_by": "Implementation decision (Claude), awaiting project developer review",
+      "stages": [
+        "actions-and-approvals",
+        "publication-validation"
+      ]
+    }
+  ]
+}

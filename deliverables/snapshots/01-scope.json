@@ -1,0 +1,678 @@
+{
+  "schema_version": "regulatory-compliance-stage-snapshot/2",
+  "snapshot_id": "RCIB-20261006T204836Z-4ec0-S01",
+  "run_id": "RCIB-20261006T204836Z-4ec0",
+  "stage": "scope",
+  "sequence": 1,
+  "created_at": "2026-10-06T20:48:36Z",
+  "status": "complete",
+  "predecessor": null,
+  "consumed_record_ids": [],
+  "produced_record_ids": [
+    "ASSIGN-BLOCK",
+    "ASSIGN-CAL",
+    "ASSIGN-CAPTURE",
+    "ASSIGN-CHANGED",
+    "ASSIGN-PUB",
+    "ASSIGN-READONLY",
+    "ASSIGN-REVIEW",
+    "ASSIGN-STATES",
+    "D-002",
+    "D-007",
+    "DEV-REDACTION-2026-10-06",
+    "INSPECT-ACCESS",
+    "INSPECT-CALENDAR",
+    "INSPECT-EVIDENCE-REC-003",
+    "INSPECT-EVIDENCE-REC-008",
+    "INSPECT-LEGAL-VERSIONS",
+    "INSPECT-NOTION-USERS",
+    "INSPECT-POLICY-AI-007",
+    "INSPECT-POLICY-STATES",
+    "INSPECT-SYSTEMS-AI-007",
+    "INT1-L118",
+    "INT1-L150",
+    "INT1-L166",
+    "INT1-L182",
+    "INT1-L212",
+    "INT1-L236",
+    "INT1-L276",
+    "INT2-L100",
+    "INT2-L108",
+    "INT2-L116",
+    "INT2-L124",
+    "INT2-L132",
+    "INT2-L140",
+    "INT2-L148",
+    "INT2-L164",
+    "INT2-L35",
+    "INT2-L52",
+    "INT2-L69",
+    "INT2-L88",
+    "ROUTE-AMEND",
+    "ROUTE-CALENDAR",
+    "ROUTE-CONSOLIDATED",
+    "ROUTE-EVIDENCE",
+    "ROUTE-FAQ",
+    "ROUTE-LAW",
+    "ROUTE-OJ",
+    "ROUTE-POLICY",
+    "ROUTE-SYSTEMS",
+    "ROUTE-TIME",
+    "SCOPE-AS-OF",
+    "SCOPE-REVIEW",
+    "SCOPE-SYS-AI-001",
+    "SCOPE-SYS-AI-002",
+    "SCOPE-SYS-AI-003",
+    "SCOPE-SYS-AI-004",
+    "SCOPE-SYS-AI-005",
+    "SCOPE-SYS-AI-006",
+    "SCOPE-SYS-AI-007",
+    "SCOPE-SYS-AI-008"
+  ],
+  "state": {
+    "as_of": "2026-08-26T23:59:59+01:00",
+    "as_of_date": "2026-08-26",
+    "review_type": "EU AI Act Article 50 transparency impact review (regulatory change impact brief)",
+    "organisation": "Quillhaven Academy — EU programme team",
+    "systems_in_scope": [
+      "AI-001",
+      "AI-002",
+      "AI-003",
+      "AI-004",
+      "AI-005",
+      "AI-006",
+      "AI-007",
+      "AI-008"
+    ],
+    "audiences": [
+      "Legal",
+      "Operations"
+    ],
+    "approval_gates": [
+      "Legal: interpretation of the EU AI Act and policy interpretation boundaries",
+      "Legal: exception requests (approval, rejection, expiry)",
+      "Operations: policy activation",
+      "Operations: approved dates and operational deadlines",
+      "Operations: incident closure"
+    ],
+    "resolution_owners": {
+      "factual_system_behaviour": "System owner named in SYSTEMS",
+      "legal_interpretation_and_exceptions": "Legal",
+      "activation_and_dates": "Operations"
+    },
+    "supersedes_run_id": "RCIB-20261006T204732Z-4235",
+    "change_reason": "Final pre-commit run: decision records updated (D-003 redirect-URL handling)",
+    "prior_run_inspection": {
+      "run_id": "RCIB-20261006T204732Z-4235",
+      "status": "partial",
+      "path": "deliverables/history/RCIB-20261006T204732Z-4235",
+      "inspection_ok": true,
+      "failed_checks": [],
+      "missing": []
+    },
+    "run_started_at": "2026-10-06T20:48:36Z",
+    "scope_records": [
+      {
+        "id": "SCOPE-REVIEW",
+        "summary": "EU AI Act Article 50 transparency impact review (regulatory change impact brief)",
+        "evidence_ids": [
+          "ASSIGN-BLOCK"
+        ]
+      },
+      {
+        "id": "SCOPE-AS-OF",
+        "summary": "As-of 2026-08-26T23:59:59+01:00 (Business observation date assigned for the review (end of the Dublin business day). It is never changed by a run; retrieval times are recorded separately (decision D-007).)",
+        "evidence_ids": [
+          "INT1-L276"
+        ]
+      },
+      {
+        "id": "SCOPE-SYS-AI-001",
+        "summary": "AI-001 in scope (eight registered EU programme systems)",
+        "evidence_ids": []
+      },
+      {
+        "id": "SCOPE-SYS-AI-002",
+        "summary": "AI-002 in scope (eight registered EU programme systems)",
+        "evidence_ids": []
+      },
+      {
+        "id": "SCOPE-SYS-AI-003",
+        "summary": "AI-003 in scope (eight registered EU programme systems)",
+        "evidence_ids": []
+      },
+      {
+        "id": "SCOPE-SYS-AI-004",
+        "summary": "AI-004 in scope (eight registered EU programme systems)",
+        "evidence_ids": []
+      },
+      {
+        "id": "SCOPE-SYS-AI-005",
+        "summary": "AI-005 in scope (eight registered EU programme systems)",
+        "evidence_ids": []
+      },
+      {
+        "id": "SCOPE-SYS-AI-006",
+        "summary": "AI-006 in scope (eight registered EU programme systems)",
+        "evidence_ids": []
+      },
+      {
+        "id": "SCOPE-SYS-AI-007",
+        "summary": "AI-007 in scope (eight registered EU programme systems)",
+        "evidence_ids": []
+      },
+      {
+        "id": "SCOPE-SYS-AI-008",
+        "summary": "AI-008 in scope (eight registered EU programme systems)",
+        "evidence_ids": []
+      }
+    ],
+    "source_routes": [
+      {
+        "id": "ROUTE-OJ",
+        "summary": "OJ: Regulation (EU) 2024/1689 (AI Act) as published in the Official Journal.",
+        "evidence_ids": [],
+        "locator": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+        "authority_class": "binding-legal",
+        "required": true,
+        "adapter": "eurlex"
+      },
+      {
+        "id": "ROUTE-AMEND",
+        "summary": "AMEND: Regulation (EU) 2026/1744 amending Regulation (EU) 2024/1689.",
+        "evidence_ids": [],
+        "locator": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ%3AL_202601744",
+        "authority_class": "binding-legal",
+        "required": true,
+        "adapter": "eurlex"
+      },
+      {
+        "id": "ROUTE-CONSOLIDATED",
+        "summary": "CONSOLIDATED: Consolidated text of Regulation (EU) 2024/1689, version 27 July 2026.",
+        "evidence_ids": [],
+        "locator": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R1689-20260727",
+        "authority_class": "binding-legal",
+        "required": true,
+        "adapter": "eurlex"
+      },
+      {
+        "id": "ROUTE-LAW",
+        "summary": "LAW: AI Act Service Desk presentation of Article 50 (text plus non-binding summary).",
+        "evidence_ids": [],
+        "locator": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-50",
+        "authority_class": "advisory",
+        "required": true,
+        "adapter": "html"
+      },
+      {
+        "id": "ROUTE-TIME",
+        "summary": "TIME: AI Act Service Desk implementation timeline.",
+        "evidence_ids": [],
+        "locator": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/eu-ai-act-implementation-timeline",
+        "authority_class": "advisory",
+        "required": true,
+        "adapter": "html"
+      },
+      {
+        "id": "ROUTE-FAQ",
+        "summary": "FAQ: European Commission FAQ on Article 50 transparency obligations.",
+        "evidence_ids": [],
+        "locator": "https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act",
+        "authority_class": "advisory",
+        "required": true,
+        "adapter": "html"
+      },
+      {
+        "id": "ROUTE-POLICY",
+        "summary": "POLICY: Quillhaven internal AI-use policy and Article 50 review operating facts (Notion).",
+        "evidence_ids": [],
+        "locator": "https://private-pecorino-70e.notion.site/Project-2-Regulatory-Compliance-Current-Internal-Policies-3ba0b700541e81f09998d48f3b1c2856",
+        "authority_class": "company",
+        "required": true,
+        "adapter": "notion"
+      },
+      {
+        "id": "ROUTE-SYSTEMS",
+        "summary": "SYSTEMS: AI System Register maintained by Operations and system owners.",
+        "evidence_ids": [],
+        "locator": "https://docs.google.com/spreadsheets/d/10ky745H_1h9XbGCXPJsiRp5yfdeU08TZtmrsCMinGgU",
+        "authority_class": "company",
+        "required": true,
+        "adapter": "gsheet"
+      },
+      {
+        "id": "ROUTE-EVIDENCE",
+        "summary": "EVIDENCE: Incident and Evidence Register (incidents, gaps, exception requests).",
+        "evidence_ids": [],
+        "locator": "https://docs.google.com/spreadsheets/d/19BYZ68OSbsa1i9OfF6MzthrdC6q6mt6IWk6ucI8u7Rk",
+        "authority_class": "company",
+        "required": true,
+        "adapter": "gsheet"
+      },
+      {
+        "id": "ROUTE-CALENDAR",
+        "summary": "CALENDAR: Compliance Calendar of Operations-tracked actions with proposed owners and dates.",
+        "evidence_ids": [],
+        "locator": "https://docs.google.com/spreadsheets/d/1xtXl_P7Yb9LaECZjjgtlyI-idoAJTAhH-1gQ4vQaCGA",
+        "authority_class": "company",
+        "required": true,
+        "adapter": "gsheet"
+      }
+    ],
+    "project_evidence": [
+      {
+        "id": "ASSIGN-STATES",
+        "summary": "Impact states are supported-impact / supported-no-impact / conflicting / unresolved; preserve unresolved or conflicting records with source basis, reason, known owner and resolution need.",
+        "evidence_ids": [],
+        "locator": "Project B assignment, 'Snapshots and captured sources', paragraph on schema states",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "ASSIGN-BLOCK",
+        "summary": "When required legal authority is unavailable or unsuitable, withhold dependent formal conclusions and preserve a blocked/unresolved chain, register and brief with an empty or limited calendar. Explain whether other unsupported inputs require whole-run deferral or permit useful unaffected work, and keep that choice consistent across outputs.",
+        "evidence_ids": [],
+        "locator": "Project B assignment, 'Final drafts', paragraph after the table",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "ASSIGN-PUB",
+        "summary": "Stage 07 publication state describes draft validation, not human approval; do not label an unresolved authority blocker as normal validated publication.",
+        "evidence_ids": [],
+        "locator": "Project B assignment, 'Final drafts', stage 07 paragraph",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "ASSIGN-CAPTURE",
+        "summary": "Record every source attempt including failed and unused attempts; verify identity, version and suitability for the review date; a login or landing page is not the requested document; accept interview-disclosed routes as runtime inputs; do not replace a failed live read with an undisclosed local copy.",
+        "evidence_ids": [],
+        "locator": "Project B assignment, 'Snapshots and captured sources', stage 02 paragraph",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "ASSIGN-READONLY",
+        "summary": "Keep the work read-only: do not expose credentials, alter sources, give final legal advice, activate policy, change approved deadlines, close incidents, send official responses or write to a production calendar.",
+        "evidence_ids": [],
+        "locator": "Project B assignment, 'Your task', second paragraph",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "ASSIGN-CHANGED",
+        "summary": "Report missing/ambiguous required fields, conflicting identities, invalid values or unsuitable responses; do not guess renamed fields or changed business meanings.",
+        "evidence_ids": [],
+        "locator": "Project B assignment, 'Changed inputs and recovery'",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "ASSIGN-CAL",
+        "summary": "Proposed events use STATUS:TENTATIVE; omit undated events and explain them in the register/brief; an empty valid calendar is required when no dated proposal is supportable.",
+        "evidence_ids": [],
+        "locator": "Project B assignment, 'Final drafts' table, action-calendar.ics row",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "ASSIGN-REVIEW",
+        "summary": "Do not simulate replies or claim an unsent request reached a reviewer; validate response bindings before applying them; leave unmatched responses unresolved.",
+        "evidence_ids": [],
+        "locator": "Project B assignment, 'Review evidence'",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "INT1-L118",
+        "summary": "Legal obligations from binding text take precedence; for factual conflicts in the records, keep both reports separate and ask the system owner to resolve them.",
+        "evidence_ids": [],
+        "locator": "interviews/project-b-regulatory-compliance-20261006-1706.md line 118",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "INT1-L150",
+        "summary": "Conflicting records occur when owner claims contradict captured evidence, like REC-008. Unresolved means expected facts are missing or stale.",
+        "evidence_ids": [],
+        "locator": "interviews/project-b-regulatory-compliance-20261006-1706.md line 150",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "INT1-L166",
+        "summary": "Stale or invalid sources block formal legal conclusions until current and binding evidence is obtained.",
+        "evidence_ids": [],
+        "locator": "interviews/project-b-regulatory-compliance-20261006-1706.md line 166",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "INT1-L182",
+        "summary": "The run is blocked when necessary binding evidence is unavailable or unsuitable, e.g. a required source locator fails or returns outdated text.",
+        "evidence_ids": [],
+        "locator": "interviews/project-b-regulatory-compliance-20261006-1706.md line 182",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "INT1-L212",
+        "summary": "Operations determines proposed dates; if an owner cannot be identified or a dependency timeline is unknown, the date remains blank and visible.",
+        "evidence_ids": [],
+        "locator": "interviews/project-b-regulatory-compliance-20261006-1706.md line 212",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "INT1-L236",
+        "summary": "The automation cannot decide policy compliance, legal interpretations, exception approvals or operational deadlines.",
+        "evidence_ids": [],
+        "locator": "interviews/project-b-regulatory-compliance-20261006-1706.md line 236",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "INT1-L276",
+        "summary": "Retrieval time, source revision and business-effective date are separate.",
+        "evidence_ids": [],
+        "locator": "interviews/project-b-regulatory-compliance-20261006-1706.md line 276",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "INT2-L35",
+        "summary": "Company sources require authorized native access and are not meant to be publicly readable; access them through their official URLs with approved read-only permissions.",
+        "evidence_ids": [],
+        "locator": "interviews/project-b-regulatory-compliance-20261006-1750.md line 35",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "INT2-L52",
+        "summary": "LAW, OJ, AMEND and CONSOLIDATED are all required; the legislative routes travel together.",
+        "evidence_ids": [],
+        "locator": "interviews/project-b-regulatory-compliance-20261006-1750.md line 52",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "INT2-L69",
+        "summary": "If TIME or FAQ is unavailable we must pause; the stakeholder wants useful unaffected work but worries a partial package will look complete.",
+        "evidence_ids": [],
+        "locator": "interviews/project-b-regulatory-compliance-20261006-1750.md lines 69 and 76",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "INT2-L88",
+        "summary": "Interviewer proposed marking affected items unresolved or blocked, explaining what is missing and who resolves it, and stating in the brief that the conclusion was withheld; the stakeholder responded that this protects Legal and Operations from assumptions.",
+        "evidence_ids": [],
+        "locator": "interviews/project-b-regulatory-compliance-20261006-1750.md lines 88-92",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "INT2-L100",
+        "summary": "The authoritative version is the binding text effective for 26 August 2026, reconciled against the Official Journal acts and applicable amendments, with Legal confirming.",
+        "evidence_ids": [],
+        "locator": "interviews/project-b-regulatory-compliance-20261006-1750.md line 100",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "INT2-L108",
+        "summary": "Use the official Article 50 paragraph text; Legal owns the final interpretation of applicability.",
+        "evidence_ids": [],
+        "locator": "interviews/project-b-regulatory-compliance-20261006-1750.md line 108",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "INT2-L116",
+        "summary": "If a company source is unavailable, pause until all required records are available; every scoped system needs its actual evidence and owner.",
+        "evidence_ids": [],
+        "locator": "interviews/project-b-regulatory-compliance-20261006-1750.md line 116",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "INT2-L124",
+        "summary": "A blocked run pauses the entire review until required sources are restored; a partial run might evaluate available unaffected information while keeping unresolved items marked with missing facts and ownership.",
+        "evidence_ids": [],
+        "locator": "interviews/project-b-regulatory-compliance-20261006-1750.md line 124",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "INT2-L132",
+        "summary": "The automation proposes actions from findings and must account for existing CALENDAR actions to prevent duplication or loss of work.",
+        "evidence_ids": [],
+        "locator": "interviews/project-b-regulatory-compliance-20261006-1750.md line 132",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "INT2-L140",
+        "summary": "Undated actions remain visible in the draft calendar and brief; they are omitted from the final ICS export.",
+        "evidence_ids": [],
+        "locator": "interviews/project-b-regulatory-compliance-20261006-1750.md line 140",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "INT2-L148",
+        "summary": "For REC-008 the system owner claims a notice banner exists but the current capture shows none; record it in the impact register as unresolved and assigned to the owner for verification.",
+        "evidence_ids": [],
+        "locator": "interviews/project-b-regulatory-compliance-20261006-1750.md line 148",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "INT2-L164",
+        "summary": "System owners resolve factual inconsistencies such as REC-008; Legal owns interpretation and exceptions; Operations manages activation and dates.",
+        "evidence_ids": [],
+        "locator": "interviews/project-b-regulatory-compliance-20261006-1750.md line 164",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "INSPECT-EVIDENCE-REC-008",
+        "summary": "REC-008 | AI-007 | incident | 2026-08-21 | Marketing | open | avatar-page-capture | conflicting | Owner says a banner exists but the current capture shows none.",
+        "evidence_ids": [],
+        "locator": "EVIDENCE sheet (Incident Evidence Register), row record_id=REC-008, inspected 2026-10-06",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "INSPECT-EVIDENCE-REC-003",
+        "summary": "REC-003 | AI-003 | incident | 2026-08-24 | Communications | open | social-post-884 | conflicting | Visible label exists but exported platform copy may have lost metadata.",
+        "evidence_ids": [],
+        "locator": "EVIDENCE sheet, row record_id=REC-003, inspected 2026-10-06",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "INSPECT-SYSTEMS-AI-007",
+        "summary": "AI-007 Website Guide Avatar, owner Marketing, current_notice=no, evidence_status=conflicting, record_version=register-2026-08-26.",
+        "evidence_ids": [],
+        "locator": "SYSTEMS sheet (AI System Register), row system_id=AI-007, inspected 2026-10-06",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "INSPECT-POLICY-STATES",
+        "summary": "missing, stale, conflicting, and not-applicable are different evidence states. Missing evidence must not be converted to compliance or non-compliance.",
+        "evidence_ids": [],
+        "locator": "POLICY Notion page, 'Evidence and exceptions' bullet 2, inspected 2026-10-06",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "INSPECT-POLICY-AI-007",
+        "summary": "The owner/banner and current-capture conflict in REC-008 remains unresolved.",
+        "evidence_ids": [],
+        "locator": "POLICY Notion page, 'Actual use and content' > AI-007, inspected 2026-10-06",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "INSPECT-ACCESS",
+        "summary": "All ten disclosed URLs returned HTTP 200 without credentials. Google Sheet /edit pages are JavaScript shells; /export?format=csv returns the data; XLSX export shows exactly one tab per sheet. The Notion HTML is a JavaScript shell; content was returned by the page's own loadCachedPageChunkV2 endpoint, and getPublicPageData reports publicAccessRole=reader and requireLogin=false.",
+        "evidence_ids": [],
+        "locator": "Source access probe, 2026-10-06 (session scratchpad)",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "INSPECT-LEGAL-VERSIONS",
+        "summary": "OJ 2024/1689 Art 113 applies from 2 Aug 2026; AMEND 2026/1744 published OJ L 24.7.2026, enters into force on the third day after publication, replaces Art 50(7); CONSOLIDATED 02024R1689-20260727 marks the amendments ▼M1, adds Art 111(4) (Art 50(2) transition to 2 Dec 2026).",
+        "evidence_ids": [],
+        "locator": "Legal source inspection, 2026-10-06",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "INSPECT-CALENDAR",
+        "summary": "Columns action_id, system_id, action, owner, due_date, status, approval_required, source_version; ACT-001..ACT-008 all dated; approval_required is operations or legal; no approval outcome column exists.",
+        "evidence_ids": [],
+        "locator": "CALENDAR sheet (Compliance Calendar), inspected 2026-10-06",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "DEV-REDACTION-2026-10-06",
+        "summary": "Redact the Notion workspace member/user table (third-party names, user IDs, profile-photo links) from the saved POLICY capture before committing, preserving all policy/content-bearing data, locators and metadata.",
+        "evidence_ids": [],
+        "locator": "Project developer instruction, 2026-10-06 (pre-commit hygiene review)",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "INSPECT-NOTION-USERS",
+        "summary": "The page-chunk response includes recordMap.notion_user with 5 workspace members (name, user ID, profile-photo link; email blank). Member IDs and names occur nowhere else in the response; blocks carry no creator/editor IDs; other non-block tables are access-role stubs.",
+        "evidence_ids": [],
+        "locator": "POLICY capture inspection, 2026-10-06",
+        "owner": null,
+        "rationale": null
+      }
+    ],
+    "decision_approval_note": "No stakeholder or facilitator has approved any of these decisions. D-001 to D-003 were made independently by the project developer. D-004 to D-008 are implementation decisions made while building the skill and are awaiting the developer's review."
+  },
+  "unresolved": [],
+  "decisions": [
+    {
+      "id": "D-002",
+      "summary": "Define the run states: blocked if any required source fails, partial if record-level gaps remain, complete if everything is supported, failed on a technical fault. Map them to stage 07 publication status.",
+      "concern": "The assignment leaves open whether unsupported inputs force whole-run deferral or permit useful unaffected work. The stakeholder said both 'we must pause until all required records are available' and 'I want useful unaffected work', and also defined partial as evaluating unaffected information. A rule is needed that produces consistent run, snapshot, register, brief and calendar states.",
+      "options": [
+        {
+          "option": "Abort and produce nothing when any source fails.",
+          "assessment": "Honours 'pause' literally but discards source attempts and evidence; contradicts the assignment's requirement to preserve a blocked/unresolved chain, register and brief."
+        },
+        {
+          "option": "Treat only binding legal source failures as blocking; continue partially when company or guidance sources fail.",
+          "assessment": "Produces more output, but contradicts the stakeholder's explicit 'pause' for TIME, FAQ and company sources and risks the misleading completeness they warned about."
+        },
+        {
+          "option": "Block on any required source failure while still emitting the evidence-preserving withheld-conclusions package; reserve partial for record-level gaps when every source was retrieved and verified.",
+          "assessment": "Matches the stakeholder's pause rule and concern about misleading completeness, and the assignment's requirement to preserve the blocked chain."
+        },
+        {
+          "option": "Track which conclusion depends on which source and withhold only those.",
+          "assessment": "More output in a blocked run, but fragile: the Article 50 text, amendments and dates are spread across OJ, AMEND, CONSOLIDATED and LAW, and the stakeholder said the routes travel together."
+        }
+      ],
+      "source_basis": [
+        "ASSIGN-BLOCK",
+        "ASSIGN-PUB",
+        "INT1-L166",
+        "INT1-L182",
+        "INT2-L52",
+        "INT2-L69",
+        "INT2-L88",
+        "INT2-L116",
+        "INT2-L124",
+        "INT2-L100",
+        "INT1-L276"
+      ],
+      "chosen_behavior": "All ten sources are required runtime retrievals, classified by authority: binding legal (OJ, AMEND, CONSOLIDATED); official advisory or interpretive (LAW, TIME, FAQ); company (POLICY, SYSTEMS, EVIDENCE, CALENDAR). Run states: 'blocked' when any required source is unavailable, invalid or unsuitable (this includes TIME or FAQ, because the stakeholder required the set to travel together, even though they are not binding authority). 'partial' when every required source is retrieved and verified but individual records hold missing, stale, partial or conflicting information. 'complete' when every required source is retrieved and verified and every in-scope item reaches a supported state. 'failed' when a technical fault prevents reliable generation or validation of the required outputs. A blocked run does not crash or discard work. It keeps the source attempts, captured evidence, factual reconciliation, unresolved and conflicting items and the blocked/unresolved chain. All formal Article 50 conclusions for the run are withheld (no conclusion-to-source dependency tracking), and factual reconciliation may continue. The final calendar is empty in a blocked run. Stage 07 publication_status: blocked→blocked, partial→validated, complete→validated, failed→failed. 'Unsuitable' is decided by observable checks recorded in stage 02:\n- expected identity or title\n- expected legal identifier (CELEX or ELI) where relevant\n- required Article 50 content or anchor\n- a version or date appropriate to the 26 Aug 2026 review: a consolidated version on or before the review date, and an amendment in force by the review date\n- not a login or landing page\n- the expected record structure for company sources\nIdentity or structure failures make a source 'invalid'. A source whose only failing checks are version or date checks is 'stale' (for example a consolidated version later than the review date, or an amendment not in force by it). A transport failure is 'unavailable', with null content and a null hash. Retrieval time, source revision or version, effective date and review date are kept as separate facts.",
+      "rationale": "This follows the stakeholder's pause rule for every source and their concern about misleading completeness, while still meeting the assignment's requirement to preserve the blocked chain, register and brief. Withholding all Article 50 conclusions on any failure avoids brittle dependency tracking across sources the stakeholder treats as one set. Observable suitability checks make 'stale' and 'unsuitable' repeatable instead of judgment calls.",
+      "tradeoffs": [
+        "A transient outage of a non-binding guidance page (TIME or FAQ) blocks the whole run, even though the binding text may be available.",
+        "Blocked runs give Legal and Operations no draft Article 50 conclusions at all, only the evidence and reconciliation.",
+        "The empty calendar in a blocked run drops dated CALENDAR actions that might be independently supportable; they stay visible in the register and brief.",
+        "With current source data the best achievable state is 'partial', because several records are missing, stale or conflicting; 'complete' needs owners to resolve them."
+      ],
+      "downstream_effect": [
+        "Stage 02 records every attempt with retrieval_status and suitability checks.",
+        "Stage 03 lists authority_blockers.",
+        "Stage 05 marks every legal-rule row 'unresolved' with a withheld reason in a blocked run.",
+        "Every snapshot's status and the brief's run status follow the run state.",
+        "Stage 07 publication_status follows the mapping.",
+        "The calendar is empty in a blocked run."
+      ],
+      "evidence_ids": [
+        "ASSIGN-BLOCK",
+        "ASSIGN-PUB",
+        "INT2-L52",
+        "INT2-L69",
+        "INT2-L116",
+        "INT2-L124",
+        "INT1-L182"
+      ],
+      "owner": "Project developer",
+      "decided_by": "Project developer (independent decision; no stakeholder or facilitator approval)",
+      "stages": [
+        "scope",
+        "authority-and-timing",
+        "publication-validation"
+      ]
+    },
+    {
+      "id": "D-007",
+      "summary": "Represent the as-of date as end of the Dublin business day on 26 Aug 2026. Accept legitimately newer source revisions while recording them separately, and judge legal versions against the review date.",
+      "concern": "The review is fixed at 26 Aug 2026, but sources are retrieved later. Some revisions postdate the review date (the POLICY context revision of 12 Sep 2026; guidance pages modified in October 2026).",
+      "options": [
+        {
+          "option": "Reject any source revised after the as-of date.",
+          "assessment": "Would block every run, since live pages are always current; contradicts the assignment's acceptance of legitimate newer versions."
+        },
+        {
+          "option": "Accept newer revisions, record them separately, and require binding legal versions to be in force on the review date.",
+          "assessment": "Keeps the review date fixed and the version facts visible."
+        }
+      ],
+      "source_basis": [
+        "INT1-L276",
+        "INT2-L100",
+        "ASSIGN-CHANGED",
+        "INSPECT-LEGAL-VERSIONS"
+      ],
+      "chosen_behavior": "as_of = 2026-08-26T23:59:59+01:00, with as_of_date 2026-08-26, which is never changed. Each source records retrieved_at, its in-source revision, its effective date and its HTTP Last-Modified header separately. CONSOLIDATED is suitable only if its version date is on or before the as-of date. AMEND is suitable only if its entry-into-force date (computed from the stated publication date plus the stated third day) is on or before the as-of date. The OJ is suitable if it identifies Regulation (EU) 2024/1689. Advisory and company sources revised after the as-of date are accepted as the current retrieved revision, with the later revision disclosed as a limitation. Company records reported after the as-of date are flagged.",
+      "rationale": "Keeps the review date fixed while preserving later evidence and its uncertainty, as the stakeholder described.",
+      "tradeoffs": [
+        "Accepted guidance revisions dated after the as-of date may not match what was published on 26 Aug; this is disclosed but not corrected.",
+        "The entry-into-force computation depends on the publication-date text pattern."
+      ],
+      "downstream_effect": [
+        "Stage 01 as_of.",
+        "Stage 02 version_metadata.",
+        "Stage 03 timing rules.",
+        "The brief's source quality and limitations section."
+      ],
+      "evidence_ids": [
+        "INT1-L276",
+        "INT2-L100",
+        "INSPECT-LEGAL-VERSIONS"
+      ],
+      "owner": "Project developer",
+      "decided_by": "Implementation decision (Claude), awaiting project developer review",
+      "stages": [
+        "scope",
+        "source-capture",
+        "authority-and-timing"
+      ]
+    }
+  ]
+}

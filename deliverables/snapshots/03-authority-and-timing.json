@@ -1,0 +1,315 @@
+{
+  "schema_version": "regulatory-compliance-stage-snapshot/2",
+  "snapshot_id": "RCIB-20261006T204836Z-4ec0-S03",
+  "run_id": "RCIB-20261006T204836Z-4ec0",
+  "stage": "authority-and-timing",
+  "sequence": 3,
+  "created_at": "2026-10-06T20:48:43Z",
+  "status": "complete",
+  "predecessor": {
+    "snapshot_id": "RCIB-20261006T204836Z-4ec0-S02",
+    "path": "deliverables/snapshots/02-source-capture.json",
+    "sha256": "sha256:7d327cca3bc966672b843af7835f7ee812ac2a3a19b90a0c394a3e691f80bec8"
+  },
+  "consumed_record_ids": [
+    "ATT-AMEND-1",
+    "ATT-CONSOLIDATED-1",
+    "ATT-FAQ-1",
+    "ATT-LAW-1",
+    "ATT-OJ-1",
+    "ATT-TIME-1",
+    "D-002",
+    "EXT-AMEND-EIF",
+    "EXT-AMEND-ITEM-20",
+    "EXT-AMEND-ITEM-39",
+    "EXT-AMEND-ITEM-40",
+    "EXT-AMEND-PUBLICATION",
+    "EXT-CONSOLIDATED-ART111-4",
+    "EXT-CONSOLIDATED-ART113",
+    "EXT-CONSOLIDATED-ART50-1",
+    "EXT-CONSOLIDATED-ART50-2",
+    "EXT-CONSOLIDATED-ART50-3",
+    "EXT-CONSOLIDATED-ART50-4",
+    "EXT-CONSOLIDATED-ART50-5",
+    "EXT-CONSOLIDATED-ART50-6",
+    "EXT-CONSOLIDATED-ART50-7",
+    "EXT-FAQ-INTRO",
+    "EXT-FAQ-LAST-UPDATE",
+    "EXT-LAW-ART50-1",
+    "EXT-LAW-DISCLAIMER",
+    "EXT-OJ-ART113",
+    "EXT-OJ-ART50-7",
+    "EXT-TIME-2026-08-02",
+    "EXT-TIME-2026-12-02",
+    "SCOPE-AS-OF"
+  ],
+  "produced_record_ids": [
+    "CTX-ART50-6",
+    "CTX-ART50-7",
+    "D-004",
+    "GUIDE-FAQ",
+    "GUIDE-LAW",
+    "GUIDE-TIME-2026-08-02",
+    "GUIDE-TIME-2026-12-02",
+    "REC-ART50-7-AMENDED",
+    "RULE-L-50-1",
+    "RULE-L-50-2",
+    "RULE-L-50-3",
+    "RULE-L-50-4-DF",
+    "RULE-L-50-4-TXT",
+    "TIME-AMEND-EIF",
+    "TIME-ART111-4",
+    "TIME-ART113-GENERAL"
+  ],
+  "state": {
+    "binding_rules": [
+      {
+        "id": "RULE-L-50-1",
+        "summary": "EU AI Act Art. 50(1) [binding]: Providers design direct-interaction AI systems so people are informed they are interacting with AI, unless obvious; information given per Art. 50(5).",
+        "evidence_ids": [
+          "EXT-CONSOLIDATED-ART50-1",
+          "EXT-CONSOLIDATED-ART50-5"
+        ],
+        "owner": "Legal (final interpretation)",
+        "rationale": "Rule text located in the binding consolidated text (version 2026-07-27, on or before the review date).",
+        "rule_id": "L-50-1",
+        "rule_ref": "EU AI Act Art. 50(1) [binding]",
+        "actor": "provider",
+        "located": true,
+        "paragraph_text": "Providers shall ensure that AI systems intended to interact directly with natural persons are designed and developed in such a way that the natural persons concerned are informed that they are interacting with an AI system, unless this is obvious from the point of view of a natural person who is reasonably well-informed, observant and circumspect, taking into account the circumstances and the context of use. This obligation shall not apply to AI systems authorised by law to detect, prevent, investigate or prosecute criminal offences, subject to appropriate safeguards for the rights and freedoms of third parties, unless those systems are available for the public to report a criminal offence.",
+        "manner_and_timing": "The information referred to in paragraphs 1 to 4 shall be provided to the natural persons concerned in a clear and distinguishable manner at the latest at the time of the first interaction or exposure. The information shall conform to the applicable accessibility requirements."
+      },
+      {
+        "id": "RULE-L-50-2",
+        "summary": "EU AI Act Art. 50(2) [binding]: Providers of systems generating synthetic audio, image, video or text mark outputs machine-readably and detectably.",
+        "evidence_ids": [
+          "EXT-CONSOLIDATED-ART50-2",
+          "EXT-CONSOLIDATED-ART50-5"
+        ],
+        "owner": "Legal (final interpretation)",
+        "rationale": "Rule text located in the binding consolidated text (version 2026-07-27, on or before the review date).",
+        "rule_id": "L-50-2",
+        "rule_ref": "EU AI Act Art. 50(2) [binding]",
+        "actor": "provider",
+        "located": true,
+        "paragraph_text": "Providers of AI systems, including general-purpose AI systems, generating synthetic audio, image, video or text content, shall ensure that the outputs of the AI system are marked in a machine-readable format and detectable as artificially generated or manipulated. Providers shall ensure their technical solutions are effective, interoperable, robust and reliable as far as this is technically feasible, taking into account the specificities and limitations of various types of content, the costs of implementation and the generally acknowledged state of the art, as may be reflected in relevant technical standards. This obligation shall not apply to the extent the AI systems perform an assistive function for standard editing or do not substantially alter the input data provided by the deployer or the semantics thereof, or where authorised by law to detect, prevent, investigate or prosecute criminal offences.",
+        "manner_and_timing": "The information referred to in paragraphs 1 to 4 shall be provided to the natural persons concerned in a clear and distinguishable manner at the latest at the time of the first interaction or exposure. The information shall conform to the applicable accessibility requirements."
+      },
+      {
+        "id": "RULE-L-50-3",
+        "summary": "EU AI Act Art. 50(3) [binding]: Deployers of emotion recognition or biometric categorisation systems inform exposed persons; information given per Art. 50(5).",
+        "evidence_ids": [
+          "EXT-CONSOLIDATED-ART50-3",
+          "EXT-CONSOLIDATED-ART50-5"
+        ],
+        "owner": "Legal (final interpretation)",
+        "rationale": "Rule text located in the binding consolidated text (version 2026-07-27, on or before the review date).",
+        "rule_id": "L-50-3",
+        "rule_ref": "EU AI Act Art. 50(3) [binding]",
+        "actor": "deployer",
+        "located": true,
+        "paragraph_text": "Deployers of an emotion recognition system or a biometric categorisation system shall inform the natural persons exposed thereto of the operation of the system, and shall process the personal data in accordance with Regulations (EU) 2016/679 and (EU) 2018/1725 and Directive (EU) 2016/680, as applicable. This obligation shall not apply to AI systems used for biometric categorisation and emotion recognition, which are permitted by law to detect, prevent or investigate criminal offences, subject to appropriate safeguards for the rights and freedoms of third parties, and in accordance with Union law.",
+        "manner_and_timing": "The information referred to in paragraphs 1 to 4 shall be provided to the natural persons concerned in a clear and distinguishable manner at the latest at the time of the first interaction or exposure. The information shall conform to the applicable accessibility requirements."
+      },
+      {
+        "id": "RULE-L-50-4-DF",
+        "summary": "EU AI Act Art. 50(4) first subpara. (deep fake) [binding]: Deployers disclose that deep-fake image, audio or video content is artificially generated or manipulated (limited for evidently artistic or fictional works); information given per Art. 50(5).",
+        "evidence_ids": [
+          "EXT-CONSOLIDATED-ART50-4",
+          "EXT-CONSOLIDATED-ART50-5"
+        ],
+        "owner": "Legal (final interpretation)",
+        "rationale": "Rule text located in the binding consolidated text (version 2026-07-27, on or before the review date).",
+        "rule_id": "L-50-4-DF",
+        "rule_ref": "EU AI Act Art. 50(4) first subpara. (deep fake) [binding]",
+        "actor": "deployer",
+        "located": true,
+        "paragraph_text": "Deployers of an AI system that generates or manipulates image, audio or video content constituting a deep fake, shall disclose that the content has been artificially generated or manipulated. This obligation shall not apply where the use is authorised by law to detect, prevent, investigate or prosecute criminal offence. Where the content forms part of an evidently artistic, creative, satirical, fictional or analogous work or programme, the transparency obligations set out in this paragraph are limited to disclosure of the existence of such generated or manipulated content in an appropriate manner that does not hamper the display or enjoyment of the work. Deployers of an AI system that generates or manipulates text which is published with the purpose of informing the public on matters of public interest shall disclose that the text has been artificially generated or manipulated. This obligation shall not apply where the use is authorised by law to detect, prevent, investigate or prosecute criminal offences or where the AI-generated content has undergone a process of human review or editorial control and where a natural or legal person holds editorial responsibility for the publication of the content.",
+        "manner_and_timing": "The information referred to in paragraphs 1 to 4 shall be provided to the natural persons concerned in a clear and distinguishable manner at the latest at the time of the first interaction or exposure. The information shall conform to the applicable accessibility requirements."
+      },
+      {
+        "id": "RULE-L-50-4-TXT",
+        "summary": "EU AI Act Art. 50(4) second subpara. (public-interest text) [binding]: Deployers disclose AI-generated text published to inform the public on matters of public interest, unless human-reviewed under editorial responsibility.",
+        "evidence_ids": [
+          "EXT-CONSOLIDATED-ART50-4",
+          "EXT-CONSOLIDATED-ART50-5"
+        ],
+        "owner": "Legal (final interpretation)",
+        "rationale": "Rule text located in the binding consolidated text (version 2026-07-27, on or before the review date).",
+        "rule_id": "L-50-4-TXT",
+        "rule_ref": "EU AI Act Art. 50(4) second subpara. (public-interest text) [binding]",
+        "actor": "deployer",
+        "located": true,
+        "paragraph_text": "Deployers of an AI system that generates or manipulates image, audio or video content constituting a deep fake, shall disclose that the content has been artificially generated or manipulated. This obligation shall not apply where the use is authorised by law to detect, prevent, investigate or prosecute criminal offence. Where the content forms part of an evidently artistic, creative, satirical, fictional or analogous work or programme, the transparency obligations set out in this paragraph are limited to disclosure of the existence of such generated or manipulated content in an appropriate manner that does not hamper the display or enjoyment of the work. Deployers of an AI system that generates or manipulates text which is published with the purpose of informing the public on matters of public interest shall disclose that the text has been artificially generated or manipulated. This obligation shall not apply where the use is authorised by law to detect, prevent, investigate or prosecute criminal offences or where the AI-generated content has undergone a process of human review or editorial control and where a natural or legal person holds editorial responsibility for the publication of the content.",
+        "manner_and_timing": "The information referred to in paragraphs 1 to 4 shall be provided to the natural persons concerned in a clear and distinguishable manner at the latest at the time of the first interaction or exposure. The information shall conform to the applicable accessibility requirements."
+      }
+    ],
+    "timing_rules": [
+      {
+        "id": "REC-ART50-7-AMENDED",
+        "summary": "Article 50(7) differs between OJ and CONSOLIDATED; the difference is explained by AMEND (Regulation (EU) 2026/1744), which replaces paragraph 7. CONSOLIDATED text is used.",
+        "evidence_ids": [
+          "EXT-AMEND-ITEM-20",
+          "EXT-AMEND-ITEM-39",
+          "EXT-AMEND-ITEM-40",
+          "EXT-CONSOLIDATED-ART50-7",
+          "EXT-OJ-ART50-7"
+        ],
+        "owner": "Legal",
+        "rationale": "Reconciled against the Official Journal acts and applicable amendment."
+      },
+      {
+        "id": "TIME-ART113-GENERAL",
+        "summary": "Article 113: the Regulation applies from 2026-08-02 (general date; Article 50 is not listed among the exceptions). Review date 2026-08-26 is on or after that date.",
+        "evidence_ids": [
+          "EXT-CONSOLIDATED-ART113",
+          "EXT-OJ-ART113"
+        ],
+        "owner": "Legal",
+        "rationale": "Binding application date compared with the fixed review date; Legal confirms.",
+        "effective_date": "2026-08-02",
+        "review_date": "2026-08-26"
+      },
+      {
+        "id": "TIME-ART111-4",
+        "summary": "Article 111(4): providers of generative AI systems placed on the market before 2026-08-02 must comply with Article 50(2) by 2026-12-02. Applies to providers only.",
+        "evidence_ids": [
+          "EXT-CONSOLIDATED-ART111-4"
+        ],
+        "owner": "Legal",
+        "rationale": "Transitional provision introduced by AMEND.",
+        "effective_date": "2026-12-02"
+      },
+      {
+        "id": "TIME-AMEND-EIF",
+        "summary": "Regulation (EU) 2026/1744 published 2026-07-24; entry into force computed as 2026-07-27 (third day after publication), on or before the review date.",
+        "evidence_ids": [
+          "EXT-AMEND-EIF",
+          "EXT-AMEND-PUBLICATION"
+        ],
+        "owner": "Legal",
+        "rationale": "Computed from the amendment's own publication reference and entry-into-force article.",
+        "effective_date": "2026-07-27"
+      }
+    ],
+    "guidance_context": [
+      {
+        "id": "CTX-ART50-6",
+        "summary": "Article 50(6) recorded as context; it creates no system-level duty assessed per system in this review.",
+        "evidence_ids": [
+          "EXT-CONSOLIDATED-ART50-6"
+        ],
+        "owner": "Legal",
+        "rationale": "Context only (D-004)."
+      },
+      {
+        "id": "CTX-ART50-7",
+        "summary": "Article 50(7) recorded as context; it creates no system-level duty assessed per system in this review.",
+        "evidence_ids": [
+          "EXT-CONSOLIDATED-ART50-7"
+        ],
+        "owner": "Legal",
+        "rationale": "Context only (D-004)."
+      },
+      {
+        "id": "GUIDE-TIME-2026-08-02",
+        "summary": "TIME milestone 2026-08-02: 02 Aug 2026 The majority of rules of the AI Act come into force and enforcement starts for applicable rules Transparency rules (Article 50) start to apply. Measures in support of innovation start apply. Enforcement of the AI Act starts at national and EU-level concerning general-purpose AI models, p",
+        "evidence_ids": [
+          "EXT-TIME-2026-08-02"
+        ],
+        "owner": "European Commission (advisory)",
+        "rationale": "Official timeline guidance; not binding."
+      },
+      {
+        "id": "GUIDE-TIME-2026-12-02",
+        "summary": "TIME milestone 2026-12-02: 02 Dec 2026 New prohibitions + Article 50(2) transition apply ** Prohibitions, for AI systems generating non-consensual sexual deepfakes and child sexual abuse material, start to apply. Transitional deadline for certain providers of AI systems, including GPAI systems, generating synthetic content, t",
+        "evidence_ids": [
+          "EXT-TIME-2026-12-02"
+        ],
+        "owner": "European Commission (advisory)",
+        "rationale": "Official timeline guidance; not binding."
+      },
+      {
+        "id": "GUIDE-FAQ",
+        "summary": "Commission FAQ on Article 50 transparency obligations (advisory; page last update 2026-07-24).",
+        "evidence_ids": [
+          "EXT-FAQ-INTRO",
+          "EXT-FAQ-LAST-UPDATE"
+        ],
+        "owner": "European Commission (advisory)",
+        "rationale": "Interpretive guidance; not binding."
+      },
+      {
+        "id": "GUIDE-LAW",
+        "summary": "AI Act Service Desk Article 50 page; its summaries state they are not legally binding. The binding text is taken from CONSOLIDATED.",
+        "evidence_ids": [
+          "EXT-LAW-ART50-1",
+          "EXT-LAW-DISCLAIMER"
+        ],
+        "owner": "European Commission (advisory)",
+        "rationale": "Official route; advisory presentation."
+      }
+    ],
+    "authority_blockers": []
+  },
+  "unresolved": [],
+  "decisions": [
+    {
+      "id": "D-004",
+      "summary": "Derive impact states per system and rule from a declared rule catalogue. Each EVIDENCE record is attributed only to the rules whose evidence subjects its own text names, so states are not propagated across a whole system. Never emit compliant or non-compliant findings.",
+      "concern": "The register needs a state for each distinct system/rule item. The stakeholder defined supported impact, supported no-impact, conflicting and unresolved in words, and Legal owns final interpretation of applicability. The automation needs a repeatable, inspectable mapping that does not invent facts or make legal findings.",
+      "options": [
+        {
+          "option": "Free-text interpretation of the policy and legal text on each run.",
+          "assessment": "Not repeatable or inspectable; risks the automation making unreviewable legal interpretations."
+        },
+        {
+          "option": "Hard-code per-system outcomes.",
+          "assessment": "Becomes a local substitute for live sources and breaks when facts change."
+        },
+        {
+          "option": "Declared rule catalogue with applicability conditions on live structured fields and live POLICY statements located by declared cue phrases, with conservative evidence-state rules and unknowns falling to unresolved.",
+          "assessment": "Repeatable, traceable to extracts, fails safe when wording changes, and clearly a draft interpretation for Legal."
+        },
+        {
+          "option": "Apply a system's worst evidence state (SYSTEMS evidence_status plus all its EVIDENCE records) to every applicable rule for that system (the first implementation).",
+          "assessment": "Simple and conservative, but it propagates one control's gap or conflict to unrelated rules. Rejected on developer review on 2026-10-06."
+        }
+      ],
+      "source_basis": [
+        "ASSIGN-STATES",
+        "INT1-L150",
+        "INT2-L108",
+        "INT1-L236",
+        "INSPECT-POLICY-STATES",
+        "INSPECT-EVIDENCE-REC-003"
+      ],
+      "chosen_behavior": "Rules (references/rules.json):\n- binding Article 50 rules L-50-1, L-50-2, L-50-3, L-50-4-DF and L-50-4-TXT (paragraph 5 is the manner-and-timing condition attached to them; paragraphs 6 and 7 are context)\n- POLICY rules POL-T1, POL-T2-PROV, POL-T2-LABEL and POL-T3\nEvery in-scope system is evaluated against every rule.\n\nApplicability comes from SYSTEMS fields (provider_role, deployer_role, exposed_group, output_type) and from POLICY per-system statements located by declared cue phrases. If a needed fact is unknown or its cue is absent, the row is 'unresolved'.\n\nEvidence is attributed at the system and rule level. Each rule declares its evidence subjects:\n- interaction-notice\n- provenance-marking\n- visible-label-disclosure\n- text-output-route\n- provider-role\n- emotion-biometric\nEach subject declares the words that identify it in a record's own evidence_ref and notes (exception_request records count as visible-label-disclosure). A record is attributed only to the subjects it names. A record naming none is 'unattributed' context and affects no row. A record naming several subjects keeps its single recorded state for each rule it names; the automation does not split it, and the reason discloses this. The SYSTEMS evidence_status summary is not propagated to rows.\n\nOne exception: if the SYSTEMS register entry is 'stale', the applicability facts for every rule of that system are stale, so all its rows are 'unresolved'. These rows link to the system's CALENDAR action under D-005.\n\nFor each row:\n- an attributed applicability record (provider-role or emotion-biometric) that is not complete → 'unresolved' ('conflicting' if that record conflicts)\n- rule not applicable on recorded facts → 'supported-no-impact'\n- rule applies:\n  - no attributed control record → 'unresolved'\n  - any attributed record conflicting → 'conflicting'\n  - any attributed record stale, missing or partial → 'unresolved'\n  - otherwise → 'supported-impact', with the control described as evidenced or as a recorded gap (for example current_notice=no)\n\nBinding-law rows are draft readings for Legal. Actor role, applicability and interpretation are Legal's (see the brief's Legal-review boundary section).",
+      "rationale": "Each conclusion stays traceable to the specific records that bear on that rule, so an unrelated gap or conflict on the same system does not change it. This keeps the stakeholder's definitions (missing or stale facts give unresolved; contradictory claims give conflicting) at the level where they apply, and keeps the law and policy bases separately identifiable.",
+      "tradeoffs": [
+        "Subject words are matched in free-text notes. A record worded without any subject word is unattributed, so a rule that depends on it shows 'unresolved' (no attributable evidence). This is a safe failure, but it needs the catalogue updated if record wording changes.",
+        "A record naming two subjects (REC-003 and REC-009 name both a label and provenance) applies its single state to both rules. With current data, AI-003's label row stays 'conflicting' because REC-003 is one conflicting record; the owner or Legal must split it.",
+        "Stale register facts still affect every row for that system (AI-005), because the stale facts are the applicability inputs, not a single control's evidence.",
+        "A full system × rule matrix (72 rows) is long; the brief summarizes it."
+      ],
+      "downstream_effect": [
+        "Stage 04 tags each incident_evidence record with evidence_subjects and an attribution note.",
+        "Stage 05 impact records carry attributed_record_ids and cite only attributed records.",
+        "The register 'reason' names the attributed records and discloses multi-subject records.",
+        "The post-run verifier checks that every cited record is attributed to that rule (CHK-D004-*)."
+      ],
+      "evidence_ids": [
+        "ASSIGN-STATES",
+        "INT1-L150",
+        "INT2-L108",
+        "INSPECT-POLICY-STATES"
+      ],
+      "owner": "Project developer",
+      "decided_by": "Implementation decision (Claude), revised at the project developer's request on 2026-10-06 (rule-level evidence states); awaiting developer review",
+      "stages": [
+        "authority-and-timing",
+        "impact-analysis"
+      ]
+    }
+  ]
+}

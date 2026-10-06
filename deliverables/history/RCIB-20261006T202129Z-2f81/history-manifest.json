@@ -1,0 +1,40 @@
+{
+  "archived_run_id": "RCIB-20261006T202129Z-2f81",
+  "archived_at": "2026-10-06T20:47:32Z",
+  "archived_run_status": "partial",
+  "files_archived": [
+    "snapshots",
+    "sources",
+    "impact-register.csv",
+    "compliance-brief.md",
+    "action-calendar.ics",
+    "run-verification.json"
+  ],
+  "expected_files_missing_at_archive_time": [],
+  "integrity_at_archive_time": {
+    "ok": true,
+    "failed_checks": []
+  },
+  "note": "Retained exactly as found before the superseding run; missing or damaged evidence is recorded, not repaired.",
+  "post_run_redactions": [
+    {
+      "file": "deliverables/history/RCIB-20261006T202129Z-2f81/snapshots/02-source-capture.json",
+      "redacted_at": "2026-10-06T20:48:08Z",
+      "reason": "Removal of signed, time-limited Google export redirect URLs (access signature, expiry and the sheet owner's account ID) from recorded final_url values before repository publication. The requested locator, retrieval status, content hash and preserved bytes are unchanged.",
+      "removed": {
+        "final_url signed redirect paths": [
+          "ATT-SYSTEMS-1",
+          "ATT-SYSTEMS-2",
+          "ATT-EVIDENCE-1",
+          "ATT-EVIDENCE-2",
+          "ATT-CALENDAR-1",
+          "ATT-CALENDAR-2"
+        ]
+      },
+      "original_file_sha256": "sha256:c7dec6aa82919a0d1a19844df9f0d7ff37a4d17f2ee926f005210997f632eade",
+      "original_file_sha256_matches_stage03_predecessor": true,
+      "redacted_file_sha256": "sha256:f9b4630751ffc6eb9aa0478cdde1cd7457735fc795c16eca54a8df6c1c0516e2",
+      "notice": "This historical snapshot was redacted after the original run. Its current hash intentionally differs from the sha256 recorded as the predecessor in this run's 03-authority-and-timing.json, which still identifies the original stage 02 bytes. Only the listed final_url values changed; run ID, snapshot ID, records, statuses, content hashes and all other snapshots are unchanged."
+    }
+  ]
+}

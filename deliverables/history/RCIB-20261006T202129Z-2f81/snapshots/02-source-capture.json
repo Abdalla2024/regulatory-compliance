@@ -1,0 +1,2650 @@
+{
+  "schema_version": "regulatory-compliance-stage-snapshot/2",
+  "snapshot_id": "RCIB-20261006T202129Z-2f81-S02",
+  "run_id": "RCIB-20261006T202129Z-2f81",
+  "stage": "source-capture",
+  "sequence": 2,
+  "created_at": "2026-10-06T20:21:37Z",
+  "status": "complete",
+  "predecessor": {
+    "snapshot_id": "RCIB-20261006T202129Z-2f81-S01",
+    "path": "deliverables/snapshots/01-scope.json",
+    "sha256": "sha256:65ce77dd13202f60c42178c673aafa542a015810fe769864d3fbb2b722c8ece9"
+  },
+  "consumed_record_ids": [
+    "ROUTE-AMEND",
+    "ROUTE-CALENDAR",
+    "ROUTE-CONSOLIDATED",
+    "ROUTE-EVIDENCE",
+    "ROUTE-FAQ",
+    "ROUTE-LAW",
+    "ROUTE-OJ",
+    "ROUTE-POLICY",
+    "ROUTE-SYSTEMS",
+    "ROUTE-TIME",
+    "SCOPE-AS-OF",
+    "SCOPE-SYS-AI-001",
+    "SCOPE-SYS-AI-002",
+    "SCOPE-SYS-AI-003",
+    "SCOPE-SYS-AI-004",
+    "SCOPE-SYS-AI-005",
+    "SCOPE-SYS-AI-006",
+    "SCOPE-SYS-AI-007",
+    "SCOPE-SYS-AI-008"
+  ],
+  "produced_record_ids": [
+    "ATT-AMEND-1",
+    "ATT-CALENDAR-1",
+    "ATT-CALENDAR-2",
+    "ATT-CONSOLIDATED-1",
+    "ATT-EVIDENCE-1",
+    "ATT-EVIDENCE-2",
+    "ATT-FAQ-1",
+    "ATT-LAW-1",
+    "ATT-OJ-1",
+    "ATT-POLICY-1",
+    "ATT-POLICY-2",
+    "ATT-SYSTEMS-1",
+    "ATT-SYSTEMS-2",
+    "ATT-TIME-1",
+    "D-003",
+    "D-008",
+    "EXT-AMEND-EIF",
+    "EXT-AMEND-ITEM-20",
+    "EXT-AMEND-ITEM-39",
+    "EXT-AMEND-ITEM-40",
+    "EXT-AMEND-PUBLICATION",
+    "EXT-CALENDAR-ACT-001",
+    "EXT-CALENDAR-ACT-002",
+    "EXT-CALENDAR-ACT-003",
+    "EXT-CALENDAR-ACT-004",
+    "EXT-CALENDAR-ACT-005",
+    "EXT-CALENDAR-ACT-006",
+    "EXT-CALENDAR-ACT-007",
+    "EXT-CALENDAR-ACT-008",
+    "EXT-CONSOLIDATED-ART111-4",
+    "EXT-CONSOLIDATED-ART113",
+    "EXT-CONSOLIDATED-ART50-1",
+    "EXT-CONSOLIDATED-ART50-2",
+    "EXT-CONSOLIDATED-ART50-3",
+    "EXT-CONSOLIDATED-ART50-4",
+    "EXT-CONSOLIDATED-ART50-5",
+    "EXT-CONSOLIDATED-ART50-6",
+    "EXT-CONSOLIDATED-ART50-7",
+    "EXT-EVIDENCE-REC-001",
+    "EXT-EVIDENCE-REC-002",
+    "EXT-EVIDENCE-REC-003",
+    "EXT-EVIDENCE-REC-004",
+    "EXT-EVIDENCE-REC-005",
+    "EXT-EVIDENCE-REC-006",
+    "EXT-EVIDENCE-REC-007",
+    "EXT-EVIDENCE-REC-008",
+    "EXT-EVIDENCE-REC-009",
+    "EXT-EVIDENCE-REC-010",
+    "EXT-FAQ-INTRO",
+    "EXT-FAQ-LAST-UPDATE",
+    "EXT-LAW-ART50-1",
+    "EXT-LAW-DISCLAIMER",
+    "EXT-OJ-ART113",
+    "EXT-OJ-ART50-1",
+    "EXT-OJ-ART50-2",
+    "EXT-OJ-ART50-3",
+    "EXT-OJ-ART50-4",
+    "EXT-OJ-ART50-5",
+    "EXT-OJ-ART50-6",
+    "EXT-OJ-ART50-7",
+    "EXT-POLICY-BLK-03ba4640",
+    "EXT-POLICY-BLK-03ec4cd9",
+    "EXT-POLICY-BLK-0ae801e1",
+    "EXT-POLICY-BLK-1c33c0b1",
+    "EXT-POLICY-BLK-1f79995a",
+    "EXT-POLICY-BLK-23072c7a",
+    "EXT-POLICY-BLK-2a762c65",
+    "EXT-POLICY-BLK-2aacbbf1",
+    "EXT-POLICY-BLK-2baa4238",
+    "EXT-POLICY-BLK-2e28b3c4",
+    "EXT-POLICY-BLK-39a6c5d1",
+    "EXT-POLICY-BLK-3ba0b700",
+    "EXT-POLICY-BLK-3e6cadff",
+    "EXT-POLICY-BLK-3f8d8763",
+    "EXT-POLICY-BLK-41ca6506",
+    "EXT-POLICY-BLK-4689e99e",
+    "EXT-POLICY-BLK-4ab52877",
+    "EXT-POLICY-BLK-4c3ab759",
+    "EXT-POLICY-BLK-5ae4808f",
+    "EXT-POLICY-BLK-5bcbdfef",
+    "EXT-POLICY-BLK-5fb89831",
+    "EXT-POLICY-BLK-640e17f8",
+    "EXT-POLICY-BLK-66b46c79",
+    "EXT-POLICY-BLK-77291703",
+    "EXT-POLICY-BLK-7e90cdc4",
+    "EXT-POLICY-BLK-868f44e2",
+    "EXT-POLICY-BLK-8ddc27f5",
+    "EXT-POLICY-BLK-911cd23c",
+    "EXT-POLICY-BLK-9f65728f",
+    "EXT-POLICY-BLK-a44120e5",
+    "EXT-POLICY-BLK-a46fd543",
+    "EXT-POLICY-BLK-a9d1fb18",
+    "EXT-POLICY-BLK-af61ff06",
+    "EXT-POLICY-BLK-bcd6574a",
+    "EXT-POLICY-BLK-bd8de7fd",
+    "EXT-POLICY-BLK-bfc055c8",
+    "EXT-POLICY-BLK-c8c5d892",
+    "EXT-POLICY-BLK-d194ed55",
+    "EXT-POLICY-BLK-d6992cd6",
+    "EXT-POLICY-BLK-d77be889",
+    "EXT-POLICY-BLK-ddb274c4",
+    "EXT-POLICY-BLK-de175065",
+    "EXT-SYSTEMS-AI-001",
+    "EXT-SYSTEMS-AI-002",
+    "EXT-SYSTEMS-AI-003",
+    "EXT-SYSTEMS-AI-004",
+    "EXT-SYSTEMS-AI-005",
+    "EXT-SYSTEMS-AI-006",
+    "EXT-SYSTEMS-AI-007",
+    "EXT-SYSTEMS-AI-008",
+    "EXT-TIME-2024-08-01",
+    "EXT-TIME-2025-02-02",
+    "EXT-TIME-2025-08-02",
+    "EXT-TIME-2026-08-02",
+    "EXT-TIME-2026-12-02",
+    "EXT-TIME-2027-08-02",
+    "EXT-TIME-2027-12-02",
+    "EXT-TIME-2028-08-02",
+    "SRC-AMEND",
+    "SRC-CALENDAR",
+    "SRC-CONSOLIDATED",
+    "SRC-EVIDENCE",
+    "SRC-FAQ",
+    "SRC-LAW",
+    "SRC-OJ",
+    "SRC-POLICY",
+    "SRC-SYSTEMS",
+    "SRC-TIME"
+  ],
+  "state": {
+    "sources": [
+      {
+        "id": "ATT-OJ-1",
+        "summary": "OJ document retrieval: retrieved",
+        "evidence_ids": [
+          "ROUTE-OJ"
+        ],
+        "source_name": "OJ",
+        "source_role": "binding-regulation",
+        "authority": "binding",
+        "authority_class": "binding-legal",
+        "locator": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+        "retrieved_at": "2026-10-06T20:21:29Z",
+        "retrieval_status": "retrieved",
+        "content_type": "text/html; charset=UTF-8",
+        "version_metadata": {
+          "title": "Regulation - EU - 2024/1689 - EN - EUR-Lex",
+          "eli": "http://data.europa.eu/eli/reg/2024/1689/oj",
+          "publication": "OJ L, 2024/1689, 12.7.2024"
+        },
+        "content_hash": "sha256:1a5e1557a17e65144c637d599e2e366aebc6935110b1acf9e5ace2a0cc6c6cd6",
+        "local_reference": "deliverables/sources/OJ.html.gz",
+        "extracts_reference": "deliverables/sources/OJ.extracts.json",
+        "attempt_purpose": "document retrieval",
+        "method": "GET",
+        "http_status": 200,
+        "final_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+        "transport_error": null,
+        "used_as_evidence": true,
+        "suitability_checks": [
+          {
+            "check": "same-host final URL (not redirected to login)",
+            "passed": true,
+            "detail": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+            "kind": "identity"
+          },
+          {
+            "check": "content type is HTML",
+            "passed": true,
+            "detail": "text/html; charset=UTF-8",
+            "kind": "identity"
+          },
+          {
+            "check": "expected title",
+            "passed": true,
+            "detail": "title: Regulation - EU - 2024/1689 - EN - EUR-Lex",
+            "kind": "identity"
+          },
+          {
+            "check": "expected content present",
+            "passed": true,
+            "detail": "Article 50 Transparency obligations for providers and deployers of certain AI systems",
+            "kind": "identity"
+          },
+          {
+            "check": "Article 50 anchor present",
+            "passed": true,
+            "detail": "id=\"art_50\"",
+            "kind": "identity"
+          },
+          {
+            "check": "legal identifier present",
+            "passed": true,
+            "detail": "2024/1689",
+            "kind": "identity"
+          },
+          {
+            "check": "Article 50 paragraphs 1-7 parsed",
+            "passed": true,
+            "detail": "parsed paragraphs [1, 2, 3, 4, 5, 6, 7]",
+            "kind": "identity"
+          }
+        ],
+        "access_basis": "Official public EU web route disclosed in the interview; no credentials used.",
+        "owner": "European Commission"
+      },
+      {
+        "id": "ATT-AMEND-1",
+        "summary": "AMEND document retrieval: retrieved",
+        "evidence_ids": [
+          "ROUTE-AMEND"
+        ],
+        "source_name": "AMEND",
+        "source_role": "binding-regulation",
+        "authority": "binding",
+        "authority_class": "binding-legal",
+        "locator": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ%3AL_202601744",
+        "retrieved_at": "2026-10-06T20:21:30Z",
+        "retrieval_status": "retrieved",
+        "content_type": "text/html; charset=UTF-8",
+        "version_metadata": {
+          "title": "Regulation - EU - 2026/1744 - EN - EUR-Lex",
+          "eli": "http://data.europa.eu/eli/reg/2026/1744/oj",
+          "publication_date": "2026-07-24",
+          "entry_into_force_date": "2026-07-27",
+          "entry_into_force_basis": "shall enter into force on the third day following that of its publication; computed as publication date + 3 days"
+        },
+        "content_hash": "sha256:7eeaaca02531295bc42cb3d214a7ea71b6f1e69a5196fb5bd1fd7be2db10ff8e",
+        "local_reference": "deliverables/sources/AMEND.html.gz",
+        "extracts_reference": "deliverables/sources/AMEND.extracts.json",
+        "attempt_purpose": "document retrieval",
+        "method": "GET",
+        "http_status": 200,
+        "final_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ%3AL_202601744",
+        "transport_error": null,
+        "used_as_evidence": true,
+        "suitability_checks": [
+          {
+            "check": "same-host final URL (not redirected to login)",
+            "passed": true,
+            "detail": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ%3AL_202601744",
+            "kind": "identity"
+          },
+          {
+            "check": "content type is HTML",
+            "passed": true,
+            "detail": "text/html; charset=UTF-8",
+            "kind": "identity"
+          },
+          {
+            "check": "expected title",
+            "passed": true,
+            "detail": "title: Regulation - EU - 2026/1744 - EN - EUR-Lex",
+            "kind": "identity"
+          },
+          {
+            "check": "expected content present",
+            "passed": true,
+            "detail": "Regulation (EU) 2024/1689 is amended as follows",
+            "kind": "identity"
+          },
+          {
+            "check": "legal identifier present",
+            "passed": true,
+            "detail": "2026/1744",
+            "kind": "identity"
+          },
+          {
+            "check": "amendment entry-into-force date determinable",
+            "passed": true,
+            "detail": "2026-07-27",
+            "kind": "identity"
+          },
+          {
+            "check": "amendment in force by review date",
+            "passed": true,
+            "detail": "2026-07-27 <= 2026-08-26",
+            "kind": "version"
+          }
+        ],
+        "access_basis": "Official public EU web route disclosed in the interview; no credentials used.",
+        "owner": "European Commission"
+      },
+      {
+        "id": "ATT-CONSOLIDATED-1",
+        "summary": "CONSOLIDATED document retrieval: retrieved",
+        "evidence_ids": [
+          "ROUTE-CONSOLIDATED"
+        ],
+        "source_name": "CONSOLIDATED",
+        "source_role": "binding-regulation",
+        "authority": "binding",
+        "authority_class": "binding-legal",
+        "locator": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R1689-20260727",
+        "retrieved_at": "2026-10-06T20:21:31Z",
+        "retrieval_status": "retrieved",
+        "content_type": "text/html; charset=UTF-8",
+        "version_metadata": {
+          "title": "EUR-Lex - 02024R1689-20260727 - EN - EUR-Lex",
+          "consolidated_version_date": "2026-07-27",
+          "celex": "02024R1689-20260727"
+        },
+        "content_hash": "sha256:524e1592b39571f6d3cc76a362e2e4a97bccac901f60d304e73a2b099e7ce299",
+        "local_reference": "deliverables/sources/CONSOLIDATED.html.gz",
+        "extracts_reference": "deliverables/sources/CONSOLIDATED.extracts.json",
+        "attempt_purpose": "document retrieval",
+        "method": "GET",
+        "http_status": 200,
+        "final_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R1689-20260727",
+        "transport_error": null,
+        "used_as_evidence": true,
+        "suitability_checks": [
+          {
+            "check": "same-host final URL (not redirected to login)",
+            "passed": true,
+            "detail": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R1689-20260727",
+            "kind": "identity"
+          },
+          {
+            "check": "content type is HTML",
+            "passed": true,
+            "detail": "text/html; charset=UTF-8",
+            "kind": "identity"
+          },
+          {
+            "check": "expected title",
+            "passed": true,
+            "detail": "title: EUR-Lex - 02024R1689-20260727 - EN - EUR-Lex",
+            "kind": "identity"
+          },
+          {
+            "check": "expected content present",
+            "passed": true,
+            "detail": "Article 50 Transparency obligations for providers and deployers of certain AI systems",
+            "kind": "identity"
+          },
+          {
+            "check": "Article 50 anchor present",
+            "passed": true,
+            "detail": "id=\"art_50\"",
+            "kind": "identity"
+          },
+          {
+            "check": "legal identifier present",
+            "passed": true,
+            "detail": "02024R1689",
+            "kind": "identity"
+          },
+          {
+            "check": "Article 50 paragraphs 1-7 parsed",
+            "passed": true,
+            "detail": "parsed paragraphs [1, 2, 3, 4, 5, 6, 7]",
+            "kind": "identity"
+          },
+          {
+            "check": "consolidated version date determinable",
+            "passed": true,
+            "detail": "2026-07-27",
+            "kind": "identity"
+          },
+          {
+            "check": "consolidated version on or before review date",
+            "passed": true,
+            "detail": "2026-07-27 <= 2026-08-26",
+            "kind": "version"
+          },
+          {
+            "check": "returned version is the requested consolidated version",
+            "passed": true,
+            "detail": "returned 20260727, requested 20260727",
+            "kind": "version"
+          }
+        ],
+        "access_basis": "Official public EU web route disclosed in the interview; no credentials used.",
+        "owner": "European Commission"
+      },
+      {
+        "id": "ATT-LAW-1",
+        "summary": "LAW document retrieval: retrieved",
+        "evidence_ids": [
+          "ROUTE-LAW"
+        ],
+        "source_name": "LAW",
+        "source_role": "official-guidance",
+        "authority": "advisory",
+        "authority_class": "advisory",
+        "locator": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-50",
+        "retrieved_at": "2026-10-06T20:21:32Z",
+        "retrieval_status": "retrieved",
+        "content_type": "text/html; charset=utf-8",
+        "version_metadata": {
+          "last-modified": "Mon, 05 Oct 2026 07:11:36 GMT",
+          "etag": "W/\"1791184296-gzip\"",
+          "title": "Article 50: Transparency obligations for providers and deployers of certain AI systems | AI Act Service Desk",
+          "revision_after_review_date": true
+        },
+        "content_hash": "sha256:792b673040b148fbaa57878b2fd4a27d161af8bff10ec0485dcb30a598a2fe00",
+        "local_reference": "deliverables/sources/LAW.html.gz",
+        "extracts_reference": "deliverables/sources/LAW.extracts.json",
+        "attempt_purpose": "document retrieval",
+        "method": "GET",
+        "http_status": 200,
+        "final_url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-50",
+        "transport_error": null,
+        "used_as_evidence": true,
+        "suitability_checks": [
+          {
+            "check": "same-host final URL (not redirected to login)",
+            "passed": true,
+            "detail": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-50",
+            "kind": "identity"
+          },
+          {
+            "check": "content type is HTML",
+            "passed": true,
+            "detail": "text/html; charset=utf-8",
+            "kind": "identity"
+          },
+          {
+            "check": "expected title",
+            "passed": true,
+            "detail": "title: Article 50: Transparency obligations for providers and deployers of certain AI systems | AI Act Service Desk",
+            "kind": "identity"
+          },
+          {
+            "check": "expected content present",
+            "passed": true,
+            "detail": "Providers shall ensure that AI systems intended to interact directly with natural persons",
+            "kind": "identity"
+          }
+        ],
+        "access_basis": "Official public EU web route disclosed in the interview; no credentials used.",
+        "owner": "European Commission"
+      },
+      {
+        "id": "ATT-TIME-1",
+        "summary": "TIME document retrieval: retrieved",
+        "evidence_ids": [
+          "ROUTE-TIME"
+        ],
+        "source_name": "TIME",
+        "source_role": "official-guidance",
+        "authority": "advisory",
+        "authority_class": "advisory",
+        "locator": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/eu-ai-act-implementation-timeline",
+        "retrieved_at": "2026-10-06T20:21:33Z",
+        "retrieval_status": "retrieved",
+        "content_type": "text/html; charset=utf-8",
+        "version_metadata": {
+          "last-modified": "Mon, 05 Oct 2026 07:38:03 GMT",
+          "etag": "W/\"1791185883-gzip\"",
+          "title": "Timeline for the Implementation of the EU AI Act | AI Act Service Desk",
+          "revision_after_review_date": true
+        },
+        "content_hash": "sha256:0a0f4470e0d6d44f398ea78bce698c61c5c3fa5d130c55630b1d26a1394e245a",
+        "local_reference": "deliverables/sources/TIME.html.gz",
+        "extracts_reference": "deliverables/sources/TIME.extracts.json",
+        "attempt_purpose": "document retrieval",
+        "method": "GET",
+        "http_status": 200,
+        "final_url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/eu-ai-act-implementation-timeline",
+        "transport_error": null,
+        "used_as_evidence": true,
+        "suitability_checks": [
+          {
+            "check": "same-host final URL (not redirected to login)",
+            "passed": true,
+            "detail": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/eu-ai-act-implementation-timeline",
+            "kind": "identity"
+          },
+          {
+            "check": "content type is HTML",
+            "passed": true,
+            "detail": "text/html; charset=utf-8",
+            "kind": "identity"
+          },
+          {
+            "check": "expected title",
+            "passed": true,
+            "detail": "title: Timeline for the Implementation of the EU AI Act | AI Act Service Desk",
+            "kind": "identity"
+          },
+          {
+            "check": "expected content present",
+            "passed": true,
+            "detail": "Article 50",
+            "kind": "identity"
+          },
+          {
+            "check": "timeline milestones parsed",
+            "passed": true,
+            "detail": "8 milestones",
+            "kind": "identity"
+          }
+        ],
+        "access_basis": "Official public EU web route disclosed in the interview; no credentials used.",
+        "owner": "European Commission"
+      },
+      {
+        "id": "ATT-FAQ-1",
+        "summary": "FAQ document retrieval: retrieved",
+        "evidence_ids": [
+          "ROUTE-FAQ"
+        ],
+        "source_name": "FAQ",
+        "source_role": "official-guidance",
+        "authority": "advisory",
+        "authority_class": "advisory",
+        "locator": "https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act",
+        "retrieved_at": "2026-10-06T20:21:33Z",
+        "retrieval_status": "retrieved",
+        "content_type": "text/html; charset=UTF-8",
+        "version_metadata": {
+          "last-modified": "Tue, 06 Oct 2026 20:01:14 GMT",
+          "etag": "W/\"1791316874-gzip\"",
+          "title": "Transparency obligations under Article 50 of the AI Act | Shaping Europe’s digital future",
+          "page_last_update": "2026-07-24",
+          "revision_after_review_date": true
+        },
+        "content_hash": "sha256:e56059d641632a1bec232bf818e9472ba5a7d0babe7f2c3db90759ba049a3a0a",
+        "local_reference": "deliverables/sources/FAQ.html.gz",
+        "extracts_reference": "deliverables/sources/FAQ.extracts.json",
+        "attempt_purpose": "document retrieval",
+        "method": "GET",
+        "http_status": 200,
+        "final_url": "https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act",
+        "transport_error": null,
+        "used_as_evidence": true,
+        "suitability_checks": [
+          {
+            "check": "same-host final URL (not redirected to login)",
+            "passed": true,
+            "detail": "https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act",
+            "kind": "identity"
+          },
+          {
+            "check": "content type is HTML",
+            "passed": true,
+            "detail": "text/html; charset=UTF-8",
+            "kind": "identity"
+          },
+          {
+            "check": "expected title",
+            "passed": true,
+            "detail": "title: Transparency obligations under Article 50 of the AI Act | Shaping Europe’s digital future",
+            "kind": "identity"
+          },
+          {
+            "check": "expected content present",
+            "passed": true,
+            "detail": "Article 50",
+            "kind": "identity"
+          }
+        ],
+        "access_basis": "Official public EU web route disclosed in the interview; no credentials used.",
+        "owner": "European Commission"
+      },
+      {
+        "id": "ATT-POLICY-1",
+        "summary": "POLICY access and identity verification: retrieved",
+        "evidence_ids": [
+          "ROUTE-POLICY"
+        ],
+        "source_name": "POLICY",
+        "source_role": "internal-policy",
+        "authority": "internal-control",
+        "authority_class": "company",
+        "locator": "https://private-pecorino-70e.notion.site/api/v3/getPublicPageData",
+        "retrieved_at": "2026-10-06T20:21:33Z",
+        "retrieval_status": "retrieved",
+        "content_type": "application/json; charset=utf-8",
+        "version_metadata": {
+          "space": "GitRoll",
+          "share_role": "reader"
+        },
+        "content_hash": "sha256:40b2261c3f903fc0f25c961f8f63aa099dc1ea82ef62c77aee96076b3e2d88bd",
+        "local_reference": "deliverables/sources/POLICY-page-metadata.json.gz",
+        "extracts_reference": null,
+        "attempt_purpose": "access and identity verification",
+        "method": "POST",
+        "http_status": 200,
+        "final_url": "https://private-pecorino-70e.notion.site/api/v3/getPublicPageData",
+        "transport_error": null,
+        "used_as_evidence": false,
+        "suitability_checks": [
+          {
+            "check": "page metadata returned",
+            "passed": true,
+            "detail": "application/json; charset=utf-8",
+            "kind": "identity"
+          },
+          {
+            "check": "page identity matches disclosed URL",
+            "passed": true,
+            "detail": "3ba0b700-541e-81f0-9998-d48f3b1c2856",
+            "kind": "identity"
+          },
+          {
+            "check": "no login required for the share link",
+            "passed": true,
+            "detail": "requireLogin=False, publicAccessRole=reader",
+            "kind": "identity"
+          }
+        ],
+        "access_basis": "Existing share-link permission on the interview-disclosed URL; no credentials, cookies or tokens are used or stored. Unauthenticated readability is not treated as making the source public.",
+        "owner": "Operations"
+      },
+      {
+        "id": "ATT-POLICY-2",
+        "summary": "POLICY content retrieval (page chunk 1): retrieved",
+        "evidence_ids": [
+          "ROUTE-POLICY"
+        ],
+        "source_name": "POLICY",
+        "source_role": "internal-policy",
+        "authority": "internal-control",
+        "authority_class": "company",
+        "locator": "https://private-pecorino-70e.notion.site/api/v3/loadCachedPageChunkV2",
+        "retrieved_at": "2026-10-06T20:21:33Z",
+        "retrieval_status": "retrieved",
+        "content_type": "application/json; charset=utf-8",
+        "version_metadata": {
+          "page_id": "3ba0b700-541e-81f0-9998-d48f3b1c2856",
+          "title": "Project 2 Regulatory Compliance — Current Internal Policies",
+          "policy_version": "AI-POL-2026-08-15",
+          "context_revision": "RC-CONTEXT-2026-09-12-R1",
+          "business_observation_date": "2026-08-26",
+          "authoring_clarification_date": "2026-09-12",
+          "etag": "W/\"16783-2g1UmDKXjfSBnat2QsokXre5tXU\"",
+          "revision_after_review_date": true
+        },
+        "content_hash": "sha256:0d5a7b71f1911331bfcad65ae623b87e0333a505985293dee98ac38423f81ee6",
+        "local_reference": "deliverables/sources/POLICY-chunk-1.json.gz",
+        "extracts_reference": "deliverables/sources/POLICY.extracts.json",
+        "attempt_purpose": "content retrieval (page chunk 1)",
+        "method": "POST",
+        "http_status": 200,
+        "final_url": "https://private-pecorino-70e.notion.site/api/v3/loadCachedPageChunkV2",
+        "transport_error": null,
+        "used_as_evidence": true,
+        "suitability_checks": [
+          {
+            "check": "page chunk JSON returned",
+            "passed": true,
+            "detail": "application/json; charset=utf-8",
+            "kind": "identity"
+          },
+          {
+            "check": "page content retrieved",
+            "passed": true,
+            "detail": "42 blocks",
+            "kind": "identity"
+          },
+          {
+            "check": "expected page title",
+            "passed": true,
+            "detail": "title: Project 2 Regulatory Compliance — Current Internal Policies",
+            "kind": "identity"
+          },
+          {
+            "check": "policy version present",
+            "passed": true,
+            "detail": "AI-POL-2026-08-15",
+            "kind": "identity"
+          },
+          {
+            "check": "context revision present",
+            "passed": true,
+            "detail": "RC-CONTEXT-2026-09-12-R1",
+            "kind": "identity"
+          },
+          {
+            "check": "access verification passed",
+            "passed": true,
+            "detail": "retrieved",
+            "kind": "identity"
+          }
+        ],
+        "access_basis": "Existing share-link permission on the interview-disclosed URL; no credentials, cookies or tokens are used or stored. Unauthenticated readability is not treated as making the source public.",
+        "owner": "Operations",
+        "redaction": {
+          "applied": true,
+          "removed_tables": {
+            "notion_user": 5
+          },
+          "reason": "Third-party workspace member data (names, user IDs, profile-photo links) removed before saving; it carries no policy content, identity, version or date information (D-008).",
+          "original_response_sha256": "sha256:8cf4e9ea06f5af96a07448f9e47ec7b9fb2260dc8e6ba8a2b1765fb74545aa37",
+          "content_hash_basis": "content_hash is the sha256 of the preserved (redacted) bytes"
+        }
+      },
+      {
+        "id": "ATT-SYSTEMS-1",
+        "summary": "SYSTEMS tab-structure verification (XLSX export): retrieved",
+        "evidence_ids": [
+          "ROUTE-SYSTEMS"
+        ],
+        "source_name": "SYSTEMS",
+        "source_role": "operational-record",
+        "authority": "operational-evidence",
+        "authority_class": "company",
+        "locator": "https://docs.google.com/spreadsheets/d/10ky745H_1h9XbGCXPJsiRp5yfdeU08TZtmrsCMinGgU/export?format=xlsx",
+        "retrieved_at": "2026-10-06T20:21:34Z",
+        "retrieval_status": "retrieved",
+        "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "version_metadata": {
+          "tabs": [
+            "AI System Register"
+          ]
+        },
+        "content_hash": "sha256:7381a76bef4ee3a10c05ca75e6bb27ae1de10144d730c18c334e1441ad31f3b0",
+        "local_reference": "deliverables/sources/SYSTEMS.xlsx.gz",
+        "extracts_reference": null,
+        "attempt_purpose": "tab-structure verification (XLSX export)",
+        "method": "GET",
+        "http_status": 200,
+        "final_url": "https://doc-0k-48-sheets.googleusercontent.com/[signed redirect path not recorded]",
+        "transport_error": null,
+        "used_as_evidence": false,
+        "suitability_checks": [
+          {
+            "check": "workbook returned (not a login page)",
+            "passed": true,
+            "detail": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            "kind": "identity"
+          },
+          {
+            "check": "expected single tab structure",
+            "passed": true,
+            "detail": "tabs found: ['AI System Register']; expected ['AI System Register']",
+            "kind": "identity"
+          }
+        ],
+        "access_basis": "Existing share-link permission on the interview-disclosed URL; no credentials, cookies or tokens are used or stored. Unauthenticated readability is not treated as making the source public.",
+        "owner": "Operations"
+      },
+      {
+        "id": "ATT-SYSTEMS-2",
+        "summary": "SYSTEMS content retrieval (CSV export): retrieved",
+        "evidence_ids": [
+          "ROUTE-SYSTEMS"
+        ],
+        "source_name": "SYSTEMS",
+        "source_role": "operational-record",
+        "authority": "operational-evidence",
+        "authority_class": "company",
+        "locator": "https://docs.google.com/spreadsheets/d/10ky745H_1h9XbGCXPJsiRp5yfdeU08TZtmrsCMinGgU/export?format=csv",
+        "retrieved_at": "2026-10-06T20:21:34Z",
+        "retrieval_status": "retrieved",
+        "content_type": "text/csv; charset=utf-8",
+        "version_metadata": {
+          "in_source_versions": [
+            "register-2026-08-26"
+          ],
+          "tabs": [
+            "AI System Register"
+          ],
+          "columns": [
+            "system_id",
+            "system_name",
+            "use_case",
+            "owner",
+            "provider_role",
+            "deployer_role",
+            "exposed_group",
+            "output_type",
+            "current_notice",
+            "human_review",
+            "evidence_status",
+            "evidence_updated_at",
+            "record_version"
+          ],
+          "extra_columns": [],
+          "versions_after_review_date": []
+        },
+        "content_hash": "sha256:5ccd555dac9dc3af5a77d3206105fb093565865f7283abe43f5339dd46ed8a80",
+        "local_reference": "deliverables/sources/SYSTEMS.csv.gz",
+        "extracts_reference": "deliverables/sources/SYSTEMS.extracts.json",
+        "attempt_purpose": "content retrieval (CSV export)",
+        "method": "GET",
+        "http_status": 200,
+        "final_url": "https://doc-0k-48-sheets.googleusercontent.com/[signed redirect path not recorded]",
+        "transport_error": null,
+        "used_as_evidence": true,
+        "suitability_checks": [
+          {
+            "check": "CSV content type (not a login page)",
+            "passed": true,
+            "detail": "text/csv; charset=utf-8",
+            "kind": "identity"
+          },
+          {
+            "check": "required columns present",
+            "passed": true,
+            "detail": "all present",
+            "kind": "identity"
+          },
+          {
+            "check": "no duplicated column headers",
+            "passed": true,
+            "detail": "none",
+            "kind": "identity"
+          },
+          {
+            "check": "records present",
+            "passed": true,
+            "detail": "8 records",
+            "kind": "identity"
+          },
+          {
+            "check": "unique record identifiers",
+            "passed": true,
+            "detail": "unique",
+            "kind": "identity"
+          },
+          {
+            "check": "tab structure verified",
+            "passed": true,
+            "detail": "tab check status: retrieved",
+            "kind": "identity"
+          }
+        ],
+        "access_basis": "Existing share-link permission on the interview-disclosed URL; no credentials, cookies or tokens are used or stored. Unauthenticated readability is not treated as making the source public.",
+        "owner": "Operations"
+      },
+      {
+        "id": "ATT-EVIDENCE-1",
+        "summary": "EVIDENCE tab-structure verification (XLSX export): retrieved",
+        "evidence_ids": [
+          "ROUTE-EVIDENCE"
+        ],
+        "source_name": "EVIDENCE",
+        "source_role": "operational-record",
+        "authority": "operational-evidence",
+        "authority_class": "company",
+        "locator": "https://docs.google.com/spreadsheets/d/19BYZ68OSbsa1i9OfF6MzthrdC6q6mt6IWk6ucI8u7Rk/export?format=xlsx",
+        "retrieved_at": "2026-10-06T20:21:35Z",
+        "retrieval_status": "retrieved",
+        "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "version_metadata": {
+          "tabs": [
+            "Incident Evidence Register"
+          ]
+        },
+        "content_hash": "sha256:d21f7d1926d89c4951edff7058bae27ada24099211ed804fdbadfaf6845b530f",
+        "local_reference": "deliverables/sources/EVIDENCE.xlsx.gz",
+        "extracts_reference": null,
+        "attempt_purpose": "tab-structure verification (XLSX export)",
+        "method": "GET",
+        "http_status": 200,
+        "final_url": "https://doc-10-48-sheets.googleusercontent.com/[signed redirect path not recorded]",
+        "transport_error": null,
+        "used_as_evidence": false,
+        "suitability_checks": [
+          {
+            "check": "workbook returned (not a login page)",
+            "passed": true,
+            "detail": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            "kind": "identity"
+          },
+          {
+            "check": "expected single tab structure",
+            "passed": true,
+            "detail": "tabs found: ['Incident Evidence Register']; expected ['Incident Evidence Register']",
+            "kind": "identity"
+          }
+        ],
+        "access_basis": "Existing share-link permission on the interview-disclosed URL; no credentials, cookies or tokens are used or stored. Unauthenticated readability is not treated as making the source public.",
+        "owner": "Operations"
+      },
+      {
+        "id": "ATT-EVIDENCE-2",
+        "summary": "EVIDENCE content retrieval (CSV export): retrieved",
+        "evidence_ids": [
+          "ROUTE-EVIDENCE"
+        ],
+        "source_name": "EVIDENCE",
+        "source_role": "operational-record",
+        "authority": "operational-evidence",
+        "authority_class": "company",
+        "locator": "https://docs.google.com/spreadsheets/d/19BYZ68OSbsa1i9OfF6MzthrdC6q6mt6IWk6ucI8u7Rk/export?format=csv",
+        "retrieved_at": "2026-10-06T20:21:36Z",
+        "retrieval_status": "retrieved",
+        "content_type": "text/csv",
+        "version_metadata": {
+          "in_source_versions": [],
+          "tabs": [
+            "Incident Evidence Register"
+          ],
+          "columns": [
+            "record_id",
+            "system_id",
+            "record_type",
+            "reported_at",
+            "owner",
+            "status",
+            "evidence_ref",
+            "evidence_state",
+            "notes"
+          ],
+          "extra_columns": [],
+          "versions_after_review_date": []
+        },
+        "content_hash": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b",
+        "local_reference": "deliverables/sources/EVIDENCE.csv.gz",
+        "extracts_reference": "deliverables/sources/EVIDENCE.extracts.json",
+        "attempt_purpose": "content retrieval (CSV export)",
+        "method": "GET",
+        "http_status": 200,
+        "final_url": "https://doc-10-48-sheets.googleusercontent.com/[signed redirect path not recorded]",
+        "transport_error": null,
+        "used_as_evidence": true,
+        "suitability_checks": [
+          {
+            "check": "CSV content type (not a login page)",
+            "passed": true,
+            "detail": "text/csv",
+            "kind": "identity"
+          },
+          {
+            "check": "required columns present",
+            "passed": true,
+            "detail": "all present",
+            "kind": "identity"
+          },
+          {
+            "check": "no duplicated column headers",
+            "passed": true,
+            "detail": "none",
+            "kind": "identity"
+          },
+          {
+            "check": "records present",
+            "passed": true,
+            "detail": "10 records",
+            "kind": "identity"
+          },
+          {
+            "check": "unique record identifiers",
+            "passed": true,
+            "detail": "unique",
+            "kind": "identity"
+          },
+          {
+            "check": "tab structure verified",
+            "passed": true,
+            "detail": "tab check status: retrieved",
+            "kind": "identity"
+          }
+        ],
+        "access_basis": "Existing share-link permission on the interview-disclosed URL; no credentials, cookies or tokens are used or stored. Unauthenticated readability is not treated as making the source public.",
+        "owner": "Operations"
+      },
+      {
+        "id": "ATT-CALENDAR-1",
+        "summary": "CALENDAR tab-structure verification (XLSX export): retrieved",
+        "evidence_ids": [
+          "ROUTE-CALENDAR"
+        ],
+        "source_name": "CALENDAR",
+        "source_role": "operational-record",
+        "authority": "operational-evidence",
+        "authority_class": "company",
+        "locator": "https://docs.google.com/spreadsheets/d/1xtXl_P7Yb9LaECZjjgtlyI-idoAJTAhH-1gQ4vQaCGA/export?format=xlsx",
+        "retrieved_at": "2026-10-06T20:21:36Z",
+        "retrieval_status": "retrieved",
+        "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+        "version_metadata": {
+          "tabs": [
+            "Compliance Calendar"
+          ]
+        },
+        "content_hash": "sha256:c5bb33095c247f3b3eff3802ee9e5f877bd1590b635b0afd202bc937f7c74693",
+        "local_reference": "deliverables/sources/CALENDAR.xlsx.gz",
+        "extracts_reference": null,
+        "attempt_purpose": "tab-structure verification (XLSX export)",
+        "method": "GET",
+        "http_status": 200,
+        "final_url": "https://doc-0o-48-sheets.googleusercontent.com/[signed redirect path not recorded]",
+        "transport_error": null,
+        "used_as_evidence": false,
+        "suitability_checks": [
+          {
+            "check": "workbook returned (not a login page)",
+            "passed": true,
+            "detail": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+            "kind": "identity"
+          },
+          {
+            "check": "expected single tab structure",
+            "passed": true,
+            "detail": "tabs found: ['Compliance Calendar']; expected ['Compliance Calendar']",
+            "kind": "identity"
+          }
+        ],
+        "access_basis": "Existing share-link permission on the interview-disclosed URL; no credentials, cookies or tokens are used or stored. Unauthenticated readability is not treated as making the source public.",
+        "owner": "Operations"
+      },
+      {
+        "id": "ATT-CALENDAR-2",
+        "summary": "CALENDAR content retrieval (CSV export): retrieved",
+        "evidence_ids": [
+          "ROUTE-CALENDAR"
+        ],
+        "source_name": "CALENDAR",
+        "source_role": "operational-record",
+        "authority": "operational-evidence",
+        "authority_class": "company",
+        "locator": "https://docs.google.com/spreadsheets/d/1xtXl_P7Yb9LaECZjjgtlyI-idoAJTAhH-1gQ4vQaCGA/export?format=csv",
+        "retrieved_at": "2026-10-06T20:21:37Z",
+        "retrieval_status": "retrieved",
+        "content_type": "text/csv; charset=utf-8",
+        "version_metadata": {
+          "in_source_versions": [
+            "calendar-2026-08-26"
+          ],
+          "tabs": [
+            "Compliance Calendar"
+          ],
+          "columns": [
+            "action_id",
+            "system_id",
+            "action",
+            "owner",
+            "due_date",
+            "status",
+            "approval_required",
+            "source_version"
+          ],
+          "extra_columns": [],
+          "versions_after_review_date": []
+        },
+        "content_hash": "sha256:cb3e2ba90e96733e5713102f0653dd02d0282be92058e60febe5af899926d8ab",
+        "local_reference": "deliverables/sources/CALENDAR.csv.gz",
+        "extracts_reference": "deliverables/sources/CALENDAR.extracts.json",
+        "attempt_purpose": "content retrieval (CSV export)",
+        "method": "GET",
+        "http_status": 200,
+        "final_url": "https://doc-0o-48-sheets.googleusercontent.com/[signed redirect path not recorded]",
+        "transport_error": null,
+        "used_as_evidence": true,
+        "suitability_checks": [
+          {
+            "check": "CSV content type (not a login page)",
+            "passed": true,
+            "detail": "text/csv; charset=utf-8",
+            "kind": "identity"
+          },
+          {
+            "check": "required columns present",
+            "passed": true,
+            "detail": "all present",
+            "kind": "identity"
+          },
+          {
+            "check": "no duplicated column headers",
+            "passed": true,
+            "detail": "none",
+            "kind": "identity"
+          },
+          {
+            "check": "records present",
+            "passed": true,
+            "detail": "8 records",
+            "kind": "identity"
+          },
+          {
+            "check": "unique record identifiers",
+            "passed": true,
+            "detail": "unique",
+            "kind": "identity"
+          },
+          {
+            "check": "tab structure verified",
+            "passed": true,
+            "detail": "tab check status: retrieved",
+            "kind": "identity"
+          }
+        ],
+        "access_basis": "Existing share-link permission on the interview-disclosed URL; no credentials, cookies or tokens are used or stored. Unauthenticated readability is not treated as making the source public.",
+        "owner": "Operations"
+      }
+    ],
+    "source_summaries": [
+      {
+        "id": "SRC-OJ",
+        "summary": "OJ overall: retrieved",
+        "evidence_ids": [
+          "ATT-OJ-1"
+        ],
+        "source_name": "OJ",
+        "authority_class": "binding-legal",
+        "retrieval_status": "retrieved",
+        "required": true,
+        "data_quality_issues": [],
+        "owner": "European Commission",
+        "rationale": "Overall status is the status of the attempt used as evidence."
+      },
+      {
+        "id": "SRC-AMEND",
+        "summary": "AMEND overall: retrieved",
+        "evidence_ids": [
+          "ATT-AMEND-1"
+        ],
+        "source_name": "AMEND",
+        "authority_class": "binding-legal",
+        "retrieval_status": "retrieved",
+        "required": true,
+        "data_quality_issues": [],
+        "owner": "European Commission",
+        "rationale": "Overall status is the status of the attempt used as evidence."
+      },
+      {
+        "id": "SRC-CONSOLIDATED",
+        "summary": "CONSOLIDATED overall: retrieved",
+        "evidence_ids": [
+          "ATT-CONSOLIDATED-1"
+        ],
+        "source_name": "CONSOLIDATED",
+        "authority_class": "binding-legal",
+        "retrieval_status": "retrieved",
+        "required": true,
+        "data_quality_issues": [],
+        "owner": "European Commission",
+        "rationale": "Overall status is the status of the attempt used as evidence."
+      },
+      {
+        "id": "SRC-LAW",
+        "summary": "LAW overall: retrieved",
+        "evidence_ids": [
+          "ATT-LAW-1"
+        ],
+        "source_name": "LAW",
+        "authority_class": "advisory",
+        "retrieval_status": "retrieved",
+        "required": true,
+        "data_quality_issues": [],
+        "owner": "European Commission",
+        "rationale": "Overall status is the status of the attempt used as evidence."
+      },
+      {
+        "id": "SRC-TIME",
+        "summary": "TIME overall: retrieved",
+        "evidence_ids": [
+          "ATT-TIME-1"
+        ],
+        "source_name": "TIME",
+        "authority_class": "advisory",
+        "retrieval_status": "retrieved",
+        "required": true,
+        "data_quality_issues": [],
+        "owner": "European Commission",
+        "rationale": "Overall status is the status of the attempt used as evidence."
+      },
+      {
+        "id": "SRC-FAQ",
+        "summary": "FAQ overall: retrieved",
+        "evidence_ids": [
+          "ATT-FAQ-1"
+        ],
+        "source_name": "FAQ",
+        "authority_class": "advisory",
+        "retrieval_status": "retrieved",
+        "required": true,
+        "data_quality_issues": [],
+        "owner": "European Commission",
+        "rationale": "Overall status is the status of the attempt used as evidence."
+      },
+      {
+        "id": "SRC-POLICY",
+        "summary": "POLICY overall: retrieved",
+        "evidence_ids": [
+          "ATT-POLICY-1",
+          "ATT-POLICY-2"
+        ],
+        "source_name": "POLICY",
+        "authority_class": "company",
+        "retrieval_status": "retrieved",
+        "required": true,
+        "data_quality_issues": [],
+        "owner": "Operations",
+        "rationale": "Overall status is the status of the attempt used as evidence."
+      },
+      {
+        "id": "SRC-SYSTEMS",
+        "summary": "SYSTEMS overall: retrieved",
+        "evidence_ids": [
+          "ATT-SYSTEMS-1",
+          "ATT-SYSTEMS-2"
+        ],
+        "source_name": "SYSTEMS",
+        "authority_class": "company",
+        "retrieval_status": "retrieved",
+        "required": true,
+        "data_quality_issues": [],
+        "owner": "Operations",
+        "rationale": "Overall status is the status of the attempt used as evidence."
+      },
+      {
+        "id": "SRC-EVIDENCE",
+        "summary": "EVIDENCE overall: retrieved",
+        "evidence_ids": [
+          "ATT-EVIDENCE-1",
+          "ATT-EVIDENCE-2"
+        ],
+        "source_name": "EVIDENCE",
+        "authority_class": "company",
+        "retrieval_status": "retrieved",
+        "required": true,
+        "data_quality_issues": [],
+        "owner": "Operations",
+        "rationale": "Overall status is the status of the attempt used as evidence."
+      },
+      {
+        "id": "SRC-CALENDAR",
+        "summary": "CALENDAR overall: retrieved",
+        "evidence_ids": [
+          "ATT-CALENDAR-1",
+          "ATT-CALENDAR-2"
+        ],
+        "source_name": "CALENDAR",
+        "authority_class": "company",
+        "retrieval_status": "retrieved",
+        "required": true,
+        "data_quality_issues": [],
+        "owner": "Operations",
+        "rationale": "Overall status is the status of the attempt used as evidence."
+      }
+    ],
+    "extracts": [
+      {
+        "id": "EXT-OJ-ART50-1",
+        "summary": "Providers shall ensure that AI systems intended to interact directly with natural persons are designed and developed in such a way that the natural persons concerned are informed that they are interacting with an AI system, unless this is o",
+        "evidence_ids": [
+          "ATT-OJ-1"
+        ],
+        "source_name": "OJ",
+        "locator": "Article 50(1)",
+        "text": "Providers shall ensure that AI systems intended to interact directly with natural persons are designed and developed in such a way that the natural persons concerned are informed that they are interacting with an AI system, unless this is obvious from the point of view of a natural person who is reasonably well-informed, observant and circumspect, taking into account the circumstances and the context of use. This obligation shall not apply to AI systems authorised by law to detect, prevent, investigate or prosecute criminal offences, subject to appropriate safeguards for the rights and freedoms of third parties, unless those systems are available for the public to report a criminal offence.",
+        "extracts_file": "deliverables/sources/OJ.extracts.json"
+      },
+      {
+        "id": "EXT-OJ-ART50-2",
+        "summary": "Providers of AI systems, including general-purpose AI systems, generating synthetic audio, image, video or text content, shall ensure that the outputs of the AI system are marked in a machine-readable format and detectable as artificially g",
+        "evidence_ids": [
+          "ATT-OJ-1"
+        ],
+        "source_name": "OJ",
+        "locator": "Article 50(2)",
+        "text": "Providers of AI systems, including general-purpose AI systems, generating synthetic audio, image, video or text content, shall ensure that the outputs of the AI system are marked in a machine-readable format and detectable as artificially generated or manipulated. Providers shall ensure their technical solutions are effective, interoperable, robust and reliable as far as this is technically feasible, taking into account the specificities and limitations of various types of content, the costs of implementation and the generally acknowledged state of the art, as may be reflected in relevant technical standards. This obligation shall not apply to the extent the AI systems perform an assistive function for standard editing or do not substantially alter the input data provided by the deployer or the semantics thereof, or where authorised by law to detect, prevent, investigate or prosecute criminal offences.",
+        "extracts_file": "deliverables/sources/OJ.extracts.json"
+      },
+      {
+        "id": "EXT-OJ-ART50-3",
+        "summary": "Deployers of an emotion recognition system or a biometric categorisation system shall inform the natural persons exposed thereto of the operation of the system, and shall process the personal data in accordance with Regulations (EU) 2016/67",
+        "evidence_ids": [
+          "ATT-OJ-1"
+        ],
+        "source_name": "OJ",
+        "locator": "Article 50(3)",
+        "text": "Deployers of an emotion recognition system or a biometric categorisation system shall inform the natural persons exposed thereto of the operation of the system, and shall process the personal data in accordance with Regulations (EU) 2016/679 and (EU) 2018/1725 and Directive (EU) 2016/680, as applicable. This obligation shall not apply to AI systems used for biometric categorisation and emotion recognition, which are permitted by law to detect, prevent or investigate criminal offences, subject to appropriate safeguards for the rights and freedoms of third parties, and in accordance with Union law.",
+        "extracts_file": "deliverables/sources/OJ.extracts.json"
+      },
+      {
+        "id": "EXT-OJ-ART50-4",
+        "summary": "Deployers of an AI system that generates or manipulates image, audio or video content constituting a deep fake, shall disclose that the content has been artificially generated or manipulated. This obligation shall not apply where the use is",
+        "evidence_ids": [
+          "ATT-OJ-1"
+        ],
+        "source_name": "OJ",
+        "locator": "Article 50(4)",
+        "text": "Deployers of an AI system that generates or manipulates image, audio or video content constituting a deep fake, shall disclose that the content has been artificially generated or manipulated. This obligation shall not apply where the use is authorised by law to detect, prevent, investigate or prosecute criminal offence. Where the content forms part of an evidently artistic, creative, satirical, fictional or analogous work or programme, the transparency obligations set out in this paragraph are limited to disclosure of the existence of such generated or manipulated content in an appropriate manner that does not hamper the display or enjoyment of the work. Deployers of an AI system that generates or manipulates text which is published with the purpose of informing the public on matters of public interest shall disclose that the text has been artificially generated or manipulated. This obligation shall not apply where the use is authorised by law to detect, prevent, investigate or prosecute criminal offences or where the AI-generated content has undergone a process of human review or editorial control and where a natural or legal person holds editorial responsibility for the publication of the content.",
+        "extracts_file": "deliverables/sources/OJ.extracts.json"
+      },
+      {
+        "id": "EXT-OJ-ART50-5",
+        "summary": "The information referred to in paragraphs 1 to 4 shall be provided to the natural persons concerned in a clear and distinguishable manner at the latest at the time of the first interaction or exposure. The information shall conform to the a",
+        "evidence_ids": [
+          "ATT-OJ-1"
+        ],
+        "source_name": "OJ",
+        "locator": "Article 50(5)",
+        "text": "The information referred to in paragraphs 1 to 4 shall be provided to the natural persons concerned in a clear and distinguishable manner at the latest at the time of the first interaction or exposure. The information shall conform to the applicable accessibility requirements.",
+        "extracts_file": "deliverables/sources/OJ.extracts.json"
+      },
+      {
+        "id": "EXT-OJ-ART50-6",
+        "summary": "Paragraphs 1 to 4 shall not affect the requirements and obligations set out in Chapter III, and shall be without prejudice to other transparency obligations laid down in Union or national law for deployers of AI systems.",
+        "evidence_ids": [
+          "ATT-OJ-1"
+        ],
+        "source_name": "OJ",
+        "locator": "Article 50(6)",
+        "text": "Paragraphs 1 to 4 shall not affect the requirements and obligations set out in Chapter III, and shall be without prejudice to other transparency obligations laid down in Union or national law for deployers of AI systems.",
+        "extracts_file": "deliverables/sources/OJ.extracts.json"
+      },
+      {
+        "id": "EXT-OJ-ART50-7",
+        "summary": "The AI Office shall encourage and facilitate the drawing up of codes of practice at Union level to facilitate the effective implementation of the obligations regarding the detection and labelling of artificially generated or manipulated con",
+        "evidence_ids": [
+          "ATT-OJ-1"
+        ],
+        "source_name": "OJ",
+        "locator": "Article 50(7)",
+        "text": "The AI Office shall encourage and facilitate the drawing up of codes of practice at Union level to facilitate the effective implementation of the obligations regarding the detection and labelling of artificially generated or manipulated content. The Commission may adopt implementing acts to approve those codes of practice in accordance with the procedure laid down in Article 56 (6). If it deems the code is not adequate, the Commission may adopt an implementing act specifying common rules for the implementation of those obligations in accordance with the examination procedure laid down in Article 98(2).",
+        "extracts_file": "deliverables/sources/OJ.extracts.json"
+      },
+      {
+        "id": "EXT-OJ-ART113",
+        "summary": "Article 113 Entry into force and application This Regulation shall enter into force on the twentieth day following that of its publication in the Official Journal of the European Union . It shall apply from 2 August 2026. However: (a) Chapt",
+        "evidence_ids": [
+          "ATT-OJ-1"
+        ],
+        "source_name": "OJ",
+        "locator": "Article 113",
+        "text": "Article 113 Entry into force and application This Regulation shall enter into force on the twentieth day following that of its publication in the Official Journal of the European Union . It shall apply from 2 August 2026. However: (a) Chapters I and II shall apply from 2 February 2025; (b) Chapter III Section 4, Chapter V, Chapter VII and Chapter XII and Article 78 shall apply from 2 August 2025, with the exception of Article 101; (c) Article 6(1) and the corresponding obligations in this Regulation shall apply from 2 August 2027. This Regulation shall be binding in its entirety and directly applicable in all Member States.",
+        "extracts_file": "deliverables/sources/OJ.extracts.json"
+      },
+      {
+        "id": "EXT-AMEND-ITEM-20",
+        "summary": "(20) in Article 50, paragraph 7 is replaced by the following:",
+        "evidence_ids": [
+          "ATT-AMEND-1"
+        ],
+        "source_name": "AMEND",
+        "locator": "Article 1, point (20)",
+        "text": "(20) in Article 50, paragraph 7 is replaced by the following:",
+        "extracts_file": "deliverables/sources/AMEND.extracts.json"
+      },
+      {
+        "id": "EXT-AMEND-ITEM-39",
+        "summary": "(39) Article 111 is amended as follows: (a) paragraph 2 is replaced by the following:",
+        "evidence_ids": [
+          "ATT-AMEND-1"
+        ],
+        "source_name": "AMEND",
+        "locator": "Article 1, point (39)",
+        "text": "(39) Article 111 is amended as follows: (a) paragraph 2 is replaced by the following:",
+        "extracts_file": "deliverables/sources/AMEND.extracts.json"
+      },
+      {
+        "id": "EXT-AMEND-ITEM-40",
+        "summary": "(40) in Article 113, the third paragraph is amended as follows: (a) point (a) is replaced by the following:",
+        "evidence_ids": [
+          "ATT-AMEND-1"
+        ],
+        "source_name": "AMEND",
+        "locator": "Article 1, point (40)",
+        "text": "(40) in Article 113, the third paragraph is amended as follows: (a) point (a) is replaced by the following:",
+        "extracts_file": "deliverables/sources/AMEND.extracts.json"
+      },
+      {
+        "id": "EXT-AMEND-PUBLICATION",
+        "summary": "OJ L, 2026/1744, 24.7.2026",
+        "evidence_ids": [
+          "ATT-AMEND-1"
+        ],
+        "source_name": "AMEND",
+        "locator": "document header",
+        "text": "OJ L, 2026/1744, 24.7.2026",
+        "extracts_file": "deliverables/sources/AMEND.extracts.json"
+      },
+      {
+        "id": "EXT-AMEND-EIF",
+        "summary": "shall enter into force on the third day following that of its publication",
+        "evidence_ids": [
+          "ATT-AMEND-1"
+        ],
+        "source_name": "AMEND",
+        "locator": "Article 4",
+        "text": "shall enter into force on the third day following that of its publication",
+        "extracts_file": "deliverables/sources/AMEND.extracts.json"
+      },
+      {
+        "id": "EXT-CONSOLIDATED-ART50-1",
+        "summary": "Providers shall ensure that AI systems intended to interact directly with natural persons are designed and developed in such a way that the natural persons concerned are informed that they are interacting with an AI system, unless this is o",
+        "evidence_ids": [
+          "ATT-CONSOLIDATED-1"
+        ],
+        "source_name": "CONSOLIDATED",
+        "locator": "Article 50(1)",
+        "text": "Providers shall ensure that AI systems intended to interact directly with natural persons are designed and developed in such a way that the natural persons concerned are informed that they are interacting with an AI system, unless this is obvious from the point of view of a natural person who is reasonably well-informed, observant and circumspect, taking into account the circumstances and the context of use. This obligation shall not apply to AI systems authorised by law to detect, prevent, investigate or prosecute criminal offences, subject to appropriate safeguards for the rights and freedoms of third parties, unless those systems are available for the public to report a criminal offence.",
+        "extracts_file": "deliverables/sources/CONSOLIDATED.extracts.json"
+      },
+      {
+        "id": "EXT-CONSOLIDATED-ART50-2",
+        "summary": "Providers of AI systems, including general-purpose AI systems, generating synthetic audio, image, video or text content, shall ensure that the outputs of the AI system are marked in a machine-readable format and detectable as artificially g",
+        "evidence_ids": [
+          "ATT-CONSOLIDATED-1"
+        ],
+        "source_name": "CONSOLIDATED",
+        "locator": "Article 50(2)",
+        "text": "Providers of AI systems, including general-purpose AI systems, generating synthetic audio, image, video or text content, shall ensure that the outputs of the AI system are marked in a machine-readable format and detectable as artificially generated or manipulated. Providers shall ensure their technical solutions are effective, interoperable, robust and reliable as far as this is technically feasible, taking into account the specificities and limitations of various types of content, the costs of implementation and the generally acknowledged state of the art, as may be reflected in relevant technical standards. This obligation shall not apply to the extent the AI systems perform an assistive function for standard editing or do not substantially alter the input data provided by the deployer or the semantics thereof, or where authorised by law to detect, prevent, investigate or prosecute criminal offences.",
+        "extracts_file": "deliverables/sources/CONSOLIDATED.extracts.json"
+      },
+      {
+        "id": "EXT-CONSOLIDATED-ART50-3",
+        "summary": "Deployers of an emotion recognition system or a biometric categorisation system shall inform the natural persons exposed thereto of the operation of the system, and shall process the personal data in accordance with Regulations (EU) 2016/67",
+        "evidence_ids": [
+          "ATT-CONSOLIDATED-1"
+        ],
+        "source_name": "CONSOLIDATED",
+        "locator": "Article 50(3)",
+        "text": "Deployers of an emotion recognition system or a biometric categorisation system shall inform the natural persons exposed thereto of the operation of the system, and shall process the personal data in accordance with Regulations (EU) 2016/679 and (EU) 2018/1725 and Directive (EU) 2016/680, as applicable. This obligation shall not apply to AI systems used for biometric categorisation and emotion recognition, which are permitted by law to detect, prevent or investigate criminal offences, subject to appropriate safeguards for the rights and freedoms of third parties, and in accordance with Union law.",
+        "extracts_file": "deliverables/sources/CONSOLIDATED.extracts.json"
+      },
+      {
+        "id": "EXT-CONSOLIDATED-ART50-4",
+        "summary": "Deployers of an AI system that generates or manipulates image, audio or video content constituting a deep fake, shall disclose that the content has been artificially generated or manipulated. This obligation shall not apply where the use is",
+        "evidence_ids": [
+          "ATT-CONSOLIDATED-1"
+        ],
+        "source_name": "CONSOLIDATED",
+        "locator": "Article 50(4)",
+        "text": "Deployers of an AI system that generates or manipulates image, audio or video content constituting a deep fake, shall disclose that the content has been artificially generated or manipulated. This obligation shall not apply where the use is authorised by law to detect, prevent, investigate or prosecute criminal offence. Where the content forms part of an evidently artistic, creative, satirical, fictional or analogous work or programme, the transparency obligations set out in this paragraph are limited to disclosure of the existence of such generated or manipulated content in an appropriate manner that does not hamper the display or enjoyment of the work. Deployers of an AI system that generates or manipulates text which is published with the purpose of informing the public on matters of public interest shall disclose that the text has been artificially generated or manipulated. This obligation shall not apply where the use is authorised by law to detect, prevent, investigate or prosecute criminal offences or where the AI-generated content has undergone a process of human review or editorial control and where a natural or legal person holds editorial responsibility for the publication of the content.",
+        "extracts_file": "deliverables/sources/CONSOLIDATED.extracts.json"
+      },
+      {
+        "id": "EXT-CONSOLIDATED-ART50-5",
+        "summary": "The information referred to in paragraphs 1 to 4 shall be provided to the natural persons concerned in a clear and distinguishable manner at the latest at the time of the first interaction or exposure. The information shall conform to the a",
+        "evidence_ids": [
+          "ATT-CONSOLIDATED-1"
+        ],
+        "source_name": "CONSOLIDATED",
+        "locator": "Article 50(5)",
+        "text": "The information referred to in paragraphs 1 to 4 shall be provided to the natural persons concerned in a clear and distinguishable manner at the latest at the time of the first interaction or exposure. The information shall conform to the applicable accessibility requirements.",
+        "extracts_file": "deliverables/sources/CONSOLIDATED.extracts.json"
+      },
+      {
+        "id": "EXT-CONSOLIDATED-ART50-6",
+        "summary": "Paragraphs 1 to 4 shall not affect the requirements and obligations set out in Chapter III, and shall be without prejudice to other transparency obligations laid down in Union or national law for deployers of AI systems.",
+        "evidence_ids": [
+          "ATT-CONSOLIDATED-1"
+        ],
+        "source_name": "CONSOLIDATED",
+        "locator": "Article 50(6)",
+        "text": "Paragraphs 1 to 4 shall not affect the requirements and obligations set out in Chapter III, and shall be without prejudice to other transparency obligations laid down in Union or national law for deployers of AI systems.",
+        "extracts_file": "deliverables/sources/CONSOLIDATED.extracts.json"
+      },
+      {
+        "id": "EXT-CONSOLIDATED-ART50-7",
+        "summary": "The Commission shall encourage and facilitate the drawing up of codes of practice at Union level to facilitate the effective implementation of the obligations regarding the detection, marking and labelling of artificially generated or manip",
+        "evidence_ids": [
+          "ATT-CONSOLIDATED-1"
+        ],
+        "source_name": "CONSOLIDATED",
+        "locator": "Article 50(7)",
+        "text": "The Commission shall encourage and facilitate the drawing up of codes of practice at Union level to facilitate the effective implementation of the obligations regarding the detection, marking and labelling of artificially generated or manipulated content. The Commission, taking utmost account of the opinion of the Board, shall assess whether adherence to those codes of practice is adequate to ensure compliance with the obligations laid down in paragraphs 2 and 4 of this Article, in accordance with the procedure laid down in Article 56(6). If it deems the code of practice to be inadequate, the Commission may adopt an implementing act specifying common rules for the implementation of those obligations in accordance with the examination procedure laid down in Article 98(2).",
+        "extracts_file": "deliverables/sources/CONSOLIDATED.extracts.json"
+      },
+      {
+        "id": "EXT-CONSOLIDATED-ART113",
+        "summary": "Article 113 Entry into force and application This Regulation shall enter into force on the twentieth day following that of its publication in the Official Journal of the European Union . It shall apply from 2 August 2026. However: ▼M1 (a) C",
+        "evidence_ids": [
+          "ATT-CONSOLIDATED-1"
+        ],
+        "source_name": "CONSOLIDATED",
+        "locator": "Article 113",
+        "text": "Article 113 Entry into force and application This Regulation shall enter into force on the twentieth day following that of its publication in the Official Journal of the European Union . It shall apply from 2 August 2026. However: ▼M1 (a) Chapters I and II shall apply from 2 February 2025, with the exception of Article 5(1), first subparagraph, points (ba) and (bb), and Article 5(1a) and (1b) which shall apply from 2 December 2026; ▼B (b) Chapter III Section 4, Chapter V, Chapter VII and Chapter XII and Article 78 shall apply from 2 August 2025, with the exception of Article 101; ▼M1 (c) Chapter III, Sections 1, 2, and 3, with the exception of Article 6(5), shall apply from: (i) 2 December 2027 as regards AI systems classified as high-risk pursuant to Article 6(2) and Annex III; and (ii) 2 August 2028 as regards AI systems classified as high-risk pursuant to Article 6(1) and Annex I; ▼M1 (d) Articles 102 to 110 shall apply from 27 July 2026. ▼B This Regulation shall be binding in its entirety and directly applicable in all Member States.",
+        "extracts_file": "deliverables/sources/CONSOLIDATED.extracts.json"
+      },
+      {
+        "id": "EXT-CONSOLIDATED-ART111-4",
+        "summary": "4. Providers of AI systems, including general-purpose AI systems, generating synthetic audio, image, video or text content, that have been placed on the market before 2 August 2026 shall take the necessary steps in order to comply with Arti",
+        "evidence_ids": [
+          "ATT-CONSOLIDATED-1"
+        ],
+        "source_name": "CONSOLIDATED",
+        "locator": "Article 111(4)",
+        "text": "4. Providers of AI systems, including general-purpose AI systems, generating synthetic audio, image, video or text content, that have been placed on the market before 2 August 2026 shall take the necessary steps in order to comply with Article 50(2) by 2 December 2026",
+        "extracts_file": "deliverables/sources/CONSOLIDATED.extracts.json"
+      },
+      {
+        "id": "EXT-LAW-ART50-1",
+        "summary": "Providers shall ensure that AI systems intended to interact directly with natural persons are designed and developed in such a way that the natural persons concerned are informed that they are interacting with an AI system, unless this is o",
+        "evidence_ids": [
+          "ATT-LAW-1"
+        ],
+        "source_name": "LAW",
+        "locator": "Article 50 page, paragraph 1",
+        "text": "Providers shall ensure that AI systems intended to interact directly with natural persons are designed and developed in such a way that the natural persons concerned are informed that they are interacting with an AI system, unless this is obvious from the point of view of a natural person who is reasonably well-informed, observant and circumspect, taking into account the circumstances and the context of use. This obligation shall not apply to AI systems authorised by law to detect, prevent, investigate or prosecute criminal offences, subject to appropriate safeguards for the rights and freedom",
+        "extracts_file": "deliverables/sources/LAW.extracts.json"
+      },
+      {
+        "id": "EXT-LAW-DISCLAIMER",
+        "summary": "The summaries are meant to provide helpful explanation but are not legal binding. 1. Providers shall ensure that AI syst",
+        "evidence_ids": [
+          "ATT-LAW-1"
+        ],
+        "source_name": "LAW",
+        "locator": "Article 50 page, summary note",
+        "text": "The summaries are meant to provide helpful explanation but are not legal binding. 1. Providers shall ensure that AI syst",
+        "extracts_file": "deliverables/sources/LAW.extracts.json"
+      },
+      {
+        "id": "EXT-TIME-2024-08-01",
+        "summary": "01 Aug 2024 Entry into force",
+        "evidence_ids": [
+          "ATT-TIME-1"
+        ],
+        "source_name": "TIME",
+        "locator": "timeline milestone 01 Aug 2024",
+        "text": "01 Aug 2024 Entry into force",
+        "extracts_file": "deliverables/sources/TIME.extracts.json"
+      },
+      {
+        "id": "EXT-TIME-2025-02-02",
+        "summary": "02 Feb 2025 General provisions (definitions & AI literacy) and prohibitions apply",
+        "evidence_ids": [
+          "ATT-TIME-1"
+        ],
+        "source_name": "TIME",
+        "locator": "timeline milestone 02 Feb 2025",
+        "text": "02 Feb 2025 General provisions (definitions & AI literacy) and prohibitions apply",
+        "extracts_file": "deliverables/sources/TIME.extracts.json"
+      },
+      {
+        "id": "EXT-TIME-2025-08-02",
+        "summary": "02 Aug 2025 Rules for general-purpose AI apply and governance must be in place AI Act obligations for providers of general-purpose AI models enter into application. Member States need to designate national competent authorities and adopt na",
+        "evidence_ids": [
+          "ATT-TIME-1"
+        ],
+        "source_name": "TIME",
+        "locator": "timeline milestone 02 Aug 2025",
+        "text": "02 Aug 2025 Rules for general-purpose AI apply and governance must be in place AI Act obligations for providers of general-purpose AI models enter into application. Member States need to designate national competent authorities and adopt national laws on penalties. EU-level governance (AI Board, Scientific Panel, Advisory Forum) must be set up.",
+        "extracts_file": "deliverables/sources/TIME.extracts.json"
+      },
+      {
+        "id": "EXT-TIME-2026-08-02",
+        "summary": "02 Aug 2026 The majority of rules of the AI Act come into force and enforcement starts for applicable rules Transparency rules (Article 50) start to apply. Measures in support of innovation start apply. Enforcement of the AI Act starts at n",
+        "evidence_ids": [
+          "ATT-TIME-1"
+        ],
+        "source_name": "TIME",
+        "locator": "timeline milestone 02 Aug 2026",
+        "text": "02 Aug 2026 The majority of rules of the AI Act come into force and enforcement starts for applicable rules Transparency rules (Article 50) start to apply. Measures in support of innovation start apply. Enforcement of the AI Act starts at national and EU-level concerning general-purpose AI models, prohibitions, transparency rules and AI literacy.",
+        "extracts_file": "deliverables/sources/TIME.extracts.json"
+      },
+      {
+        "id": "EXT-TIME-2026-12-02",
+        "summary": "02 Dec 2026 New prohibitions + Article 50(2) transition apply ** Prohibitions, for AI systems generating non-consensual sexual deepfakes and child sexual abuse material, start to apply. Transitional deadline for certain providers of AI syst",
+        "evidence_ids": [
+          "ATT-TIME-1"
+        ],
+        "source_name": "TIME",
+        "locator": "timeline milestone 02 Dec 2026",
+        "text": "02 Dec 2026 New prohibitions + Article 50(2) transition apply ** Prohibitions, for AI systems generating non-consensual sexual deepfakes and child sexual abuse material, start to apply. Transitional deadline for certain providers of AI systems, including GPAI systems, generating synthetic content, that were already placed on the market before 02 Aug 2026, to comply with Article 50(2).",
+        "extracts_file": "deliverables/sources/TIME.extracts.json"
+      },
+      {
+        "id": "EXT-TIME-2027-08-02",
+        "summary": "02 Aug 2027 Member States should have at least one AI regulatory sandbox per country operational",
+        "evidence_ids": [
+          "ATT-TIME-1"
+        ],
+        "source_name": "TIME",
+        "locator": "timeline milestone 02 Aug 2027",
+        "text": "02 Aug 2027 Member States should have at least one AI regulatory sandbox per country operational",
+        "extracts_file": "deliverables/sources/TIME.extracts.json"
+      },
+      {
+        "id": "EXT-TIME-2027-12-02",
+        "summary": "02 Dec 2027 Rules for high-risk AI systems in Annex III apply **",
+        "evidence_ids": [
+          "ATT-TIME-1"
+        ],
+        "source_name": "TIME",
+        "locator": "timeline milestone 02 Dec 2027",
+        "text": "02 Dec 2027 Rules for high-risk AI systems in Annex III apply **",
+        "extracts_file": "deliverables/sources/TIME.extracts.json"
+      },
+      {
+        "id": "EXT-TIME-2028-08-02",
+        "summary": "02 Aug 2028 Rules for high-risk AI embedded in regulated products covered by Annex I apply ** ** Following the Digital Omnibus on AI, certain provisions of the AI Act have been amended. For more information, refer to the FAQ section under '",
+        "evidence_ids": [
+          "ATT-TIME-1"
+        ],
+        "source_name": "TIME",
+        "locator": "timeline milestone 02 Aug 2028",
+        "text": "02 Aug 2028 Rules for high-risk AI embedded in regulated products covered by Annex I apply ** ** Following the Digital Omnibus on AI, certain provisions of the AI Act have been amended. For more information, refer to the FAQ section under 'Digital Omnibus .",
+        "extracts_file": "deliverables/sources/TIME.extracts.json"
+      },
+      {
+        "id": "EXT-FAQ-LAST-UPDATE",
+        "summary": "Last update 24 July 2026",
+        "evidence_ids": [
+          "ATT-FAQ-1"
+        ],
+        "source_name": "FAQ",
+        "locator": "page header",
+        "text": "Last update 24 July 2026",
+        "extracts_file": "deliverables/sources/FAQ.extracts.json"
+      },
+      {
+        "id": "EXT-FAQ-INTRO",
+        "summary": "This page provides answers to frequently asked questions related to concepts and obligations clarified in the Commission Guidelines on Article 50 of the AI Act. Who is a provider of an AI system and what transparency obligations apply to th",
+        "evidence_ids": [
+          "ATT-FAQ-1"
+        ],
+        "source_name": "FAQ",
+        "locator": "page introduction",
+        "text": "This page provides answers to frequently asked questions related to concepts and obligations clarified in the Commission Guidelines on Article 50 of the AI Act. Who is a provider of an AI system and what transparency obligations apply to them? According to Article 3(3) of the AI Act , providers of AI systems are natural or legal persons, public authorities, agencies or other bodies that develop AI systems, or have them developed, and place them on the EU market or put them into service under their own name or trademark. This is irrespective of whether those providers are established or located within the EU or in a third country. Providers of AI systems established or located outside the EU are also subject to the provisions of the AI Act if the output of their AI system is used in the EU. Providers must ensure that their AI systems meet the relevant transparency obligations laid down in Articles 50(1), (2) and (5) of the AI Act before placing those systems on the market or putting them into service. According to Article 50(2) of the AI Act, providers must design and develop AI systems that interact directly with natural persons — such as chatbots, AI agents, and avatars — to ensure that people are informed they are interacting with AI. Providers must also ensure that the outputs of their generative AI systems are marked with effective, reliable, robust and interoperable machine-readable marks that enable the outputs to be detected as generated or manipulated by AI systems. Who is a deployer and what transparency obligations apply to them? Deployers of AI systems are natural or legal persons, public authorities, agencies or other bodies using AI systems under their authority, excluding use for personal, non-professional activities. When a natural person uses an AI system in their personal capacity — for example, to generate deepfakes and disseminate them on social media — this is considered a personal activity. Such use is excluded from the scope of the AI Act. However, if it is an activity through which they gain an economic benefit on a regular basis (or are otherwise involved in a business, trade, occupational or freelance activity) this is considered a ‘professional’ activity. In this case, the natural person is considered to be a deployer of that AI system. Where the deployer of an AI system is a legal person under whose authority the system is used (e.g. an advertising company), the individual employees that act under the instructions and under the control of that legal person (e.g. digital animators, web designers, content creators, journalists) should not be considered as separate deployers of that system. A legal person remains a deployer even if third parties (e.g. contractors, freelancers) are involved in the operation of the system on its behalf and under its responsibility and control. Under the AI Act, deployers must ensure that they inform people when they use emotion recognition or biometric categorisation systems ( Articles 50(3)",
+        "extracts_file": "deliverables/sources/FAQ.extracts.json"
+      },
+      {
+        "id": "EXT-POLICY-BLK-3ba0b700",
+        "summary": "Project 2 Regulatory Compliance — Current Internal Policies",
+        "evidence_ids": [
+          "ATT-POLICY-2"
+        ],
+        "source_name": "POLICY",
+        "locator": "Notion block 3ba0b700-541e-81f0-9998-d48f3b1c2856 (#0, page)",
+        "text": "Project 2 Regulatory Compliance — Current Internal Policies",
+        "extracts_file": "deliverables/sources/POLICY.extracts.json"
+      },
+      {
+        "id": "EXT-POLICY-BLK-bcd6574a",
+        "summary": "Internal AI-use policy",
+        "evidence_ids": [
+          "ATT-POLICY-2"
+        ],
+        "source_name": "POLICY",
+        "locator": "Notion block bcd6574a-5228-4877-8d16-d24c45c80544 (#1, header)",
+        "text": "Internal AI-use policy",
+        "extracts_file": "deliverables/sources/POLICY.extracts.json"
+      },
+      {
+        "id": "EXT-POLICY-BLK-1c33c0b1",
+        "summary": "Policy version: AI-POL-2026-08-15",
+        "evidence_ids": [
+          "ATT-POLICY-2"
+        ],
+        "source_name": "POLICY",
+        "locator": "Notion block 1c33c0b1-6c73-4218-8aa3-83fbfb653aba (#2, text)",
+        "text": "Policy version: AI-POL-2026-08-15",
+        "extracts_file": "deliverables/sources/POLICY.extracts.json"
+      },
+      {
+        "id": "EXT-POLICY-BLK-868f44e2",
+        "summary": "Purpose",
+        "evidence_ids": [
+          "ATT-POLICY-2"
+        ],
+        "source_name": "POLICY",
+        "locator": "Notion block 868f44e2-4592-4ba0-821a-dce2c1dcc5d3 (#3, sub_header)",
+        "text": "Purpose",
+        "extracts_file": "deliverables/sources/POLICY.extracts.json"
+      },
+      {
+        "id": "EXT-POLICY-BLK-03ba4640",
+        "summary": "Quillhaven Academy uses AI only when the responsible owner can explain the use, preserve evidence, and route consequential decisions to an authorized human.",
+        "evidence_ids": [
+          "ATT-POLICY-2"
+        ],
+        "source_name": "POLICY",
+        "locator": "Notion block 03ba4640-39b7-4ea1-927d-5ce980872718 (#4, text)",
+        "text": "Quillhaven Academy uses AI only when the responsible owner can explain the use, preserve evidence, and route consequential decisions to an authorized human.",
+        "extracts_file": "deliverables/sources/POLICY.extracts.json"
+      },
+      {
+        "id": "EXT-POLICY-BLK-5bcbdfef",
+        "summary": "Learner and public transparency",
+        "evidence_ids": [
+          "ATT-POLICY-2"
+        ],
+        "source_name": "POLICY",
+        "locator": "Notion block 5bcbdfef-1800-4bcf-8cd2-d6f32125c9ff (#5, sub_header)",
+        "text": "Learner and public transparency",
+        "extracts_file": "deliverables/sources/POLICY.extracts.json"
+      },
+      {
+        "id": "EXT-POLICY-BLK-7e90cdc4",
+        "summary": "A person directly interacting with an AI system must receive a clear notice before or at the first interaction unless the AI nature is obvious from the context.",
+        "evidence_ids": [
+          "ATT-POLICY-2"
+        ],
+        "source_name": "POLICY",
+        "locator": "Notion block 7e90cdc4-4505-4858-be25-515616d70184 (#6, bulleted_list)",
+        "text": "A person directly interacting with an AI system must receive a clear notice before or at the first interaction unless the AI nature is obvious from the context.",
+        "extracts_file": "deliverables/sources/POLICY.extracts.json"
+      },
+      {
+        "id": "EXT-POLICY-BLK-3e6cadff",
+        "summary": "Public synthetic images, audio, or video must retain machine-readable provenance when the tool supports it. The Communications owner also requires a visible label unless Legal approves a documented exception.",
+        "evidence_ids": [
+          "ATT-POLICY-2"
+        ],
+        "source_name": "POLICY",
+        "locator": "Notion block 3e6cadff-3969-489a-9815-129b14e02f0c (#7, bulleted_list)",
+        "text": "Public synthetic images, audio, or video must retain machine-readable provenance when the tool supports it. The Communications owner also requires a visible label unless Legal approves a documented exception.",
+        "extracts_file": "deliverables/sources/POLICY.extracts.json"
+      },
+      {
+        "id": "EXT-POLICY-BLK-41ca6506",
+        "summary": "Staff-only drafting tools are not automatically treated as public interactions. The owner must still record how generated material reaches learners or the public.",
+        "evidence_ids": [
+          "ATT-POLICY-2"
+        ],
+        "source_name": "POLICY",
+        "locator": "Notion block 41ca6506-ba15-4af7-a03e-c57112da262a (#8, bulleted_list)",
+        "text": "Staff-only drafting tools are not automatically treated as public interactions. The owner must still record how generated material reaches learners or the public.",
+        "extracts_file": "deliverables/sources/POLICY.extracts.json"
+      },
+      {
+        "id": "EXT-POLICY-BLK-9f65728f",
+        "summary": "Evidence and exceptions",
+        "evidence_ids": [
+          "ATT-POLICY-2"
+        ],
+        "source_name": "POLICY",
+        "locator": "Notion block 9f65728f-339c-4960-9383-e003186b816b (#9, sub_header)",
+        "text": "Evidence and exceptions",
+        "extracts_file": "deliverables/sources/POLICY.extracts.json"
+      },
+      {
+        "id": "EXT-POLICY-BLK-d6992cd6",
+        "summary": "Each registered system must have a current owner, use description, exposed group, disclosure status, human-review path, and evidence reference.",
+        "evidence_ids": [
+          "ATT-POLICY-2"
+        ],
+        "source_name": "POLICY",
+        "locator": "Notion block d6992cd6-cb82-416a-87f1-0cc6bf4b4204 (#10, bulleted_list)",
+        "text": "Each registered system must have a current owner, use description, exposed group, disclosure status, human-review path, and evidence reference.",
+        "extracts_file": "deliverables/sources/POLICY.extracts.json"
+      },
+      {
+        "id": "EXT-POLICY-BLK-8ddc27f5",
+        "summary": "missing, stale, conflicting, and not-applicable are different evidence states. Missing evidence must not be converted to compliance or non-compliance.",
+        "evidence_ids": [
+          "ATT-POLICY-2"
+        ],
+        "source_name": "POLICY",
+        "locator": "Notion block 8ddc27f5-6326-470f-aa2b-71f04ac6f616 (#11, bulleted_list)",
+        "text": "missing, stale, conflicting, and not-applicable are different evidence states. Missing evidence must not be converted to compliance or non-compliance.",
+        "extracts_file": "deliverables/sources/POLICY.extracts.json"
+      },
+      {
+        "id": "EXT-POLICY-BLK-a9d1fb18",
+        "summary": "An exception requires a named owner, rationale, expiry date, and Legal approval. The automation may draft an exception request but may not approve it.",
+        "evidence_ids": [
+          "ATT-POLICY-2"
+        ],
+        "source_name": "POLICY",
+        "locator": "Notion block a9d1fb18-ee77-4c80-a085-6e06966c8f1e (#12, bulleted_list)",
+        "text": "An exception requires a named owner, rationale, expiry date, and Legal approval. The automation may draft an exception request but may not approve it.",
+        "extracts_file": "deliverables/sources/POLICY.extracts.json"
+      },
+      {
+        "id": "EXT-POLICY-BLK-c8c5d892",
+        "summary": "Approval boundary",
+        "evidence_ids": [
+          "ATT-POLICY-2"
+        ],
+        "source_name": "POLICY",
+        "locator": "Notion block c8c5d892-a333-4497-a1d1-87ed94105150 (#13, sub_header)",
+        "text": "Approval boundary",
+        "extracts_file": "deliverables/sources/POLICY.extracts.json"
+      },
+      {
+        "id": "EXT-POLICY-BLK-5ae4808f",
+        "summary": "Legal owns final interpretation of the EU AI Act. Operations owns policy activation and operational deadlines. System owners correct evidence. The automation may prepare a draft impact package and proposed actions; it may not give final leg",
+        "evidence_ids": [
+          "ATT-POLICY-2"
+        ],
+        "source_name": "POLICY",
+        "locator": "Notion block 5ae4808f-d249-4ee7-bd9f-66bd15d58055 (#14, text)",
+        "text": "Legal owns final interpretation of the EU AI Act. Operations owns policy activation and operational deadlines. System owners correct evidence. The automation may prepare a draft impact package and proposed actions; it may not give final legal advice, activate policy, change a production deadline, close an incident, or submit an official response.",
+        "extracts_file": "deliverables/sources/POLICY.extracts.json"
+      },
+      {
+        "id": "EXT-POLICY-BLK-5fb89831",
+        "summary": "Article 50 review — company operating facts",
+        "evidence_ids": [
+          "ATT-POLICY-2"
+        ],
+        "source_name": "POLICY",
+        "locator": "Notion block 5fb89831-20be-4a26-9a9e-43aaf231cc5e (#15, header)",
+        "text": "Article 50 review — company operating facts",
+        "extracts_file": "deliverables/sources/POLICY.extracts.json"
+      },
+      {
+        "id": "EXT-POLICY-BLK-4ab52877",
+        "summary": "Context revision: RC-CONTEXT-2026-09-12-R1",
+        "evidence_ids": [
+          "ATT-POLICY-2"
+        ],
+        "source_name": "POLICY",
+        "locator": "Notion block 4ab52877-9716-44f5-a219-cbb0a0557468 (#16, text)",
+        "text": "Context revision: RC-CONTEXT-2026-09-12-R1",
+        "extracts_file": "deliverables/sources/POLICY.extracts.json"
+      },
+      {
+        "id": "EXT-POLICY-BLK-77291703",
+        "summary": "Business observation date: 26 August 2026. Authoring clarification date: 12 September 2026. These case dates are separate from the date a learner retrieves the sources.",
+        "evidence_ids": [
+          "ATT-POLICY-2"
+        ],
+        "source_name": "POLICY",
+        "locator": "Notion block 77291703-0ee3-4fbf-90c8-1c2022298147 (#17, text)",
+        "text": "Business observation date: 26 August 2026. Authoring clarification date: 12 September 2026. These case dates are separate from the date a learner retrieves the sources.",
+        "extracts_file": "deliverables/sources/POLICY.extracts.json"
+      },
+      {
+        "id": "EXT-POLICY-BLK-66b46c79",
+        "summary": "Prepared by Operations with the named system owners for the current review. These are authored facts for the fictional Quillhaven training case, not statements about a real company or a Legal decision. This context supplements the unchanged",
+        "evidence_ids": [
+          "ATT-POLICY-2"
+        ],
+        "source_name": "POLICY",
+        "locator": "Notion block 66b46c79-a988-41e5-a598-535dc2a211c2 (#18, text)",
+        "text": "Prepared by Operations with the named system owners for the current review. These are authored facts for the fictional Quillhaven training case, not statements about a real company or a Legal decision. This context supplements the unchanged AI-POL-2026-08-15 policy and the dated system, evidence and action registers. It does not revise their recorded notices, evidence states, proposed dates or approvals.",
+        "extracts_file": "deliverables/sources/POLICY.extracts.json"
+      },
+      {
+        "id": "EXT-POLICY-BLK-4c3ab759",
+        "summary": "Operating scope",
+        "evidence_ids": [
+          "ATT-POLICY-2"
+        ],
+        "source_name": "POLICY",
+        "locator": "Notion block 4c3ab759-d0f5-4358-a8e5-54260585118f (#19, sub_header)",
+        "text": "Operating scope",
+        "extracts_file": "deliverables/sources/POLICY.extracts.json"
+      },
+      {
+        "id": "EXT-POLICY-BLK-911cd23c",
+        "summary": "This review concerns Quillhaven Academy's EU programme team operating from Dublin, Ireland. That team administers all eight registered uses for its professional work; the learners, applicants and staff concerned include people in Ireland, a",
+        "evidence_ids": [
+          "ATT-POLICY-2"
+        ],
+        "source_name": "POLICY",
+        "locator": "Notion block 911cd23c-b6fd-4192-b395-da1840cc1e20 (#20, text)",
+        "text": "This review concerns Quillhaven Academy's EU programme team operating from Dublin, Ireland. That team administers all eight registered uses for its professional work; the learners, applicants and staff concerned include people in Ireland, and the public campaign and programme outputs are used there. None of these uses is personal, military, national-security or law-enforcement activity. The systems are operating services, not research-only prototypes.",
+        "extracts_file": "deliverables/sources/POLICY.extracts.json"
+      },
+      {
+        "id": "EXT-POLICY-BLK-39a6c5d1",
+        "summary": "For AI-001, AI-002, AI-003, AI-004, AI-006, AI-007 and AI-008, Quillhaven licenses and operates a third-party supplier's existing AI product. It did not develop or commission development of that product, distribute it as its own AI product,",
+        "evidence_ids": [
+          "ATT-POLICY-2"
+        ],
+        "source_name": "POLICY",
+        "locator": "Notion block 39a6c5d1-4cf3-42ea-bed2-e2358a652904 (#21, text)",
+        "text": "For AI-001, AI-002, AI-003, AI-004, AI-006, AI-007 and AI-008, Quillhaven licenses and operates a third-party supplier's existing AI product. It did not develop or commission development of that product, distribute it as its own AI product, or place it into service under its own product name or trademark. The register's system names are internal inventory labels. Company content, ordinary settings and website placement do not describe a separately developed Quillhaven AI product. The current AI-005 release's development, commissioning and product-branding records are still awaiting the Assessment Operations owner refresh; the old questionnaire does not resolve them.",
+        "extracts_file": "deliverables/sources/POLICY.extracts.json"
+      },
+      {
+        "id": "EXT-POLICY-BLK-bd8de7fd",
+        "summary": "Actual use and content",
+        "evidence_ids": [
+          "ATT-POLICY-2"
+        ],
+        "source_name": "POLICY",
+        "locator": "Notion block bd8de7fd-e435-4f7f-bc65-e344ad9400a4 (#22, sub_header)",
+        "text": "Actual use and content",
+        "extracts_file": "deliverables/sources/POLICY.extracts.json"
+      },
+      {
+        "id": "EXT-POLICY-BLK-d77be889",
+        "summary": "AI-001",
+        "evidence_ids": [
+          "ATT-POLICY-2"
+        ],
+        "source_name": "POLICY",
+        "locator": "Notion block d77be889-f435-4c29-91cb-4a92d97fde72 (#23, sub_sub_header)",
+        "text": "AI-001",
+        "extracts_file": "deliverables/sources/POLICY.extracts.json"
+      },
+      {
+        "id": "EXT-POLICY-BLK-3f8d8763",
+        "summary": "Learners exchange questions and generated replies directly with the licensed support chat. It does not classify biometric data or infer emotions or intentions. The existing notice and evidence reports remain the source for disclosure practi",
+        "evidence_ids": [
+          "ATT-POLICY-2"
+        ],
+        "source_name": "POLICY",
+        "locator": "Notion block 3f8d8763-fa5f-4ffe-8122-73a15496d8b5 (#24, text)",
+        "text": "Learners exchange questions and generated replies directly with the licensed support chat. It does not classify biometric data or infer emotions or intentions. The existing notice and evidence reports remain the source for disclosure practice.",
+        "extracts_file": "deliverables/sources/POLICY.extracts.json"
+      },
+      {
+        "id": "EXT-POLICY-BLK-2a762c65",
+        "summary": "AI-002",
+        "evidence_ids": [
+          "ATT-POLICY-2"
+        ],
+        "source_name": "POLICY",
+        "locator": "Notion block 2a762c65-4b93-42a5-ae1c-c7134956c2cf (#25, sub_sub_header)",
+        "text": "AI-002",
+        "extracts_file": "deliverables/sources/POLICY.extracts.json"
+      },
+      {
+        "id": "EXT-POLICY-BLK-03ec4cd9",
+        "summary": "Staff use the drafting product privately. An admissions advisor reviews and edits a draft before personally sending an individual applicant email; applicants do not converse with the AI product. These are individual administrative replies, ",
+        "evidence_ids": [
+          "ATT-POLICY-2"
+        ],
+        "source_name": "POLICY",
+        "locator": "Notion block 03ec4cd9-cf3f-4949-9e03-3e11bceca258 (#26, text)",
+        "text": "Staff use the drafting product privately. An admissions advisor reviews and edits a draft before personally sending an individual applicant email; applicants do not converse with the AI product. These are individual administrative replies, not material published to inform the public about matters of public interest.",
+        "extracts_file": "deliverables/sources/POLICY.extracts.json"
+      },
+      {
+        "id": "EXT-POLICY-BLK-bfc055c8",
+        "summary": "AI-003",
+        "evidence_ids": [
+          "ATT-POLICY-2"
+        ],
+        "source_name": "POLICY",
+        "locator": "Notion block bfc055c8-f6f6-4930-9a3a-0b41f44df6bc (#27, sub_sub_header)",
+        "text": "AI-003",
+        "extracts_file": "deliverables/sources/POLICY.extracts.json"
+      },
+      {
+        "id": "EXT-POLICY-BLK-de175065",
+        "summary": "The current campaign uses visibly illustrated fictional classroom scenes. They are not depictions of an existing person, campus, object or event presented as an authentic photograph or recording. The supplier's product generates images from",
+        "evidence_ids": [
+          "ATT-POLICY-2"
+        ],
+        "source_name": "POLICY",
+        "locator": "Notion block de175065-2691-4e41-81f4-c8ea55d1b5ac (#28, text)",
+        "text": "The current campaign uses visibly illustrated fictional classroom scenes. They are not depictions of an existing person, campus, object or event presented as an authentic photograph or recording. The supplier's product generates images from prompts; this use is not limited to minor correction of supplied images. The published-copy metadata conflict in REC-003 remains unresolved.",
+        "extracts_file": "deliverables/sources/POLICY.extracts.json"
+      },
+      {
+        "id": "EXT-POLICY-BLK-4689e99e",
+        "summary": "AI-004",
+        "evidence_ids": [
+          "ATT-POLICY-2"
+        ],
+        "source_name": "POLICY",
+        "locator": "Notion block 4689e99e-1a31-40ca-8c5c-0bd552e34aeb (#29, sub_sub_header)",
+        "text": "AI-004",
+        "extracts_file": "deliverables/sources/POLICY.extracts.json"
+      },
+      {
+        "id": "EXT-POLICY-BLK-2aacbbf1",
+        "summary": "Learners interact directly with the licensed spoken-practice product and receive pronunciation feedback. It evaluates spoken pronunciation; it is not used to identify or infer emotions or intentions or to assign people to categories from bi",
+        "evidence_ids": [
+          "ATT-POLICY-2"
+        ],
+        "source_name": "POLICY",
+        "locator": "Notion block 2aacbbf1-953a-463f-92e3-70b3db3e5131 (#30, text)",
+        "text": "Learners interact directly with the licensed spoken-practice product and receive pronunciation feedback. It evaluates spoken pronunciation; it is not used to identify or infer emotions or intentions or to assign people to categories from biometric data. The missing first-interaction notice remains as reported.",
+        "extracts_file": "deliverables/sources/POLICY.extracts.json"
+      },
+      {
+        "id": "EXT-POLICY-BLK-1f79995a",
+        "summary": "AI-005",
+        "evidence_ids": [
+          "ATT-POLICY-2"
+        ],
+        "source_name": "POLICY",
+        "locator": "Notion block 1f79995a-5284-45a9-b09a-aab48b57a876 (#31, sub_sub_header)",
+        "text": "AI-005",
+        "extracts_file": "deliverables/sources/POLICY.extracts.json"
+      },
+      {
+        "id": "EXT-POLICY-BLK-2e28b3c4",
+        "summary": "The product flags assessment-session activity for a human reviewer and never makes the final assessment decision. Current-release documentation has not yet established whether the flagging uses biometric data to infer emotions, intentions o",
+        "evidence_ids": [
+          "ATT-POLICY-2"
+        ],
+        "source_name": "POLICY",
+        "locator": "Notion block 2e28b3c4-a5e1-4dc3-9a18-0a22ff63e41e (#32, text)",
+        "text": "The product flags assessment-session activity for a human reviewer and never makes the final assessment decision. Current-release documentation has not yet established whether the flagging uses biometric data to infer emotions, intentions or personal categories. Assessment Operations must supply those facts together with the current development and release records; a human-review step does not settle them.",
+        "extracts_file": "deliverables/sources/POLICY.extracts.json"
+      },
+      {
+        "id": "EXT-POLICY-BLK-640e17f8",
+        "summary": "AI-006",
+        "evidence_ids": [
+          "ATT-POLICY-2"
+        ],
+        "source_name": "POLICY",
+        "locator": "Notion block 640e17f8-d74e-42d5-8205-ca86ab7544d8 (#33, sub_sub_header)",
+        "text": "AI-006",
+        "extracts_file": "deliverables/sources/POLICY.extracts.json"
+      },
+      {
+        "id": "EXT-POLICY-BLK-2baa4238",
+        "summary": "Staff generate internal meeting summaries within the restricted staff workspace. The summaries are not published or sent to applicants, learners or the general public. They do not involve generated or manipulated images, audio or video.",
+        "evidence_ids": [
+          "ATT-POLICY-2"
+        ],
+        "source_name": "POLICY",
+        "locator": "Notion block 2baa4238-573a-4f91-a394-c7dd73ba2f5c (#34, text)",
+        "text": "Staff generate internal meeting summaries within the restricted staff workspace. The summaries are not published or sent to applicants, learners or the general public. They do not involve generated or manipulated images, audio or video.",
+        "extracts_file": "deliverables/sources/POLICY.extracts.json"
+      },
+      {
+        "id": "EXT-POLICY-BLK-d194ed55",
+        "summary": "AI-007",
+        "evidence_ids": [
+          "ATT-POLICY-2"
+        ],
+        "source_name": "POLICY",
+        "locator": "Notion block d194ed55-af4e-45e4-bee4-521c4b250e9a (#35, sub_sub_header)",
+        "text": "AI-007",
+        "extracts_file": "deliverables/sources/POLICY.extracts.json"
+      },
+      {
+        "id": "EXT-POLICY-BLK-a44120e5",
+        "summary": "Visitors converse directly with the licensed website guide. Its visible character is an obviously stylized fictional graphic, not a likeness or recording of an existing person. The graphic alone does not establish what visitors understand a",
+        "evidence_ids": [
+          "ATT-POLICY-2"
+        ],
+        "source_name": "POLICY",
+        "locator": "Notion block a44120e5-ad1b-4e65-8c06-dc4f43c3630b (#36, text)",
+        "text": "Visitors converse directly with the licensed website guide. Its visible character is an obviously stylized fictional graphic, not a likeness or recording of an existing person. The graphic alone does not establish what visitors understand about the conversation. The owner/banner and current-capture conflict in REC-008 remains unresolved.",
+        "extracts_file": "deliverables/sources/POLICY.extracts.json"
+      },
+      {
+        "id": "EXT-POLICY-BLK-23072c7a",
+        "summary": "AI-008",
+        "evidence_ids": [
+          "ATT-POLICY-2"
+        ],
+        "source_name": "POLICY",
+        "locator": "Notion block 23072c7a-9845-4763-8d83-cfc01e170388 (#37, sub_sub_header)",
+        "text": "AI-008",
+        "extracts_file": "deliverables/sources/POLICY.extracts.json"
+      },
+      {
+        "id": "EXT-POLICY-BLK-a46fd543",
+        "summary": "Communications uses the supplier's product to create translated speech and adjusted lip movements for recorded programme presenters. The presenters are real people; the altered recording makes them appear to speak words in a language they d",
+        "evidence_ids": [
+          "ATT-POLICY-2"
+        ],
+        "source_name": "POLICY",
+        "locator": "Notion block a46fd543-30cc-4cd3-bf4d-591434c636f2 (#38, text)",
+        "text": "Communications uses the supplier's product to create translated speech and adjusted lip movements for recorded programme presenters. The presenters are real people; the altered recording makes them appear to speak words in a language they did not actually record, and a viewer could mistake it for an authentic recording without disclosure. The videos communicate programme information, not an evidently artistic, satirical or fictional performance. The visible-label report, untested provenance and unapproved exception request remain exactly as recorded.",
+        "extracts_file": "deliverables/sources/POLICY.extracts.json"
+      },
+      {
+        "id": "EXT-POLICY-BLK-0ae801e1",
+        "summary": "Product timing and evidence limits",
+        "evidence_ids": [
+          "ATT-POLICY-2"
+        ],
+        "source_name": "POLICY",
+        "locator": "Notion block 0ae801e1-cc9e-4460-9853-f7309b21eac2 (#39, sub_header)",
+        "text": "Product timing and evidence limits",
+        "extracts_file": "deliverables/sources/POLICY.extracts.json"
+      },
+      {
+        "id": "EXT-POLICY-BLK-af61ff06",
+        "summary": "The suppliers' product-release notices held by Operations report that the currently licensed image-generation product used for AI-003 and audio/video-generation product used for AI-008 were first offered commercially in the EU on 1 June 202",
+        "evidence_ids": [
+          "ATT-POLICY-2"
+        ],
+        "source_name": "POLICY",
+        "locator": "Notion block af61ff06-4e78-44a8-9d7f-52238a870a79 (#40, text)",
+        "text": "The suppliers' product-release notices held by Operations report that the currently licensed image-generation product used for AI-003 and audio/video-generation product used for AI-008 were first offered commercially in the EU on 1 June 2026. These are product market-entry dates, not the dates Quillhaven exported or published individual images or videos. They do not identify Quillhaven as the supplier. Current release and market-entry evidence for AI-005 remains unavailable.",
+        "extracts_file": "deliverables/sources/POLICY.extracts.json"
+      },
+      {
+        "id": "EXT-POLICY-BLK-ddb274c4",
+        "summary": "This document records owner-supplied operating facts. It does not replace missing screenshots, prove provenance metadata survived publication, refresh stale evidence, authorize an exception or settle statutory applicability. No Legal approv",
+        "evidence_ids": [
+          "ATT-POLICY-2"
+        ],
+        "source_name": "POLICY",
+        "locator": "Notion block ddb274c4-e916-4511-a1b7-b19f1f65e756 (#41, text)",
+        "text": "This document records owner-supplied operating facts. It does not replace missing screenshots, prove provenance metadata survived publication, refresh stale evidence, authorize an exception or settle statutory applicability. No Legal approval, expiry date, activated policy or new operational deadline is supplied. Legal reviews the learner's supported interpretation; system owners resolve the specifically identified factual gaps.",
+        "extracts_file": "deliverables/sources/POLICY.extracts.json"
+      },
+      {
+        "id": "EXT-SYSTEMS-AI-001",
+        "summary": "system_id=AI-001 | system_name=Learner Support Chat | use_case=Answers routine learner questions | owner=Learner Operations | provider_role=no | deployer_role=yes | exposed_group=learners | output_type=direct_interaction | current_notice=ye",
+        "evidence_ids": [
+          "ATT-SYSTEMS-2"
+        ],
+        "source_name": "SYSTEMS",
+        "locator": "tab 'AI System Register' row 2 (system_id=AI-001)",
+        "text": "system_id=AI-001 | system_name=Learner Support Chat | use_case=Answers routine learner questions | owner=Learner Operations | provider_role=no | deployer_role=yes | exposed_group=learners | output_type=direct_interaction | current_notice=yes | human_review=staff escalation | evidence_status=complete | evidence_updated_at=2026-08-20 | record_version=register-2026-08-26",
+        "extracts_file": "deliverables/sources/SYSTEMS.extracts.json"
+      },
+      {
+        "id": "EXT-SYSTEMS-AI-002",
+        "summary": "system_id=AI-002 | system_name=Admissions Draft Assistant | use_case=Drafts applicant email replies | owner=Admissions | provider_role=no | deployer_role=yes | exposed_group=applicants | output_type=text | current_notice=unknown | human_rev",
+        "evidence_ids": [
+          "ATT-SYSTEMS-2"
+        ],
+        "source_name": "SYSTEMS",
+        "locator": "tab 'AI System Register' row 3 (system_id=AI-002)",
+        "text": "system_id=AI-002 | system_name=Admissions Draft Assistant | use_case=Drafts applicant email replies | owner=Admissions | provider_role=no | deployer_role=yes | exposed_group=applicants | output_type=text | current_notice=unknown | human_review=advisor approval | evidence_status=partial | evidence_updated_at=2026-07-01 | record_version=register-2026-08-26",
+        "extracts_file": "deliverables/sources/SYSTEMS.extracts.json"
+      },
+      {
+        "id": "EXT-SYSTEMS-AI-003",
+        "summary": "system_id=AI-003 | system_name=Campaign Image Studio | use_case=Creates public campaign images | owner=Communications | provider_role=no | deployer_role=yes | exposed_group=public | output_type=synthetic_image | current_notice=visible_label",
+        "evidence_ids": [
+          "ATT-SYSTEMS-2"
+        ],
+        "source_name": "SYSTEMS",
+        "locator": "tab 'AI System Register' row 4 (system_id=AI-003)",
+        "text": "system_id=AI-003 | system_name=Campaign Image Studio | use_case=Creates public campaign images | owner=Communications | provider_role=no | deployer_role=yes | exposed_group=public | output_type=synthetic_image | current_notice=visible_label | human_review=communications approval | evidence_status=complete | evidence_updated_at=2026-08-22 | record_version=register-2026-08-26",
+        "extracts_file": "deliverables/sources/SYSTEMS.extracts.json"
+      },
+      {
+        "id": "EXT-SYSTEMS-AI-004",
+        "summary": "system_id=AI-004 | system_name=Pronunciation Coach | use_case=Provides spoken practice feedback | owner=Learning Experience | provider_role=no | deployer_role=yes | exposed_group=learners | output_type=direct_interaction | current_notice=no",
+        "evidence_ids": [
+          "ATT-SYSTEMS-2"
+        ],
+        "source_name": "SYSTEMS",
+        "locator": "tab 'AI System Register' row 5 (system_id=AI-004)",
+        "text": "system_id=AI-004 | system_name=Pronunciation Coach | use_case=Provides spoken practice feedback | owner=Learning Experience | provider_role=no | deployer_role=yes | exposed_group=learners | output_type=direct_interaction | current_notice=no | human_review=instructor escalation | evidence_status=complete | evidence_updated_at=2026-08-18 | record_version=register-2026-08-26",
+        "extracts_file": "deliverables/sources/SYSTEMS.extracts.json"
+      },
+      {
+        "id": "EXT-SYSTEMS-AI-005",
+        "summary": "system_id=AI-005 | system_name=Remote Proctor Signal | use_case=Flags assessment sessions for review | owner=Assessment Operations | provider_role=unknown | deployer_role=yes | exposed_group=learners | output_type=classification | current_n",
+        "evidence_ids": [
+          "ATT-SYSTEMS-2"
+        ],
+        "source_name": "SYSTEMS",
+        "locator": "tab 'AI System Register' row 6 (system_id=AI-005)",
+        "text": "system_id=AI-005 | system_name=Remote Proctor Signal | use_case=Flags assessment sessions for review | owner=Assessment Operations | provider_role=unknown | deployer_role=yes | exposed_group=learners | output_type=classification | current_notice=yes | human_review=human adjudication | evidence_status=stale | evidence_updated_at=2026-04-15 | record_version=register-2026-08-26",
+        "extracts_file": "deliverables/sources/SYSTEMS.extracts.json"
+      },
+      {
+        "id": "EXT-SYSTEMS-AI-006",
+        "summary": "system_id=AI-006 | system_name=Staff Summary Assistant | use_case=Summarizes internal meeting notes | owner=People Operations | provider_role=no | deployer_role=yes | exposed_group=staff | output_type=text | current_notice=not_applicable | ",
+        "evidence_ids": [
+          "ATT-SYSTEMS-2"
+        ],
+        "source_name": "SYSTEMS",
+        "locator": "tab 'AI System Register' row 7 (system_id=AI-006)",
+        "text": "system_id=AI-006 | system_name=Staff Summary Assistant | use_case=Summarizes internal meeting notes | owner=People Operations | provider_role=no | deployer_role=yes | exposed_group=staff | output_type=text | current_notice=not_applicable | human_review=author review | evidence_status=complete | evidence_updated_at=2026-08-14 | record_version=register-2026-08-26",
+        "extracts_file": "deliverables/sources/SYSTEMS.extracts.json"
+      },
+      {
+        "id": "EXT-SYSTEMS-AI-007",
+        "summary": "system_id=AI-007 | system_name=Website Guide Avatar | use_case=Answers public programme questions | owner=Marketing | provider_role=no | deployer_role=yes | exposed_group=public | output_type=direct_interaction | current_notice=no | human_r",
+        "evidence_ids": [
+          "ATT-SYSTEMS-2"
+        ],
+        "source_name": "SYSTEMS",
+        "locator": "tab 'AI System Register' row 8 (system_id=AI-007)",
+        "text": "system_id=AI-007 | system_name=Website Guide Avatar | use_case=Answers public programme questions | owner=Marketing | provider_role=no | deployer_role=yes | exposed_group=public | output_type=direct_interaction | current_notice=no | human_review=marketing escalation | evidence_status=conflicting | evidence_updated_at=2026-08-21 | record_version=register-2026-08-26",
+        "extracts_file": "deliverables/sources/SYSTEMS.extracts.json"
+      },
+      {
+        "id": "EXT-SYSTEMS-AI-008",
+        "summary": "system_id=AI-008 | system_name=Video Localisation Tool | use_case=Generates dubbed public programme videos | owner=Communications | provider_role=no | deployer_role=yes | exposed_group=public | output_type=synthetic_audio_video | current_no",
+        "evidence_ids": [
+          "ATT-SYSTEMS-2"
+        ],
+        "source_name": "SYSTEMS",
+        "locator": "tab 'AI System Register' row 9 (system_id=AI-008)",
+        "text": "system_id=AI-008 | system_name=Video Localisation Tool | use_case=Generates dubbed public programme videos | owner=Communications | provider_role=no | deployer_role=yes | exposed_group=public | output_type=synthetic_audio_video | current_notice=visible_label | human_review=communications approval | evidence_status=partial | evidence_updated_at=2026-08-19 | record_version=register-2026-08-26",
+        "extracts_file": "deliverables/sources/SYSTEMS.extracts.json"
+      },
+      {
+        "id": "EXT-EVIDENCE-REC-001",
+        "summary": "record_id=REC-001 | system_id=AI-001 | record_type=evidence | reported_at=2026-08-20 | owner=Learner Operations | status=closed | evidence_ref=notice-screen-v3 | evidence_state=complete | notes=Notice screenshot and release record agree",
+        "evidence_ids": [
+          "ATT-EVIDENCE-2"
+        ],
+        "source_name": "EVIDENCE",
+        "locator": "tab 'Incident Evidence Register' row 2 (record_id=REC-001)",
+        "text": "record_id=REC-001 | system_id=AI-001 | record_type=evidence | reported_at=2026-08-20 | owner=Learner Operations | status=closed | evidence_ref=notice-screen-v3 | evidence_state=complete | notes=Notice screenshot and release record agree",
+        "extracts_file": "deliverables/sources/EVIDENCE.extracts.json"
+      },
+      {
+        "id": "EXT-EVIDENCE-REC-002",
+        "summary": "record_id=REC-002 | system_id=AI-002 | record_type=evidence_gap | reported_at=2026-08-23 | owner=Admissions | status=open | evidence_ref=applicant-email-sample | evidence_state=missing | notes=No evidence that recipients are told when gener",
+        "evidence_ids": [
+          "ATT-EVIDENCE-2"
+        ],
+        "source_name": "EVIDENCE",
+        "locator": "tab 'Incident Evidence Register' row 3 (record_id=REC-002)",
+        "text": "record_id=REC-002 | system_id=AI-002 | record_type=evidence_gap | reported_at=2026-08-23 | owner=Admissions | status=open | evidence_ref=applicant-email-sample | evidence_state=missing | notes=No evidence that recipients are told when generated text is used",
+        "extracts_file": "deliverables/sources/EVIDENCE.extracts.json"
+      },
+      {
+        "id": "EXT-EVIDENCE-REC-003",
+        "summary": "record_id=REC-003 | system_id=AI-003 | record_type=incident | reported_at=2026-08-24 | owner=Communications | status=open | evidence_ref=social-post-884 | evidence_state=conflicting | notes=Visible label exists but exported platform copy ma",
+        "evidence_ids": [
+          "ATT-EVIDENCE-2"
+        ],
+        "source_name": "EVIDENCE",
+        "locator": "tab 'Incident Evidence Register' row 4 (record_id=REC-003)",
+        "text": "record_id=REC-003 | system_id=AI-003 | record_type=incident | reported_at=2026-08-24 | owner=Communications | status=open | evidence_ref=social-post-884 | evidence_state=conflicting | notes=Visible label exists but exported platform copy may have lost metadata",
+        "extracts_file": "deliverables/sources/EVIDENCE.extracts.json"
+      },
+      {
+        "id": "EXT-EVIDENCE-REC-004",
+        "summary": "record_id=REC-004 | system_id=AI-004 | record_type=incident | reported_at=2026-08-18 | owner=Learning Experience | status=open | evidence_ref=coach-onboarding-v2 | evidence_state=complete | notes=First interaction contains no AI notice",
+        "evidence_ids": [
+          "ATT-EVIDENCE-2"
+        ],
+        "source_name": "EVIDENCE",
+        "locator": "tab 'Incident Evidence Register' row 5 (record_id=REC-004)",
+        "text": "record_id=REC-004 | system_id=AI-004 | record_type=incident | reported_at=2026-08-18 | owner=Learning Experience | status=open | evidence_ref=coach-onboarding-v2 | evidence_state=complete | notes=First interaction contains no AI notice",
+        "extracts_file": "deliverables/sources/EVIDENCE.extracts.json"
+      },
+      {
+        "id": "EXT-EVIDENCE-REC-005",
+        "summary": "record_id=REC-005 | system_id=AI-005 | record_type=evidence_gap | reported_at=2026-08-25 | owner=Assessment Operations | status=open | evidence_ref=provider-role-questionnaire | evidence_state=stale | notes=Provider role questionnaire preda",
+        "evidence_ids": [
+          "ATT-EVIDENCE-2"
+        ],
+        "source_name": "EVIDENCE",
+        "locator": "tab 'Incident Evidence Register' row 6 (record_id=REC-005)",
+        "text": "record_id=REC-005 | system_id=AI-005 | record_type=evidence_gap | reported_at=2026-08-25 | owner=Assessment Operations | status=open | evidence_ref=provider-role-questionnaire | evidence_state=stale | notes=Provider role questionnaire predates the current release",
+        "extracts_file": "deliverables/sources/EVIDENCE.extracts.json"
+      },
+      {
+        "id": "EXT-EVIDENCE-REC-006",
+        "summary": "record_id=REC-006 | system_id=AI-005 | record_type=evidence | reported_at=2026-08-25 | owner=Assessment Operations | status=open | evidence_ref=human-review-sop-v4 | evidence_state=complete | notes=Flag never makes the final assessment deci",
+        "evidence_ids": [
+          "ATT-EVIDENCE-2"
+        ],
+        "source_name": "EVIDENCE",
+        "locator": "tab 'Incident Evidence Register' row 7 (record_id=REC-006)",
+        "text": "record_id=REC-006 | system_id=AI-005 | record_type=evidence | reported_at=2026-08-25 | owner=Assessment Operations | status=open | evidence_ref=human-review-sop-v4 | evidence_state=complete | notes=Flag never makes the final assessment decision",
+        "extracts_file": "deliverables/sources/EVIDENCE.extracts.json"
+      },
+      {
+        "id": "EXT-EVIDENCE-REC-007",
+        "summary": "record_id=REC-007 | system_id=AI-006 | record_type=evidence | reported_at=2026-08-14 | owner=People Operations | status=closed | evidence_ref=internal-use-review | evidence_state=complete | notes=Tool is restricted to staff workspace",
+        "evidence_ids": [
+          "ATT-EVIDENCE-2"
+        ],
+        "source_name": "EVIDENCE",
+        "locator": "tab 'Incident Evidence Register' row 8 (record_id=REC-007)",
+        "text": "record_id=REC-007 | system_id=AI-006 | record_type=evidence | reported_at=2026-08-14 | owner=People Operations | status=closed | evidence_ref=internal-use-review | evidence_state=complete | notes=Tool is restricted to staff workspace",
+        "extracts_file": "deliverables/sources/EVIDENCE.extracts.json"
+      },
+      {
+        "id": "EXT-EVIDENCE-REC-008",
+        "summary": "record_id=REC-008 | system_id=AI-007 | record_type=incident | reported_at=2026-08-21 | owner=Marketing | status=open | evidence_ref=avatar-page-capture | evidence_state=conflicting | notes=Owner says a banner exists but the current capture ",
+        "evidence_ids": [
+          "ATT-EVIDENCE-2"
+        ],
+        "source_name": "EVIDENCE",
+        "locator": "tab 'Incident Evidence Register' row 9 (record_id=REC-008)",
+        "text": "record_id=REC-008 | system_id=AI-007 | record_type=incident | reported_at=2026-08-21 | owner=Marketing | status=open | evidence_ref=avatar-page-capture | evidence_state=conflicting | notes=Owner says a banner exists but the current capture shows none",
+        "extracts_file": "deliverables/sources/EVIDENCE.extracts.json"
+      },
+      {
+        "id": "EXT-EVIDENCE-REC-009",
+        "summary": "record_id=REC-009 | system_id=AI-008 | record_type=evidence | reported_at=2026-08-19 | owner=Communications | status=open | evidence_ref=localisation-export-test | evidence_state=partial | notes=Visible label verified but machine-readable p",
+        "evidence_ids": [
+          "ATT-EVIDENCE-2"
+        ],
+        "source_name": "EVIDENCE",
+        "locator": "tab 'Incident Evidence Register' row 10 (record_id=REC-009)",
+        "text": "record_id=REC-009 | system_id=AI-008 | record_type=evidence | reported_at=2026-08-19 | owner=Communications | status=open | evidence_ref=localisation-export-test | evidence_state=partial | notes=Visible label verified but machine-readable provenance not checked",
+        "extracts_file": "deliverables/sources/EVIDENCE.extracts.json"
+      },
+      {
+        "id": "EXT-EVIDENCE-REC-010",
+        "summary": "record_id=REC-010 | system_id=AI-008 | record_type=exception_request | reported_at=2026-08-26 | owner=Communications | status=draft | evidence_ref=exception-draft-008 | evidence_state=missing | notes=No Legal approval or expiry date recorde",
+        "evidence_ids": [
+          "ATT-EVIDENCE-2"
+        ],
+        "source_name": "EVIDENCE",
+        "locator": "tab 'Incident Evidence Register' row 11 (record_id=REC-010)",
+        "text": "record_id=REC-010 | system_id=AI-008 | record_type=exception_request | reported_at=2026-08-26 | owner=Communications | status=draft | evidence_ref=exception-draft-008 | evidence_state=missing | notes=No Legal approval or expiry date recorded",
+        "extracts_file": "deliverables/sources/EVIDENCE.extracts.json"
+      },
+      {
+        "id": "EXT-CALENDAR-ACT-001",
+        "summary": "action_id=ACT-001 | system_id=AI-004 | action=Add and verify first-interaction AI notice | owner=Learning Experience | due_date=2026-09-04 | status=planned | approval_required=operations | source_version=calendar-2026-08-26",
+        "evidence_ids": [
+          "ATT-CALENDAR-2"
+        ],
+        "source_name": "CALENDAR",
+        "locator": "tab 'Compliance Calendar' row 2 (action_id=ACT-001)",
+        "text": "action_id=ACT-001 | system_id=AI-004 | action=Add and verify first-interaction AI notice | owner=Learning Experience | due_date=2026-09-04 | status=planned | approval_required=operations | source_version=calendar-2026-08-26",
+        "extracts_file": "deliverables/sources/CALENDAR.extracts.json"
+      },
+      {
+        "id": "EXT-CALENDAR-ACT-002",
+        "summary": "action_id=ACT-002 | system_id=AI-007 | action=Resolve disclosure evidence conflict | owner=Marketing | due_date=2026-09-03 | status=open | approval_required=operations | source_version=calendar-2026-08-26",
+        "evidence_ids": [
+          "ATT-CALENDAR-2"
+        ],
+        "source_name": "CALENDAR",
+        "locator": "tab 'Compliance Calendar' row 3 (action_id=ACT-002)",
+        "text": "action_id=ACT-002 | system_id=AI-007 | action=Resolve disclosure evidence conflict | owner=Marketing | due_date=2026-09-03 | status=open | approval_required=operations | source_version=calendar-2026-08-26",
+        "extracts_file": "deliverables/sources/CALENDAR.extracts.json"
+      },
+      {
+        "id": "EXT-CALENDAR-ACT-003",
+        "summary": "action_id=ACT-003 | system_id=AI-002 | action=Confirm recipient disclosure practice | owner=Admissions | due_date=2026-09-08 | status=open | approval_required=legal | source_version=calendar-2026-08-26",
+        "evidence_ids": [
+          "ATT-CALENDAR-2"
+        ],
+        "source_name": "CALENDAR",
+        "locator": "tab 'Compliance Calendar' row 4 (action_id=ACT-003)",
+        "text": "action_id=ACT-003 | system_id=AI-002 | action=Confirm recipient disclosure practice | owner=Admissions | due_date=2026-09-08 | status=open | approval_required=legal | source_version=calendar-2026-08-26",
+        "extracts_file": "deliverables/sources/CALENDAR.extracts.json"
+      },
+      {
+        "id": "EXT-CALENDAR-ACT-004",
+        "summary": "action_id=ACT-004 | system_id=AI-003 | action=Verify machine-readable provenance after publishing | owner=Communications | due_date=2026-09-10 | status=open | approval_required=operations | source_version=calendar-2026-08-26",
+        "evidence_ids": [
+          "ATT-CALENDAR-2"
+        ],
+        "source_name": "CALENDAR",
+        "locator": "tab 'Compliance Calendar' row 5 (action_id=ACT-004)",
+        "text": "action_id=ACT-004 | system_id=AI-003 | action=Verify machine-readable provenance after publishing | owner=Communications | due_date=2026-09-10 | status=open | approval_required=operations | source_version=calendar-2026-08-26",
+        "extracts_file": "deliverables/sources/CALENDAR.extracts.json"
+      },
+      {
+        "id": "EXT-CALENDAR-ACT-005",
+        "summary": "action_id=ACT-005 | system_id=AI-005 | action=Refresh provider-role and release evidence | owner=Assessment Operations | due_date=2026-09-12 | status=open | approval_required=legal | source_version=calendar-2026-08-26",
+        "evidence_ids": [
+          "ATT-CALENDAR-2"
+        ],
+        "source_name": "CALENDAR",
+        "locator": "tab 'Compliance Calendar' row 6 (action_id=ACT-005)",
+        "text": "action_id=ACT-005 | system_id=AI-005 | action=Refresh provider-role and release evidence | owner=Assessment Operations | due_date=2026-09-12 | status=open | approval_required=legal | source_version=calendar-2026-08-26",
+        "extracts_file": "deliverables/sources/CALENDAR.extracts.json"
+      },
+      {
+        "id": "EXT-CALENDAR-ACT-006",
+        "summary": "action_id=ACT-006 | system_id=AI-008 | action=Complete provenance test | owner=Communications | due_date=2026-09-09 | status=open | approval_required=operations | source_version=calendar-2026-08-26",
+        "evidence_ids": [
+          "ATT-CALENDAR-2"
+        ],
+        "source_name": "CALENDAR",
+        "locator": "tab 'Compliance Calendar' row 7 (action_id=ACT-006)",
+        "text": "action_id=ACT-006 | system_id=AI-008 | action=Complete provenance test | owner=Communications | due_date=2026-09-09 | status=open | approval_required=operations | source_version=calendar-2026-08-26",
+        "extracts_file": "deliverables/sources/CALENDAR.extracts.json"
+      },
+      {
+        "id": "EXT-CALENDAR-ACT-007",
+        "summary": "action_id=ACT-007 | system_id=AI-008 | action=Review exception request | owner=Legal | due_date=2026-09-15 | status=blocked | approval_required=legal | source_version=calendar-2026-08-26",
+        "evidence_ids": [
+          "ATT-CALENDAR-2"
+        ],
+        "source_name": "CALENDAR",
+        "locator": "tab 'Compliance Calendar' row 8 (action_id=ACT-007)",
+        "text": "action_id=ACT-007 | system_id=AI-008 | action=Review exception request | owner=Legal | due_date=2026-09-15 | status=blocked | approval_required=legal | source_version=calendar-2026-08-26",
+        "extracts_file": "deliverables/sources/CALENDAR.extracts.json"
+      },
+      {
+        "id": "EXT-CALENDAR-ACT-008",
+        "summary": "action_id=ACT-008 | system_id=ALL | action=Quarterly AI register evidence review | owner=Operations | due_date=2026-10-02 | status=scheduled | approval_required=operations | source_version=calendar-2026-08-26",
+        "evidence_ids": [
+          "ATT-CALENDAR-2"
+        ],
+        "source_name": "CALENDAR",
+        "locator": "tab 'Compliance Calendar' row 9 (action_id=ACT-008)",
+        "text": "action_id=ACT-008 | system_id=ALL | action=Quarterly AI register evidence review | owner=Operations | due_date=2026-10-02 | status=scheduled | approval_required=operations | source_version=calendar-2026-08-26",
+        "extracts_file": "deliverables/sources/CALENDAR.extracts.json"
+      }
+    ],
+    "source_versions": {
+      "OJ": {
+        "status": "retrieved",
+        "content_hash": "sha256:1a5e1557a17e65144c637d599e2e366aebc6935110b1acf9e5ace2a0cc6c6cd6",
+        "extracts_sha256": "sha256:bb692d7918df0189dd26615ddb2cba757d4b2afe2f881d569d85d37d526ab532",
+        "version": {
+          "title": "Regulation - EU - 2024/1689 - EN - EUR-Lex",
+          "eli": "http://data.europa.eu/eli/reg/2024/1689/oj",
+          "publication": "OJ L, 2024/1689, 12.7.2024"
+        },
+        "retrieved_at": "2026-10-06T20:21:29Z"
+      },
+      "AMEND": {
+        "status": "retrieved",
+        "content_hash": "sha256:7eeaaca02531295bc42cb3d214a7ea71b6f1e69a5196fb5bd1fd7be2db10ff8e",
+        "extracts_sha256": "sha256:e4c62ed296ee6561daeed21174792ea2d96de4d8e27d5aa008ce94a07ebc9321",
+        "version": {
+          "title": "Regulation - EU - 2026/1744 - EN - EUR-Lex",
+          "eli": "http://data.europa.eu/eli/reg/2026/1744/oj",
+          "publication_date": "2026-07-24",
+          "entry_into_force_date": "2026-07-27",
+          "entry_into_force_basis": "shall enter into force on the third day following that of its publication; computed as publication date + 3 days"
+        },
+        "retrieved_at": "2026-10-06T20:21:30Z"
+      },
+      "CONSOLIDATED": {
+        "status": "retrieved",
+        "content_hash": "sha256:524e1592b39571f6d3cc76a362e2e4a97bccac901f60d304e73a2b099e7ce299",
+        "extracts_sha256": "sha256:47c3891418a55eb43b894168d851e017ee69a107ecc6c4aadd4b845bc351ce2d",
+        "version": {
+          "title": "EUR-Lex - 02024R1689-20260727 - EN - EUR-Lex",
+          "consolidated_version_date": "2026-07-27",
+          "celex": "02024R1689-20260727"
+        },
+        "retrieved_at": "2026-10-06T20:21:31Z"
+      },
+      "LAW": {
+        "status": "retrieved",
+        "content_hash": "sha256:792b673040b148fbaa57878b2fd4a27d161af8bff10ec0485dcb30a598a2fe00",
+        "extracts_sha256": "sha256:ce17c0109748f4c48b373e5b50408bd7954fa47db3156c440b5db01b316824d8",
+        "version": {
+          "last-modified": "Mon, 05 Oct 2026 07:11:36 GMT",
+          "etag": "W/\"1791184296-gzip\"",
+          "title": "Article 50: Transparency obligations for providers and deployers of certain AI systems | AI Act Service Desk",
+          "revision_after_review_date": true
+        },
+        "retrieved_at": "2026-10-06T20:21:32Z"
+      },
+      "TIME": {
+        "status": "retrieved",
+        "content_hash": "sha256:0a0f4470e0d6d44f398ea78bce698c61c5c3fa5d130c55630b1d26a1394e245a",
+        "extracts_sha256": "sha256:3cb2b38cac9f254bdae79819142c5858d902b9d3d79f30a63d874b4f1afa9322",
+        "version": {
+          "last-modified": "Mon, 05 Oct 2026 07:38:03 GMT",
+          "etag": "W/\"1791185883-gzip\"",
+          "title": "Timeline for the Implementation of the EU AI Act | AI Act Service Desk",
+          "revision_after_review_date": true
+        },
+        "retrieved_at": "2026-10-06T20:21:33Z"
+      },
+      "FAQ": {
+        "status": "retrieved",
+        "content_hash": "sha256:e56059d641632a1bec232bf818e9472ba5a7d0babe7f2c3db90759ba049a3a0a",
+        "extracts_sha256": "sha256:e0021984b46aa1d182990cc71ed949f40d8bb08a6004c667c59cc9f650dfdb9c",
+        "version": {
+          "last-modified": "Tue, 06 Oct 2026 20:01:14 GMT",
+          "etag": "W/\"1791316874-gzip\"",
+          "title": "Transparency obligations under Article 50 of the AI Act | Shaping Europe’s digital future",
+          "page_last_update": "2026-07-24",
+          "revision_after_review_date": true
+        },
+        "retrieved_at": "2026-10-06T20:21:33Z"
+      },
+      "POLICY": {
+        "status": "retrieved",
+        "content_hash": "sha256:0d5a7b71f1911331bfcad65ae623b87e0333a505985293dee98ac38423f81ee6",
+        "extracts_sha256": "sha256:65bc60e4be29d6d923d2efd5988414925b1e87a216890086b83dafa8c61a8de7",
+        "version": {
+          "page_id": "3ba0b700-541e-81f0-9998-d48f3b1c2856",
+          "title": "Project 2 Regulatory Compliance — Current Internal Policies",
+          "policy_version": "AI-POL-2026-08-15",
+          "context_revision": "RC-CONTEXT-2026-09-12-R1",
+          "business_observation_date": "2026-08-26",
+          "authoring_clarification_date": "2026-09-12",
+          "etag": "W/\"16783-2g1UmDKXjfSBnat2QsokXre5tXU\"",
+          "revision_after_review_date": true
+        },
+        "retrieved_at": "2026-10-06T20:21:33Z"
+      },
+      "SYSTEMS": {
+        "status": "retrieved",
+        "content_hash": "sha256:5ccd555dac9dc3af5a77d3206105fb093565865f7283abe43f5339dd46ed8a80",
+        "extracts_sha256": "sha256:785733a4d76a83fcd21c8ffadd3b61d28c8aa031fdfdfa571431063899cb85f4",
+        "version": {
+          "in_source_versions": [
+            "register-2026-08-26"
+          ],
+          "tabs": [
+            "AI System Register"
+          ],
+          "extra_columns": [],
+          "versions_after_review_date": []
+        },
+        "retrieved_at": "2026-10-06T20:21:34Z"
+      },
+      "EVIDENCE": {
+        "status": "retrieved",
+        "content_hash": "sha256:3dacdd595cbbdb17749bc879b01f197d2c5691ab5e2385aacef797ebdea7295b",
+        "extracts_sha256": "sha256:7e81d567d50bc12511bce5b8f7f854bce316c77d24f4f15bb8617adbccc248dd",
+        "version": {
+          "in_source_versions": [],
+          "tabs": [
+            "Incident Evidence Register"
+          ],
+          "extra_columns": [],
+          "versions_after_review_date": []
+        },
+        "retrieved_at": "2026-10-06T20:21:36Z"
+      },
+      "CALENDAR": {
+        "status": "retrieved",
+        "content_hash": "sha256:cb3e2ba90e96733e5713102f0653dd02d0282be92058e60febe5af899926d8ab",
+        "extracts_sha256": "sha256:855cd517f5c589bf5fd9f79ebbf5a5aa5837f5e50fb45d0383bcd51d3d12b7ec",
+        "version": {
+          "in_source_versions": [
+            "calendar-2026-08-26"
+          ],
+          "tabs": [
+            "Compliance Calendar"
+          ],
+          "extra_columns": [],
+          "versions_after_review_date": []
+        },
+        "retrieved_at": "2026-10-06T20:21:37Z"
+      }
+    },
+    "changes_since_superseded_run": {
+      "superseded_run_id": "RCIB-20261006T201243Z-5795",
+      "changed_sources": [],
+      "comparison_basis": "sha256 of claim-bearing extracts (content_hash of raw bytes also differs for: ['AMEND', 'CONSOLIDATED', 'OJ', 'POLICY'], e.g. per-request page tokens)",
+      "unchanged_sources": [
+        "AMEND",
+        "CALENDAR",
+        "CONSOLIDATED",
+        "EVIDENCE",
+        "FAQ",
+        "LAW",
+        "OJ",
+        "POLICY",
+        "SYSTEMS",
+        "TIME"
+      ],
+      "earliest_changed_basis": "none (inputs unchanged)",
+      "recomputation": "All stages 03-07 and all three drafts are recomputed from the fresh captures."
+    },
+    "as_of_date": "2026-08-26",
+    "time_separation_note": "retrieved_at is the actual retrieval time; in-source revisions and effective dates are in version_metadata; the review date is fixed."
+  },
+  "unresolved": [],
+  "decisions": [
+    {
+      "id": "D-003",
+      "summary": "Read the ten interview-disclosed URLs live and read-only, using existing share-link permissions. No credentials, no local substitutes; Google Sheets via one-tab-verified CSV export, Notion via an isolated page-chunk adapter.",
+      "concern": "The stakeholder said the company sources require authorized native access and are not public, yet every disclosed URL returned content without credentials. The assignment forbids exposing credentials and substituting local copies, and requires the disclosed routes to be read live each run. The human-facing pages for Sheets and Notion are JavaScript shells that hold no data.",
+      "options": [
+        {
+          "option": "Add an authentication system (Google service account, Notion integration token).",
+          "assessment": "No credentials were issued, and the assignment specifies none; inventing one adds secrets to manage and an unapproved access path."
+        },
+        {
+          "option": "Treat the sources as public and describe them that way.",
+          "assessment": "Contradicts the stakeholder's statement; unauthenticated readability is not proof of public status."
+        },
+        {
+          "option": "Read the disclosed URLs through their existing share-link permission with read-only routes (Sheets CSV export after verifying the tab list; Notion page-chunk endpoint behind an adapter), and record that no credentials are used.",
+          "assessment": "Reads the live source directly with no secrets, keeps the mechanism replaceable and is honest about the access basis."
+        },
+        {
+          "option": "Render the Notion page in a headless browser.",
+          "assessment": "Closest to the human route but adds a heavy browser dependency without evidence that the current route is insufficient."
+        }
+      ],
+      "source_basis": [
+        "INT2-L35",
+        "ASSIGN-CAPTURE",
+        "ASSIGN-READONLY",
+        "INSPECT-ACCESS"
+      ],
+      "chosen_behavior": "The official URLs disclosed in the interviews are live runtime inputs (references/source-routes.json), read on every run. Company sources are read using their existing share-link permissions. No credentials are used or stored, and the sources are never described as public just because an unauthenticated GET currently succeeds. Retrieval is read-only: GET requests, plus the read-only POST that Notion's own page client uses to load a page. Source content is never modified. An undisclosed local copy is never substituted when a live read fails; a failed read is recorded as unavailable or invalid. Google Sheets: the tab list is checked on every run through the XLSX export. Exactly one tab is expected. A different tab count is recorded as an invalid or changed source condition and is not ignored. The single tab is then read through the CSV export. Notion POLICY: the page-chunk retrieval sits behind a source adapter. Page identity, title, policy version, context revision and content retrieval are checked on every run. No API credential or browser dependency is added unless implementation evidence shows the current route is insufficient. Every attempt — successful, failed or unused — is recorded in stage 02.",
+      "rationale": "This respects both the stakeholder's description (no claim of public status, read-only access through the official URLs) and the assignment's rules (no credentials, live reads, no local substitution, every attempt recorded). Isolating the Notion mechanism means it can be replaced if the endpoint changes, without touching the rest of the skill.",
+      "tradeoffs": [
+        "The Notion page-chunk endpoint is undocumented and may change without notice; a change will block the run until the adapter is updated.",
+        "If the owners revoke link sharing, the run blocks: there is deliberately no credentialed fallback.",
+        "Reading the XLSX export only for the tab list costs one extra request per sheet per run."
+      ],
+      "downstream_effect": [
+        "Stage 02 records the access basis ('share-link permission; no credentials') and the method used for each attempt, including the XLSX tab-check attempts.",
+        "A login page, a changed tab count or a failed Notion identity check makes the source invalid or unavailable, which blocks the run under D-002.",
+        "The README and SKILL.md document that no credentials are needed or accepted."
+      ],
+      "evidence_ids": [
+        "INT2-L35",
+        "ASSIGN-CAPTURE",
+        "ASSIGN-READONLY",
+        "INSPECT-ACCESS"
+      ],
+      "owner": "Project developer",
+      "decided_by": "Project developer (independent decision; no stakeholder or facilitator approval)",
+      "stages": [
+        "source-capture"
+      ]
+    },
+    {
+      "id": "D-008",
+      "summary": "Preserve every retrieved response gzip-compressed, plus claim-bearing extracts with locators. The one exception is the documented removal of Notion's workspace member table from the POLICY capture. content_hash is the sha256 of the preserved bytes, and the original response hash is recorded for the redacted capture.",
+      "concern": "The assignment requires the actual bytes or permitted extracts, with locators. The legal pages are 0.6–1.5 MB each, and every run is retained in history. The Notion page-chunk response also carries a workspace member table with third-party names, user IDs and profile-photo links, which committing would publish.",
+      "options": [
+        {
+          "option": "Store raw bytes uncompressed.",
+          "assessment": "Simple but grows the repository by about 4 MB per run."
+        },
+        {
+          "option": "Store only extracts.",
+          "assessment": "Smaller, but identity checks cannot be re-run on the full document."
+        },
+        {
+          "option": "Store raw bytes gzip-compressed plus a JSON file of extracts with locators.",
+          "assessment": "Keeps full fidelity at a fraction of the size."
+        },
+        {
+          "option": "Redact only recordMap.notion_user from the saved POLICY chunks, record what was removed and the original response hash, and prove that the saved bytes still reproduce every extract.",
+          "assessment": "Removes third-party personal data while keeping all policy content, identity, version, dates and locators verifiable."
+        }
+      ],
+      "source_basis": [
+        "ASSIGN-CAPTURE",
+        "DEV-REDACTION-2026-10-06",
+        "INSPECT-NOTION-USERS"
+      ],
+      "chosen_behavior": "deliverables/sources/<SOURCE>.<ext>.gz holds the response bytes, and deliverables/sources/<SOURCE>.extracts.json holds claim-bearing extracts with section, paragraph, row or block locators. content_hash is the sha256 of the preserved (uncompressed) bytes. Failed attempts have null content, a null hash and a null local reference.\n\nThe POLICY page-chunk responses are the one exception to keeping exact bytes. Before saving, recordMap.notion_user (workspace member names, user IDs and profile-photo links) is removed; everything else is kept, including all blocks, page identity, policy version, context revision and the observation and clarification dates. Each such attempt records redaction.removed_tables and redaction.original_response_sha256 (the hash of the unredacted response). The verifier proves that the saved POLICY bytes contain no member table or profile details, and that they reproduce every POLICY extract (block IDs, order, text), the identity and version patterns, the revision dates and the declared content sections. It applies the same reproduction test to the sheet captures.",
+      "rationale": "Full fidelity and verifiable hashes at modest size, without publishing third-party personal data that is irrelevant to the review.",
+      "tradeoffs": [
+        "Readers must decompress the raw file to inspect it; the extracts are plain JSON.",
+        "The saved POLICY chunk is not byte-identical to Notion's response. Its integrity is shown through the recorded original hash and the reproduction check, not by re-hashing Notion's exact bytes.",
+        "Earlier runs archived before this change still hold unredacted POLICY captures in deliverables/history/; they are retained as found unless the developer decides otherwise."
+      ],
+      "downstream_effect": [
+        "Stage 02 local_reference, content_hash and (for POLICY chunks) the redaction metadata.",
+        "The verifier re-hashes the preserved bytes and runs CHK-D008-POLICY-REDACTED, CHK-D008-POLICY-REPRODUCIBLE and CHK-D008-<SHEET>-REPRODUCIBLE."
+      ],
+      "evidence_ids": [
+        "ASSIGN-CAPTURE",
+        "DEV-REDACTION-2026-10-06",
+        "INSPECT-NOTION-USERS"
+      ],
+      "owner": "Project developer",
+      "decided_by": "Implementation decision (Claude), revised at the project developer's instruction on 2026-10-06 (Notion member-table redaction)",
+      "stages": [
+        "source-capture"
+      ]
+    }
+  ]
+}

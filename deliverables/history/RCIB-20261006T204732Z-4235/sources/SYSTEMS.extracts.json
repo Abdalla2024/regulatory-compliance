@@ -1,0 +1,166 @@
+{
+  "source": "SYSTEMS",
+  "locator": "https://docs.google.com/spreadsheets/d/10ky745H_1h9XbGCXPJsiRp5yfdeU08TZtmrsCMinGgU",
+  "extracts": [
+    {
+      "id": "EXT-SYSTEMS-AI-001",
+      "locator": "tab 'AI System Register' row 2 (system_id=AI-001)",
+      "text": "system_id=AI-001 | system_name=Learner Support Chat | use_case=Answers routine learner questions | owner=Learner Operations | provider_role=no | deployer_role=yes | exposed_group=learners | output_type=direct_interaction | current_notice=yes | human_review=staff escalation | evidence_status=complete | evidence_updated_at=2026-08-20 | record_version=register-2026-08-26",
+      "fields": {
+        "system_id": "AI-001",
+        "system_name": "Learner Support Chat",
+        "use_case": "Answers routine learner questions",
+        "owner": "Learner Operations",
+        "provider_role": "no",
+        "deployer_role": "yes",
+        "exposed_group": "learners",
+        "output_type": "direct_interaction",
+        "current_notice": "yes",
+        "human_review": "staff escalation",
+        "evidence_status": "complete",
+        "evidence_updated_at": "2026-08-20",
+        "record_version": "register-2026-08-26"
+      }
+    },
+    {
+      "id": "EXT-SYSTEMS-AI-002",
+      "locator": "tab 'AI System Register' row 3 (system_id=AI-002)",
+      "text": "system_id=AI-002 | system_name=Admissions Draft Assistant | use_case=Drafts applicant email replies | owner=Admissions | provider_role=no | deployer_role=yes | exposed_group=applicants | output_type=text | current_notice=unknown | human_review=advisor approval | evidence_status=partial | evidence_updated_at=2026-07-01 | record_version=register-2026-08-26",
+      "fields": {
+        "system_id": "AI-002",
+        "system_name": "Admissions Draft Assistant",
+        "use_case": "Drafts applicant email replies",
+        "owner": "Admissions",
+        "provider_role": "no",
+        "deployer_role": "yes",
+        "exposed_group": "applicants",
+        "output_type": "text",
+        "current_notice": "unknown",
+        "human_review": "advisor approval",
+        "evidence_status": "partial",
+        "evidence_updated_at": "2026-07-01",
+        "record_version": "register-2026-08-26"
+      }
+    },
+    {
+      "id": "EXT-SYSTEMS-AI-003",
+      "locator": "tab 'AI System Register' row 4 (system_id=AI-003)",
+      "text": "system_id=AI-003 | system_name=Campaign Image Studio | use_case=Creates public campaign images | owner=Communications | provider_role=no | deployer_role=yes | exposed_group=public | output_type=synthetic_image | current_notice=visible_label | human_review=communications approval | evidence_status=complete | evidence_updated_at=2026-08-22 | record_version=register-2026-08-26",
+      "fields": {
+        "system_id": "AI-003",
+        "system_name": "Campaign Image Studio",
+        "use_case": "Creates public campaign images",
+        "owner": "Communications",
+        "provider_role": "no",
+        "deployer_role": "yes",
+        "exposed_group": "public",
+        "output_type": "synthetic_image",
+        "current_notice": "visible_label",
+        "human_review": "communications approval",
+        "evidence_status": "complete",
+        "evidence_updated_at": "2026-08-22",
+        "record_version": "register-2026-08-26"
+      }
+    },
+    {
+      "id": "EXT-SYSTEMS-AI-004",
+      "locator": "tab 'AI System Register' row 5 (system_id=AI-004)",
+      "text": "system_id=AI-004 | system_name=Pronunciation Coach | use_case=Provides spoken practice feedback | owner=Learning Experience | provider_role=no | deployer_role=yes | exposed_group=learners | output_type=direct_interaction | current_notice=no | human_review=instructor escalation | evidence_status=complete | evidence_updated_at=2026-08-18 | record_version=register-2026-08-26",
+      "fields": {
+        "system_id": "AI-004",
+        "system_name": "Pronunciation Coach",
+        "use_case": "Provides spoken practice feedback",
+        "owner": "Learning Experience",
+        "provider_role": "no",
+        "deployer_role": "yes",
+        "exposed_group": "learners",
+        "output_type": "direct_interaction",
+        "current_notice": "no",
+        "human_review": "instructor escalation",
+        "evidence_status": "complete",
+        "evidence_updated_at": "2026-08-18",
+        "record_version": "register-2026-08-26"
+      }
+    },
+    {
+      "id": "EXT-SYSTEMS-AI-005",
+      "locator": "tab 'AI System Register' row 6 (system_id=AI-005)",
+      "text": "system_id=AI-005 | system_name=Remote Proctor Signal | use_case=Flags assessment sessions for review | owner=Assessment Operations | provider_role=unknown | deployer_role=yes | exposed_group=learners | output_type=classification | current_notice=yes | human_review=human adjudication | evidence_status=stale | evidence_updated_at=2026-04-15 | record_version=register-2026-08-26",
+      "fields": {
+        "system_id": "AI-005",
+        "system_name": "Remote Proctor Signal",
+        "use_case": "Flags assessment sessions for review",
+        "owner": "Assessment Operations",
+        "provider_role": "unknown",
+        "deployer_role": "yes",
+        "exposed_group": "learners",
+        "output_type": "classification",
+        "current_notice": "yes",
+        "human_review": "human adjudication",
+        "evidence_status": "stale",
+        "evidence_updated_at": "2026-04-15",
+        "record_version": "register-2026-08-26"
+      }
+    },
+    {
+      "id": "EXT-SYSTEMS-AI-006",
+      "locator": "tab 'AI System Register' row 7 (system_id=AI-006)",
+      "text": "system_id=AI-006 | system_name=Staff Summary Assistant | use_case=Summarizes internal meeting notes | owner=People Operations | provider_role=no | deployer_role=yes | exposed_group=staff | output_type=text | current_notice=not_applicable | human_review=author review | evidence_status=complete | evidence_updated_at=2026-08-14 | record_version=register-2026-08-26",
+      "fields": {
+        "system_id": "AI-006",
+        "system_name": "Staff Summary Assistant",
+        "use_case": "Summarizes internal meeting notes",
+        "owner": "People Operations",
+        "provider_role": "no",
+        "deployer_role": "yes",
+        "exposed_group": "staff",
+        "output_type": "text",
+        "current_notice": "not_applicable",
+        "human_review": "author review",
+        "evidence_status": "complete",
+        "evidence_updated_at": "2026-08-14",
+        "record_version": "register-2026-08-26"
+      }
+    },
+    {
+      "id": "EXT-SYSTEMS-AI-007",
+      "locator": "tab 'AI System Register' row 8 (system_id=AI-007)",
+      "text": "system_id=AI-007 | system_name=Website Guide Avatar | use_case=Answers public programme questions | owner=Marketing | provider_role=no | deployer_role=yes | exposed_group=public | output_type=direct_interaction | current_notice=no | human_review=marketing escalation | evidence_status=conflicting | evidence_updated_at=2026-08-21 | record_version=register-2026-08-26",
+      "fields": {
+        "system_id": "AI-007",
+        "system_name": "Website Guide Avatar",
+        "use_case": "Answers public programme questions",
+        "owner": "Marketing",
+        "provider_role": "no",
+        "deployer_role": "yes",
+        "exposed_group": "public",
+        "output_type": "direct_interaction",
+        "current_notice": "no",
+        "human_review": "marketing escalation",
+        "evidence_status": "conflicting",
+        "evidence_updated_at": "2026-08-21",
+        "record_version": "register-2026-08-26"
+      }
+    },
+    {
+      "id": "EXT-SYSTEMS-AI-008",
+      "locator": "tab 'AI System Register' row 9 (system_id=AI-008)",
+      "text": "system_id=AI-008 | system_name=Video Localisation Tool | use_case=Generates dubbed public programme videos | owner=Communications | provider_role=no | deployer_role=yes | exposed_group=public | output_type=synthetic_audio_video | current_notice=visible_label | human_review=communications approval | evidence_status=partial | evidence_updated_at=2026-08-19 | record_version=register-2026-08-26",
+      "fields": {
+        "system_id": "AI-008",
+        "system_name": "Video Localisation Tool",
+        "use_case": "Generates dubbed public programme videos",
+        "owner": "Communications",
+        "provider_role": "no",
+        "deployer_role": "yes",
+        "exposed_group": "public",
+        "output_type": "synthetic_audio_video",
+        "current_notice": "visible_label",
+        "human_review": "communications approval",
+        "evidence_status": "partial",
+        "evidence_updated_at": "2026-08-19",
+        "record_version": "register-2026-08-26"
+      }
+    }
+  ]
+}

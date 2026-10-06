@@ -1,0 +1,126 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Quillhaven Academy//regulatory-change-impact-brief 1.0//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Article 50 review draft actions (RCIB-20261006T201243Z-5795)
+BEGIN:VEVENT
+UID:ACT-001@regulatory-change-impact-brief.quillhaven
+DTSTAMP:20261006T201244Z
+DTSTART;VALUE=DATE:20260904
+DTEND;VALUE=DATE:20260905
+SUMMARY:[Proposed] ACT-001 AI-004: Add and verify first-interaction AI noti
+ ce
+DESCRIPTION:Action: ACT-001\nSystem: AI-004\nResponsible role: Learning Exp
+ erience\nBasis: Operations-proposed date from CALENDAR calendar-2026-08-26
+ \; origin calendar-linked\; linked findings: IMP-AI-004-POL-T1\nApproval s
+ tatus: pending (Operations approval required)\nRun: RCIB-20261006T201243Z-
+ 5795\nDraft proposal for review\; not an approved deadline.
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ACT-002@regulatory-change-impact-brief.quillhaven
+DTSTAMP:20261006T201244Z
+DTSTART;VALUE=DATE:20260903
+DTEND;VALUE=DATE:20260904
+SUMMARY:[Proposed] ACT-002 AI-007: Resolve disclosure evidence conflict
+DESCRIPTION:Action: ACT-002\nSystem: AI-007\nResponsible role: Marketing\nB
+ asis: Operations-proposed date from CALENDAR calendar-2026-08-26\; origin 
+ calendar-linked\; linked findings: IMP-AI-007-POL-T1\nApproval status: pen
+ ding (Operations approval required)\nRun: RCIB-20261006T201243Z-5795\nDraf
+ t proposal for review\; not an approved deadline.
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ACT-003@regulatory-change-impact-brief.quillhaven
+DTSTAMP:20261006T201244Z
+DTSTART;VALUE=DATE:20260908
+DTEND;VALUE=DATE:20260909
+SUMMARY:[Proposed] ACT-003 AI-002: Confirm recipient disclosure practice
+DESCRIPTION:Action: ACT-003\nSystem: AI-002\nResponsible role: Admissions\n
+ Basis: Operations-proposed date from CALENDAR calendar-2026-08-26\; origin
+  calendar-linked\; linked findings: IMP-AI-002-POL-T3\nApproval status: pe
+ nding (Legal approval required)\nRun: RCIB-20261006T201243Z-5795\nDraft pr
+ oposal for review\; not an approved deadline.
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ACT-004@regulatory-change-impact-brief.quillhaven
+DTSTAMP:20261006T201244Z
+DTSTART;VALUE=DATE:20260910
+DTEND;VALUE=DATE:20260911
+SUMMARY:[Proposed] ACT-004 AI-003: Verify machine-readable provenance after
+  publishing
+DESCRIPTION:Action: ACT-004\nSystem: AI-003\nResponsible role: Communicatio
+ ns\nBasis: Operations-proposed date from CALENDAR calendar-2026-08-26\; or
+ igin calendar-linked\; linked findings: IMP-AI-003-POL-T2-PROV\, IMP-AI-00
+ 3-POL-T2-LABEL\nApproval status: pending (Operations approval required)\nR
+ un: RCIB-20261006T201243Z-5795\nDraft proposal for review\; not an approve
+ d deadline.
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ACT-005@regulatory-change-impact-brief.quillhaven
+DTSTAMP:20261006T201244Z
+DTSTART;VALUE=DATE:20260912
+DTEND;VALUE=DATE:20260913
+SUMMARY:[Proposed] ACT-005 AI-005: Refresh provider-role and release eviden
+ ce
+DESCRIPTION:Action: ACT-005\nSystem: AI-005\nResponsible role: Assessment O
+ perations\nBasis: Operations-proposed date from CALENDAR calendar-2026-08-
+ 26\; origin calendar-linked\; linked findings: IMP-AI-005-L-50-1\, IMP-AI-
+ 005-L-50-2\, IMP-AI-005-L-50-3\, IMP-AI-005-L-50-4-DF\, IMP-AI-005-L-50-4-
+ TXT\, IMP-AI-005-POL-T1\, IMP-AI-005-POL-T2-PROV\, IMP-AI-005-POL-T2-LABEL
+ \, IMP-AI-005-POL-T3\nApproval status: pending (Legal approval required)\n
+ Run: RCIB-20261006T201243Z-5795\nDraft proposal for review\; not an approv
+ ed deadline.
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ACT-006@regulatory-change-impact-brief.quillhaven
+DTSTAMP:20261006T201244Z
+DTSTART;VALUE=DATE:20260909
+DTEND;VALUE=DATE:20260910
+SUMMARY:[Proposed] ACT-006 AI-008: Complete provenance test
+DESCRIPTION:Action: ACT-006\nSystem: AI-008\nResponsible role: Communicatio
+ ns\nBasis: Operations-proposed date from CALENDAR calendar-2026-08-26\; or
+ igin calendar-linked\; linked findings: IMP-AI-008-POL-T2-PROV\nApproval s
+ tatus: pending (Operations approval required)\nRun: RCIB-20261006T201243Z-
+ 5795\nDraft proposal for review\; not an approved deadline.
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ACT-007@regulatory-change-impact-brief.quillhaven
+DTSTAMP:20261006T201244Z
+DTSTART;VALUE=DATE:20260915
+DTEND;VALUE=DATE:20260916
+SUMMARY:[Proposed] ACT-007 AI-008: Review exception request
+DESCRIPTION:Action: ACT-007\nSystem: AI-008\nResponsible role: Legal\nBasis
+ : Operations-proposed date from CALENDAR calendar-2026-08-26\; origin cale
+ ndar-linked\; linked findings: IMP-AI-008-L-50-4-DF\, IMP-AI-008-POL-T2-LA
+ BEL\nApproval status: pending (Legal approval required)\nRun: RCIB-2026100
+ 6T201243Z-5795\nDraft proposal for review\; not an approved deadline.
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ACT-008@regulatory-change-impact-brief.quillhaven
+DTSTAMP:20261006T201244Z
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261003
+SUMMARY:[Proposed] ACT-008 ALL: Quarterly AI register evidence review
+DESCRIPTION:Action: ACT-008\nSystem: ALL\nResponsible role: Operations\nBas
+ is: Operations-proposed date from CALENDAR calendar-2026-08-26\; origin ca
+ lendar-carried-forward\; linked findings: none (carried forward from CALEN
+ DAR)\nApproval status: pending (Operations approval required)\nRun: RCIB-2
+ 0261006T201243Z-5795\nDraft proposal for review\; not an approved deadline
+ .
+STATUS:TENTATIVE
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,283 @@
+{
+  "document": "Interview-disclosed source routes (runtime inputs). Source: interviews/project-b-regulatory-compliance-20261006-1706.md lines 91-98 and 200; interviews/project-b-regulatory-compliance-20261006-1750.md line 23. All ten are required on every run (decision D-002). Access basis: the disclosed URL's existing share-link permission; no credentials are used or accepted (decision D-003).",
+  "sources": [
+    {
+      "name": "OJ",
+      "url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+      "authority_class": "binding-legal",
+      "source_role": "binding-regulation",
+      "authority": "binding",
+      "adapter": "eurlex",
+      "summary": "Regulation (EU) 2024/1689 (AI Act) as published in the Official Journal.",
+      "expect": {
+        "title_contains": "2024/1689",
+        "text_contains": [
+          "Article 50 Transparency obligations for providers and deployers of certain AI systems"
+        ],
+        "anchor": "id=\"art_50\"",
+        "identifier": "2024/1689"
+      }
+    },
+    {
+      "name": "AMEND",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ%3AL_202601744",
+      "authority_class": "binding-legal",
+      "source_role": "binding-regulation",
+      "authority": "binding",
+      "adapter": "eurlex",
+      "summary": "Regulation (EU) 2026/1744 amending Regulation (EU) 2024/1689.",
+      "expect": {
+        "title_contains": "2026/1744",
+        "text_contains": [
+          "Regulation (EU) 2024/1689 is amended as follows"
+        ],
+        "identifier": "2026/1744",
+        "entry_into_force_by_as_of": true
+      }
+    },
+    {
+      "name": "CONSOLIDATED",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02024R1689-20260727",
+      "authority_class": "binding-legal",
+      "source_role": "binding-regulation",
+      "authority": "binding",
+      "adapter": "eurlex",
+      "summary": "Consolidated text of Regulation (EU) 2024/1689, version 27 July 2026.",
+      "expect": {
+        "title_contains": "02024R1689-",
+        "text_contains": [
+          "Article 50 Transparency obligations for providers and deployers of certain AI systems"
+        ],
+        "anchor": "id=\"art_50\"",
+        "identifier": "02024R1689",
+        "consolidated_version_from": "02024R1689-(\\d{8})"
+      }
+    },
+    {
+      "name": "LAW",
+      "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-50",
+      "authority_class": "advisory",
+      "source_role": "official-guidance",
+      "authority": "advisory",
+      "adapter": "html",
+      "summary": "AI Act Service Desk presentation of Article 50 (text plus non-binding summary).",
+      "expect": {
+        "title_contains": "Article 50",
+        "text_contains": [
+          "Providers shall ensure that AI systems intended to interact directly with natural persons"
+        ]
+      }
+    },
+    {
+      "name": "TIME",
+      "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/eu-ai-act-implementation-timeline",
+      "authority_class": "advisory",
+      "source_role": "official-guidance",
+      "authority": "advisory",
+      "adapter": "html",
+      "summary": "AI Act Service Desk implementation timeline.",
+      "expect": {
+        "title_contains": "Timeline for the Implementation of the EU AI Act",
+        "text_contains": [
+          "Article 50"
+        ]
+      }
+    },
+    {
+      "name": "FAQ",
+      "url": "https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act",
+      "authority_class": "advisory",
+      "source_role": "official-guidance",
+      "authority": "advisory",
+      "adapter": "html",
+      "summary": "European Commission FAQ on Article 50 transparency obligations.",
+      "expect": {
+        "title_contains": "Transparency obligations under Article 50",
+        "text_contains": [
+          "Article 50"
+        ]
+      }
+    },
+    {
+      "name": "POLICY",
+      "url": "https://private-pecorino-70e.notion.site/Project-2-Regulatory-Compliance-Current-Internal-Policies-3ba0b700541e81f09998d48f3b1c2856",
+      "authority_class": "company",
+      "source_role": "internal-policy",
+      "authority": "internal-control",
+      "adapter": "notion",
+      "summary": "Quillhaven internal AI-use policy and Article 50 review operating facts (Notion).",
+      "expect": {
+        "page_id": "3ba0b700-541e-81f0-9998-d48f3b1c2856",
+        "title_contains": "Current Internal Policies",
+        "policy_version_pattern": "Policy version: (AI-POL-[0-9-]+)",
+        "context_revision_pattern": "Context revision: (RC-CONTEXT-[0-9A-Za-z-]+)",
+        "content_sections": [
+          "Learner and public transparency",
+          "Evidence and exceptions",
+          "Approval boundary",
+          "Operating scope",
+          "Actual use and content",
+          "Product timing and evidence limits"
+        ],
+        "date_patterns": [
+          "Business observation date: ",
+          "Authoring clarification date: "
+        ]
+      }
+    },
+    {
+      "name": "SYSTEMS",
+      "url": "https://docs.google.com/spreadsheets/d/10ky745H_1h9XbGCXPJsiRp5yfdeU08TZtmrsCMinGgU",
+      "authority_class": "company",
+      "source_role": "operational-record",
+      "authority": "operational-evidence",
+      "adapter": "gsheet",
+      "summary": "AI System Register maintained by Operations and system owners.",
+      "expect": {
+        "tabs": [
+          "AI System Register"
+        ],
+        "id_column": "system_id",
+        "required_columns": [
+          "system_id",
+          "system_name",
+          "use_case",
+          "owner",
+          "provider_role",
+          "deployer_role",
+          "exposed_group",
+          "output_type",
+          "current_notice",
+          "human_review",
+          "evidence_status",
+          "evidence_updated_at",
+          "record_version"
+        ],
+        "date_columns": [
+          "evidence_updated_at"
+        ],
+        "enums": {
+          "provider_role": [
+            "yes",
+            "no",
+            "unknown"
+          ],
+          "deployer_role": [
+            "yes",
+            "no",
+            "unknown"
+          ],
+          "output_type": [
+            "direct_interaction",
+            "text",
+            "synthetic_image",
+            "synthetic_audio_video",
+            "classification"
+          ],
+          "current_notice": [
+            "yes",
+            "no",
+            "unknown",
+            "visible_label",
+            "not_applicable"
+          ],
+          "evidence_status": [
+            "complete",
+            "partial",
+            "stale",
+            "conflicting",
+            "missing"
+          ]
+        }
+      }
+    },
+    {
+      "name": "EVIDENCE",
+      "url": "https://docs.google.com/spreadsheets/d/19BYZ68OSbsa1i9OfF6MzthrdC6q6mt6IWk6ucI8u7Rk",
+      "authority_class": "company",
+      "source_role": "operational-record",
+      "authority": "operational-evidence",
+      "adapter": "gsheet",
+      "summary": "Incident and Evidence Register (incidents, gaps, exception requests).",
+      "expect": {
+        "tabs": [
+          "Incident Evidence Register"
+        ],
+        "id_column": "record_id",
+        "required_columns": [
+          "record_id",
+          "system_id",
+          "record_type",
+          "reported_at",
+          "owner",
+          "status",
+          "evidence_ref",
+          "evidence_state",
+          "notes"
+        ],
+        "date_columns": [
+          "reported_at"
+        ],
+        "enums": {
+          "record_type": [
+            "evidence",
+            "evidence_gap",
+            "incident",
+            "exception_request"
+          ],
+          "status": [
+            "open",
+            "closed",
+            "draft"
+          ],
+          "evidence_state": [
+            "complete",
+            "partial",
+            "stale",
+            "conflicting",
+            "missing",
+            "not-applicable"
+          ]
+        }
+      }
+    },
+    {
+      "name": "CALENDAR",
+      "url": "https://docs.google.com/spreadsheets/d/1xtXl_P7Yb9LaECZjjgtlyI-idoAJTAhH-1gQ4vQaCGA",
+      "authority_class": "company",
+      "source_role": "operational-record",
+      "authority": "operational-evidence",
+      "adapter": "gsheet",
+      "summary": "Compliance Calendar of Operations-tracked actions with proposed owners and dates.",
+      "expect": {
+        "tabs": [
+          "Compliance Calendar"
+        ],
+        "id_column": "action_id",
+        "required_columns": [
+          "action_id",
+          "system_id",
+          "action",
+          "owner",
+          "due_date",
+          "status",
+          "approval_required",
+          "source_version"
+        ],
+        "date_columns": [
+          "due_date"
+        ],
+        "optional_blank_columns": [
+          "due_date",
+          "owner"
+        ],
+        "enums": {
+          "approval_required": [
+            "operations",
+            "legal"
+          ]
+        }
+      }
+    }
+  ]
+}

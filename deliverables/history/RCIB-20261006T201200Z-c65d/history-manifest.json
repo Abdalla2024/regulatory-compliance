@@ -1,0 +1,58 @@
+{
+  "archived_run_id": "RCIB-20261006T201200Z-c65d",
+  "archived_at": "2026-10-06T20:12:44Z",
+  "archived_run_status": "partial",
+  "files_archived": [
+    "snapshots",
+    "sources",
+    "impact-register.csv",
+    "compliance-brief.md",
+    "action-calendar.ics",
+    "run-verification.json"
+  ],
+  "expected_files_missing_at_archive_time": [],
+  "integrity_at_archive_time": {
+    "ok": true,
+    "failed_checks": []
+  },
+  "note": "Retained exactly as found before the superseding run; missing or damaged evidence is recorded, not repaired.",
+  "post_run_redactions": [
+    {
+      "file": "deliverables/history/RCIB-20261006T201200Z-c65d/sources/POLICY-chunk-1.json.gz",
+      "stage02_attempt_id": "ATT-POLICY-2",
+      "redacted_at": "2026-10-06T20:24:44Z",
+      "reason": "Removal of incidental third-party Notion workspace-member metadata (names, user IDs, profile-photo links) before repository publication. The table carries no policy content, identity, version or date information.",
+      "removed": {
+        "recordMap tables": {
+          "notion_user": 5
+        }
+      },
+      "original_content_sha256": "sha256:6d98e13449f8cb1c7dca8c774cac03c8e9b7bf38bc3ea20cf6c95a17a4851ff5",
+      "original_content_sha256_matches_stage02_content_hash": true,
+      "original_gzip_file_sha256": "sha256:565289b8c13475440215b5b0e0c21fb4ac7ed715344a8b26bc0a8b163083736b",
+      "redacted_content_sha256": "sha256:97effb1769e0b73eb180b7cc3c7381c34a41f44992605925b48870fe1d78c761",
+      "redacted_gzip_file_sha256": "sha256:f5b5e6ec3b721c31f2a912691f8d48684d0ba3f20e8aaf8d5de6c55fd7683adf",
+      "extracts_reproduced_after_redaction": true,
+      "notice": "This historical artifact was redacted after the original run. Its current hash intentionally differs from the content_hash recorded in this run's stage 02 snapshot, which still records the original captured bytes. The redacted file is not the original capture; run ID, snapshot IDs, snapshots, decisions, register, brief and calendar are unchanged."
+    },
+    {
+      "file": "deliverables/history/RCIB-20261006T201200Z-c65d/snapshots/02-source-capture.json",
+      "redacted_at": "2026-10-06T20:48:08Z",
+      "reason": "Removal of signed, time-limited Google export redirect URLs (access signature, expiry and the sheet owner's account ID) from recorded final_url values before repository publication. The requested locator, retrieval status, content hash and preserved bytes are unchanged.",
+      "removed": {
+        "final_url signed redirect paths": [
+          "ATT-SYSTEMS-1",
+          "ATT-SYSTEMS-2",
+          "ATT-EVIDENCE-1",
+          "ATT-EVIDENCE-2",
+          "ATT-CALENDAR-1",
+          "ATT-CALENDAR-2"
+        ]
+      },
+      "original_file_sha256": "sha256:f523bf28ce6e204b3b9f358607f7ff6cacfcc89ff0064b279ffaded2ef399683",
+      "original_file_sha256_matches_stage03_predecessor": true,
+      "redacted_file_sha256": "sha256:b02d79d3fe810696457fef34914fa65b3715f59a6b33595d606b0f21fc7897d8",
+      "notice": "This historical snapshot was redacted after the original run. Its current hash intentionally differs from the sha256 recorded as the predecessor in this run's 03-authority-and-timing.json, which still identifies the original stage 02 bytes. Only the listed final_url values changed; run ID, snapshot ID, records, statuses, content hashes and all other snapshots are unchanged."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "archived_run_id": "RCIB-20261006T204732Z-4235",
+  "archived_at": "2026-10-06T20:48:36Z",
+  "archived_run_status": "partial",
+  "files_archived": [
+    "snapshots",
+    "sources",
+    "impact-register.csv",
+    "compliance-brief.md",
+    "action-calendar.ics",
+    "run-verification.json"
+  ],
+  "expected_files_missing_at_archive_time": [],
+  "integrity_at_archive_time": {
+    "ok": true,
+    "failed_checks": []
+  },
+  "note": "Retained exactly as found before the superseding run; missing or damaged evidence is recorded, not repaired."
+}

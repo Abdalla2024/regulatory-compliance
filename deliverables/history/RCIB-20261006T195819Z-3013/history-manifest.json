@@ -1,0 +1,69 @@
+{
+  "archived_run_id": "RCIB-20261006T195819Z-3013",
+  "archived_at": "2026-10-06T20:12:00Z",
+  "archived_run_status": "partial",
+  "files_archived": [
+    "snapshots",
+    "sources",
+    "impact-register.csv",
+    "compliance-brief.md",
+    "action-calendar.ics",
+    "run-verification.json"
+  ],
+  "expected_files_missing_at_archive_time": [],
+  "integrity_at_archive_time": {
+    "ok": false,
+    "failed_checks": [
+      {
+        "id": "CHK-BRIEF-AGREEMENT",
+        "summary": "Brief cites run, impacts, actions and review requests and has required sections",
+        "detail": "missing: [\"section 'Legal-review boundary'\"]"
+      },
+      {
+        "id": "CHK-D004-RULE-LEVEL",
+        "summary": "D-004: each row's state and cited records come only from records attributed to that rule",
+        "detail": "IMP-AI-001-POL-T1 cites unattributed ['REC-001']; IMP-AI-001-POL-T1 state supported-impact but attributed records imply unresolved; IMP-AI-002-POL-T3 cites unattributed ['REC-002']; IMP-AI-003-POL-T2-PROV cites unattributed ['REC-003']; IMP-AI-003-POL-T2-PROV state conflicting but attributed records imply unresolved; IMP-AI-003-POL-T2-LABEL cites unattributed ['REC-003']; IMP-AI-003-POL-T2-LABEL state conflicting but attributed records imply unresolved; IMP-AI-004-POL-T1 cites unattributed ['REC-004']"
+      }
+    ]
+  },
+  "note": "Retained exactly as found before the superseding run; missing or damaged evidence is recorded, not repaired.",
+  "post_run_redactions": [
+    {
+      "file": "deliverables/history/RCIB-20261006T195819Z-3013/sources/POLICY-chunk-1.json.gz",
+      "stage02_attempt_id": "ATT-POLICY-2",
+      "redacted_at": "2026-10-06T20:24:44Z",
+      "reason": "Removal of incidental third-party Notion workspace-member metadata (names, user IDs, profile-photo links) before repository publication. The table carries no policy content, identity, version or date information.",
+      "removed": {
+        "recordMap tables": {
+          "notion_user": 5
+        }
+      },
+      "original_content_sha256": "sha256:39d7d1bcc779594b1826f3d65af7e38a3a11908e0896e96b35903c5f8bff0651",
+      "original_content_sha256_matches_stage02_content_hash": true,
+      "original_gzip_file_sha256": "sha256:85d3120fc4d085b50faf5515f11f22665abf4c55a266834c02bf59b4762c565e",
+      "redacted_content_sha256": "sha256:947b93ae4775eb33cd9754ca0013e0b1bb3981f369a9069a1d1ed6dc4fda48ea",
+      "redacted_gzip_file_sha256": "sha256:52b431b3c33b4f2e4d7dfdeeacda11fe2b124e3602adea7b4dd3b3763cd109f4",
+      "extracts_reproduced_after_redaction": true,
+      "notice": "This historical artifact was redacted after the original run. Its current hash intentionally differs from the content_hash recorded in this run's stage 02 snapshot, which still records the original captured bytes. The redacted file is not the original capture; run ID, snapshot IDs, snapshots, decisions, register, brief and calendar are unchanged."
+    },
+    {
+      "file": "deliverables/history/RCIB-20261006T195819Z-3013/snapshots/02-source-capture.json",
+      "redacted_at": "2026-10-06T20:48:08Z",
+      "reason": "Removal of signed, time-limited Google export redirect URLs (access signature, expiry and the sheet owner's account ID) from recorded final_url values before repository publication. The requested locator, retrieval status, content hash and preserved bytes are unchanged.",
+      "removed": {
+        "final_url signed redirect paths": [
+          "ATT-SYSTEMS-1",
+          "ATT-SYSTEMS-2",
+          "ATT-EVIDENCE-1",
+          "ATT-EVIDENCE-2",
+          "ATT-CALENDAR-1",
+          "ATT-CALENDAR-2"
+        ]
+      },
+      "original_file_sha256": "sha256:32e84f6766fb8d1ad8c301ae8fce535f51221c22fc884acfc704f68f0e27ab29",
+      "original_file_sha256_matches_stage03_predecessor": true,
+      "redacted_file_sha256": "sha256:bd21d5448c85bd2a1a0d467194982feb6290cbeb6b7d86a87512be3e670623f7",
+      "notice": "This historical snapshot was redacted after the original run. Its current hash intentionally differs from the sha256 recorded as the predecessor in this run's 03-authority-and-timing.json, which still identifies the original stage 02 bytes. Only the listed final_url values changed; run ID, snapshot ID, records, statuses, content hashes and all other snapshots are unchanged."
+    }
+  ]
+}

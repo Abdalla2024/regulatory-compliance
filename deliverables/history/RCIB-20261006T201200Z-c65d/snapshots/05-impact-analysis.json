@@ -1,0 +1,2823 @@
+{
+  "schema_version": "regulatory-compliance-stage-snapshot/2",
+  "snapshot_id": "RCIB-20261006T201200Z-c65d-S05",
+  "run_id": "RCIB-20261006T201200Z-c65d",
+  "stage": "impact-analysis",
+  "sequence": 5,
+  "created_at": "2026-10-06T20:12:08Z",
+  "status": "partial",
+  "predecessor": {
+    "snapshot_id": "RCIB-20261006T201200Z-c65d-S04",
+    "path": "deliverables/snapshots/04-evidence-reconciliation.json",
+    "sha256": "sha256:565b59ba8f728909d8d32e851926e7e0eb3cf8c76164ca2e2959c2b3c7326559"
+  },
+  "consumed_record_ids": [
+    "CONF-REC-003",
+    "CONF-REC-008",
+    "D-002",
+    "EXT-EVIDENCE-REC-001",
+    "EXT-EVIDENCE-REC-002",
+    "EXT-EVIDENCE-REC-003",
+    "EXT-EVIDENCE-REC-004",
+    "EXT-EVIDENCE-REC-007",
+    "EXT-EVIDENCE-REC-008",
+    "EXT-EVIDENCE-REC-009",
+    "EXT-EVIDENCE-REC-010",
+    "EXT-POLICY-BLK-03ec4cd9",
+    "EXT-POLICY-BLK-2aacbbf1",
+    "EXT-POLICY-BLK-2baa4238",
+    "EXT-POLICY-BLK-3f8d8763",
+    "EXT-POLICY-BLK-a46fd543",
+    "EXT-POLICY-BLK-de175065",
+    "FACT-AI-001",
+    "FACT-AI-002",
+    "FACT-AI-003",
+    "FACT-AI-004",
+    "FACT-AI-005",
+    "FACT-AI-006",
+    "FACT-AI-007",
+    "FACT-AI-008",
+    "GAP-AI-005-REGISTER-STALE",
+    "GAP-REC-002",
+    "GAP-REC-005",
+    "GAP-REC-009",
+    "GAP-REC-010",
+    "POLCTL-POL-T1",
+    "POLCTL-POL-T2-LABEL",
+    "POLCTL-POL-T2-PROV",
+    "POLCTL-POL-T3",
+    "REC-001",
+    "REC-002",
+    "REC-003",
+    "REC-004",
+    "REC-007",
+    "REC-008",
+    "REC-009",
+    "REC-010",
+    "RULE-L-50-1",
+    "RULE-L-50-2",
+    "RULE-L-50-3",
+    "RULE-L-50-4-DF",
+    "RULE-L-50-4-TXT"
+  ],
+  "produced_record_ids": [
+    "CONFLICT-IMP-AI-003-POL-T2-LABEL",
+    "CONFLICT-IMP-AI-003-POL-T2-PROV",
+    "CONFLICT-IMP-AI-007-POL-T1",
+    "IMP-AI-001-L-50-1",
+    "IMP-AI-001-L-50-2",
+    "IMP-AI-001-L-50-3",
+    "IMP-AI-001-L-50-4-DF",
+    "IMP-AI-001-L-50-4-TXT",
+    "IMP-AI-001-POL-T1",
+    "IMP-AI-001-POL-T2-LABEL",
+    "IMP-AI-001-POL-T2-PROV",
+    "IMP-AI-001-POL-T3",
+    "IMP-AI-002-L-50-1",
+    "IMP-AI-002-L-50-2",
+    "IMP-AI-002-L-50-3",
+    "IMP-AI-002-L-50-4-DF",
+    "IMP-AI-002-L-50-4-TXT",
+    "IMP-AI-002-POL-T1",
+    "IMP-AI-002-POL-T2-LABEL",
+    "IMP-AI-002-POL-T2-PROV",
+    "IMP-AI-002-POL-T3",
+    "IMP-AI-003-L-50-1",
+    "IMP-AI-003-L-50-2",
+    "IMP-AI-003-L-50-3",
+    "IMP-AI-003-L-50-4-DF",
+    "IMP-AI-003-L-50-4-TXT",
+    "IMP-AI-003-POL-T1",
+    "IMP-AI-003-POL-T2-LABEL",
+    "IMP-AI-003-POL-T2-PROV",
+    "IMP-AI-003-POL-T3",
+    "IMP-AI-004-L-50-1",
+    "IMP-AI-004-L-50-2",
+    "IMP-AI-004-L-50-3",
+    "IMP-AI-004-L-50-4-DF",
+    "IMP-AI-004-L-50-4-TXT",
+    "IMP-AI-004-POL-T1",
+    "IMP-AI-004-POL-T2-LABEL",
+    "IMP-AI-004-POL-T2-PROV",
+    "IMP-AI-004-POL-T3",
+    "IMP-AI-005-L-50-1",
+    "IMP-AI-005-L-50-2",
+    "IMP-AI-005-L-50-3",
+    "IMP-AI-005-L-50-4-DF",
+    "IMP-AI-005-L-50-4-TXT",
+    "IMP-AI-005-POL-T1",
+    "IMP-AI-005-POL-T2-LABEL",
+    "IMP-AI-005-POL-T2-PROV",
+    "IMP-AI-005-POL-T3",
+    "IMP-AI-006-L-50-1",
+    "IMP-AI-006-L-50-2",
+    "IMP-AI-006-L-50-3",
+    "IMP-AI-006-L-50-4-DF",
+    "IMP-AI-006-L-50-4-TXT",
+    "IMP-AI-006-POL-T1",
+    "IMP-AI-006-POL-T2-LABEL",
+    "IMP-AI-006-POL-T2-PROV",
+    "IMP-AI-006-POL-T3",
+    "IMP-AI-007-L-50-1",
+    "IMP-AI-007-L-50-2",
+    "IMP-AI-007-L-50-3",
+    "IMP-AI-007-L-50-4-DF",
+    "IMP-AI-007-L-50-4-TXT",
+    "IMP-AI-007-POL-T1",
+    "IMP-AI-007-POL-T2-LABEL",
+    "IMP-AI-007-POL-T2-PROV",
+    "IMP-AI-007-POL-T3",
+    "IMP-AI-008-L-50-1",
+    "IMP-AI-008-L-50-2",
+    "IMP-AI-008-L-50-3",
+    "IMP-AI-008-L-50-4-DF",
+    "IMP-AI-008-L-50-4-TXT",
+    "IMP-AI-008-POL-T1",
+    "IMP-AI-008-POL-T2-LABEL",
+    "IMP-AI-008-POL-T2-PROV",
+    "IMP-AI-008-POL-T3",
+    "UNAFF-AI-001",
+    "UNAFF-AI-002",
+    "UNAFF-AI-003",
+    "UNAFF-AI-004",
+    "UNAFF-AI-006",
+    "UNAFF-AI-007",
+    "UNAFF-AI-008",
+    "UNRES-IMP-AI-002-POL-T3",
+    "UNRES-IMP-AI-005-L-50-1",
+    "UNRES-IMP-AI-005-L-50-2",
+    "UNRES-IMP-AI-005-L-50-3",
+    "UNRES-IMP-AI-005-L-50-4-DF",
+    "UNRES-IMP-AI-005-L-50-4-TXT",
+    "UNRES-IMP-AI-005-POL-T1",
+    "UNRES-IMP-AI-005-POL-T2-LABEL",
+    "UNRES-IMP-AI-005-POL-T2-PROV",
+    "UNRES-IMP-AI-005-POL-T3",
+    "UNRES-IMP-AI-008-L-50-4-DF",
+    "UNRES-IMP-AI-008-POL-T2-LABEL",
+    "UNRES-IMP-AI-008-POL-T2-PROV"
+  ],
+  "state": {
+    "impacts": [
+      {
+        "id": "IMP-AI-001-L-50-1",
+        "summary": "AI-001 × EU AI Act Art. 50(1) [binding]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-001",
+          "RULE-L-50-1"
+        ],
+        "owner": "Learner Operations",
+        "rationale": "Draft reading for Legal review: Art. 50(1) places this duty on providers (\"Providers shall ensure ...\"). SYSTEMS records provider_role=no and POLICY records a licensed third-party supplier product that Quillhaven did not develop, commission or place on the market under its own name or trademark. The automation does not determine provider status; Legal confirms whether Quillhaven is the provider of this system. This row is not a finding that no transparency duty applies: the internal-policy rows for the same system are assessed separately.",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "interaction-notice",
+          "provider-role"
+        ],
+        "system_id": "AI-001",
+        "rule_id": "L-50-1",
+        "rule_ref": "EU AI Act Art. 50(1) [binding]",
+        "rule_basis": "binding-law",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft reading of the binding Article 50 text as of 2026-08-26 for AI-001 only. Actor role (provider/deployer), applicability and interpretation are for Legal to decide; not legal advice and not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-001-L-50-2",
+        "summary": "AI-001 × EU AI Act Art. 50(2) [binding]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-001",
+          "RULE-L-50-2"
+        ],
+        "owner": "Learner Operations",
+        "rationale": "Draft reading for Legal review: Art. 50(2) places this duty on providers (\"Providers shall ensure ...\"). SYSTEMS records provider_role=no and POLICY records a licensed third-party supplier product that Quillhaven did not develop, commission or place on the market under its own name or trademark. The automation does not determine provider status; Legal confirms whether Quillhaven is the provider of this system. This row is not a finding that no transparency duty applies: the internal-policy rows for the same system are assessed separately.",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "provenance-marking",
+          "provider-role"
+        ],
+        "system_id": "AI-001",
+        "rule_id": "L-50-2",
+        "rule_ref": "EU AI Act Art. 50(2) [binding]",
+        "rule_basis": "binding-law",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft reading of the binding Article 50 text as of 2026-08-26 for AI-001 only. Actor role (provider/deployer), applicability and interpretation are for Legal to decide; not legal advice and not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-001-L-50-3",
+        "summary": "AI-001 × EU AI Act Art. 50(3) [binding]: supported-no-impact",
+        "evidence_ids": [
+          "EXT-POLICY-BLK-3f8d8763",
+          "FACT-AI-001",
+          "RULE-L-50-3"
+        ],
+        "owner": "Learner Operations",
+        "rationale": "POLICY states that the system does not perform emotion recognition or biometric categorisation.",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "emotion-biometric"
+        ],
+        "system_id": "AI-001",
+        "rule_id": "L-50-3",
+        "rule_ref": "EU AI Act Art. 50(3) [binding]",
+        "rule_basis": "binding-law",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft reading of the binding Article 50 text as of 2026-08-26 for AI-001 only. Actor role (provider/deployer), applicability and interpretation are for Legal to decide; not legal advice and not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-001-L-50-4-DF",
+        "summary": "AI-001 × EU AI Act Art. 50(4) first subpara. (deep fake) [binding]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-001",
+          "RULE-L-50-4-DF"
+        ],
+        "owner": "Learner Operations",
+        "rationale": "Recorded output_type 'direct_interaction' is not generated image, audio or video.",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "visible-label-disclosure"
+        ],
+        "system_id": "AI-001",
+        "rule_id": "L-50-4-DF",
+        "rule_ref": "EU AI Act Art. 50(4) first subpara. (deep fake) [binding]",
+        "rule_basis": "binding-law",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft reading of the binding Article 50 text as of 2026-08-26 for AI-001 only. Actor role (provider/deployer), applicability and interpretation are for Legal to decide; not legal advice and not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-001-L-50-4-TXT",
+        "summary": "AI-001 × EU AI Act Art. 50(4) second subpara. (public-interest text) [binding]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-001",
+          "RULE-L-50-4-TXT"
+        ],
+        "owner": "Learner Operations",
+        "rationale": "Recorded output_type 'direct_interaction' is not text published by the deployer.",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "text-output-route"
+        ],
+        "system_id": "AI-001",
+        "rule_id": "L-50-4-TXT",
+        "rule_ref": "EU AI Act Art. 50(4) second subpara. (public-interest text) [binding]",
+        "rule_basis": "binding-law",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft reading of the binding Article 50 text as of 2026-08-26 for AI-001 only. Actor role (provider/deployer), applicability and interpretation are for Legal to decide; not legal advice and not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-001-POL-T1",
+        "summary": "AI-001 × AI-POL Learner and public transparency, bullet 1 (interaction notice) [internal policy]: supported-impact",
+        "evidence_ids": [
+          "EXT-EVIDENCE-REC-001",
+          "FACT-AI-001",
+          "POLCTL-POL-T1",
+          "REC-001"
+        ],
+        "owner": "Learner Operations",
+        "rationale": "SYSTEMS records direct interaction with learners. Control evidenced (current_notice=yes) by REC-001 (complete): Notice screenshot and release record agree.",
+        "state": "supported-impact",
+        "applicability": "applies-on-recorded-facts",
+        "control_status": "evidenced: current_notice=yes",
+        "resolution_need": "None for the control; Legal confirms the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [
+          "REC-001"
+        ],
+        "evidence_subjects": [
+          "interaction-notice"
+        ],
+        "system_id": "AI-001",
+        "rule_id": "POL-T1",
+        "rule_ref": "AI-POL Learner and public transparency, bullet 1 (interaction notice) [internal policy]",
+        "rule_basis": "internal-policy",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft internal-policy reading as of 2026-08-26 for AI-001 only; Legal owns policy interpretation boundaries; not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-001-POL-T2-PROV",
+        "summary": "AI-001 × AI-POL Learner and public transparency, bullet 2 (machine-readable provenance) [internal policy]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-001",
+          "POLCTL-POL-T2-PROV"
+        ],
+        "owner": "Learner Operations",
+        "rationale": "Not public synthetic media (output_type=direct_interaction, exposed_group=learners).",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "provenance-marking"
+        ],
+        "system_id": "AI-001",
+        "rule_id": "POL-T2-PROV",
+        "rule_ref": "AI-POL Learner and public transparency, bullet 2 (machine-readable provenance) [internal policy]",
+        "rule_basis": "internal-policy",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft internal-policy reading as of 2026-08-26 for AI-001 only; Legal owns policy interpretation boundaries; not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-001-POL-T2-LABEL",
+        "summary": "AI-001 × AI-POL Learner and public transparency, bullet 2 (visible label unless Legal-approved exception) [internal policy]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-001",
+          "POLCTL-POL-T2-LABEL"
+        ],
+        "owner": "Learner Operations",
+        "rationale": "Not public synthetic media (output_type=direct_interaction, exposed_group=learners).",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "visible-label-disclosure"
+        ],
+        "system_id": "AI-001",
+        "rule_id": "POL-T2-LABEL",
+        "rule_ref": "AI-POL Learner and public transparency, bullet 2 (visible label unless Legal-approved exception) [internal policy]",
+        "rule_basis": "internal-policy",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft internal-policy reading as of 2026-08-26 for AI-001 only; Legal owns policy interpretation boundaries; not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-001-POL-T3",
+        "summary": "AI-001 × AI-POL Learner and public transparency, bullet 3 (staff-only tool output route) [internal policy]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-001",
+          "POLCTL-POL-T3"
+        ],
+        "owner": "Learner Operations",
+        "rationale": "Recorded output_type 'direct_interaction' is not a staff text-drafting tool.",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "text-output-route"
+        ],
+        "system_id": "AI-001",
+        "rule_id": "POL-T3",
+        "rule_ref": "AI-POL Learner and public transparency, bullet 3 (staff-only tool output route) [internal policy]",
+        "rule_basis": "internal-policy",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft internal-policy reading as of 2026-08-26 for AI-001 only; Legal owns policy interpretation boundaries; not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-002-L-50-1",
+        "summary": "AI-002 × EU AI Act Art. 50(1) [binding]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-002",
+          "RULE-L-50-1"
+        ],
+        "owner": "Admissions",
+        "rationale": "Recorded output_type 'text' is not direct interaction.",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "interaction-notice",
+          "provider-role"
+        ],
+        "system_id": "AI-002",
+        "rule_id": "L-50-1",
+        "rule_ref": "EU AI Act Art. 50(1) [binding]",
+        "rule_basis": "binding-law",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft reading of the binding Article 50 text as of 2026-08-26 for AI-002 only. Actor role (provider/deployer), applicability and interpretation are for Legal to decide; not legal advice and not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-002-L-50-2",
+        "summary": "AI-002 × EU AI Act Art. 50(2) [binding]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-002",
+          "RULE-L-50-2"
+        ],
+        "owner": "Admissions",
+        "rationale": "Draft reading for Legal review: Art. 50(2) places this duty on providers (\"Providers shall ensure ...\"). SYSTEMS records provider_role=no and POLICY records a licensed third-party supplier product that Quillhaven did not develop, commission or place on the market under its own name or trademark. The automation does not determine provider status; Legal confirms whether Quillhaven is the provider of this system. This row is not a finding that no transparency duty applies: the internal-policy rows for the same system are assessed separately.",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "provenance-marking",
+          "provider-role"
+        ],
+        "system_id": "AI-002",
+        "rule_id": "L-50-2",
+        "rule_ref": "EU AI Act Art. 50(2) [binding]",
+        "rule_basis": "binding-law",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft reading of the binding Article 50 text as of 2026-08-26 for AI-002 only. Actor role (provider/deployer), applicability and interpretation are for Legal to decide; not legal advice and not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-002-L-50-3",
+        "summary": "AI-002 × EU AI Act Art. 50(3) [binding]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-002",
+          "RULE-L-50-3"
+        ],
+        "owner": "Admissions",
+        "rationale": "Recorded function is 'text'; no source records emotion recognition or biometric categorisation.",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "emotion-biometric"
+        ],
+        "system_id": "AI-002",
+        "rule_id": "L-50-3",
+        "rule_ref": "EU AI Act Art. 50(3) [binding]",
+        "rule_basis": "binding-law",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft reading of the binding Article 50 text as of 2026-08-26 for AI-002 only. Actor role (provider/deployer), applicability and interpretation are for Legal to decide; not legal advice and not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-002-L-50-4-DF",
+        "summary": "AI-002 × EU AI Act Art. 50(4) first subpara. (deep fake) [binding]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-002",
+          "RULE-L-50-4-DF"
+        ],
+        "owner": "Admissions",
+        "rationale": "Recorded output_type 'text' is not generated image, audio or video.",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "visible-label-disclosure"
+        ],
+        "system_id": "AI-002",
+        "rule_id": "L-50-4-DF",
+        "rule_ref": "EU AI Act Art. 50(4) first subpara. (deep fake) [binding]",
+        "rule_basis": "binding-law",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft reading of the binding Article 50 text as of 2026-08-26 for AI-002 only. Actor role (provider/deployer), applicability and interpretation are for Legal to decide; not legal advice and not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-002-L-50-4-TXT",
+        "summary": "AI-002 × EU AI Act Art. 50(4) second subpara. (public-interest text) [binding]: supported-no-impact",
+        "evidence_ids": [
+          "EXT-POLICY-BLK-03ec4cd9",
+          "FACT-AI-002",
+          "RULE-L-50-4-TXT"
+        ],
+        "owner": "Admissions",
+        "rationale": "POLICY records that the generated text is not published to inform the public on matters of public interest.",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "text-output-route"
+        ],
+        "system_id": "AI-002",
+        "rule_id": "L-50-4-TXT",
+        "rule_ref": "EU AI Act Art. 50(4) second subpara. (public-interest text) [binding]",
+        "rule_basis": "binding-law",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft reading of the binding Article 50 text as of 2026-08-26 for AI-002 only. Actor role (provider/deployer), applicability and interpretation are for Legal to decide; not legal advice and not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-002-POL-T1",
+        "summary": "AI-002 × AI-POL Learner and public transparency, bullet 1 (interaction notice) [internal policy]: supported-no-impact",
+        "evidence_ids": [
+          "EXT-POLICY-BLK-03ec4cd9",
+          "FACT-AI-002",
+          "POLCTL-POL-T1"
+        ],
+        "owner": "Admissions",
+        "rationale": "POLICY records that the people concerned do not interact directly with the AI product.",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "interaction-notice"
+        ],
+        "system_id": "AI-002",
+        "rule_id": "POL-T1",
+        "rule_ref": "AI-POL Learner and public transparency, bullet 1 (interaction notice) [internal policy]",
+        "rule_basis": "internal-policy",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft internal-policy reading as of 2026-08-26 for AI-002 only; Legal owns policy interpretation boundaries; not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-002-POL-T2-PROV",
+        "summary": "AI-002 × AI-POL Learner and public transparency, bullet 2 (machine-readable provenance) [internal policy]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-002",
+          "POLCTL-POL-T2-PROV"
+        ],
+        "owner": "Admissions",
+        "rationale": "Not public synthetic media (output_type=text, exposed_group=applicants).",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "provenance-marking"
+        ],
+        "system_id": "AI-002",
+        "rule_id": "POL-T2-PROV",
+        "rule_ref": "AI-POL Learner and public transparency, bullet 2 (machine-readable provenance) [internal policy]",
+        "rule_basis": "internal-policy",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft internal-policy reading as of 2026-08-26 for AI-002 only; Legal owns policy interpretation boundaries; not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-002-POL-T2-LABEL",
+        "summary": "AI-002 × AI-POL Learner and public transparency, bullet 2 (visible label unless Legal-approved exception) [internal policy]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-002",
+          "POLCTL-POL-T2-LABEL"
+        ],
+        "owner": "Admissions",
+        "rationale": "Not public synthetic media (output_type=text, exposed_group=applicants).",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "visible-label-disclosure"
+        ],
+        "system_id": "AI-002",
+        "rule_id": "POL-T2-LABEL",
+        "rule_ref": "AI-POL Learner and public transparency, bullet 2 (visible label unless Legal-approved exception) [internal policy]",
+        "rule_basis": "internal-policy",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft internal-policy reading as of 2026-08-26 for AI-002 only; Legal owns policy interpretation boundaries; not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-002-POL-T3",
+        "summary": "AI-002 × AI-POL Learner and public transparency, bullet 3 (staff-only tool output route) [internal policy]: unresolved",
+        "evidence_ids": [
+          "EXT-EVIDENCE-REC-002",
+          "FACT-AI-002",
+          "GAP-REC-002",
+          "POLCTL-POL-T3",
+          "REC-002"
+        ],
+        "owner": "Admissions",
+        "rationale": "SYSTEMS records a text-generation tool used by staff (exposed group applicants). Evidence for this rule is incomplete: REC-002 (missing): No evidence that recipients are told when generated text is used.",
+        "state": "unresolved",
+        "applicability": "applies-on-recorded-facts",
+        "control_status": "evidence missing",
+        "resolution_need": "Admissions supplies current, complete evidence.",
+        "needs_action": true,
+        "attributed_record_ids": [
+          "REC-002"
+        ],
+        "evidence_subjects": [
+          "text-output-route"
+        ],
+        "system_id": "AI-002",
+        "rule_id": "POL-T3",
+        "rule_ref": "AI-POL Learner and public transparency, bullet 3 (staff-only tool output route) [internal policy]",
+        "rule_basis": "internal-policy",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft internal-policy reading as of 2026-08-26 for AI-002 only; Legal owns policy interpretation boundaries; not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-003-L-50-1",
+        "summary": "AI-003 × EU AI Act Art. 50(1) [binding]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-003",
+          "RULE-L-50-1"
+        ],
+        "owner": "Communications",
+        "rationale": "Recorded output_type 'synthetic_image' is not direct interaction.",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "interaction-notice",
+          "provider-role"
+        ],
+        "system_id": "AI-003",
+        "rule_id": "L-50-1",
+        "rule_ref": "EU AI Act Art. 50(1) [binding]",
+        "rule_basis": "binding-law",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft reading of the binding Article 50 text as of 2026-08-26 for AI-003 only. Actor role (provider/deployer), applicability and interpretation are for Legal to decide; not legal advice and not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-003-L-50-2",
+        "summary": "AI-003 × EU AI Act Art. 50(2) [binding]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-003",
+          "RULE-L-50-2"
+        ],
+        "owner": "Communications",
+        "rationale": "Draft reading for Legal review: Art. 50(2) places this duty on providers (\"Providers shall ensure ...\"). SYSTEMS records provider_role=no and POLICY records a licensed third-party supplier product that Quillhaven did not develop, commission or place on the market under its own name or trademark. The automation does not determine provider status; Legal confirms whether Quillhaven is the provider of this system. This row is not a finding that no transparency duty applies: the internal-policy rows for the same system are assessed separately.",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "provenance-marking",
+          "provider-role"
+        ],
+        "system_id": "AI-003",
+        "rule_id": "L-50-2",
+        "rule_ref": "EU AI Act Art. 50(2) [binding]",
+        "rule_basis": "binding-law",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft reading of the binding Article 50 text as of 2026-08-26 for AI-003 only. Actor role (provider/deployer), applicability and interpretation are for Legal to decide; not legal advice and not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-003-L-50-3",
+        "summary": "AI-003 × EU AI Act Art. 50(3) [binding]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-003",
+          "RULE-L-50-3"
+        ],
+        "owner": "Communications",
+        "rationale": "Recorded function is 'synthetic_image'; no source records emotion recognition or biometric categorisation.",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "emotion-biometric"
+        ],
+        "system_id": "AI-003",
+        "rule_id": "L-50-3",
+        "rule_ref": "EU AI Act Art. 50(3) [binding]",
+        "rule_basis": "binding-law",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft reading of the binding Article 50 text as of 2026-08-26 for AI-003 only. Actor role (provider/deployer), applicability and interpretation are for Legal to decide; not legal advice and not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-003-L-50-4-DF",
+        "summary": "AI-003 × EU AI Act Art. 50(4) first subpara. (deep fake) [binding]: supported-no-impact",
+        "evidence_ids": [
+          "EXT-POLICY-BLK-de175065",
+          "FACT-AI-003",
+          "RULE-L-50-4-DF"
+        ],
+        "owner": "Communications",
+        "rationale": "POLICY records that the generated media does not depict existing persons, places, objects or events presented as authentic.",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "visible-label-disclosure"
+        ],
+        "system_id": "AI-003",
+        "rule_id": "L-50-4-DF",
+        "rule_ref": "EU AI Act Art. 50(4) first subpara. (deep fake) [binding]",
+        "rule_basis": "binding-law",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft reading of the binding Article 50 text as of 2026-08-26 for AI-003 only. Actor role (provider/deployer), applicability and interpretation are for Legal to decide; not legal advice and not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-003-L-50-4-TXT",
+        "summary": "AI-003 × EU AI Act Art. 50(4) second subpara. (public-interest text) [binding]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-003",
+          "RULE-L-50-4-TXT"
+        ],
+        "owner": "Communications",
+        "rationale": "Recorded output_type 'synthetic_image' is not text published by the deployer.",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "text-output-route"
+        ],
+        "system_id": "AI-003",
+        "rule_id": "L-50-4-TXT",
+        "rule_ref": "EU AI Act Art. 50(4) second subpara. (public-interest text) [binding]",
+        "rule_basis": "binding-law",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft reading of the binding Article 50 text as of 2026-08-26 for AI-003 only. Actor role (provider/deployer), applicability and interpretation are for Legal to decide; not legal advice and not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-003-POL-T1",
+        "summary": "AI-003 × AI-POL Learner and public transparency, bullet 1 (interaction notice) [internal policy]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-003",
+          "POLCTL-POL-T1"
+        ],
+        "owner": "Communications",
+        "rationale": "Recorded output_type 'synthetic_image' is not direct interaction.",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "interaction-notice"
+        ],
+        "system_id": "AI-003",
+        "rule_id": "POL-T1",
+        "rule_ref": "AI-POL Learner and public transparency, bullet 1 (interaction notice) [internal policy]",
+        "rule_basis": "internal-policy",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft internal-policy reading as of 2026-08-26 for AI-003 only; Legal owns policy interpretation boundaries; not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-003-POL-T2-PROV",
+        "summary": "AI-003 × AI-POL Learner and public transparency, bullet 2 (machine-readable provenance) [internal policy]: conflicting",
+        "evidence_ids": [
+          "CONF-REC-003",
+          "EXT-EVIDENCE-REC-003",
+          "FACT-AI-003",
+          "POLCTL-POL-T2-PROV",
+          "REC-003"
+        ],
+        "owner": "Communications",
+        "rationale": "SYSTEMS records public synthetic media (synthetic_image, exposed_group=public). Evidence for this rule conflicts (D-001): REC-003 (conflicting): Visible label exists but exported platform copy may have lost metadata [record also names visible-label-disclosure; its single recorded state is applied to each rule it names and is not split by the automation]. Both facts are preserved; the item remains unresolved pending system-owner verification and is not decided by the automation.",
+        "state": "conflicting",
+        "applicability": "applies-on-recorded-facts",
+        "control_status": "contested",
+        "resolution_need": "System owner (Communications) verifies the contested fact using social-post-884 and updates EVIDENCE/SYSTEMS.",
+        "needs_action": true,
+        "attributed_record_ids": [
+          "REC-003"
+        ],
+        "evidence_subjects": [
+          "provenance-marking"
+        ],
+        "system_id": "AI-003",
+        "rule_id": "POL-T2-PROV",
+        "rule_ref": "AI-POL Learner and public transparency, bullet 2 (machine-readable provenance) [internal policy]",
+        "rule_basis": "internal-policy",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft internal-policy reading as of 2026-08-26 for AI-003 only; Legal owns policy interpretation boundaries; not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-003-POL-T2-LABEL",
+        "summary": "AI-003 × AI-POL Learner and public transparency, bullet 2 (visible label unless Legal-approved exception) [internal policy]: conflicting",
+        "evidence_ids": [
+          "CONF-REC-003",
+          "EXT-EVIDENCE-REC-003",
+          "FACT-AI-003",
+          "POLCTL-POL-T2-LABEL",
+          "REC-003"
+        ],
+        "owner": "Communications",
+        "rationale": "SYSTEMS records public synthetic media (synthetic_image, exposed_group=public). Evidence for this rule conflicts (D-001): REC-003 (conflicting): Visible label exists but exported platform copy may have lost metadata [record also names provenance-marking; its single recorded state is applied to each rule it names and is not split by the automation]. Both facts are preserved; the item remains unresolved pending system-owner verification and is not decided by the automation.",
+        "state": "conflicting",
+        "applicability": "applies-on-recorded-facts",
+        "control_status": "contested",
+        "resolution_need": "System owner (Communications) verifies the contested fact using social-post-884 and updates EVIDENCE/SYSTEMS.",
+        "needs_action": true,
+        "attributed_record_ids": [
+          "REC-003"
+        ],
+        "evidence_subjects": [
+          "visible-label-disclosure"
+        ],
+        "system_id": "AI-003",
+        "rule_id": "POL-T2-LABEL",
+        "rule_ref": "AI-POL Learner and public transparency, bullet 2 (visible label unless Legal-approved exception) [internal policy]",
+        "rule_basis": "internal-policy",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft internal-policy reading as of 2026-08-26 for AI-003 only; Legal owns policy interpretation boundaries; not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-003-POL-T3",
+        "summary": "AI-003 × AI-POL Learner and public transparency, bullet 3 (staff-only tool output route) [internal policy]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-003",
+          "POLCTL-POL-T3"
+        ],
+        "owner": "Communications",
+        "rationale": "Recorded output_type 'synthetic_image' is not a staff text-drafting tool.",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "text-output-route"
+        ],
+        "system_id": "AI-003",
+        "rule_id": "POL-T3",
+        "rule_ref": "AI-POL Learner and public transparency, bullet 3 (staff-only tool output route) [internal policy]",
+        "rule_basis": "internal-policy",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft internal-policy reading as of 2026-08-26 for AI-003 only; Legal owns policy interpretation boundaries; not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-004-L-50-1",
+        "summary": "AI-004 × EU AI Act Art. 50(1) [binding]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-004",
+          "RULE-L-50-1"
+        ],
+        "owner": "Learning Experience",
+        "rationale": "Draft reading for Legal review: Art. 50(1) places this duty on providers (\"Providers shall ensure ...\"). SYSTEMS records provider_role=no and POLICY records a licensed third-party supplier product that Quillhaven did not develop, commission or place on the market under its own name or trademark. The automation does not determine provider status; Legal confirms whether Quillhaven is the provider of this system. This row is not a finding that no transparency duty applies: the internal-policy rows for the same system are assessed separately.",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "interaction-notice",
+          "provider-role"
+        ],
+        "system_id": "AI-004",
+        "rule_id": "L-50-1",
+        "rule_ref": "EU AI Act Art. 50(1) [binding]",
+        "rule_basis": "binding-law",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft reading of the binding Article 50 text as of 2026-08-26 for AI-004 only. Actor role (provider/deployer), applicability and interpretation are for Legal to decide; not legal advice and not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-004-L-50-2",
+        "summary": "AI-004 × EU AI Act Art. 50(2) [binding]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-004",
+          "RULE-L-50-2"
+        ],
+        "owner": "Learning Experience",
+        "rationale": "Draft reading for Legal review: Art. 50(2) places this duty on providers (\"Providers shall ensure ...\"). SYSTEMS records provider_role=no and POLICY records a licensed third-party supplier product that Quillhaven did not develop, commission or place on the market under its own name or trademark. The automation does not determine provider status; Legal confirms whether Quillhaven is the provider of this system. This row is not a finding that no transparency duty applies: the internal-policy rows for the same system are assessed separately.",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "provenance-marking",
+          "provider-role"
+        ],
+        "system_id": "AI-004",
+        "rule_id": "L-50-2",
+        "rule_ref": "EU AI Act Art. 50(2) [binding]",
+        "rule_basis": "binding-law",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft reading of the binding Article 50 text as of 2026-08-26 for AI-004 only. Actor role (provider/deployer), applicability and interpretation are for Legal to decide; not legal advice and not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-004-L-50-3",
+        "summary": "AI-004 × EU AI Act Art. 50(3) [binding]: supported-no-impact",
+        "evidence_ids": [
+          "EXT-POLICY-BLK-2aacbbf1",
+          "FACT-AI-004",
+          "RULE-L-50-3"
+        ],
+        "owner": "Learning Experience",
+        "rationale": "POLICY states that the system does not perform emotion recognition or biometric categorisation.",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "emotion-biometric"
+        ],
+        "system_id": "AI-004",
+        "rule_id": "L-50-3",
+        "rule_ref": "EU AI Act Art. 50(3) [binding]",
+        "rule_basis": "binding-law",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft reading of the binding Article 50 text as of 2026-08-26 for AI-004 only. Actor role (provider/deployer), applicability and interpretation are for Legal to decide; not legal advice and not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-004-L-50-4-DF",
+        "summary": "AI-004 × EU AI Act Art. 50(4) first subpara. (deep fake) [binding]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-004",
+          "RULE-L-50-4-DF"
+        ],
+        "owner": "Learning Experience",
+        "rationale": "Recorded output_type 'direct_interaction' is not generated image, audio or video.",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "visible-label-disclosure"
+        ],
+        "system_id": "AI-004",
+        "rule_id": "L-50-4-DF",
+        "rule_ref": "EU AI Act Art. 50(4) first subpara. (deep fake) [binding]",
+        "rule_basis": "binding-law",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft reading of the binding Article 50 text as of 2026-08-26 for AI-004 only. Actor role (provider/deployer), applicability and interpretation are for Legal to decide; not legal advice and not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-004-L-50-4-TXT",
+        "summary": "AI-004 × EU AI Act Art. 50(4) second subpara. (public-interest text) [binding]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-004",
+          "RULE-L-50-4-TXT"
+        ],
+        "owner": "Learning Experience",
+        "rationale": "Recorded output_type 'direct_interaction' is not text published by the deployer.",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "text-output-route"
+        ],
+        "system_id": "AI-004",
+        "rule_id": "L-50-4-TXT",
+        "rule_ref": "EU AI Act Art. 50(4) second subpara. (public-interest text) [binding]",
+        "rule_basis": "binding-law",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft reading of the binding Article 50 text as of 2026-08-26 for AI-004 only. Actor role (provider/deployer), applicability and interpretation are for Legal to decide; not legal advice and not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-004-POL-T1",
+        "summary": "AI-004 × AI-POL Learner and public transparency, bullet 1 (interaction notice) [internal policy]: supported-impact",
+        "evidence_ids": [
+          "EXT-EVIDENCE-REC-004",
+          "FACT-AI-004",
+          "POLCTL-POL-T1",
+          "REC-004"
+        ],
+        "owner": "Learning Experience",
+        "rationale": "SYSTEMS records direct interaction with learners. Control gap recorded: current_notice=no, consistent with REC-004 (complete): First interaction contains no AI notice.",
+        "state": "supported-impact",
+        "applicability": "applies-on-recorded-facts",
+        "control_status": "gap: current_notice=no",
+        "resolution_need": "Learning Experience closes the recorded control gap; Operations approves activation and dates.",
+        "needs_action": true,
+        "attributed_record_ids": [
+          "REC-004"
+        ],
+        "evidence_subjects": [
+          "interaction-notice"
+        ],
+        "system_id": "AI-004",
+        "rule_id": "POL-T1",
+        "rule_ref": "AI-POL Learner and public transparency, bullet 1 (interaction notice) [internal policy]",
+        "rule_basis": "internal-policy",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft internal-policy reading as of 2026-08-26 for AI-004 only; Legal owns policy interpretation boundaries; not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-004-POL-T2-PROV",
+        "summary": "AI-004 × AI-POL Learner and public transparency, bullet 2 (machine-readable provenance) [internal policy]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-004",
+          "POLCTL-POL-T2-PROV"
+        ],
+        "owner": "Learning Experience",
+        "rationale": "Not public synthetic media (output_type=direct_interaction, exposed_group=learners).",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "provenance-marking"
+        ],
+        "system_id": "AI-004",
+        "rule_id": "POL-T2-PROV",
+        "rule_ref": "AI-POL Learner and public transparency, bullet 2 (machine-readable provenance) [internal policy]",
+        "rule_basis": "internal-policy",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft internal-policy reading as of 2026-08-26 for AI-004 only; Legal owns policy interpretation boundaries; not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-004-POL-T2-LABEL",
+        "summary": "AI-004 × AI-POL Learner and public transparency, bullet 2 (visible label unless Legal-approved exception) [internal policy]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-004",
+          "POLCTL-POL-T2-LABEL"
+        ],
+        "owner": "Learning Experience",
+        "rationale": "Not public synthetic media (output_type=direct_interaction, exposed_group=learners).",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "visible-label-disclosure"
+        ],
+        "system_id": "AI-004",
+        "rule_id": "POL-T2-LABEL",
+        "rule_ref": "AI-POL Learner and public transparency, bullet 2 (visible label unless Legal-approved exception) [internal policy]",
+        "rule_basis": "internal-policy",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft internal-policy reading as of 2026-08-26 for AI-004 only; Legal owns policy interpretation boundaries; not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-004-POL-T3",
+        "summary": "AI-004 × AI-POL Learner and public transparency, bullet 3 (staff-only tool output route) [internal policy]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-004",
+          "POLCTL-POL-T3"
+        ],
+        "owner": "Learning Experience",
+        "rationale": "Recorded output_type 'direct_interaction' is not a staff text-drafting tool.",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "text-output-route"
+        ],
+        "system_id": "AI-004",
+        "rule_id": "POL-T3",
+        "rule_ref": "AI-POL Learner and public transparency, bullet 3 (staff-only tool output route) [internal policy]",
+        "rule_basis": "internal-policy",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft internal-policy reading as of 2026-08-26 for AI-004 only; Legal owns policy interpretation boundaries; not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-005-L-50-1",
+        "summary": "AI-005 × EU AI Act Art. 50(1) [binding]: unresolved",
+        "evidence_ids": [
+          "FACT-AI-005",
+          "GAP-AI-005-REGISTER-STALE",
+          "GAP-REC-005",
+          "RULE-L-50-1"
+        ],
+        "owner": "Assessment Operations",
+        "rationale": "The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release.",
+        "state": "unresolved",
+        "applicability": "unknown",
+        "control_status": null,
+        "resolution_need": "Assessment Operations refreshes the register entry and evidence.",
+        "needs_action": true,
+        "attributed_record_ids": [
+          "REC-005"
+        ],
+        "evidence_subjects": [
+          "interaction-notice",
+          "provider-role"
+        ],
+        "system_id": "AI-005",
+        "rule_id": "L-50-1",
+        "rule_ref": "EU AI Act Art. 50(1) [binding]",
+        "rule_basis": "binding-law",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft reading of the binding Article 50 text as of 2026-08-26 for AI-005 only. Actor role (provider/deployer), applicability and interpretation are for Legal to decide; not legal advice and not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-005-L-50-2",
+        "summary": "AI-005 × EU AI Act Art. 50(2) [binding]: unresolved",
+        "evidence_ids": [
+          "FACT-AI-005",
+          "GAP-AI-005-REGISTER-STALE",
+          "GAP-REC-005",
+          "RULE-L-50-2"
+        ],
+        "owner": "Assessment Operations",
+        "rationale": "The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release.",
+        "state": "unresolved",
+        "applicability": "unknown",
+        "control_status": null,
+        "resolution_need": "Assessment Operations refreshes the register entry and evidence.",
+        "needs_action": true,
+        "attributed_record_ids": [
+          "REC-005"
+        ],
+        "evidence_subjects": [
+          "provenance-marking",
+          "provider-role"
+        ],
+        "system_id": "AI-005",
+        "rule_id": "L-50-2",
+        "rule_ref": "EU AI Act Art. 50(2) [binding]",
+        "rule_basis": "binding-law",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft reading of the binding Article 50 text as of 2026-08-26 for AI-005 only. Actor role (provider/deployer), applicability and interpretation are for Legal to decide; not legal advice and not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-005-L-50-3",
+        "summary": "AI-005 × EU AI Act Art. 50(3) [binding]: unresolved",
+        "evidence_ids": [
+          "FACT-AI-005",
+          "GAP-AI-005-REGISTER-STALE",
+          "GAP-REC-005",
+          "RULE-L-50-3"
+        ],
+        "owner": "Assessment Operations",
+        "rationale": "The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release [record also names provider-role; its single recorded state is applied to each rule it names and is not split by the automation].",
+        "state": "unresolved",
+        "applicability": "unknown",
+        "control_status": null,
+        "resolution_need": "Assessment Operations refreshes the register entry and evidence.",
+        "needs_action": true,
+        "attributed_record_ids": [
+          "REC-005"
+        ],
+        "evidence_subjects": [
+          "emotion-biometric"
+        ],
+        "system_id": "AI-005",
+        "rule_id": "L-50-3",
+        "rule_ref": "EU AI Act Art. 50(3) [binding]",
+        "rule_basis": "binding-law",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft reading of the binding Article 50 text as of 2026-08-26 for AI-005 only. Actor role (provider/deployer), applicability and interpretation are for Legal to decide; not legal advice and not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-005-L-50-4-DF",
+        "summary": "AI-005 × EU AI Act Art. 50(4) first subpara. (deep fake) [binding]: unresolved",
+        "evidence_ids": [
+          "FACT-AI-005",
+          "GAP-AI-005-REGISTER-STALE",
+          "GAP-REC-005",
+          "RULE-L-50-4-DF"
+        ],
+        "owner": "Assessment Operations",
+        "rationale": "The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release [record also names provider-role; its single recorded state is applied to each rule it names and is not split by the automation].",
+        "state": "unresolved",
+        "applicability": "unknown",
+        "control_status": null,
+        "resolution_need": "Assessment Operations refreshes the register entry and evidence.",
+        "needs_action": true,
+        "attributed_record_ids": [
+          "REC-005"
+        ],
+        "evidence_subjects": [
+          "visible-label-disclosure"
+        ],
+        "system_id": "AI-005",
+        "rule_id": "L-50-4-DF",
+        "rule_ref": "EU AI Act Art. 50(4) first subpara. (deep fake) [binding]",
+        "rule_basis": "binding-law",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft reading of the binding Article 50 text as of 2026-08-26 for AI-005 only. Actor role (provider/deployer), applicability and interpretation are for Legal to decide; not legal advice and not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-005-L-50-4-TXT",
+        "summary": "AI-005 × EU AI Act Art. 50(4) second subpara. (public-interest text) [binding]: unresolved",
+        "evidence_ids": [
+          "FACT-AI-005",
+          "GAP-AI-005-REGISTER-STALE",
+          "GAP-REC-005",
+          "RULE-L-50-4-TXT"
+        ],
+        "owner": "Assessment Operations",
+        "rationale": "The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release [record also names provider-role; its single recorded state is applied to each rule it names and is not split by the automation].",
+        "state": "unresolved",
+        "applicability": "unknown",
+        "control_status": null,
+        "resolution_need": "Assessment Operations refreshes the register entry and evidence.",
+        "needs_action": true,
+        "attributed_record_ids": [
+          "REC-005"
+        ],
+        "evidence_subjects": [
+          "text-output-route"
+        ],
+        "system_id": "AI-005",
+        "rule_id": "L-50-4-TXT",
+        "rule_ref": "EU AI Act Art. 50(4) second subpara. (public-interest text) [binding]",
+        "rule_basis": "binding-law",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft reading of the binding Article 50 text as of 2026-08-26 for AI-005 only. Actor role (provider/deployer), applicability and interpretation are for Legal to decide; not legal advice and not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-005-POL-T1",
+        "summary": "AI-005 × AI-POL Learner and public transparency, bullet 1 (interaction notice) [internal policy]: unresolved",
+        "evidence_ids": [
+          "FACT-AI-005",
+          "GAP-AI-005-REGISTER-STALE",
+          "GAP-REC-005",
+          "POLCTL-POL-T1"
+        ],
+        "owner": "Assessment Operations",
+        "rationale": "The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release [record also names provider-role; its single recorded state is applied to each rule it names and is not split by the automation].",
+        "state": "unresolved",
+        "applicability": "unknown",
+        "control_status": null,
+        "resolution_need": "Assessment Operations refreshes the register entry and evidence.",
+        "needs_action": true,
+        "attributed_record_ids": [
+          "REC-005"
+        ],
+        "evidence_subjects": [
+          "interaction-notice"
+        ],
+        "system_id": "AI-005",
+        "rule_id": "POL-T1",
+        "rule_ref": "AI-POL Learner and public transparency, bullet 1 (interaction notice) [internal policy]",
+        "rule_basis": "internal-policy",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft internal-policy reading as of 2026-08-26 for AI-005 only; Legal owns policy interpretation boundaries; not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-005-POL-T2-PROV",
+        "summary": "AI-005 × AI-POL Learner and public transparency, bullet 2 (machine-readable provenance) [internal policy]: unresolved",
+        "evidence_ids": [
+          "FACT-AI-005",
+          "GAP-AI-005-REGISTER-STALE",
+          "GAP-REC-005",
+          "POLCTL-POL-T2-PROV"
+        ],
+        "owner": "Assessment Operations",
+        "rationale": "The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release [record also names provider-role; its single recorded state is applied to each rule it names and is not split by the automation].",
+        "state": "unresolved",
+        "applicability": "unknown",
+        "control_status": null,
+        "resolution_need": "Assessment Operations refreshes the register entry and evidence.",
+        "needs_action": true,
+        "attributed_record_ids": [
+          "REC-005"
+        ],
+        "evidence_subjects": [
+          "provenance-marking"
+        ],
+        "system_id": "AI-005",
+        "rule_id": "POL-T2-PROV",
+        "rule_ref": "AI-POL Learner and public transparency, bullet 2 (machine-readable provenance) [internal policy]",
+        "rule_basis": "internal-policy",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft internal-policy reading as of 2026-08-26 for AI-005 only; Legal owns policy interpretation boundaries; not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-005-POL-T2-LABEL",
+        "summary": "AI-005 × AI-POL Learner and public transparency, bullet 2 (visible label unless Legal-approved exception) [internal policy]: unresolved",
+        "evidence_ids": [
+          "FACT-AI-005",
+          "GAP-AI-005-REGISTER-STALE",
+          "GAP-REC-005",
+          "POLCTL-POL-T2-LABEL"
+        ],
+        "owner": "Assessment Operations",
+        "rationale": "The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release [record also names provider-role; its single recorded state is applied to each rule it names and is not split by the automation].",
+        "state": "unresolved",
+        "applicability": "unknown",
+        "control_status": null,
+        "resolution_need": "Assessment Operations refreshes the register entry and evidence.",
+        "needs_action": true,
+        "attributed_record_ids": [
+          "REC-005"
+        ],
+        "evidence_subjects": [
+          "visible-label-disclosure"
+        ],
+        "system_id": "AI-005",
+        "rule_id": "POL-T2-LABEL",
+        "rule_ref": "AI-POL Learner and public transparency, bullet 2 (visible label unless Legal-approved exception) [internal policy]",
+        "rule_basis": "internal-policy",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft internal-policy reading as of 2026-08-26 for AI-005 only; Legal owns policy interpretation boundaries; not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-005-POL-T3",
+        "summary": "AI-005 × AI-POL Learner and public transparency, bullet 3 (staff-only tool output route) [internal policy]: unresolved",
+        "evidence_ids": [
+          "FACT-AI-005",
+          "GAP-AI-005-REGISTER-STALE",
+          "GAP-REC-005",
+          "POLCTL-POL-T3"
+        ],
+        "owner": "Assessment Operations",
+        "rationale": "The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release [record also names provider-role; its single recorded state is applied to each rule it names and is not split by the automation].",
+        "state": "unresolved",
+        "applicability": "unknown",
+        "control_status": null,
+        "resolution_need": "Assessment Operations refreshes the register entry and evidence.",
+        "needs_action": true,
+        "attributed_record_ids": [
+          "REC-005"
+        ],
+        "evidence_subjects": [
+          "text-output-route"
+        ],
+        "system_id": "AI-005",
+        "rule_id": "POL-T3",
+        "rule_ref": "AI-POL Learner and public transparency, bullet 3 (staff-only tool output route) [internal policy]",
+        "rule_basis": "internal-policy",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft internal-policy reading as of 2026-08-26 for AI-005 only; Legal owns policy interpretation boundaries; not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-006-L-50-1",
+        "summary": "AI-006 × EU AI Act Art. 50(1) [binding]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-006",
+          "RULE-L-50-1"
+        ],
+        "owner": "People Operations",
+        "rationale": "Recorded output_type 'text' is not direct interaction.",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "interaction-notice",
+          "provider-role"
+        ],
+        "system_id": "AI-006",
+        "rule_id": "L-50-1",
+        "rule_ref": "EU AI Act Art. 50(1) [binding]",
+        "rule_basis": "binding-law",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft reading of the binding Article 50 text as of 2026-08-26 for AI-006 only. Actor role (provider/deployer), applicability and interpretation are for Legal to decide; not legal advice and not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-006-L-50-2",
+        "summary": "AI-006 × EU AI Act Art. 50(2) [binding]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-006",
+          "RULE-L-50-2"
+        ],
+        "owner": "People Operations",
+        "rationale": "Draft reading for Legal review: Art. 50(2) places this duty on providers (\"Providers shall ensure ...\"). SYSTEMS records provider_role=no and POLICY records a licensed third-party supplier product that Quillhaven did not develop, commission or place on the market under its own name or trademark. The automation does not determine provider status; Legal confirms whether Quillhaven is the provider of this system. This row is not a finding that no transparency duty applies: the internal-policy rows for the same system are assessed separately.",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "provenance-marking",
+          "provider-role"
+        ],
+        "system_id": "AI-006",
+        "rule_id": "L-50-2",
+        "rule_ref": "EU AI Act Art. 50(2) [binding]",
+        "rule_basis": "binding-law",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft reading of the binding Article 50 text as of 2026-08-26 for AI-006 only. Actor role (provider/deployer), applicability and interpretation are for Legal to decide; not legal advice and not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-006-L-50-3",
+        "summary": "AI-006 × EU AI Act Art. 50(3) [binding]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-006",
+          "RULE-L-50-3"
+        ],
+        "owner": "People Operations",
+        "rationale": "Recorded function is 'text'; no source records emotion recognition or biometric categorisation.",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "emotion-biometric"
+        ],
+        "system_id": "AI-006",
+        "rule_id": "L-50-3",
+        "rule_ref": "EU AI Act Art. 50(3) [binding]",
+        "rule_basis": "binding-law",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft reading of the binding Article 50 text as of 2026-08-26 for AI-006 only. Actor role (provider/deployer), applicability and interpretation are for Legal to decide; not legal advice and not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-006-L-50-4-DF",
+        "summary": "AI-006 × EU AI Act Art. 50(4) first subpara. (deep fake) [binding]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-006",
+          "RULE-L-50-4-DF"
+        ],
+        "owner": "People Operations",
+        "rationale": "Recorded output_type 'text' is not generated image, audio or video.",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "visible-label-disclosure"
+        ],
+        "system_id": "AI-006",
+        "rule_id": "L-50-4-DF",
+        "rule_ref": "EU AI Act Art. 50(4) first subpara. (deep fake) [binding]",
+        "rule_basis": "binding-law",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft reading of the binding Article 50 text as of 2026-08-26 for AI-006 only. Actor role (provider/deployer), applicability and interpretation are for Legal to decide; not legal advice and not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-006-L-50-4-TXT",
+        "summary": "AI-006 × EU AI Act Art. 50(4) second subpara. (public-interest text) [binding]: supported-no-impact",
+        "evidence_ids": [
+          "EXT-POLICY-BLK-2baa4238",
+          "FACT-AI-006",
+          "RULE-L-50-4-TXT"
+        ],
+        "owner": "People Operations",
+        "rationale": "POLICY records that the generated text is not published to inform the public on matters of public interest.",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "text-output-route"
+        ],
+        "system_id": "AI-006",
+        "rule_id": "L-50-4-TXT",
+        "rule_ref": "EU AI Act Art. 50(4) second subpara. (public-interest text) [binding]",
+        "rule_basis": "binding-law",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft reading of the binding Article 50 text as of 2026-08-26 for AI-006 only. Actor role (provider/deployer), applicability and interpretation are for Legal to decide; not legal advice and not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-006-POL-T1",
+        "summary": "AI-006 × AI-POL Learner and public transparency, bullet 1 (interaction notice) [internal policy]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-006",
+          "POLCTL-POL-T1"
+        ],
+        "owner": "People Operations",
+        "rationale": "Recorded output_type 'text' is not direct interaction.",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "interaction-notice"
+        ],
+        "system_id": "AI-006",
+        "rule_id": "POL-T1",
+        "rule_ref": "AI-POL Learner and public transparency, bullet 1 (interaction notice) [internal policy]",
+        "rule_basis": "internal-policy",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft internal-policy reading as of 2026-08-26 for AI-006 only; Legal owns policy interpretation boundaries; not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-006-POL-T2-PROV",
+        "summary": "AI-006 × AI-POL Learner and public transparency, bullet 2 (machine-readable provenance) [internal policy]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-006",
+          "POLCTL-POL-T2-PROV"
+        ],
+        "owner": "People Operations",
+        "rationale": "Not public synthetic media (output_type=text, exposed_group=staff).",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "provenance-marking"
+        ],
+        "system_id": "AI-006",
+        "rule_id": "POL-T2-PROV",
+        "rule_ref": "AI-POL Learner and public transparency, bullet 2 (machine-readable provenance) [internal policy]",
+        "rule_basis": "internal-policy",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft internal-policy reading as of 2026-08-26 for AI-006 only; Legal owns policy interpretation boundaries; not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-006-POL-T2-LABEL",
+        "summary": "AI-006 × AI-POL Learner and public transparency, bullet 2 (visible label unless Legal-approved exception) [internal policy]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-006",
+          "POLCTL-POL-T2-LABEL"
+        ],
+        "owner": "People Operations",
+        "rationale": "Not public synthetic media (output_type=text, exposed_group=staff).",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "visible-label-disclosure"
+        ],
+        "system_id": "AI-006",
+        "rule_id": "POL-T2-LABEL",
+        "rule_ref": "AI-POL Learner and public transparency, bullet 2 (visible label unless Legal-approved exception) [internal policy]",
+        "rule_basis": "internal-policy",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft internal-policy reading as of 2026-08-26 for AI-006 only; Legal owns policy interpretation boundaries; not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-006-POL-T3",
+        "summary": "AI-006 × AI-POL Learner and public transparency, bullet 3 (staff-only tool output route) [internal policy]: supported-impact",
+        "evidence_ids": [
+          "EXT-EVIDENCE-REC-007",
+          "FACT-AI-006",
+          "POLCTL-POL-T3",
+          "REC-007"
+        ],
+        "owner": "People Operations",
+        "rationale": "SYSTEMS records a text-generation tool used by staff (exposed group staff). Control evidenced by REC-007 (complete): Tool is restricted to staff workspace.",
+        "state": "supported-impact",
+        "applicability": "applies-on-recorded-facts",
+        "control_status": "evidenced",
+        "resolution_need": "None for the control; Legal confirms the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [
+          "REC-007"
+        ],
+        "evidence_subjects": [
+          "text-output-route"
+        ],
+        "system_id": "AI-006",
+        "rule_id": "POL-T3",
+        "rule_ref": "AI-POL Learner and public transparency, bullet 3 (staff-only tool output route) [internal policy]",
+        "rule_basis": "internal-policy",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft internal-policy reading as of 2026-08-26 for AI-006 only; Legal owns policy interpretation boundaries; not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-007-L-50-1",
+        "summary": "AI-007 × EU AI Act Art. 50(1) [binding]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-007",
+          "RULE-L-50-1"
+        ],
+        "owner": "Marketing",
+        "rationale": "Draft reading for Legal review: Art. 50(1) places this duty on providers (\"Providers shall ensure ...\"). SYSTEMS records provider_role=no and POLICY records a licensed third-party supplier product that Quillhaven did not develop, commission or place on the market under its own name or trademark. The automation does not determine provider status; Legal confirms whether Quillhaven is the provider of this system. This row is not a finding that no transparency duty applies: the internal-policy rows for the same system are assessed separately.",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "interaction-notice",
+          "provider-role"
+        ],
+        "system_id": "AI-007",
+        "rule_id": "L-50-1",
+        "rule_ref": "EU AI Act Art. 50(1) [binding]",
+        "rule_basis": "binding-law",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft reading of the binding Article 50 text as of 2026-08-26 for AI-007 only. Actor role (provider/deployer), applicability and interpretation are for Legal to decide; not legal advice and not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-007-L-50-2",
+        "summary": "AI-007 × EU AI Act Art. 50(2) [binding]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-007",
+          "RULE-L-50-2"
+        ],
+        "owner": "Marketing",
+        "rationale": "Draft reading for Legal review: Art. 50(2) places this duty on providers (\"Providers shall ensure ...\"). SYSTEMS records provider_role=no and POLICY records a licensed third-party supplier product that Quillhaven did not develop, commission or place on the market under its own name or trademark. The automation does not determine provider status; Legal confirms whether Quillhaven is the provider of this system. This row is not a finding that no transparency duty applies: the internal-policy rows for the same system are assessed separately.",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "provenance-marking",
+          "provider-role"
+        ],
+        "system_id": "AI-007",
+        "rule_id": "L-50-2",
+        "rule_ref": "EU AI Act Art. 50(2) [binding]",
+        "rule_basis": "binding-law",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft reading of the binding Article 50 text as of 2026-08-26 for AI-007 only. Actor role (provider/deployer), applicability and interpretation are for Legal to decide; not legal advice and not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-007-L-50-3",
+        "summary": "AI-007 × EU AI Act Art. 50(3) [binding]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-007",
+          "RULE-L-50-3"
+        ],
+        "owner": "Marketing",
+        "rationale": "Recorded function is 'direct_interaction'; no source records emotion recognition or biometric categorisation.",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "emotion-biometric"
+        ],
+        "system_id": "AI-007",
+        "rule_id": "L-50-3",
+        "rule_ref": "EU AI Act Art. 50(3) [binding]",
+        "rule_basis": "binding-law",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft reading of the binding Article 50 text as of 2026-08-26 for AI-007 only. Actor role (provider/deployer), applicability and interpretation are for Legal to decide; not legal advice and not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-007-L-50-4-DF",
+        "summary": "AI-007 × EU AI Act Art. 50(4) first subpara. (deep fake) [binding]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-007",
+          "RULE-L-50-4-DF"
+        ],
+        "owner": "Marketing",
+        "rationale": "Recorded output_type 'direct_interaction' is not generated image, audio or video.",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "visible-label-disclosure"
+        ],
+        "system_id": "AI-007",
+        "rule_id": "L-50-4-DF",
+        "rule_ref": "EU AI Act Art. 50(4) first subpara. (deep fake) [binding]",
+        "rule_basis": "binding-law",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft reading of the binding Article 50 text as of 2026-08-26 for AI-007 only. Actor role (provider/deployer), applicability and interpretation are for Legal to decide; not legal advice and not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-007-L-50-4-TXT",
+        "summary": "AI-007 × EU AI Act Art. 50(4) second subpara. (public-interest text) [binding]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-007",
+          "RULE-L-50-4-TXT"
+        ],
+        "owner": "Marketing",
+        "rationale": "Recorded output_type 'direct_interaction' is not text published by the deployer.",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "text-output-route"
+        ],
+        "system_id": "AI-007",
+        "rule_id": "L-50-4-TXT",
+        "rule_ref": "EU AI Act Art. 50(4) second subpara. (public-interest text) [binding]",
+        "rule_basis": "binding-law",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft reading of the binding Article 50 text as of 2026-08-26 for AI-007 only. Actor role (provider/deployer), applicability and interpretation are for Legal to decide; not legal advice and not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-007-POL-T1",
+        "summary": "AI-007 × AI-POL Learner and public transparency, bullet 1 (interaction notice) [internal policy]: conflicting",
+        "evidence_ids": [
+          "CONF-REC-008",
+          "EXT-EVIDENCE-REC-008",
+          "FACT-AI-007",
+          "POLCTL-POL-T1",
+          "REC-008"
+        ],
+        "owner": "Marketing",
+        "rationale": "SYSTEMS records direct interaction with public. Evidence for this rule conflicts (D-001): REC-008 (conflicting): Owner says a banner exists but the current capture shows none. Both facts are preserved; the item remains unresolved pending system-owner verification and is not decided by the automation.",
+        "state": "conflicting",
+        "applicability": "applies-on-recorded-facts",
+        "control_status": "contested",
+        "resolution_need": "System owner (Marketing) verifies the contested fact using avatar-page-capture and updates EVIDENCE/SYSTEMS.",
+        "needs_action": true,
+        "attributed_record_ids": [
+          "REC-008"
+        ],
+        "evidence_subjects": [
+          "interaction-notice"
+        ],
+        "system_id": "AI-007",
+        "rule_id": "POL-T1",
+        "rule_ref": "AI-POL Learner and public transparency, bullet 1 (interaction notice) [internal policy]",
+        "rule_basis": "internal-policy",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft internal-policy reading as of 2026-08-26 for AI-007 only; Legal owns policy interpretation boundaries; not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-007-POL-T2-PROV",
+        "summary": "AI-007 × AI-POL Learner and public transparency, bullet 2 (machine-readable provenance) [internal policy]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-007",
+          "POLCTL-POL-T2-PROV"
+        ],
+        "owner": "Marketing",
+        "rationale": "Not public synthetic media (output_type=direct_interaction, exposed_group=public).",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "provenance-marking"
+        ],
+        "system_id": "AI-007",
+        "rule_id": "POL-T2-PROV",
+        "rule_ref": "AI-POL Learner and public transparency, bullet 2 (machine-readable provenance) [internal policy]",
+        "rule_basis": "internal-policy",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft internal-policy reading as of 2026-08-26 for AI-007 only; Legal owns policy interpretation boundaries; not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-007-POL-T2-LABEL",
+        "summary": "AI-007 × AI-POL Learner and public transparency, bullet 2 (visible label unless Legal-approved exception) [internal policy]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-007",
+          "POLCTL-POL-T2-LABEL"
+        ],
+        "owner": "Marketing",
+        "rationale": "Not public synthetic media (output_type=direct_interaction, exposed_group=public).",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "visible-label-disclosure"
+        ],
+        "system_id": "AI-007",
+        "rule_id": "POL-T2-LABEL",
+        "rule_ref": "AI-POL Learner and public transparency, bullet 2 (visible label unless Legal-approved exception) [internal policy]",
+        "rule_basis": "internal-policy",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft internal-policy reading as of 2026-08-26 for AI-007 only; Legal owns policy interpretation boundaries; not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-007-POL-T3",
+        "summary": "AI-007 × AI-POL Learner and public transparency, bullet 3 (staff-only tool output route) [internal policy]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-007",
+          "POLCTL-POL-T3"
+        ],
+        "owner": "Marketing",
+        "rationale": "Recorded output_type 'direct_interaction' is not a staff text-drafting tool.",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "text-output-route"
+        ],
+        "system_id": "AI-007",
+        "rule_id": "POL-T3",
+        "rule_ref": "AI-POL Learner and public transparency, bullet 3 (staff-only tool output route) [internal policy]",
+        "rule_basis": "internal-policy",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft internal-policy reading as of 2026-08-26 for AI-007 only; Legal owns policy interpretation boundaries; not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-008-L-50-1",
+        "summary": "AI-008 × EU AI Act Art. 50(1) [binding]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-008",
+          "RULE-L-50-1"
+        ],
+        "owner": "Communications",
+        "rationale": "Recorded output_type 'synthetic_audio_video' is not direct interaction.",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "interaction-notice",
+          "provider-role"
+        ],
+        "system_id": "AI-008",
+        "rule_id": "L-50-1",
+        "rule_ref": "EU AI Act Art. 50(1) [binding]",
+        "rule_basis": "binding-law",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft reading of the binding Article 50 text as of 2026-08-26 for AI-008 only. Actor role (provider/deployer), applicability and interpretation are for Legal to decide; not legal advice and not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-008-L-50-2",
+        "summary": "AI-008 × EU AI Act Art. 50(2) [binding]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-008",
+          "RULE-L-50-2"
+        ],
+        "owner": "Communications",
+        "rationale": "Draft reading for Legal review: Art. 50(2) places this duty on providers (\"Providers shall ensure ...\"). SYSTEMS records provider_role=no and POLICY records a licensed third-party supplier product that Quillhaven did not develop, commission or place on the market under its own name or trademark. The automation does not determine provider status; Legal confirms whether Quillhaven is the provider of this system. This row is not a finding that no transparency duty applies: the internal-policy rows for the same system are assessed separately.",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "provenance-marking",
+          "provider-role"
+        ],
+        "system_id": "AI-008",
+        "rule_id": "L-50-2",
+        "rule_ref": "EU AI Act Art. 50(2) [binding]",
+        "rule_basis": "binding-law",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft reading of the binding Article 50 text as of 2026-08-26 for AI-008 only. Actor role (provider/deployer), applicability and interpretation are for Legal to decide; not legal advice and not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-008-L-50-3",
+        "summary": "AI-008 × EU AI Act Art. 50(3) [binding]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-008",
+          "RULE-L-50-3"
+        ],
+        "owner": "Communications",
+        "rationale": "Recorded function is 'synthetic_audio_video'; no source records emotion recognition or biometric categorisation.",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "emotion-biometric"
+        ],
+        "system_id": "AI-008",
+        "rule_id": "L-50-3",
+        "rule_ref": "EU AI Act Art. 50(3) [binding]",
+        "rule_basis": "binding-law",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft reading of the binding Article 50 text as of 2026-08-26 for AI-008 only. Actor role (provider/deployer), applicability and interpretation are for Legal to decide; not legal advice and not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-008-L-50-4-DF",
+        "summary": "AI-008 × EU AI Act Art. 50(4) first subpara. (deep fake) [binding]: unresolved",
+        "evidence_ids": [
+          "EXT-EVIDENCE-REC-009",
+          "EXT-EVIDENCE-REC-010",
+          "EXT-POLICY-BLK-a46fd543",
+          "FACT-AI-008",
+          "GAP-REC-009",
+          "GAP-REC-010",
+          "REC-009",
+          "REC-010",
+          "RULE-L-50-4-DF"
+        ],
+        "owner": "Communications",
+        "rationale": "POLICY records that the content shows real people, could be mistaken for an authentic recording and is not an evidently artistic or fictional work. Evidence for this rule is incomplete: REC-009 (partial): Visible label verified but machine-readable provenance not checked [record also names provenance-marking; its single recorded state is applied to each rule it names and is not split by the automation]; REC-010 (missing): No Legal approval or expiry date recorded.",
+        "state": "unresolved",
+        "applicability": "applies-on-recorded-facts",
+        "control_status": "evidence missing, partial",
+        "resolution_need": "Communications supplies current, complete evidence; Legal decides the exception request.",
+        "needs_action": true,
+        "attributed_record_ids": [
+          "REC-009",
+          "REC-010"
+        ],
+        "evidence_subjects": [
+          "visible-label-disclosure"
+        ],
+        "system_id": "AI-008",
+        "rule_id": "L-50-4-DF",
+        "rule_ref": "EU AI Act Art. 50(4) first subpara. (deep fake) [binding]",
+        "rule_basis": "binding-law",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft reading of the binding Article 50 text as of 2026-08-26 for AI-008 only. Actor role (provider/deployer), applicability and interpretation are for Legal to decide; not legal advice and not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-008-L-50-4-TXT",
+        "summary": "AI-008 × EU AI Act Art. 50(4) second subpara. (public-interest text) [binding]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-008",
+          "RULE-L-50-4-TXT"
+        ],
+        "owner": "Communications",
+        "rationale": "Recorded output_type 'synthetic_audio_video' is not text published by the deployer.",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "text-output-route"
+        ],
+        "system_id": "AI-008",
+        "rule_id": "L-50-4-TXT",
+        "rule_ref": "EU AI Act Art. 50(4) second subpara. (public-interest text) [binding]",
+        "rule_basis": "binding-law",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft reading of the binding Article 50 text as of 2026-08-26 for AI-008 only. Actor role (provider/deployer), applicability and interpretation are for Legal to decide; not legal advice and not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-008-POL-T1",
+        "summary": "AI-008 × AI-POL Learner and public transparency, bullet 1 (interaction notice) [internal policy]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-008",
+          "POLCTL-POL-T1"
+        ],
+        "owner": "Communications",
+        "rationale": "Recorded output_type 'synthetic_audio_video' is not direct interaction.",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "interaction-notice"
+        ],
+        "system_id": "AI-008",
+        "rule_id": "POL-T1",
+        "rule_ref": "AI-POL Learner and public transparency, bullet 1 (interaction notice) [internal policy]",
+        "rule_basis": "internal-policy",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft internal-policy reading as of 2026-08-26 for AI-008 only; Legal owns policy interpretation boundaries; not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-008-POL-T2-PROV",
+        "summary": "AI-008 × AI-POL Learner and public transparency, bullet 2 (machine-readable provenance) [internal policy]: unresolved",
+        "evidence_ids": [
+          "EXT-EVIDENCE-REC-009",
+          "FACT-AI-008",
+          "GAP-REC-009",
+          "POLCTL-POL-T2-PROV",
+          "REC-009"
+        ],
+        "owner": "Communications",
+        "rationale": "SYSTEMS records public synthetic media (synthetic_audio_video, exposed_group=public). Evidence for this rule is incomplete: REC-009 (partial): Visible label verified but machine-readable provenance not checked [record also names visible-label-disclosure; its single recorded state is applied to each rule it names and is not split by the automation].",
+        "state": "unresolved",
+        "applicability": "applies-on-recorded-facts",
+        "control_status": "evidence partial",
+        "resolution_need": "Communications supplies current, complete evidence.",
+        "needs_action": true,
+        "attributed_record_ids": [
+          "REC-009"
+        ],
+        "evidence_subjects": [
+          "provenance-marking"
+        ],
+        "system_id": "AI-008",
+        "rule_id": "POL-T2-PROV",
+        "rule_ref": "AI-POL Learner and public transparency, bullet 2 (machine-readable provenance) [internal policy]",
+        "rule_basis": "internal-policy",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft internal-policy reading as of 2026-08-26 for AI-008 only; Legal owns policy interpretation boundaries; not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-008-POL-T2-LABEL",
+        "summary": "AI-008 × AI-POL Learner and public transparency, bullet 2 (visible label unless Legal-approved exception) [internal policy]: unresolved",
+        "evidence_ids": [
+          "EXT-EVIDENCE-REC-009",
+          "EXT-EVIDENCE-REC-010",
+          "FACT-AI-008",
+          "GAP-REC-009",
+          "GAP-REC-010",
+          "POLCTL-POL-T2-LABEL",
+          "REC-009",
+          "REC-010"
+        ],
+        "owner": "Communications",
+        "rationale": "SYSTEMS records public synthetic media (synthetic_audio_video, exposed_group=public). Evidence for this rule is incomplete: REC-009 (partial): Visible label verified but machine-readable provenance not checked [record also names provenance-marking; its single recorded state is applied to each rule it names and is not split by the automation]; REC-010 (missing): No Legal approval or expiry date recorded.",
+        "state": "unresolved",
+        "applicability": "applies-on-recorded-facts",
+        "control_status": "evidence missing, partial",
+        "resolution_need": "Communications supplies current, complete evidence; Legal decides the exception request.",
+        "needs_action": true,
+        "attributed_record_ids": [
+          "REC-009",
+          "REC-010"
+        ],
+        "evidence_subjects": [
+          "visible-label-disclosure"
+        ],
+        "system_id": "AI-008",
+        "rule_id": "POL-T2-LABEL",
+        "rule_ref": "AI-POL Learner and public transparency, bullet 2 (visible label unless Legal-approved exception) [internal policy]",
+        "rule_basis": "internal-policy",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft internal-policy reading as of 2026-08-26 for AI-008 only; Legal owns policy interpretation boundaries; not a compliance finding."
+      },
+      {
+        "id": "IMP-AI-008-POL-T3",
+        "summary": "AI-008 × AI-POL Learner and public transparency, bullet 3 (staff-only tool output route) [internal policy]: supported-no-impact",
+        "evidence_ids": [
+          "FACT-AI-008",
+          "POLCTL-POL-T3"
+        ],
+        "owner": "Communications",
+        "rationale": "Recorded output_type 'synthetic_audio_video' is not a staff text-drafting tool.",
+        "state": "supported-no-impact",
+        "applicability": "not-applicable-on-recorded-facts",
+        "control_status": null,
+        "resolution_need": "None for the system owner; Legal confirms or corrects the draft reading.",
+        "needs_action": false,
+        "attributed_record_ids": [],
+        "evidence_subjects": [
+          "text-output-route"
+        ],
+        "system_id": "AI-008",
+        "rule_id": "POL-T3",
+        "rule_ref": "AI-POL Learner and public transparency, bullet 3 (staff-only tool output route) [internal policy]",
+        "rule_basis": "internal-policy",
+        "required_reviewer": "Legal",
+        "approval_status": "pending",
+        "conclusion_scope": "Draft internal-policy reading as of 2026-08-26 for AI-008 only; Legal owns policy interpretation boundaries; not a compliance finding."
+      }
+    ],
+    "unaffected_items": [
+      {
+        "id": "UNAFF-AI-001",
+        "summary": "No impact on recorded facts for L-50-1, L-50-2, L-50-3, L-50-4-DF, L-50-4-TXT, POL-T2-PROV, POL-T2-LABEL, POL-T3 (draft; Legal confirms).",
+        "evidence_ids": [
+          "EXT-POLICY-BLK-3f8d8763",
+          "FACT-AI-001",
+          "POLCTL-POL-T2-LABEL",
+          "POLCTL-POL-T2-PROV",
+          "POLCTL-POL-T3",
+          "RULE-L-50-1",
+          "RULE-L-50-2",
+          "RULE-L-50-3",
+          "RULE-L-50-4-DF",
+          "RULE-L-50-4-TXT"
+        ],
+        "owner": "Learner Operations",
+        "rationale": "Supported no-impact rows grouped per system.",
+        "impact_ids": [
+          "IMP-AI-001-L-50-1",
+          "IMP-AI-001-L-50-2",
+          "IMP-AI-001-L-50-3",
+          "IMP-AI-001-L-50-4-DF",
+          "IMP-AI-001-L-50-4-TXT",
+          "IMP-AI-001-POL-T2-PROV",
+          "IMP-AI-001-POL-T2-LABEL",
+          "IMP-AI-001-POL-T3"
+        ]
+      },
+      {
+        "id": "UNAFF-AI-002",
+        "summary": "No impact on recorded facts for L-50-1, L-50-2, L-50-3, L-50-4-DF, L-50-4-TXT, POL-T1, POL-T2-PROV, POL-T2-LABEL (draft; Legal confirms).",
+        "evidence_ids": [
+          "EXT-POLICY-BLK-03ec4cd9",
+          "FACT-AI-002",
+          "POLCTL-POL-T1",
+          "POLCTL-POL-T2-LABEL",
+          "POLCTL-POL-T2-PROV",
+          "RULE-L-50-1",
+          "RULE-L-50-2",
+          "RULE-L-50-3",
+          "RULE-L-50-4-DF",
+          "RULE-L-50-4-TXT"
+        ],
+        "owner": "Admissions",
+        "rationale": "Supported no-impact rows grouped per system.",
+        "impact_ids": [
+          "IMP-AI-002-L-50-1",
+          "IMP-AI-002-L-50-2",
+          "IMP-AI-002-L-50-3",
+          "IMP-AI-002-L-50-4-DF",
+          "IMP-AI-002-L-50-4-TXT",
+          "IMP-AI-002-POL-T1",
+          "IMP-AI-002-POL-T2-PROV",
+          "IMP-AI-002-POL-T2-LABEL"
+        ]
+      },
+      {
+        "id": "UNAFF-AI-003",
+        "summary": "No impact on recorded facts for L-50-1, L-50-2, L-50-3, L-50-4-DF, L-50-4-TXT, POL-T1, POL-T3 (draft; Legal confirms).",
+        "evidence_ids": [
+          "EXT-POLICY-BLK-de175065",
+          "FACT-AI-003",
+          "POLCTL-POL-T1",
+          "POLCTL-POL-T3",
+          "RULE-L-50-1",
+          "RULE-L-50-2",
+          "RULE-L-50-3",
+          "RULE-L-50-4-DF",
+          "RULE-L-50-4-TXT"
+        ],
+        "owner": "Communications",
+        "rationale": "Supported no-impact rows grouped per system.",
+        "impact_ids": [
+          "IMP-AI-003-L-50-1",
+          "IMP-AI-003-L-50-2",
+          "IMP-AI-003-L-50-3",
+          "IMP-AI-003-L-50-4-DF",
+          "IMP-AI-003-L-50-4-TXT",
+          "IMP-AI-003-POL-T1",
+          "IMP-AI-003-POL-T3"
+        ]
+      },
+      {
+        "id": "UNAFF-AI-004",
+        "summary": "No impact on recorded facts for L-50-1, L-50-2, L-50-3, L-50-4-DF, L-50-4-TXT, POL-T2-PROV, POL-T2-LABEL, POL-T3 (draft; Legal confirms).",
+        "evidence_ids": [
+          "EXT-POLICY-BLK-2aacbbf1",
+          "FACT-AI-004",
+          "POLCTL-POL-T2-LABEL",
+          "POLCTL-POL-T2-PROV",
+          "POLCTL-POL-T3",
+          "RULE-L-50-1",
+          "RULE-L-50-2",
+          "RULE-L-50-3",
+          "RULE-L-50-4-DF",
+          "RULE-L-50-4-TXT"
+        ],
+        "owner": "Learning Experience",
+        "rationale": "Supported no-impact rows grouped per system.",
+        "impact_ids": [
+          "IMP-AI-004-L-50-1",
+          "IMP-AI-004-L-50-2",
+          "IMP-AI-004-L-50-3",
+          "IMP-AI-004-L-50-4-DF",
+          "IMP-AI-004-L-50-4-TXT",
+          "IMP-AI-004-POL-T2-PROV",
+          "IMP-AI-004-POL-T2-LABEL",
+          "IMP-AI-004-POL-T3"
+        ]
+      },
+      {
+        "id": "UNAFF-AI-006",
+        "summary": "No impact on recorded facts for L-50-1, L-50-2, L-50-3, L-50-4-DF, L-50-4-TXT, POL-T1, POL-T2-PROV, POL-T2-LABEL (draft; Legal confirms).",
+        "evidence_ids": [
+          "EXT-POLICY-BLK-2baa4238",
+          "FACT-AI-006",
+          "POLCTL-POL-T1",
+          "POLCTL-POL-T2-LABEL",
+          "POLCTL-POL-T2-PROV",
+          "RULE-L-50-1",
+          "RULE-L-50-2",
+          "RULE-L-50-3",
+          "RULE-L-50-4-DF",
+          "RULE-L-50-4-TXT"
+        ],
+        "owner": "People Operations",
+        "rationale": "Supported no-impact rows grouped per system.",
+        "impact_ids": [
+          "IMP-AI-006-L-50-1",
+          "IMP-AI-006-L-50-2",
+          "IMP-AI-006-L-50-3",
+          "IMP-AI-006-L-50-4-DF",
+          "IMP-AI-006-L-50-4-TXT",
+          "IMP-AI-006-POL-T1",
+          "IMP-AI-006-POL-T2-PROV",
+          "IMP-AI-006-POL-T2-LABEL"
+        ]
+      },
+      {
+        "id": "UNAFF-AI-007",
+        "summary": "No impact on recorded facts for L-50-1, L-50-2, L-50-3, L-50-4-DF, L-50-4-TXT, POL-T2-PROV, POL-T2-LABEL, POL-T3 (draft; Legal confirms).",
+        "evidence_ids": [
+          "FACT-AI-007",
+          "POLCTL-POL-T2-LABEL",
+          "POLCTL-POL-T2-PROV",
+          "POLCTL-POL-T3",
+          "RULE-L-50-1",
+          "RULE-L-50-2",
+          "RULE-L-50-3",
+          "RULE-L-50-4-DF",
+          "RULE-L-50-4-TXT"
+        ],
+        "owner": "Marketing",
+        "rationale": "Supported no-impact rows grouped per system.",
+        "impact_ids": [
+          "IMP-AI-007-L-50-1",
+          "IMP-AI-007-L-50-2",
+          "IMP-AI-007-L-50-3",
+          "IMP-AI-007-L-50-4-DF",
+          "IMP-AI-007-L-50-4-TXT",
+          "IMP-AI-007-POL-T2-PROV",
+          "IMP-AI-007-POL-T2-LABEL",
+          "IMP-AI-007-POL-T3"
+        ]
+      },
+      {
+        "id": "UNAFF-AI-008",
+        "summary": "No impact on recorded facts for L-50-1, L-50-2, L-50-3, L-50-4-TXT, POL-T1, POL-T3 (draft; Legal confirms).",
+        "evidence_ids": [
+          "FACT-AI-008",
+          "POLCTL-POL-T1",
+          "POLCTL-POL-T3",
+          "RULE-L-50-1",
+          "RULE-L-50-2",
+          "RULE-L-50-3",
+          "RULE-L-50-4-TXT"
+        ],
+        "owner": "Communications",
+        "rationale": "Supported no-impact rows grouped per system.",
+        "impact_ids": [
+          "IMP-AI-008-L-50-1",
+          "IMP-AI-008-L-50-2",
+          "IMP-AI-008-L-50-3",
+          "IMP-AI-008-L-50-4-TXT",
+          "IMP-AI-008-POL-T1",
+          "IMP-AI-008-POL-T3"
+        ]
+      }
+    ],
+    "conflicts": [
+      {
+        "id": "CONFLICT-IMP-AI-003-POL-T2-PROV",
+        "summary": "SYSTEMS records public synthetic media (synthetic_image, exposed_group=public). Evidence for this rule conflicts (D-001): REC-003 (conflicting): Visible label exists but exported platform copy may have lost metadata [record also names visible-label-disclosure; its single recorded state is applied to each rule it names and is not split by the automation]. Both facts are preserved; the item remains unresolved pending system-owner verification and is not decided by the automation.",
+        "evidence_ids": [
+          "CONF-REC-003",
+          "EXT-EVIDENCE-REC-003",
+          "FACT-AI-003",
+          "POLCTL-POL-T2-PROV",
+          "REC-003"
+        ],
+        "owner": "Communications",
+        "rationale": "D-001",
+        "impact_id": "IMP-AI-003-POL-T2-PROV",
+        "resolution_need": "System owner (Communications) verifies the contested fact using social-post-884 and updates EVIDENCE/SYSTEMS."
+      },
+      {
+        "id": "CONFLICT-IMP-AI-003-POL-T2-LABEL",
+        "summary": "SYSTEMS records public synthetic media (synthetic_image, exposed_group=public). Evidence for this rule conflicts (D-001): REC-003 (conflicting): Visible label exists but exported platform copy may have lost metadata [record also names provenance-marking; its single recorded state is applied to each rule it names and is not split by the automation]. Both facts are preserved; the item remains unresolved pending system-owner verification and is not decided by the automation.",
+        "evidence_ids": [
+          "CONF-REC-003",
+          "EXT-EVIDENCE-REC-003",
+          "FACT-AI-003",
+          "POLCTL-POL-T2-LABEL",
+          "REC-003"
+        ],
+        "owner": "Communications",
+        "rationale": "D-001",
+        "impact_id": "IMP-AI-003-POL-T2-LABEL",
+        "resolution_need": "System owner (Communications) verifies the contested fact using social-post-884 and updates EVIDENCE/SYSTEMS."
+      },
+      {
+        "id": "CONFLICT-IMP-AI-007-POL-T1",
+        "summary": "SYSTEMS records direct interaction with public. Evidence for this rule conflicts (D-001): REC-008 (conflicting): Owner says a banner exists but the current capture shows none. Both facts are preserved; the item remains unresolved pending system-owner verification and is not decided by the automation.",
+        "evidence_ids": [
+          "CONF-REC-008",
+          "EXT-EVIDENCE-REC-008",
+          "FACT-AI-007",
+          "POLCTL-POL-T1",
+          "REC-008"
+        ],
+        "owner": "Marketing",
+        "rationale": "D-001",
+        "impact_id": "IMP-AI-007-POL-T1",
+        "resolution_need": "System owner (Marketing) verifies the contested fact using avatar-page-capture and updates EVIDENCE/SYSTEMS."
+      }
+    ],
+    "unresolved_items": [
+      {
+        "id": "UNRES-IMP-AI-002-POL-T3",
+        "summary": "SYSTEMS records a text-generation tool used by staff (exposed group applicants). Evidence for this rule is incomplete: REC-002 (missing): No evidence that recipients are told when generated text is used.",
+        "evidence_ids": [
+          "EXT-EVIDENCE-REC-002",
+          "FACT-AI-002",
+          "GAP-REC-002",
+          "POLCTL-POL-T3",
+          "REC-002"
+        ],
+        "owner": "Admissions",
+        "rationale": "Missing, stale, withheld or unknown facts.",
+        "impact_id": "IMP-AI-002-POL-T3",
+        "resolution_need": "Admissions supplies current, complete evidence."
+      },
+      {
+        "id": "UNRES-IMP-AI-005-L-50-1",
+        "summary": "The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release.",
+        "evidence_ids": [
+          "FACT-AI-005",
+          "GAP-AI-005-REGISTER-STALE",
+          "GAP-REC-005",
+          "RULE-L-50-1"
+        ],
+        "owner": "Assessment Operations",
+        "rationale": "Missing, stale, withheld or unknown facts.",
+        "impact_id": "IMP-AI-005-L-50-1",
+        "resolution_need": "Assessment Operations refreshes the register entry and evidence."
+      },
+      {
+        "id": "UNRES-IMP-AI-005-L-50-2",
+        "summary": "The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release.",
+        "evidence_ids": [
+          "FACT-AI-005",
+          "GAP-AI-005-REGISTER-STALE",
+          "GAP-REC-005",
+          "RULE-L-50-2"
+        ],
+        "owner": "Assessment Operations",
+        "rationale": "Missing, stale, withheld or unknown facts.",
+        "impact_id": "IMP-AI-005-L-50-2",
+        "resolution_need": "Assessment Operations refreshes the register entry and evidence."
+      },
+      {
+        "id": "UNRES-IMP-AI-005-L-50-3",
+        "summary": "The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release [record also names provider-role; its single recorded state is applied to each rule it names and is not split by the automation].",
+        "evidence_ids": [
+          "FACT-AI-005",
+          "GAP-AI-005-REGISTER-STALE",
+          "GAP-REC-005",
+          "RULE-L-50-3"
+        ],
+        "owner": "Assessment Operations",
+        "rationale": "Missing, stale, withheld or unknown facts.",
+        "impact_id": "IMP-AI-005-L-50-3",
+        "resolution_need": "Assessment Operations refreshes the register entry and evidence."
+      },
+      {
+        "id": "UNRES-IMP-AI-005-L-50-4-DF",
+        "summary": "The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release [record also names provider-role; its single recorded state is applied to each rule it names and is not split by the automation].",
+        "evidence_ids": [
+          "FACT-AI-005",
+          "GAP-AI-005-REGISTER-STALE",
+          "GAP-REC-005",
+          "RULE-L-50-4-DF"
+        ],
+        "owner": "Assessment Operations",
+        "rationale": "Missing, stale, withheld or unknown facts.",
+        "impact_id": "IMP-AI-005-L-50-4-DF",
+        "resolution_need": "Assessment Operations refreshes the register entry and evidence."
+      },
+      {
+        "id": "UNRES-IMP-AI-005-L-50-4-TXT",
+        "summary": "The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release [record also names provider-role; its single recorded state is applied to each rule it names and is not split by the automation].",
+        "evidence_ids": [
+          "FACT-AI-005",
+          "GAP-AI-005-REGISTER-STALE",
+          "GAP-REC-005",
+          "RULE-L-50-4-TXT"
+        ],
+        "owner": "Assessment Operations",
+        "rationale": "Missing, stale, withheld or unknown facts.",
+        "impact_id": "IMP-AI-005-L-50-4-TXT",
+        "resolution_need": "Assessment Operations refreshes the register entry and evidence."
+      },
+      {
+        "id": "UNRES-IMP-AI-005-POL-T1",
+        "summary": "The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release [record also names provider-role; its single recorded state is applied to each rule it names and is not split by the automation].",
+        "evidence_ids": [
+          "FACT-AI-005",
+          "GAP-AI-005-REGISTER-STALE",
+          "GAP-REC-005",
+          "POLCTL-POL-T1"
+        ],
+        "owner": "Assessment Operations",
+        "rationale": "Missing, stale, withheld or unknown facts.",
+        "impact_id": "IMP-AI-005-POL-T1",
+        "resolution_need": "Assessment Operations refreshes the register entry and evidence."
+      },
+      {
+        "id": "UNRES-IMP-AI-005-POL-T2-PROV",
+        "summary": "The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release [record also names provider-role; its single recorded state is applied to each rule it names and is not split by the automation].",
+        "evidence_ids": [
+          "FACT-AI-005",
+          "GAP-AI-005-REGISTER-STALE",
+          "GAP-REC-005",
+          "POLCTL-POL-T2-PROV"
+        ],
+        "owner": "Assessment Operations",
+        "rationale": "Missing, stale, withheld or unknown facts.",
+        "impact_id": "IMP-AI-005-POL-T2-PROV",
+        "resolution_need": "Assessment Operations refreshes the register entry and evidence."
+      },
+      {
+        "id": "UNRES-IMP-AI-005-POL-T2-LABEL",
+        "summary": "The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release [record also names provider-role; its single recorded state is applied to each rule it names and is not split by the automation].",
+        "evidence_ids": [
+          "FACT-AI-005",
+          "GAP-AI-005-REGISTER-STALE",
+          "GAP-REC-005",
+          "POLCTL-POL-T2-LABEL"
+        ],
+        "owner": "Assessment Operations",
+        "rationale": "Missing, stale, withheld or unknown facts.",
+        "impact_id": "IMP-AI-005-POL-T2-LABEL",
+        "resolution_need": "Assessment Operations refreshes the register entry and evidence."
+      },
+      {
+        "id": "UNRES-IMP-AI-005-POL-T3",
+        "summary": "The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release [record also names provider-role; its single recorded state is applied to each rule it names and is not split by the automation].",
+        "evidence_ids": [
+          "FACT-AI-005",
+          "GAP-AI-005-REGISTER-STALE",
+          "GAP-REC-005",
+          "POLCTL-POL-T3"
+        ],
+        "owner": "Assessment Operations",
+        "rationale": "Missing, stale, withheld or unknown facts.",
+        "impact_id": "IMP-AI-005-POL-T3",
+        "resolution_need": "Assessment Operations refreshes the register entry and evidence."
+      },
+      {
+        "id": "UNRES-IMP-AI-008-L-50-4-DF",
+        "summary": "POLICY records that the content shows real people, could be mistaken for an authentic recording and is not an evidently artistic or fictional work. Evidence for this rule is incomplete: REC-009 (partial): Visible label verified but machine-readable provenance not checked [record also names provenance-marking; its single recorded state is applied to each rule it names and is not split by the automation]; REC-010 (missing): No Legal approval or expiry date recorded.",
+        "evidence_ids": [
+          "EXT-EVIDENCE-REC-009",
+          "EXT-EVIDENCE-REC-010",
+          "EXT-POLICY-BLK-a46fd543",
+          "FACT-AI-008",
+          "GAP-REC-009",
+          "GAP-REC-010",
+          "REC-009",
+          "REC-010",
+          "RULE-L-50-4-DF"
+        ],
+        "owner": "Communications",
+        "rationale": "Missing, stale, withheld or unknown facts.",
+        "impact_id": "IMP-AI-008-L-50-4-DF",
+        "resolution_need": "Communications supplies current, complete evidence; Legal decides the exception request."
+      },
+      {
+        "id": "UNRES-IMP-AI-008-POL-T2-PROV",
+        "summary": "SYSTEMS records public synthetic media (synthetic_audio_video, exposed_group=public). Evidence for this rule is incomplete: REC-009 (partial): Visible label verified but machine-readable provenance not checked [record also names visible-label-disclosure; its single recorded state is applied to each rule it names and is not split by the automation].",
+        "evidence_ids": [
+          "EXT-EVIDENCE-REC-009",
+          "FACT-AI-008",
+          "GAP-REC-009",
+          "POLCTL-POL-T2-PROV",
+          "REC-009"
+        ],
+        "owner": "Communications",
+        "rationale": "Missing, stale, withheld or unknown facts.",
+        "impact_id": "IMP-AI-008-POL-T2-PROV",
+        "resolution_need": "Communications supplies current, complete evidence."
+      },
+      {
+        "id": "UNRES-IMP-AI-008-POL-T2-LABEL",
+        "summary": "SYSTEMS records public synthetic media (synthetic_audio_video, exposed_group=public). Evidence for this rule is incomplete: REC-009 (partial): Visible label verified but machine-readable provenance not checked [record also names provenance-marking; its single recorded state is applied to each rule it names and is not split by the automation]; REC-010 (missing): No Legal approval or expiry date recorded.",
+        "evidence_ids": [
+          "EXT-EVIDENCE-REC-009",
+          "EXT-EVIDENCE-REC-010",
+          "FACT-AI-008",
+          "GAP-REC-009",
+          "GAP-REC-010",
+          "POLCTL-POL-T2-LABEL",
+          "REC-009",
+          "REC-010"
+        ],
+        "owner": "Communications",
+        "rationale": "Missing, stale, withheld or unknown facts.",
+        "impact_id": "IMP-AI-008-POL-T2-LABEL",
+        "resolution_need": "Communications supplies current, complete evidence; Legal decides the exception request."
+      }
+    ]
+  },
+  "unresolved": [
+    {
+      "id": "CONFLICT-IMP-AI-003-POL-T2-PROV",
+      "summary": "SYSTEMS records public synthetic media (synthetic_image, exposed_group=public). Evidence for this rule conflicts (D-001): REC-003 (conflicting): Visible label exists but exported platform copy may have lost metadata [record also names visible-label-disclosure; its single recorded state is applied to each rule it names and is not split by the automation]. Both facts are preserved; the item remains unresolved pending system-owner verification and is not decided by the automation.",
+      "evidence_ids": [
+        "CONF-REC-003",
+        "EXT-EVIDENCE-REC-003",
+        "FACT-AI-003",
+        "POLCTL-POL-T2-PROV",
+        "REC-003"
+      ],
+      "owner": "Communications",
+      "rationale": "D-001",
+      "impact_id": "IMP-AI-003-POL-T2-PROV",
+      "resolution_need": "System owner (Communications) verifies the contested fact using social-post-884 and updates EVIDENCE/SYSTEMS."
+    },
+    {
+      "id": "CONFLICT-IMP-AI-003-POL-T2-LABEL",
+      "summary": "SYSTEMS records public synthetic media (synthetic_image, exposed_group=public). Evidence for this rule conflicts (D-001): REC-003 (conflicting): Visible label exists but exported platform copy may have lost metadata [record also names provenance-marking; its single recorded state is applied to each rule it names and is not split by the automation]. Both facts are preserved; the item remains unresolved pending system-owner verification and is not decided by the automation.",
+      "evidence_ids": [
+        "CONF-REC-003",
+        "EXT-EVIDENCE-REC-003",
+        "FACT-AI-003",
+        "POLCTL-POL-T2-LABEL",
+        "REC-003"
+      ],
+      "owner": "Communications",
+      "rationale": "D-001",
+      "impact_id": "IMP-AI-003-POL-T2-LABEL",
+      "resolution_need": "System owner (Communications) verifies the contested fact using social-post-884 and updates EVIDENCE/SYSTEMS."
+    },
+    {
+      "id": "CONFLICT-IMP-AI-007-POL-T1",
+      "summary": "SYSTEMS records direct interaction with public. Evidence for this rule conflicts (D-001): REC-008 (conflicting): Owner says a banner exists but the current capture shows none. Both facts are preserved; the item remains unresolved pending system-owner verification and is not decided by the automation.",
+      "evidence_ids": [
+        "CONF-REC-008",
+        "EXT-EVIDENCE-REC-008",
+        "FACT-AI-007",
+        "POLCTL-POL-T1",
+        "REC-008"
+      ],
+      "owner": "Marketing",
+      "rationale": "D-001",
+      "impact_id": "IMP-AI-007-POL-T1",
+      "resolution_need": "System owner (Marketing) verifies the contested fact using avatar-page-capture and updates EVIDENCE/SYSTEMS."
+    },
+    {
+      "id": "UNRES-IMP-AI-002-POL-T3",
+      "summary": "SYSTEMS records a text-generation tool used by staff (exposed group applicants). Evidence for this rule is incomplete: REC-002 (missing): No evidence that recipients are told when generated text is used.",
+      "evidence_ids": [
+        "EXT-EVIDENCE-REC-002",
+        "FACT-AI-002",
+        "GAP-REC-002",
+        "POLCTL-POL-T3",
+        "REC-002"
+      ],
+      "owner": "Admissions",
+      "rationale": "Missing, stale, withheld or unknown facts.",
+      "impact_id": "IMP-AI-002-POL-T3",
+      "resolution_need": "Admissions supplies current, complete evidence."
+    },
+    {
+      "id": "UNRES-IMP-AI-005-L-50-1",
+      "summary": "The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release.",
+      "evidence_ids": [
+        "FACT-AI-005",
+        "GAP-AI-005-REGISTER-STALE",
+        "GAP-REC-005",
+        "RULE-L-50-1"
+      ],
+      "owner": "Assessment Operations",
+      "rationale": "Missing, stale, withheld or unknown facts.",
+      "impact_id": "IMP-AI-005-L-50-1",
+      "resolution_need": "Assessment Operations refreshes the register entry and evidence."
+    },
+    {
+      "id": "UNRES-IMP-AI-005-L-50-2",
+      "summary": "The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release.",
+      "evidence_ids": [
+        "FACT-AI-005",
+        "GAP-AI-005-REGISTER-STALE",
+        "GAP-REC-005",
+        "RULE-L-50-2"
+      ],
+      "owner": "Assessment Operations",
+      "rationale": "Missing, stale, withheld or unknown facts.",
+      "impact_id": "IMP-AI-005-L-50-2",
+      "resolution_need": "Assessment Operations refreshes the register entry and evidence."
+    },
+    {
+      "id": "UNRES-IMP-AI-005-L-50-3",
+      "summary": "The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release [record also names provider-role; its single recorded state is applied to each rule it names and is not split by the automation].",
+      "evidence_ids": [
+        "FACT-AI-005",
+        "GAP-AI-005-REGISTER-STALE",
+        "GAP-REC-005",
+        "RULE-L-50-3"
+      ],
+      "owner": "Assessment Operations",
+      "rationale": "Missing, stale, withheld or unknown facts.",
+      "impact_id": "IMP-AI-005-L-50-3",
+      "resolution_need": "Assessment Operations refreshes the register entry and evidence."
+    },
+    {
+      "id": "UNRES-IMP-AI-005-L-50-4-DF",
+      "summary": "The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release [record also names provider-role; its single recorded state is applied to each rule it names and is not split by the automation].",
+      "evidence_ids": [
+        "FACT-AI-005",
+        "GAP-AI-005-REGISTER-STALE",
+        "GAP-REC-005",
+        "RULE-L-50-4-DF"
+      ],
+      "owner": "Assessment Operations",
+      "rationale": "Missing, stale, withheld or unknown facts.",
+      "impact_id": "IMP-AI-005-L-50-4-DF",
+      "resolution_need": "Assessment Operations refreshes the register entry and evidence."
+    },
+    {
+      "id": "UNRES-IMP-AI-005-L-50-4-TXT",
+      "summary": "The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release [record also names provider-role; its single recorded state is applied to each rule it names and is not split by the automation].",
+      "evidence_ids": [
+        "FACT-AI-005",
+        "GAP-AI-005-REGISTER-STALE",
+        "GAP-REC-005",
+        "RULE-L-50-4-TXT"
+      ],
+      "owner": "Assessment Operations",
+      "rationale": "Missing, stale, withheld or unknown facts.",
+      "impact_id": "IMP-AI-005-L-50-4-TXT",
+      "resolution_need": "Assessment Operations refreshes the register entry and evidence."
+    },
+    {
+      "id": "UNRES-IMP-AI-005-POL-T1",
+      "summary": "The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release [record also names provider-role; its single recorded state is applied to each rule it names and is not split by the automation].",
+      "evidence_ids": [
+        "FACT-AI-005",
+        "GAP-AI-005-REGISTER-STALE",
+        "GAP-REC-005",
+        "POLCTL-POL-T1"
+      ],
+      "owner": "Assessment Operations",
+      "rationale": "Missing, stale, withheld or unknown facts.",
+      "impact_id": "IMP-AI-005-POL-T1",
+      "resolution_need": "Assessment Operations refreshes the register entry and evidence."
+    },
+    {
+      "id": "UNRES-IMP-AI-005-POL-T2-PROV",
+      "summary": "The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release [record also names provider-role; its single recorded state is applied to each rule it names and is not split by the automation].",
+      "evidence_ids": [
+        "FACT-AI-005",
+        "GAP-AI-005-REGISTER-STALE",
+        "GAP-REC-005",
+        "POLCTL-POL-T2-PROV"
+      ],
+      "owner": "Assessment Operations",
+      "rationale": "Missing, stale, withheld or unknown facts.",
+      "impact_id": "IMP-AI-005-POL-T2-PROV",
+      "resolution_need": "Assessment Operations refreshes the register entry and evidence."
+    },
+    {
+      "id": "UNRES-IMP-AI-005-POL-T2-LABEL",
+      "summary": "The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release [record also names provider-role; its single recorded state is applied to each rule it names and is not split by the automation].",
+      "evidence_ids": [
+        "FACT-AI-005",
+        "GAP-AI-005-REGISTER-STALE",
+        "GAP-REC-005",
+        "POLCTL-POL-T2-LABEL"
+      ],
+      "owner": "Assessment Operations",
+      "rationale": "Missing, stale, withheld or unknown facts.",
+      "impact_id": "IMP-AI-005-POL-T2-LABEL",
+      "resolution_need": "Assessment Operations refreshes the register entry and evidence."
+    },
+    {
+      "id": "UNRES-IMP-AI-005-POL-T3",
+      "summary": "The SYSTEMS register entry for AI-005 is stale (evidence_updated_at 2026-04-15), so the applicability facts used for every rule are stale; no conclusion is drawn from stale facts. Stale record(s): REC-005 (stale): Provider role questionnaire predates the current release [record also names provider-role; its single recorded state is applied to each rule it names and is not split by the automation].",
+      "evidence_ids": [
+        "FACT-AI-005",
+        "GAP-AI-005-REGISTER-STALE",
+        "GAP-REC-005",
+        "POLCTL-POL-T3"
+      ],
+      "owner": "Assessment Operations",
+      "rationale": "Missing, stale, withheld or unknown facts.",
+      "impact_id": "IMP-AI-005-POL-T3",
+      "resolution_need": "Assessment Operations refreshes the register entry and evidence."
+    },
+    {
+      "id": "UNRES-IMP-AI-008-L-50-4-DF",
+      "summary": "POLICY records that the content shows real people, could be mistaken for an authentic recording and is not an evidently artistic or fictional work. Evidence for this rule is incomplete: REC-009 (partial): Visible label verified but machine-readable provenance not checked [record also names provenance-marking; its single recorded state is applied to each rule it names and is not split by the automation]; REC-010 (missing): No Legal approval or expiry date recorded.",
+      "evidence_ids": [
+        "EXT-EVIDENCE-REC-009",
+        "EXT-EVIDENCE-REC-010",
+        "EXT-POLICY-BLK-a46fd543",
+        "FACT-AI-008",
+        "GAP-REC-009",
+        "GAP-REC-010",
+        "REC-009",
+        "REC-010",
+        "RULE-L-50-4-DF"
+      ],
+      "owner": "Communications",
+      "rationale": "Missing, stale, withheld or unknown facts.",
+      "impact_id": "IMP-AI-008-L-50-4-DF",
+      "resolution_need": "Communications supplies current, complete evidence; Legal decides the exception request."
+    },
+    {
+      "id": "UNRES-IMP-AI-008-POL-T2-PROV",
+      "summary": "SYSTEMS records public synthetic media (synthetic_audio_video, exposed_group=public). Evidence for this rule is incomplete: REC-009 (partial): Visible label verified but machine-readable provenance not checked [record also names visible-label-disclosure; its single recorded state is applied to each rule it names and is not split by the automation].",
+      "evidence_ids": [
+        "EXT-EVIDENCE-REC-009",
+        "FACT-AI-008",
+        "GAP-REC-009",
+        "POLCTL-POL-T2-PROV",
+        "REC-009"
+      ],
+      "owner": "Communications",
+      "rationale": "Missing, stale, withheld or unknown facts.",
+      "impact_id": "IMP-AI-008-POL-T2-PROV",
+      "resolution_need": "Communications supplies current, complete evidence."
+    },
+    {
+      "id": "UNRES-IMP-AI-008-POL-T2-LABEL",
+      "summary": "SYSTEMS records public synthetic media (synthetic_audio_video, exposed_group=public). Evidence for this rule is incomplete: REC-009 (partial): Visible label verified but machine-readable provenance not checked [record also names provenance-marking; its single recorded state is applied to each rule it names and is not split by the automation]; REC-010 (missing): No Legal approval or expiry date recorded.",
+      "evidence_ids": [
+        "EXT-EVIDENCE-REC-009",
+        "EXT-EVIDENCE-REC-010",
+        "FACT-AI-008",
+        "GAP-REC-009",
+        "GAP-REC-010",
+        "POLCTL-POL-T2-LABEL",
+        "REC-009",
+        "REC-010"
+      ],
+      "owner": "Communications",
+      "rationale": "Missing, stale, withheld or unknown facts.",
+      "impact_id": "IMP-AI-008-POL-T2-LABEL",
+      "resolution_need": "Communications supplies current, complete evidence; Legal decides the exception request."
+    }
+  ],
+  "decisions": []
+}

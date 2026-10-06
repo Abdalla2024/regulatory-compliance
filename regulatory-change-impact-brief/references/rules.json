@@ -1,0 +1,312 @@
+{
+  "document": "Rule catalogue and fact cues for impact analysis (decision D-004, revised: evidence states are attributed per system and rule through evidence_subjects). Each rule's text is located live on every run, from the binding Article 50 paragraph in CONSOLIDATED (cross-checked against OJ and AMEND) or from the live POLICY page; if the text_cue is not found, the rule is unavailable and every row that depends on it is 'unresolved'. These are draft interpretation aids for Legal review, not legal conclusions.",
+  "rules": [
+    {
+      "id": "L-50-1",
+      "rule_ref": "EU AI Act Art. 50(1) [binding]",
+      "basis": "binding-law",
+      "source": "CONSOLIDATED",
+      "paragraph": 1,
+      "text_cue": "Providers shall ensure that AI systems intended to interact directly with natural persons",
+      "actor": "provider",
+      "summary": "Providers design direct-interaction AI systems so people are informed they are interacting with AI, unless obvious; information given per Art. 50(5).",
+      "control_field": null,
+      "action_cues": [
+        "notice",
+        "disclosure"
+      ],
+      "new_action_text": "Confirm with Legal whether the provider-side interaction-notice duty bears on this system",
+      "evidence_subjects": [
+        "interaction-notice",
+        "provider-role"
+      ]
+    },
+    {
+      "id": "L-50-2",
+      "rule_ref": "EU AI Act Art. 50(2) [binding]",
+      "basis": "binding-law",
+      "source": "CONSOLIDATED",
+      "paragraph": 2,
+      "text_cue": "generating synthetic audio, image, video or text content, shall ensure that the outputs of the AI system are marked in a machine-readable format",
+      "actor": "provider",
+      "summary": "Providers of systems generating synthetic audio, image, video or text mark outputs machine-readably and detectably.",
+      "control_field": null,
+      "action_cues": [
+        "provenance",
+        "marking"
+      ],
+      "new_action_text": "Confirm with Legal whether the provider-side marking duty bears on this system",
+      "evidence_subjects": [
+        "provenance-marking",
+        "provider-role"
+      ]
+    },
+    {
+      "id": "L-50-3",
+      "rule_ref": "EU AI Act Art. 50(3) [binding]",
+      "basis": "binding-law",
+      "source": "CONSOLIDATED",
+      "paragraph": 3,
+      "text_cue": "Deployers of an emotion recognition system or a biometric categorisation system shall inform the natural persons exposed thereto",
+      "actor": "deployer",
+      "summary": "Deployers of emotion recognition or biometric categorisation systems inform exposed persons; information given per Art. 50(5).",
+      "control_field": null,
+      "action_cues": [
+        "provider-role",
+        "release evidence",
+        "biometric"
+      ],
+      "new_action_text": "Supply current-release facts on emotion-recognition / biometric-categorisation use",
+      "evidence_subjects": [
+        "emotion-biometric"
+      ]
+    },
+    {
+      "id": "L-50-4-DF",
+      "rule_ref": "EU AI Act Art. 50(4) first subpara. (deep fake) [binding]",
+      "basis": "binding-law",
+      "source": "CONSOLIDATED",
+      "paragraph": 4,
+      "text_cue": "Deployers of an AI system that generates or manipulates image, audio or video content constituting a deep fake, shall disclose",
+      "actor": "deployer",
+      "summary": "Deployers disclose that deep-fake image, audio or video content is artificially generated or manipulated (limited for evidently artistic or fictional works); information given per Art. 50(5).",
+      "control_field": "current_notice",
+      "control_ok_values": [
+        "visible_label"
+      ],
+      "action_cues": [
+        "exception",
+        "label",
+        "disclos"
+      ],
+      "new_action_text": "Confirm deep-fake disclosure for published content",
+      "evidence_subjects": [
+        "visible-label-disclosure"
+      ]
+    },
+    {
+      "id": "L-50-4-TXT",
+      "rule_ref": "EU AI Act Art. 50(4) second subpara. (public-interest text) [binding]",
+      "basis": "binding-law",
+      "source": "CONSOLIDATED",
+      "paragraph": 4,
+      "text_cue": "Deployers of an AI system that generates or manipulates text which is published with the purpose of informing the public on matters of public interest",
+      "actor": "deployer",
+      "summary": "Deployers disclose AI-generated text published to inform the public on matters of public interest, unless human-reviewed under editorial responsibility.",
+      "control_field": null,
+      "action_cues": [
+        "disclos",
+        "recipient"
+      ],
+      "new_action_text": "Confirm whether generated text is published to inform the public on matters of public interest",
+      "evidence_subjects": [
+        "text-output-route"
+      ]
+    },
+    {
+      "id": "POL-T1",
+      "rule_ref": "AI-POL Learner and public transparency, bullet 1 (interaction notice) [internal policy]",
+      "basis": "internal-policy",
+      "source": "POLICY",
+      "text_cue": "must receive a clear notice before or at the first interaction",
+      "summary": "A person directly interacting with an AI system receives a clear notice before or at the first interaction unless the AI nature is obvious from context.",
+      "control_field": "current_notice",
+      "control_ok_values": [
+        "yes"
+      ],
+      "action_cues": [
+        "notice",
+        "disclosure"
+      ],
+      "new_action_text": "Add and verify a first-interaction AI notice",
+      "evidence_subjects": [
+        "interaction-notice"
+      ]
+    },
+    {
+      "id": "POL-T2-PROV",
+      "rule_ref": "AI-POL Learner and public transparency, bullet 2 (machine-readable provenance) [internal policy]",
+      "basis": "internal-policy",
+      "source": "POLICY",
+      "text_cue": "must retain machine-readable provenance when the tool supports it",
+      "summary": "Public synthetic images, audio or video retain machine-readable provenance when the tool supports it.",
+      "control_field": null,
+      "control_note": "No structured source field verifies provenance; it needs a complete evidence record.",
+      "action_cues": [
+        "provenance"
+      ],
+      "new_action_text": "Verify machine-readable provenance on published synthetic media",
+      "evidence_subjects": [
+        "provenance-marking"
+      ]
+    },
+    {
+      "id": "POL-T2-LABEL",
+      "rule_ref": "AI-POL Learner and public transparency, bullet 2 (visible label unless Legal-approved exception) [internal policy]",
+      "basis": "internal-policy",
+      "source": "POLICY",
+      "text_cue": "also requires a visible label unless Legal approves a documented exception",
+      "summary": "The Communications owner requires a visible label on public synthetic media unless Legal approves a documented exception.",
+      "control_field": "current_notice",
+      "control_ok_values": [
+        "visible_label"
+      ],
+      "action_cues": [
+        "label",
+        "exception"
+      ],
+      "new_action_text": "Verify visible label or obtain a Legal decision on the exception",
+      "evidence_subjects": [
+        "visible-label-disclosure"
+      ]
+    },
+    {
+      "id": "POL-T3",
+      "rule_ref": "AI-POL Learner and public transparency, bullet 3 (staff-only tool output route) [internal policy]",
+      "basis": "internal-policy",
+      "source": "POLICY",
+      "text_cue": "The owner must still record how generated material reaches learners or the public",
+      "summary": "Staff-only drafting tools are not automatically public interactions; the owner records how generated material reaches learners or the public.",
+      "control_field": null,
+      "control_note": "Needs a complete evidence record of the output route.",
+      "action_cues": [
+        "disclosure practice",
+        "recipient",
+        "disclosure"
+      ],
+      "new_action_text": "Record how generated material reaches learners or the public",
+      "evidence_subjects": [
+        "text-output-route"
+      ]
+    }
+  ],
+  "output_types": {
+    "direct_interaction": "interaction",
+    "text": "generated-text",
+    "synthetic_image": "generated-media",
+    "synthetic_audio_video": "generated-media",
+    "classification": "classification"
+  },
+  "fact_cues": {
+    "licensed_supplier_product": {
+      "scope": "operating-scope",
+      "patterns": [
+        "licenses and operates a third-party supplier's existing AI product"
+      ],
+      "meaning": "Systems listed in the same POLICY block are licensed supplier products; Quillhaven did not develop, commission or brand them."
+    },
+    "no_emotion_or_biometric": {
+      "scope": "system-section",
+      "patterns": [
+        "does not classify biometric data or infer emotions",
+        "not used to identify or infer emotions or intentions or to assign people to categories from biometric data"
+      ],
+      "meaning": "POLICY states that the system does not perform emotion recognition or biometric categorisation."
+    },
+    "emotion_or_biometric_unestablished": {
+      "scope": "system-section",
+      "patterns": [
+        "has not yet established whether the flagging uses biometric data"
+      ],
+      "meaning": "POLICY states that emotion-recognition or biometric use is not established."
+    },
+    "not_existing_person_depiction": {
+      "scope": "system-section",
+      "patterns": [
+        "not depictions of an existing person"
+      ],
+      "meaning": "POLICY states that the generated media does not depict existing persons, places, objects or events as authentic."
+    },
+    "deep_fake_indicators": {
+      "scope": "system-section",
+      "patterns_all": [
+        "real people",
+        "could mistake it for an authentic recording",
+        "not an evidently artistic"
+      ],
+      "meaning": "POLICY states that the content shows real people, could be mistaken for authentic, and is not evidently artistic or fictional."
+    },
+    "not_public_interest_text": {
+      "scope": "system-section",
+      "patterns": [
+        "not material published to inform the public about matters of public interest",
+        "not published or sent to applicants, learners or the general public"
+      ],
+      "meaning": "POLICY states that the generated text is not published to inform the public on matters of public interest."
+    },
+    "no_direct_conversation": {
+      "scope": "system-section",
+      "patterns": [
+        "do not converse with the AI product"
+      ],
+      "meaning": "POLICY states that the people concerned do not interact directly with the AI system."
+    }
+  },
+  "evidence_subjects": {
+    "interaction-notice": {
+      "affects": "control",
+      "patterns": [
+        "notice",
+        "banner",
+        "first interaction",
+        "first-interaction"
+      ],
+      "meaning": "Records about AI-interaction notices or banners."
+    },
+    "provenance-marking": {
+      "affects": "control",
+      "patterns": [
+        "provenance",
+        "metadata",
+        "machine-readable",
+        "marking"
+      ],
+      "meaning": "Records about machine-readable marking or provenance metadata."
+    },
+    "visible-label-disclosure": {
+      "affects": "control",
+      "patterns": [
+        "label",
+        "disclos"
+      ],
+      "record_types": [
+        "exception_request"
+      ],
+      "meaning": "Records about visible labels, disclosure to viewers, or label exceptions (exception requests)."
+    },
+    "text-output-route": {
+      "affects": "control",
+      "patterns": [
+        "recipient",
+        "generated text",
+        "staff workspace",
+        "published"
+      ],
+      "meaning": "Records about how generated text reaches recipients or the public."
+    },
+    "provider-role": {
+      "affects": "applicability",
+      "patterns": [
+        "provider role",
+        "provider-role"
+      ],
+      "meaning": "Records about whether Quillhaven is the provider (applicability of provider-side duties)."
+    },
+    "emotion-biometric": {
+      "affects": "applicability",
+      "patterns": [
+        "biometric",
+        "emotion"
+      ],
+      "meaning": "Records about emotion recognition or biometric categorisation (applicability of Art. 50(3))."
+    }
+  },
+  "evidence_state_effect": {
+    "conflicting": "conflicting",
+    "stale": "unresolved",
+    "missing": "unresolved",
+    "partial": "unresolved",
+    "complete": "supports",
+    "not-applicable": "supports"
+  }
+}

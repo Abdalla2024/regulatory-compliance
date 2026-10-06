@@ -1,0 +1,1257 @@
+{
+  "schema_version": "regulatory-compliance-stage-snapshot/2",
+  "snapshot_id": "RCIB-20261006T195819Z-3013-S07",
+  "run_id": "RCIB-20261006T195819Z-3013",
+  "stage": "publication-validation",
+  "sequence": 7,
+  "created_at": "2026-10-06T19:58:28Z",
+  "status": "partial",
+  "predecessor": {
+    "snapshot_id": "RCIB-20261006T195819Z-3013-S06",
+    "path": "deliverables/snapshots/06-actions-and-approvals.json",
+    "sha256": "sha256:62f8fc92affb942b7dbba9f6867160e9701ce8aff67a33077c78b4aede24adb7"
+  },
+  "consumed_record_ids": [
+    "ACT-001",
+    "ACT-002",
+    "ACT-003",
+    "ACT-004",
+    "ACT-005",
+    "ACT-006",
+    "ACT-007",
+    "ACT-008",
+    "APR-ACT-001",
+    "APR-ACT-002",
+    "APR-ACT-003",
+    "APR-ACT-004",
+    "APR-ACT-005",
+    "APR-ACT-006",
+    "APR-ACT-007",
+    "APR-ACT-008",
+    "APR-LEGAL-A50-INTERPRETATION",
+    "APR-LEGAL-POLICY-INTERPRETATION",
+    "D-002",
+    "RR-A50",
+    "RR-ACT-001",
+    "RR-ACT-002",
+    "RR-ACT-003",
+    "RR-ACT-004",
+    "RR-ACT-005",
+    "RR-ACT-006",
+    "RR-ACT-007",
+    "RR-ACT-008",
+    "RR-POLICY"
+  ],
+  "produced_record_ids": [
+    "ART-BRIEF",
+    "ART-CALENDAR",
+    "ART-REGISTER",
+    "BIND-RR-A50",
+    "BIND-RR-ACT-001",
+    "BIND-RR-ACT-002",
+    "BIND-RR-ACT-003",
+    "BIND-RR-ACT-004",
+    "BIND-RR-ACT-005",
+    "BIND-RR-ACT-006",
+    "BIND-RR-ACT-007",
+    "BIND-RR-ACT-008",
+    "BIND-RR-POLICY",
+    "CHK-BRIEF-AGREEMENT",
+    "CHK-CALENDAR-AGREEMENT",
+    "CHK-CALENDAR-FORMAT",
+    "CHK-EVIDENCE-ATT-AMEND-1",
+    "CHK-EVIDENCE-ATT-CALENDAR-1",
+    "CHK-EVIDENCE-ATT-CALENDAR-2",
+    "CHK-EVIDENCE-ATT-CONSOLIDATED-1",
+    "CHK-EVIDENCE-ATT-EVIDENCE-1",
+    "CHK-EVIDENCE-ATT-EVIDENCE-2",
+    "CHK-EVIDENCE-ATT-FAQ-1",
+    "CHK-EVIDENCE-ATT-LAW-1",
+    "CHK-EVIDENCE-ATT-OJ-1",
+    "CHK-EVIDENCE-ATT-POLICY-1",
+    "CHK-EVIDENCE-ATT-POLICY-2",
+    "CHK-EVIDENCE-ATT-SYSTEMS-1",
+    "CHK-EVIDENCE-ATT-SYSTEMS-2",
+    "CHK-EVIDENCE-ATT-TIME-1",
+    "CHK-EXTRACTS-ATT-AMEND-1",
+    "CHK-EXTRACTS-ATT-CALENDAR-2",
+    "CHK-EXTRACTS-ATT-CONSOLIDATED-1",
+    "CHK-EXTRACTS-ATT-EVIDENCE-2",
+    "CHK-EXTRACTS-ATT-FAQ-1",
+    "CHK-EXTRACTS-ATT-LAW-1",
+    "CHK-EXTRACTS-ATT-OJ-1",
+    "CHK-EXTRACTS-ATT-POLICY-2",
+    "CHK-EXTRACTS-ATT-SYSTEMS-2",
+    "CHK-EXTRACTS-ATT-TIME-1",
+    "CHK-REGISTER-AGREEMENT",
+    "CHK-REGISTER-FORMAT",
+    "CHK-REGISTER-ROWS",
+    "CHK-SNAPSHOT-01-PRODUCED",
+    "CHK-SNAPSHOT-01-RUN",
+    "CHK-SNAPSHOT-01-SCHEMA",
+    "CHK-SNAPSHOT-01-STAGE",
+    "CHK-SNAPSHOT-02-CONSUMED",
+    "CHK-SNAPSHOT-02-PREDECESSOR",
+    "CHK-SNAPSHOT-02-PRODUCED",
+    "CHK-SNAPSHOT-02-RUN",
+    "CHK-SNAPSHOT-02-SCHEMA",
+    "CHK-SNAPSHOT-02-STAGE",
+    "CHK-SNAPSHOT-03-CONSUMED",
+    "CHK-SNAPSHOT-03-PREDECESSOR",
+    "CHK-SNAPSHOT-03-PRODUCED",
+    "CHK-SNAPSHOT-03-RUN",
+    "CHK-SNAPSHOT-03-SCHEMA",
+    "CHK-SNAPSHOT-03-STAGE",
+    "CHK-SNAPSHOT-04-CONSUMED",
+    "CHK-SNAPSHOT-04-PREDECESSOR",
+    "CHK-SNAPSHOT-04-PRODUCED",
+    "CHK-SNAPSHOT-04-RUN",
+    "CHK-SNAPSHOT-04-SCHEMA",
+    "CHK-SNAPSHOT-04-STAGE",
+    "CHK-SNAPSHOT-05-CONSUMED",
+    "CHK-SNAPSHOT-05-PREDECESSOR",
+    "CHK-SNAPSHOT-05-PRODUCED",
+    "CHK-SNAPSHOT-05-RUN",
+    "CHK-SNAPSHOT-05-SCHEMA",
+    "CHK-SNAPSHOT-05-STAGE",
+    "CHK-SNAPSHOT-06-CONSUMED",
+    "CHK-SNAPSHOT-06-PREDECESSOR",
+    "CHK-SNAPSHOT-06-PRODUCED",
+    "CHK-SNAPSHOT-06-RUN",
+    "CHK-SNAPSHOT-06-SCHEMA",
+    "CHK-SNAPSHOT-06-STAGE",
+    "OPEN-IMP-AI-002-POL-T3",
+    "OPEN-IMP-AI-003-POL-T2-LABEL",
+    "OPEN-IMP-AI-003-POL-T2-PROV",
+    "OPEN-IMP-AI-005-L-50-1",
+    "OPEN-IMP-AI-005-L-50-2",
+    "OPEN-IMP-AI-005-L-50-3",
+    "OPEN-IMP-AI-005-L-50-4-DF",
+    "OPEN-IMP-AI-005-L-50-4-TXT",
+    "OPEN-IMP-AI-005-POL-T1",
+    "OPEN-IMP-AI-005-POL-T2-LABEL",
+    "OPEN-IMP-AI-005-POL-T2-PROV",
+    "OPEN-IMP-AI-005-POL-T3",
+    "OPEN-IMP-AI-007-POL-T1",
+    "OPEN-IMP-AI-008-L-50-4-DF",
+    "OPEN-IMP-AI-008-POL-T2-LABEL",
+    "OPEN-IMP-AI-008-POL-T2-PROV"
+  ],
+  "state": {
+    "artifacts": [
+      {
+        "id": "ART-REGISTER",
+        "path": "deliverables/impact-register.csv",
+        "sha256": "sha256:10ebb8f3ef02b0921d0f3472a842e031627113a18751453e451da03387c0d848",
+        "validation_status": "valid",
+        "summary": "Final draft impact-register.csv",
+        "evidence_ids": [
+          "CHK-REGISTER-FORMAT",
+          "CHK-REGISTER-ROWS",
+          "CHK-REGISTER-AGREEMENT"
+        ]
+      },
+      {
+        "id": "ART-BRIEF",
+        "path": "deliverables/compliance-brief.md",
+        "sha256": "sha256:3eb55d220b776b77f3397125a47f95b663a51055b070ee00ec0e844ab900a025",
+        "validation_status": "valid",
+        "summary": "Final draft compliance-brief.md",
+        "evidence_ids": [
+          "CHK-BRIEF-AGREEMENT"
+        ]
+      },
+      {
+        "id": "ART-CALENDAR",
+        "path": "deliverables/action-calendar.ics",
+        "sha256": "sha256:3eda50c3c5d461caf48cb45da3f661c453725dd9376485cfc67094ef65b90cd8",
+        "validation_status": "valid",
+        "summary": "Final draft action-calendar.ics",
+        "evidence_ids": [
+          "CHK-CALENDAR-FORMAT",
+          "CHK-CALENDAR-AGREEMENT"
+        ]
+      }
+    ],
+    "validation_checks": [
+      {
+        "id": "CHK-SNAPSHOT-01-SCHEMA",
+        "summary": "Snapshot 01-scope.json conforms to snapshot.schema.json",
+        "evidence_ids": [
+          "RCIB-20261006T195819Z-3013-S01"
+        ],
+        "passed": true,
+        "detail": "valid",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-SNAPSHOT-01-STAGE",
+        "summary": "Snapshot 01-scope.json has stage scope / sequence 1",
+        "evidence_ids": [],
+        "passed": true,
+        "detail": "stage=scope sequence=1",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-SNAPSHOT-01-RUN",
+        "summary": "Snapshot 01-scope.json shares run_id",
+        "evidence_ids": [],
+        "passed": true,
+        "detail": "RCIB-20261006T195819Z-3013 vs RCIB-20261006T195819Z-3013",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-SNAPSHOT-01-PRODUCED",
+        "summary": "Snapshot 01-scope.json produced_record_ids present in the stage",
+        "evidence_ids": [],
+        "passed": true,
+        "detail": "57 records",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-SNAPSHOT-02-SCHEMA",
+        "summary": "Snapshot 02-source-capture.json conforms to snapshot.schema.json",
+        "evidence_ids": [
+          "RCIB-20261006T195819Z-3013-S02"
+        ],
+        "passed": true,
+        "detail": "valid",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-SNAPSHOT-02-STAGE",
+        "summary": "Snapshot 02-source-capture.json has stage source-capture / sequence 2",
+        "evidence_ids": [],
+        "passed": true,
+        "detail": "stage=source-capture sequence=2",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-SNAPSHOT-02-RUN",
+        "summary": "Snapshot 02-source-capture.json shares run_id",
+        "evidence_ids": [],
+        "passed": true,
+        "detail": "RCIB-20261006T195819Z-3013 vs RCIB-20261006T195819Z-3013",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-SNAPSHOT-02-PREDECESSOR",
+        "summary": "Snapshot 02-source-capture.json predecessor identifies and hashes 01-scope.json",
+        "evidence_ids": [],
+        "passed": true,
+        "detail": "{\"snapshot_id\": \"RCIB-20261006T195819Z-3013-S01\", \"path\": \"deliverables/snapshots/01-scope.json\", \"sha256\": \"sha256:778097c1cf40740fc6fddd0f68fdc10768068269eb844d78110fb60b5442d0e3\"}",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-SNAPSHOT-02-CONSUMED",
+        "summary": "Snapshot 02-source-capture.json consumed_record_ids resolve upstream",
+        "evidence_ids": [],
+        "passed": true,
+        "detail": "19 resolved",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-SNAPSHOT-02-PRODUCED",
+        "summary": "Snapshot 02-source-capture.json produced_record_ids present in the stage",
+        "evidence_ids": [],
+        "passed": true,
+        "detail": "128 records",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-SNAPSHOT-03-SCHEMA",
+        "summary": "Snapshot 03-authority-and-timing.json conforms to snapshot.schema.json",
+        "evidence_ids": [
+          "RCIB-20261006T195819Z-3013-S03"
+        ],
+        "passed": true,
+        "detail": "valid",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-SNAPSHOT-03-STAGE",
+        "summary": "Snapshot 03-authority-and-timing.json has stage authority-and-timing / sequence 3",
+        "evidence_ids": [],
+        "passed": true,
+        "detail": "stage=authority-and-timing sequence=3",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-SNAPSHOT-03-RUN",
+        "summary": "Snapshot 03-authority-and-timing.json shares run_id",
+        "evidence_ids": [],
+        "passed": true,
+        "detail": "RCIB-20261006T195819Z-3013 vs RCIB-20261006T195819Z-3013",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-SNAPSHOT-03-PREDECESSOR",
+        "summary": "Snapshot 03-authority-and-timing.json predecessor identifies and hashes 02-source-capture.json",
+        "evidence_ids": [],
+        "passed": true,
+        "detail": "{\"snapshot_id\": \"RCIB-20261006T195819Z-3013-S02\", \"path\": \"deliverables/snapshots/02-source-capture.json\", \"sha256\": \"sha256:32e84f6766fb8d1ad8c301ae8fce535f51221c22fc884acfc704f68f0e27ab29\"}",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-SNAPSHOT-03-CONSUMED",
+        "summary": "Snapshot 03-authority-and-timing.json consumed_record_ids resolve upstream",
+        "evidence_ids": [],
+        "passed": true,
+        "detail": "30 resolved",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-SNAPSHOT-03-PRODUCED",
+        "summary": "Snapshot 03-authority-and-timing.json produced_record_ids present in the stage",
+        "evidence_ids": [],
+        "passed": true,
+        "detail": "16 records",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-SNAPSHOT-04-SCHEMA",
+        "summary": "Snapshot 04-evidence-reconciliation.json conforms to snapshot.schema.json",
+        "evidence_ids": [
+          "RCIB-20261006T195819Z-3013-S04"
+        ],
+        "passed": true,
+        "detail": "valid",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-SNAPSHOT-04-STAGE",
+        "summary": "Snapshot 04-evidence-reconciliation.json has stage evidence-reconciliation / sequence 4",
+        "evidence_ids": [],
+        "passed": true,
+        "detail": "stage=evidence-reconciliation sequence=4",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-SNAPSHOT-04-RUN",
+        "summary": "Snapshot 04-evidence-reconciliation.json shares run_id",
+        "evidence_ids": [],
+        "passed": true,
+        "detail": "RCIB-20261006T195819Z-3013 vs RCIB-20261006T195819Z-3013",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-SNAPSHOT-04-PREDECESSOR",
+        "summary": "Snapshot 04-evidence-reconciliation.json predecessor identifies and hashes 03-authority-and-timing.json",
+        "evidence_ids": [],
+        "passed": true,
+        "detail": "{\"snapshot_id\": \"RCIB-20261006T195819Z-3013-S03\", \"path\": \"deliverables/snapshots/03-authority-and-timing.json\", \"sha256\": \"sha256:e8486b811881ed75c190cc2843fb65bb6a306f9f8ee2b9d7b619bcf44b1f48e4\"}",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-SNAPSHOT-04-CONSUMED",
+        "summary": "Snapshot 04-evidence-reconciliation.json consumed_record_ids resolve upstream",
+        "evidence_ids": [],
+        "passed": true,
+        "detail": "82 resolved",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-SNAPSHOT-04-PRODUCED",
+        "summary": "Snapshot 04-evidence-reconciliation.json produced_record_ids present in the stage",
+        "evidence_ids": [],
+        "passed": true,
+        "detail": "34 records",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-SNAPSHOT-05-SCHEMA",
+        "summary": "Snapshot 05-impact-analysis.json conforms to snapshot.schema.json",
+        "evidence_ids": [
+          "RCIB-20261006T195819Z-3013-S05"
+        ],
+        "passed": true,
+        "detail": "valid",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-SNAPSHOT-05-STAGE",
+        "summary": "Snapshot 05-impact-analysis.json has stage impact-analysis / sequence 5",
+        "evidence_ids": [],
+        "passed": true,
+        "detail": "stage=impact-analysis sequence=5",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-SNAPSHOT-05-RUN",
+        "summary": "Snapshot 05-impact-analysis.json shares run_id",
+        "evidence_ids": [],
+        "passed": true,
+        "detail": "RCIB-20261006T195819Z-3013 vs RCIB-20261006T195819Z-3013",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-SNAPSHOT-05-PREDECESSOR",
+        "summary": "Snapshot 05-impact-analysis.json predecessor identifies and hashes 04-evidence-reconciliation.json",
+        "evidence_ids": [],
+        "passed": true,
+        "detail": "{\"snapshot_id\": \"RCIB-20261006T195819Z-3013-S04\", \"path\": \"deliverables/snapshots/04-evidence-reconciliation.json\", \"sha256\": \"sha256:909a5a842a072473eaf6fc0040a57ebfb5b1614a22fb8be2860c0f270691d565\"}",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-SNAPSHOT-05-CONSUMED",
+        "summary": "Snapshot 05-impact-analysis.json consumed_record_ids resolve upstream",
+        "evidence_ids": [],
+        "passed": true,
+        "detail": "47 resolved",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-SNAPSHOT-05-PRODUCED",
+        "summary": "Snapshot 05-impact-analysis.json produced_record_ids present in the stage",
+        "evidence_ids": [],
+        "passed": true,
+        "detail": "95 records",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-SNAPSHOT-06-SCHEMA",
+        "summary": "Snapshot 06-actions-and-approvals.json conforms to snapshot.schema.json",
+        "evidence_ids": [
+          "RCIB-20261006T195819Z-3013-S06"
+        ],
+        "passed": true,
+        "detail": "valid",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-SNAPSHOT-06-STAGE",
+        "summary": "Snapshot 06-actions-and-approvals.json has stage actions-and-approvals / sequence 6",
+        "evidence_ids": [],
+        "passed": true,
+        "detail": "stage=actions-and-approvals sequence=6",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-SNAPSHOT-06-RUN",
+        "summary": "Snapshot 06-actions-and-approvals.json shares run_id",
+        "evidence_ids": [],
+        "passed": true,
+        "detail": "RCIB-20261006T195819Z-3013 vs RCIB-20261006T195819Z-3013",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-SNAPSHOT-06-PREDECESSOR",
+        "summary": "Snapshot 06-actions-and-approvals.json predecessor identifies and hashes 05-impact-analysis.json",
+        "evidence_ids": [],
+        "passed": true,
+        "detail": "{\"snapshot_id\": \"RCIB-20261006T195819Z-3013-S05\", \"path\": \"deliverables/snapshots/05-impact-analysis.json\", \"sha256\": \"sha256:a4abeca37799a07e2f35acf9177b8a27ddcfcbdcbd309b8e1fec931da8ddabb1\"}",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-SNAPSHOT-06-CONSUMED",
+        "summary": "Snapshot 06-actions-and-approvals.json consumed_record_ids resolve upstream",
+        "evidence_ids": [],
+        "passed": true,
+        "detail": "81 resolved",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-SNAPSHOT-06-PRODUCED",
+        "summary": "Snapshot 06-actions-and-approvals.json produced_record_ids present in the stage",
+        "evidence_ids": [],
+        "passed": true,
+        "detail": "46 records",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-EVIDENCE-ATT-OJ-1",
+        "summary": "ATT-OJ-1 preserved bytes match content_hash",
+        "evidence_ids": [
+          "ATT-OJ-1"
+        ],
+        "passed": true,
+        "detail": "hash matches preserved bytes",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-EXTRACTS-ATT-OJ-1",
+        "summary": "ATT-OJ-1 extracts file present",
+        "evidence_ids": [
+          "ATT-OJ-1"
+        ],
+        "passed": true,
+        "detail": "deliverables/sources/OJ.extracts.json",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-EVIDENCE-ATT-AMEND-1",
+        "summary": "ATT-AMEND-1 preserved bytes match content_hash",
+        "evidence_ids": [
+          "ATT-AMEND-1"
+        ],
+        "passed": true,
+        "detail": "hash matches preserved bytes",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-EXTRACTS-ATT-AMEND-1",
+        "summary": "ATT-AMEND-1 extracts file present",
+        "evidence_ids": [
+          "ATT-AMEND-1"
+        ],
+        "passed": true,
+        "detail": "deliverables/sources/AMEND.extracts.json",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-EVIDENCE-ATT-CONSOLIDATED-1",
+        "summary": "ATT-CONSOLIDATED-1 preserved bytes match content_hash",
+        "evidence_ids": [
+          "ATT-CONSOLIDATED-1"
+        ],
+        "passed": true,
+        "detail": "hash matches preserved bytes",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-EXTRACTS-ATT-CONSOLIDATED-1",
+        "summary": "ATT-CONSOLIDATED-1 extracts file present",
+        "evidence_ids": [
+          "ATT-CONSOLIDATED-1"
+        ],
+        "passed": true,
+        "detail": "deliverables/sources/CONSOLIDATED.extracts.json",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-EVIDENCE-ATT-LAW-1",
+        "summary": "ATT-LAW-1 preserved bytes match content_hash",
+        "evidence_ids": [
+          "ATT-LAW-1"
+        ],
+        "passed": true,
+        "detail": "hash matches preserved bytes",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-EXTRACTS-ATT-LAW-1",
+        "summary": "ATT-LAW-1 extracts file present",
+        "evidence_ids": [
+          "ATT-LAW-1"
+        ],
+        "passed": true,
+        "detail": "deliverables/sources/LAW.extracts.json",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-EVIDENCE-ATT-TIME-1",
+        "summary": "ATT-TIME-1 preserved bytes match content_hash",
+        "evidence_ids": [
+          "ATT-TIME-1"
+        ],
+        "passed": true,
+        "detail": "hash matches preserved bytes",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-EXTRACTS-ATT-TIME-1",
+        "summary": "ATT-TIME-1 extracts file present",
+        "evidence_ids": [
+          "ATT-TIME-1"
+        ],
+        "passed": true,
+        "detail": "deliverables/sources/TIME.extracts.json",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-EVIDENCE-ATT-FAQ-1",
+        "summary": "ATT-FAQ-1 preserved bytes match content_hash",
+        "evidence_ids": [
+          "ATT-FAQ-1"
+        ],
+        "passed": true,
+        "detail": "hash matches preserved bytes",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-EXTRACTS-ATT-FAQ-1",
+        "summary": "ATT-FAQ-1 extracts file present",
+        "evidence_ids": [
+          "ATT-FAQ-1"
+        ],
+        "passed": true,
+        "detail": "deliverables/sources/FAQ.extracts.json",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-EVIDENCE-ATT-POLICY-1",
+        "summary": "ATT-POLICY-1 preserved bytes match content_hash",
+        "evidence_ids": [
+          "ATT-POLICY-1"
+        ],
+        "passed": true,
+        "detail": "hash matches preserved bytes",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-EVIDENCE-ATT-POLICY-2",
+        "summary": "ATT-POLICY-2 preserved bytes match content_hash",
+        "evidence_ids": [
+          "ATT-POLICY-2"
+        ],
+        "passed": true,
+        "detail": "hash matches preserved bytes",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-EXTRACTS-ATT-POLICY-2",
+        "summary": "ATT-POLICY-2 extracts file present",
+        "evidence_ids": [
+          "ATT-POLICY-2"
+        ],
+        "passed": true,
+        "detail": "deliverables/sources/POLICY.extracts.json",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-EVIDENCE-ATT-SYSTEMS-1",
+        "summary": "ATT-SYSTEMS-1 preserved bytes match content_hash",
+        "evidence_ids": [
+          "ATT-SYSTEMS-1"
+        ],
+        "passed": true,
+        "detail": "hash matches preserved bytes",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-EVIDENCE-ATT-SYSTEMS-2",
+        "summary": "ATT-SYSTEMS-2 preserved bytes match content_hash",
+        "evidence_ids": [
+          "ATT-SYSTEMS-2"
+        ],
+        "passed": true,
+        "detail": "hash matches preserved bytes",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-EXTRACTS-ATT-SYSTEMS-2",
+        "summary": "ATT-SYSTEMS-2 extracts file present",
+        "evidence_ids": [
+          "ATT-SYSTEMS-2"
+        ],
+        "passed": true,
+        "detail": "deliverables/sources/SYSTEMS.extracts.json",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-EVIDENCE-ATT-EVIDENCE-1",
+        "summary": "ATT-EVIDENCE-1 preserved bytes match content_hash",
+        "evidence_ids": [
+          "ATT-EVIDENCE-1"
+        ],
+        "passed": true,
+        "detail": "hash matches preserved bytes",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-EVIDENCE-ATT-EVIDENCE-2",
+        "summary": "ATT-EVIDENCE-2 preserved bytes match content_hash",
+        "evidence_ids": [
+          "ATT-EVIDENCE-2"
+        ],
+        "passed": true,
+        "detail": "hash matches preserved bytes",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-EXTRACTS-ATT-EVIDENCE-2",
+        "summary": "ATT-EVIDENCE-2 extracts file present",
+        "evidence_ids": [
+          "ATT-EVIDENCE-2"
+        ],
+        "passed": true,
+        "detail": "deliverables/sources/EVIDENCE.extracts.json",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-EVIDENCE-ATT-CALENDAR-1",
+        "summary": "ATT-CALENDAR-1 preserved bytes match content_hash",
+        "evidence_ids": [
+          "ATT-CALENDAR-1"
+        ],
+        "passed": true,
+        "detail": "hash matches preserved bytes",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-EVIDENCE-ATT-CALENDAR-2",
+        "summary": "ATT-CALENDAR-2 preserved bytes match content_hash",
+        "evidence_ids": [
+          "ATT-CALENDAR-2"
+        ],
+        "passed": true,
+        "detail": "hash matches preserved bytes",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-EXTRACTS-ATT-CALENDAR-2",
+        "summary": "ATT-CALENDAR-2 extracts file present",
+        "evidence_ids": [
+          "ATT-CALENDAR-2"
+        ],
+        "passed": true,
+        "detail": "deliverables/sources/CALENDAR.extracts.json",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-REGISTER-FORMAT",
+        "summary": "Register is UTF-8 CSV with the required header",
+        "evidence_ids": [
+          "ART-REGISTER"
+        ],
+        "passed": true,
+        "detail": "header: ['impact_id', 'system_id', 'rule_ref', 'state', 'evidence_ids', 'reason', 'owner', 'proposed_action', 'proposed_due_date', 'approval_status']",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-REGISTER-ROWS",
+        "summary": "One register row per stage 05 impact, no duplicates",
+        "evidence_ids": [
+          "ART-REGISTER"
+        ],
+        "passed": true,
+        "detail": "72 rows vs 72 impacts",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-REGISTER-AGREEMENT",
+        "summary": "Register rows agree with stage 05 impacts and stage 06 actions",
+        "evidence_ids": [
+          "ART-REGISTER"
+        ],
+        "passed": true,
+        "detail": "all rows agree",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-CALENDAR-FORMAT",
+        "summary": "Calendar is a valid RFC 5545 VCALENDAR draft",
+        "evidence_ids": [
+          "ART-CALENDAR"
+        ],
+        "passed": true,
+        "detail": "valid",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-CALENDAR-AGREEMENT",
+        "summary": "Calendar events agree with stage 06 dated actions",
+        "evidence_ids": [
+          "ART-CALENDAR"
+        ],
+        "passed": true,
+        "detail": "8 events agree",
+        "owner": null,
+        "rationale": null
+      },
+      {
+        "id": "CHK-BRIEF-AGREEMENT",
+        "summary": "Brief cites run, impacts, actions and review requests and has required sections",
+        "evidence_ids": [
+          "ART-BRIEF"
+        ],
+        "passed": true,
+        "detail": "complete",
+        "owner": null,
+        "rationale": null
+      }
+    ],
+    "publication_status": "validated",
+    "run_status": "partial",
+    "run_status_reason": "all ten required sources retrieved and verified; 3 conflicting and 13 unresolved register rows remain.",
+    "publication_meaning": "Draft validation only; not human approval and not external publication.",
+    "calendar_event_uids": [
+      "ACT-001@regulatory-change-impact-brief.quillhaven",
+      "ACT-002@regulatory-change-impact-brief.quillhaven",
+      "ACT-003@regulatory-change-impact-brief.quillhaven",
+      "ACT-004@regulatory-change-impact-brief.quillhaven",
+      "ACT-005@regulatory-change-impact-brief.quillhaven",
+      "ACT-006@regulatory-change-impact-brief.quillhaven",
+      "ACT-007@regulatory-change-impact-brief.quillhaven",
+      "ACT-008@regulatory-change-impact-brief.quillhaven"
+    ],
+    "review_bindings": [
+      {
+        "id": "BIND-RR-A50",
+        "summary": "RR-A50 bound to the final drafts reviewed under this run (detached binding; the brief does not contain its own hash).",
+        "evidence_ids": [
+          "RR-A50"
+        ],
+        "request_id": "RR-A50",
+        "required_reviewer": "Legal",
+        "run_id": "RCIB-20261006T195819Z-3013",
+        "artifacts": [
+          {
+            "path": "deliverables/impact-register.csv",
+            "sha256": "sha256:10ebb8f3ef02b0921d0f3472a842e031627113a18751453e451da03387c0d848"
+          },
+          {
+            "path": "deliverables/compliance-brief.md",
+            "sha256": "sha256:3eb55d220b776b77f3397125a47f95b663a51055b070ee00ec0e844ab900a025"
+          },
+          {
+            "path": "deliverables/action-calendar.ics",
+            "sha256": "sha256:3eda50c3c5d461caf48cb45da3f661c453725dd9376485cfc67094ef65b90cd8"
+          }
+        ],
+        "delivery_status": "prepared; not sent"
+      },
+      {
+        "id": "BIND-RR-POLICY",
+        "summary": "RR-POLICY bound to the final drafts reviewed under this run (detached binding; the brief does not contain its own hash).",
+        "evidence_ids": [
+          "RR-POLICY"
+        ],
+        "request_id": "RR-POLICY",
+        "required_reviewer": "Legal",
+        "run_id": "RCIB-20261006T195819Z-3013",
+        "artifacts": [
+          {
+            "path": "deliverables/impact-register.csv",
+            "sha256": "sha256:10ebb8f3ef02b0921d0f3472a842e031627113a18751453e451da03387c0d848"
+          },
+          {
+            "path": "deliverables/compliance-brief.md",
+            "sha256": "sha256:3eb55d220b776b77f3397125a47f95b663a51055b070ee00ec0e844ab900a025"
+          },
+          {
+            "path": "deliverables/action-calendar.ics",
+            "sha256": "sha256:3eda50c3c5d461caf48cb45da3f661c453725dd9376485cfc67094ef65b90cd8"
+          }
+        ],
+        "delivery_status": "prepared; not sent"
+      },
+      {
+        "id": "BIND-RR-ACT-001",
+        "summary": "RR-ACT-001 bound to the final drafts reviewed under this run (detached binding; the brief does not contain its own hash).",
+        "evidence_ids": [
+          "RR-ACT-001"
+        ],
+        "request_id": "RR-ACT-001",
+        "required_reviewer": "Operations",
+        "run_id": "RCIB-20261006T195819Z-3013",
+        "artifacts": [
+          {
+            "path": "deliverables/impact-register.csv",
+            "sha256": "sha256:10ebb8f3ef02b0921d0f3472a842e031627113a18751453e451da03387c0d848"
+          },
+          {
+            "path": "deliverables/compliance-brief.md",
+            "sha256": "sha256:3eb55d220b776b77f3397125a47f95b663a51055b070ee00ec0e844ab900a025"
+          },
+          {
+            "path": "deliverables/action-calendar.ics",
+            "sha256": "sha256:3eda50c3c5d461caf48cb45da3f661c453725dd9376485cfc67094ef65b90cd8"
+          }
+        ],
+        "delivery_status": "prepared; not sent"
+      },
+      {
+        "id": "BIND-RR-ACT-002",
+        "summary": "RR-ACT-002 bound to the final drafts reviewed under this run (detached binding; the brief does not contain its own hash).",
+        "evidence_ids": [
+          "RR-ACT-002"
+        ],
+        "request_id": "RR-ACT-002",
+        "required_reviewer": "Operations",
+        "run_id": "RCIB-20261006T195819Z-3013",
+        "artifacts": [
+          {
+            "path": "deliverables/impact-register.csv",
+            "sha256": "sha256:10ebb8f3ef02b0921d0f3472a842e031627113a18751453e451da03387c0d848"
+          },
+          {
+            "path": "deliverables/compliance-brief.md",
+            "sha256": "sha256:3eb55d220b776b77f3397125a47f95b663a51055b070ee00ec0e844ab900a025"
+          },
+          {
+            "path": "deliverables/action-calendar.ics",
+            "sha256": "sha256:3eda50c3c5d461caf48cb45da3f661c453725dd9376485cfc67094ef65b90cd8"
+          }
+        ],
+        "delivery_status": "prepared; not sent"
+      },
+      {
+        "id": "BIND-RR-ACT-003",
+        "summary": "RR-ACT-003 bound to the final drafts reviewed under this run (detached binding; the brief does not contain its own hash).",
+        "evidence_ids": [
+          "RR-ACT-003"
+        ],
+        "request_id": "RR-ACT-003",
+        "required_reviewer": "Legal",
+        "run_id": "RCIB-20261006T195819Z-3013",
+        "artifacts": [
+          {
+            "path": "deliverables/impact-register.csv",
+            "sha256": "sha256:10ebb8f3ef02b0921d0f3472a842e031627113a18751453e451da03387c0d848"
+          },
+          {
+            "path": "deliverables/compliance-brief.md",
+            "sha256": "sha256:3eb55d220b776b77f3397125a47f95b663a51055b070ee00ec0e844ab900a025"
+          },
+          {
+            "path": "deliverables/action-calendar.ics",
+            "sha256": "sha256:3eda50c3c5d461caf48cb45da3f661c453725dd9376485cfc67094ef65b90cd8"
+          }
+        ],
+        "delivery_status": "prepared; not sent"
+      },
+      {
+        "id": "BIND-RR-ACT-004",
+        "summary": "RR-ACT-004 bound to the final drafts reviewed under this run (detached binding; the brief does not contain its own hash).",
+        "evidence_ids": [
+          "RR-ACT-004"
+        ],
+        "request_id": "RR-ACT-004",
+        "required_reviewer": "Operations",
+        "run_id": "RCIB-20261006T195819Z-3013",
+        "artifacts": [
+          {
+            "path": "deliverables/impact-register.csv",
+            "sha256": "sha256:10ebb8f3ef02b0921d0f3472a842e031627113a18751453e451da03387c0d848"
+          },
+          {
+            "path": "deliverables/compliance-brief.md",
+            "sha256": "sha256:3eb55d220b776b77f3397125a47f95b663a51055b070ee00ec0e844ab900a025"
+          },
+          {
+            "path": "deliverables/action-calendar.ics",
+            "sha256": "sha256:3eda50c3c5d461caf48cb45da3f661c453725dd9376485cfc67094ef65b90cd8"
+          }
+        ],
+        "delivery_status": "prepared; not sent"
+      },
+      {
+        "id": "BIND-RR-ACT-005",
+        "summary": "RR-ACT-005 bound to the final drafts reviewed under this run (detached binding; the brief does not contain its own hash).",
+        "evidence_ids": [
+          "RR-ACT-005"
+        ],
+        "request_id": "RR-ACT-005",
+        "required_reviewer": "Legal",
+        "run_id": "RCIB-20261006T195819Z-3013",
+        "artifacts": [
+          {
+            "path": "deliverables/impact-register.csv",
+            "sha256": "sha256:10ebb8f3ef02b0921d0f3472a842e031627113a18751453e451da03387c0d848"
+          },
+          {
+            "path": "deliverables/compliance-brief.md",
+            "sha256": "sha256:3eb55d220b776b77f3397125a47f95b663a51055b070ee00ec0e844ab900a025"
+          },
+          {
+            "path": "deliverables/action-calendar.ics",
+            "sha256": "sha256:3eda50c3c5d461caf48cb45da3f661c453725dd9376485cfc67094ef65b90cd8"
+          }
+        ],
+        "delivery_status": "prepared; not sent"
+      },
+      {
+        "id": "BIND-RR-ACT-006",
+        "summary": "RR-ACT-006 bound to the final drafts reviewed under this run (detached binding; the brief does not contain its own hash).",
+        "evidence_ids": [
+          "RR-ACT-006"
+        ],
+        "request_id": "RR-ACT-006",
+        "required_reviewer": "Operations",
+        "run_id": "RCIB-20261006T195819Z-3013",
+        "artifacts": [
+          {
+            "path": "deliverables/impact-register.csv",
+            "sha256": "sha256:10ebb8f3ef02b0921d0f3472a842e031627113a18751453e451da03387c0d848"
+          },
+          {
+            "path": "deliverables/compliance-brief.md",
+            "sha256": "sha256:3eb55d220b776b77f3397125a47f95b663a51055b070ee00ec0e844ab900a025"
+          },
+          {
+            "path": "deliverables/action-calendar.ics",
+            "sha256": "sha256:3eda50c3c5d461caf48cb45da3f661c453725dd9376485cfc67094ef65b90cd8"
+          }
+        ],
+        "delivery_status": "prepared; not sent"
+      },
+      {
+        "id": "BIND-RR-ACT-007",
+        "summary": "RR-ACT-007 bound to the final drafts reviewed under this run (detached binding; the brief does not contain its own hash).",
+        "evidence_ids": [
+          "RR-ACT-007"
+        ],
+        "request_id": "RR-ACT-007",
+        "required_reviewer": "Legal",
+        "run_id": "RCIB-20261006T195819Z-3013",
+        "artifacts": [
+          {
+            "path": "deliverables/impact-register.csv",
+            "sha256": "sha256:10ebb8f3ef02b0921d0f3472a842e031627113a18751453e451da03387c0d848"
+          },
+          {
+            "path": "deliverables/compliance-brief.md",
+            "sha256": "sha256:3eb55d220b776b77f3397125a47f95b663a51055b070ee00ec0e844ab900a025"
+          },
+          {
+            "path": "deliverables/action-calendar.ics",
+            "sha256": "sha256:3eda50c3c5d461caf48cb45da3f661c453725dd9376485cfc67094ef65b90cd8"
+          }
+        ],
+        "delivery_status": "prepared; not sent"
+      },
+      {
+        "id": "BIND-RR-ACT-008",
+        "summary": "RR-ACT-008 bound to the final drafts reviewed under this run (detached binding; the brief does not contain its own hash).",
+        "evidence_ids": [
+          "RR-ACT-008"
+        ],
+        "request_id": "RR-ACT-008",
+        "required_reviewer": "Operations",
+        "run_id": "RCIB-20261006T195819Z-3013",
+        "artifacts": [
+          {
+            "path": "deliverables/impact-register.csv",
+            "sha256": "sha256:10ebb8f3ef02b0921d0f3472a842e031627113a18751453e451da03387c0d848"
+          },
+          {
+            "path": "deliverables/compliance-brief.md",
+            "sha256": "sha256:3eb55d220b776b77f3397125a47f95b663a51055b070ee00ec0e844ab900a025"
+          },
+          {
+            "path": "deliverables/action-calendar.ics",
+            "sha256": "sha256:3eda50c3c5d461caf48cb45da3f661c453725dd9376485cfc67094ef65b90cd8"
+          }
+        ],
+        "delivery_status": "prepared; not sent"
+      }
+    ],
+    "post_write_verification": "deliverables/run-verification.json (written after this snapshot)"
+  },
+  "unresolved": [
+    {
+      "id": "OPEN-IMP-AI-002-POL-T3",
+      "summary": "unresolved: SYSTEMS records a text-generation tool used by staff (exposed group applicants). Worst evidence state recorded for AI-002 is 'missing' (D-004): REC-002 (missing): No evidence that recipients are told when generated text is used.",
+      "evidence_ids": [
+        "IMP-AI-002-POL-T3"
+      ],
+      "owner": "Admissions",
+      "rationale": "Remains open in the published draft.",
+      "resolution_need": "Admissions supplies current, complete evidence."
+    },
+    {
+      "id": "OPEN-IMP-AI-003-POL-T2-PROV",
+      "summary": "conflicting: SYSTEMS records public synthetic media (synthetic_image, exposed_group=public). Evidence conflicts (D-001): REC-003 (conflicting): Visible label exists but exported platform copy may have lost metadata. Both facts are preserved; the item remains unresolved pending system-owner verification and is not decided by the automation.",
+      "evidence_ids": [
+        "IMP-AI-003-POL-T2-PROV"
+      ],
+      "owner": "Communications",
+      "rationale": "Remains open in the published draft.",
+      "resolution_need": "System owner (Communications) verifies the contested fact using social-post-884 and updates EVIDENCE/SYSTEMS."
+    },
+    {
+      "id": "OPEN-IMP-AI-003-POL-T2-LABEL",
+      "summary": "conflicting: SYSTEMS records public synthetic media (synthetic_image, exposed_group=public). Evidence conflicts (D-001): REC-003 (conflicting): Visible label exists but exported platform copy may have lost metadata. Both facts are preserved; the item remains unresolved pending system-owner verification and is not decided by the automation.",
+      "evidence_ids": [
+        "IMP-AI-003-POL-T2-LABEL"
+      ],
+      "owner": "Communications",
+      "rationale": "Remains open in the published draft.",
+      "resolution_need": "System owner (Communications) verifies the contested fact using social-post-884 and updates EVIDENCE/SYSTEMS."
+    },
+    {
+      "id": "OPEN-IMP-AI-005-L-50-1",
+      "summary": "unresolved: Register facts for AI-005 are stale (evidence_updated_at 2026-04-15); no conclusion is drawn from stale facts.",
+      "evidence_ids": [
+        "IMP-AI-005-L-50-1"
+      ],
+      "owner": "Assessment Operations",
+      "rationale": "Remains open in the published draft.",
+      "resolution_need": "Assessment Operations refreshes the register entry and evidence."
+    },
+    {
+      "id": "OPEN-IMP-AI-005-L-50-2",
+      "summary": "unresolved: Register facts for AI-005 are stale (evidence_updated_at 2026-04-15); no conclusion is drawn from stale facts.",
+      "evidence_ids": [
+        "IMP-AI-005-L-50-2"
+      ],
+      "owner": "Assessment Operations",
+      "rationale": "Remains open in the published draft.",
+      "resolution_need": "Assessment Operations refreshes the register entry and evidence."
+    },
+    {
+      "id": "OPEN-IMP-AI-005-L-50-3",
+      "summary": "unresolved: Register facts for AI-005 are stale (evidence_updated_at 2026-04-15); no conclusion is drawn from stale facts.",
+      "evidence_ids": [
+        "IMP-AI-005-L-50-3"
+      ],
+      "owner": "Assessment Operations",
+      "rationale": "Remains open in the published draft.",
+      "resolution_need": "Assessment Operations refreshes the register entry and evidence."
+    },
+    {
+      "id": "OPEN-IMP-AI-005-L-50-4-DF",
+      "summary": "unresolved: Register facts for AI-005 are stale (evidence_updated_at 2026-04-15); no conclusion is drawn from stale facts.",
+      "evidence_ids": [
+        "IMP-AI-005-L-50-4-DF"
+      ],
+      "owner": "Assessment Operations",
+      "rationale": "Remains open in the published draft.",
+      "resolution_need": "Assessment Operations refreshes the register entry and evidence."
+    },
+    {
+      "id": "OPEN-IMP-AI-005-L-50-4-TXT",
+      "summary": "unresolved: Register facts for AI-005 are stale (evidence_updated_at 2026-04-15); no conclusion is drawn from stale facts.",
+      "evidence_ids": [
+        "IMP-AI-005-L-50-4-TXT"
+      ],
+      "owner": "Assessment Operations",
+      "rationale": "Remains open in the published draft.",
+      "resolution_need": "Assessment Operations refreshes the register entry and evidence."
+    },
+    {
+      "id": "OPEN-IMP-AI-005-POL-T1",
+      "summary": "unresolved: Register facts for AI-005 are stale (evidence_updated_at 2026-04-15); no conclusion is drawn from stale facts.",
+      "evidence_ids": [
+        "IMP-AI-005-POL-T1"
+      ],
+      "owner": "Assessment Operations",
+      "rationale": "Remains open in the published draft.",
+      "resolution_need": "Assessment Operations refreshes the register entry and evidence."
+    },
+    {
+      "id": "OPEN-IMP-AI-005-POL-T2-PROV",
+      "summary": "unresolved: Register facts for AI-005 are stale (evidence_updated_at 2026-04-15); no conclusion is drawn from stale facts.",
+      "evidence_ids": [
+        "IMP-AI-005-POL-T2-PROV"
+      ],
+      "owner": "Assessment Operations",
+      "rationale": "Remains open in the published draft.",
+      "resolution_need": "Assessment Operations refreshes the register entry and evidence."
+    },
+    {
+      "id": "OPEN-IMP-AI-005-POL-T2-LABEL",
+      "summary": "unresolved: Register facts for AI-005 are stale (evidence_updated_at 2026-04-15); no conclusion is drawn from stale facts.",
+      "evidence_ids": [
+        "IMP-AI-005-POL-T2-LABEL"
+      ],
+      "owner": "Assessment Operations",
+      "rationale": "Remains open in the published draft.",
+      "resolution_need": "Assessment Operations refreshes the register entry and evidence."
+    },
+    {
+      "id": "OPEN-IMP-AI-005-POL-T3",
+      "summary": "unresolved: Register facts for AI-005 are stale (evidence_updated_at 2026-04-15); no conclusion is drawn from stale facts.",
+      "evidence_ids": [
+        "IMP-AI-005-POL-T3"
+      ],
+      "owner": "Assessment Operations",
+      "rationale": "Remains open in the published draft.",
+      "resolution_need": "Assessment Operations refreshes the register entry and evidence."
+    },
+    {
+      "id": "OPEN-IMP-AI-007-POL-T1",
+      "summary": "conflicting: SYSTEMS records direct interaction with public. Evidence conflicts (D-001): REC-008 (conflicting): Owner says a banner exists but the current capture shows none. Both facts are preserved; the item remains unresolved pending system-owner verification and is not decided by the automation.",
+      "evidence_ids": [
+        "IMP-AI-007-POL-T1"
+      ],
+      "owner": "Marketing",
+      "rationale": "Remains open in the published draft.",
+      "resolution_need": "System owner (Marketing) verifies the contested fact using avatar-page-capture and updates EVIDENCE/SYSTEMS."
+    },
+    {
+      "id": "OPEN-IMP-AI-008-L-50-4-DF",
+      "summary": "unresolved: POLICY records that the content shows real people, could be mistaken for an authentic recording and is not an evidently artistic or fictional work. Worst evidence state recorded for AI-008 is 'missing' (D-004): REC-009 (partial): Visible label verified but machine-readable provenance not checked; REC-010 (missing): No Legal approval or expiry date recorded.",
+      "evidence_ids": [
+        "IMP-AI-008-L-50-4-DF"
+      ],
+      "owner": "Communications",
+      "rationale": "Remains open in the published draft.",
+      "resolution_need": "Communications supplies current, complete evidence; Legal decides the exception request."
+    },
+    {
+      "id": "OPEN-IMP-AI-008-POL-T2-PROV",
+      "summary": "unresolved: SYSTEMS records public synthetic media (synthetic_audio_video, exposed_group=public). Worst evidence state recorded for AI-008 is 'missing' (D-004): REC-009 (partial): Visible label verified but machine-readable provenance not checked; REC-010 (missing): No Legal approval or expiry date recorded.",
+      "evidence_ids": [
+        "IMP-AI-008-POL-T2-PROV"
+      ],
+      "owner": "Communications",
+      "rationale": "Remains open in the published draft.",
+      "resolution_need": "Communications supplies current, complete evidence; Legal decides the exception request."
+    },
+    {
+      "id": "OPEN-IMP-AI-008-POL-T2-LABEL",
+      "summary": "unresolved: SYSTEMS records public synthetic media (synthetic_audio_video, exposed_group=public). Worst evidence state recorded for AI-008 is 'missing' (D-004): REC-009 (partial): Visible label verified but machine-readable provenance not checked; REC-010 (missing): No Legal approval or expiry date recorded.",
+      "evidence_ids": [
+        "IMP-AI-008-POL-T2-LABEL"
+      ],
+      "owner": "Communications",
+      "rationale": "Remains open in the published draft.",
+      "resolution_need": "Communications supplies current, complete evidence; Legal decides the exception request."
+    }
+  ],
+  "decisions": []
+}
