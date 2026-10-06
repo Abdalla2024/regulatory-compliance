@@ -1,0 +1,296 @@
+Good. Now that you've confirmed the sources are accessible, do a deeper read-only inspection of the available sources.
+
+For POLICY, SYSTEMS, EVIDENCE, and CALENDAR, inspect the actual records, fields, IDs, statuses, owners, dates, and relationships. For the legal sources, inspect the relevant Article 50 text and version/date information. Also investigate whether TIME can be retrieved in a complete form using an appropriate read-only method.
+
+Do not implement the skill yet and do not modify any source. Do not make compliance conclusions.
+
+The goal is to determine whether the source contents themselves resolve any of the remaining requirements questions, especially:
+
+Article 50 paragraphs and applicable rules
+system IDs and applicability information
+policy rules
+evidence states and REC-008
+action/status/date structure
+approval information
+legal version/effective-date information
+whether all Google Sheet tabs contain relevant data
+what information TIME actually provides
+
+For anything that remains genuinely ambiguous after inspecting the sources, list it separately.
+
+At the end, give me a concise assessment of whether we now have enough information to begin implementation.
+
+---
+
+I did not ask the facilitator because they would like to assess my problem solving. Below are my decisions. Let me know if you agree with them or disagree
+
+<pasted_content id="b86b">
+1. REC-008: use conflicting
+
+This one is the clearest.
+
+The actual EVIDENCE record says:
+
+REC-008 | AI-007 | incident | ... | conflicting | Owner says a banner exists but the current capture shows none
+
+And SYSTEMS independently says:
+
+AI-007 → current_notice = no, evidence_status = conflicting
+
+So the strongest evidence says conflicting.
+
+The interview mentioning unresolved doesn't necessarily mean conflicting and unresolved are competing states. The assignment itself distinguishes:
+
+supported-impact
+supported-no-impact
+conflicting
+unresolved
+
+I would therefore treat them differently:
+
+conflicting = sources/evidence disagree
+unresolved = the available evidence is insufficient to determine the outcome
+
+REC-008 clearly has contradictory evidence. Therefore:
+
+Decision: REC-008 remains conflicting.
+
+The system should preserve both facts rather than deciding whether the banner exists.
+
+2. Blocked vs. partial
+
+This is where we should use the assignment's logic.
+
+The assignment says:
+
+necessary binding legal evidence unavailable/unsuitable blocks formal legal conclusions
+
+But it also says the system should explain whether useful unaffected work can continue.
+
+So I would define:
+
+Partial
+
+Some company/source information is missing, stale, conflicting, etc.
+But the legal authority necessary for the particular conclusion is available.
+Continue evaluating what can be supported.
+Mark affected systems/items unresolved.
+Don't manufacture conclusions for missing information.
+
+Blocked
+
+A required binding legal source is unavailable, invalid, stale, or otherwise unsuitable for the legal conclusion.
+Therefore formal legal conclusions that depend on that source must be withheld.
+Still preserve whatever useful technical/source evidence can safely be collected.
+Produce a draft package showing what was attempted, what was unavailable, what conclusions are withheld, and what remains unresolved.
+
+That is much more useful than simply crashing the entire run.
+
+For example:
+
+CONSOLIDATED unavailable, but SYSTEMS/EVIDENCE/CALENDAR are available.
+
+The program shouldn't just say FAILED and throw everything away. It should preserve the evidence and explicitly say:
+
+Formal legal conclusions dependent on the unavailable binding source are withheld.
+
+That fits the assignment's emphasis on traceability and preserving unresolved chains.
+
+So:
+
+Decision: blocked means formal legal conclusions cannot safely be produced; partial means some inputs are imperfect but unaffected supported analysis can continue. A blocked run should still produce the appropriate evidence/withheld-conclusions package rather than silently discarding the work.
+
+3. Private-source access
+
+This one requires the most caution.
+
+Claude discovered that the sources are technically readable without authentication. But the stakeholder explicitly said:
+
+private sources are not public and require authorized access.
+
+So we should not interpret successful unauthenticated HTTP access as permission to treat them as public sources.
+
+At the same time, the assignment says:
+
+Accept interview-disclosed routes as runtime inputs.
+
+And the interview disclosed the official URLs.
+
+Therefore I would design the skill around the official disclosed URLs, while keeping the access mechanism configurable and not putting credentials into the repo.
+
+For Google Sheets, the CSV export is a reasonable read-only retrieval mechanism because:
+
+it is the same source,
+it retrieves the actual sheet,
+each sheet has one tab,
+it doesn't modify anything.
+
+For Notion, Claude discovered the page-chunk endpoint. But because that endpoint is undocumented, I'd be more conservative. The implementation can isolate the Notion retrieval mechanism behind a source adapter rather than hard-coding assumptions throughout the skill.
+
+Most importantly, don't put credentials in the skill or repository.
+
+So the decision can be:
+
+Use the facilitator-disclosed official source routes as runtime inputs. Use read-only retrieval methods that retrieve the live source directly. Do not treat unauthenticated accessibility as evidence that a source is public, and do not store credentials or substitute local copies when a live source fails.
+
+That demonstrates good judgment without inventing an authentication system that the assignment never specified.
+</pasted_content id="b86b">
+
+---
+
+I have decided to resolve the remaining ambiguities independently rather than ask the facilitator.
+
+Before implementation, create the required project decision records for the three decisions below. Each decision record must contain: concern, options considered, source basis, chosen behavior, rationale, trade-offs, and downstream effect. Tie the decisions to the actual assignment, interview transcripts, and source inspection. Do not invent stakeholder approval.
+
+Decision 1: REC-008
+
+Keep REC-008 in the conflicting state.
+
+Source basis:
+
+EVIDENCE explicitly records REC-008 as conflicting.
+SYSTEMS records AI-007 as current_notice=no and evidence_status=conflicting.
+Interview 1 used REC-008 as an example of conflicting evidence.
+Interview 2 used the wording "unresolved and assigned to the owner."
+
+Record that we are deliberately choosing the source/schema state conflicting over the interview-2 wording unresolved, because the underlying facts directly contradict one another. Do not erase the interview-2 interpretation.
+
+Set owner to Marketing. Resolution need: verify whether the disclosure banner exists, using the identified avatar-page-capture evidence. Preserve the item in the brief's conflicts/unresolved scope. Apply the same general rule to REC-003 because it is also source-level conflicting evidence.
+
+Decision 2: run-state semantics
+
+Use these rules:
+
+blocked: any required source is unavailable, invalid, or unsuitable.
+partial: all required sources are successfully retrieved and verified, but individual records contain missing, stale, partial, or conflicting information.
+complete: all required sources are successfully retrieved and verified and all in-scope items reach supported states.
+failed: a technical failure prevents reliable generation or validation of the required outputs.
+
+For a blocked run, do not crash or discard the work. Preserve source attempts, evidence, factual reconciliation, unresolved/conflicting items, and the required blocked/unresolved chain.
+
+If any required source fails, withhold all formal Article 50 conclusions for the run, rather than attempting fragile conclusion-to-source dependency tracking. Factual reconciliation may continue. The final calendar must be empty or limited to actions independently supportable under the assignment.
+
+Stage 07 publication status:
+
+blocked → blocked
+partial → validated
+complete → validated
+failed → failed
+
+Treat all ten sources as required runtime retrievals. Classify them by authority:
+
+Binding legal: OJ, AMEND, CONSOLIDATED
+Official advisory/interpretive: LAW, TIME, FAQ
+Company: POLICY, SYSTEMS, EVIDENCE, CALENDAR
+
+TIME and FAQ are not binding legal authority, but failure to retrieve either still blocks the run because the stakeholder required the source set to travel together.
+
+Define "unsuitable" using observable validation checks rather than subjective judgment. At minimum verify expected identity/title, applicable legal identifier where relevant, required Article 50 content/anchor, appropriate version/date for the 26 Aug 2026 review, in-force amendment status where applicable, and that the response is the actual source rather than a login/landing page. Keep retrieval time, source revision/version, effective date, and review date as separate facts.
+
+Decision 3: source access
+
+Use the official URLs disclosed during the interview as live runtime inputs.
+
+Access the company sources using their existing share-link permissions. No credentials are used or stored. Do not describe these sources as public merely because an unauthenticated GET currently succeeds.
+
+Use read-only retrieval only. Never modify source content. Never substitute an undisclosed local copy when a live source fails.
+
+For Google Sheets, verify the expected one-tab structure on every run. CSV export is acceptable for retrieving the complete current tab because each source currently has exactly one tab. If a new tab appears, record it as a changed/invalid source condition rather than silently ignoring it.
+
+For Notion POLICY, initially isolate the existing page-chunk retrieval behind the source adapter. Verify page identity, title, policy version, context revision, and content retrieval on every run. Do not add an API credential or unnecessary browser dependency unless implementation evidence shows the current route is insufficient.
+
+Record all source attempts in Stage 02, including unsuccessful or unused attempts, as required by the assignment.
+
+After recording these decisions, proceed to implementation.
+
+Do not ask the facilitator for clarification unless the actual source or assignment creates a contradiction that cannot be resolved using these documented rules. Do not make legal conclusions during the implementation. Preserve uncertainty, conflicts, missing facts, and ownership explicitly.
+
+---
+
+<pasted_content id="b86b">
+Revise D-004 so evidence states are determined at the system/rule level, not propagated wholesale across a system.
+Verify D-005 through D-008 against the actual generated artifacts.
+Review the Article 50(1)/(2) language in compliance-brief.md and make the Legal-review boundary explicit.
+Re-run all tests.
+Re-run the complete live-source workflow.
+Verify the seven snapshots and three final files again.
+Show you the final git status, diff/stat, run ID, and test result.
+Then stop before committing.
+</pasted_content id="b86b">
+
+---
+
+<pasted_content id="b86b">
+Everything looks ready. Do one final pre-commit submission hygiene check only.
+
+Verify:
+
+No credentials, API keys, tokens, cookies, secrets, or other sensitive authentication material are present anywhere in tracked or untracked submission files.
+.gitignore excludes appropriate local/session artifacts without excluding any required assignment deliverables.
+Both original interview exports are present under interviews/ and have not been rewritten or summarized.
+deliverables/ contains the current run, required snapshots, register, brief, calendar, sources, and required history.
+regulatory-change-impact-brief/ contains the skill, implementation, references, tests, and required supporting material.
+README contains the reproduction command and setup/runtime information.
+No node_modules, virtual environments, caches, editor state, Entire session artifacts, or other unnecessary generated files will be committed.
+Confirm the 128 untracked files are expected submission files rather than accidental artifacts.
+Run git diff --check.
+Show me the final git status --short and a concise summary of anything that would be excluded by .gitignore.
+
+Do not modify project behavior or rerun the implementation after this check. Stop after reporting the result.
+</pasted_content id="b86b">
+
+---
+
+<pasted_content id="b86b">
+I want to redact the Notion workspace member/user table from the captured POLICY response before committing.
+
+Update the Notion adapter so that the saved POLICY capture preserves all policy/content-bearing data and required locators/metadata, but removes the workspace member table containing third-party names, user IDs, and profile-photo links. Do not remove anything needed to establish the policy's identity, version, context revision, effective/revision dates, policy rules, approval boundaries, or evidence limits.
+
+Then rerun the complete Project B pipeline from the live required sources with a fresh run ID. Because this changes source-capture behavior, treat it as a new run rather than modifying the existing run in place. Preserve the previous run under history as required.
+
+Re-run all tests and verification. Specifically verify that:
+
+the POLICY capture no longer contains the workspace member table or those third-party profile details;
+all claim-bearing policy content and locators remain intact;
+D-008 still passes and the saved capture is sufficient to reproduce the evidence used downstream;
+all seven snapshots and final deliverables are regenerated and hash-bound to the new run;
+the final verification passes with no schema/hash/binding errors;
+report the new run ID, status, test count, verification count, and final git status.
+
+Do not commit or push yet.
+</pasted_content id="b86b">
+
+---
+
+<pasted_content id="b86b">
+Proceed with Option 1.
+
+Redact the Notion workspace-member table from all three historical runs:
+
+RCIB-20261006T195819Z-3013
+RCIB-20261006T201200Z-c65d
+RCIB-20261006T201243Z-5795
+
+Apply the same narrowly scoped redaction used by the current POLICY adapter. Remove only the five workspace-member records containing names, user IDs, and profile-photo links. Preserve all policy/content-bearing records and every piece of evidence needed to reproduce the historical run's downstream conclusions.
+
+For each historical run:
+
+Preserve the original file hash in its history manifest.
+Record the redaction reason as removal of incidental third-party Notion workspace-member metadata before repository publication.
+Record the original hash and the new post-redaction hash.
+Clearly state that the historical artifact was redacted after the original run and therefore its current hash intentionally differs from the original run hash.
+Do not alter the historical run ID, snapshot IDs, decisions, register, brief, calendar, or substantive policy evidence unless the redaction requires it.
+Do not fabricate a new historical run or make the redacted artifact appear to have been the original captured bytes.
+
+Then run the complete verification/test suite again. Confirm:
+
+all tests pass;
+all required current-run files remain bound to RCIB-20261006T202129Z-2f81;
+historical manifests explicitly document their post-run redactions;
+no copy of the five names, user IDs, or profile-photo links remains anywhere under the repository;
+no credentials/secrets are introduced;
+git diff --check passes;
+final git status --short is reported.
+
+Do not commit or push yet.
+</pasted_content id="b86b">
