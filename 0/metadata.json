@@ -1,0 +1,51 @@
+{
+  "cli_version": "0.11.3",
+  "checkpoint_id": "01M49918Y8KJVTX0NW9RN5BB1S",
+  "session_id": "6585e3c7-c45f-4f42-9ff4-e554a0fd2086",
+  "strategy": "manual-commit",
+  "created_at": "2026-10-06T18:53:53.27777Z",
+  "branch": "main",
+  "checkpoints_count": 2,
+  "files_touched": [
+    "interviews/project-b-regulatory-compliance-20261006-1750.md"
+  ],
+  "agent": "Claude Code",
+  "model": "claude-sonnet-5-5",
+  "turn_id": "80b2f1c3e0ca",
+  "compact_transcript_start": 0,
+  "token_usage": {
+    "input_tokens": 20,
+    "cache_creation_tokens": 119809,
+    "cache_read_tokens": 400936,
+    "output_tokens": 20130,
+    "api_call_count": 10
+  },
+  "session_metrics": {
+    "turn_count": 2
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-10-06T18:53:53.258177Z",
+    "agent_lines": 0,
+    "agent_removed": 0,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 0,
+    "total_lines_changed": 0,
+    "agent_percentage": 0,
+    "metric_version": 2
+  },
+  "prompt_attributions": [
+    {
+      "checkpoint_number": 1,
+      "user_lines_added": 173,
+      "user_lines_removed": 0,
+      "agent_lines_added": 0,
+      "agent_lines_removed": 0,
+      "user_added_per_file": {
+        ".gitignore": 1,
+        "interviews/project-b-regulatory-compliance-20261006-1750.md": 172
+      }
+    }
+  ]
+}
